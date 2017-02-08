@@ -12,7 +12,7 @@ class DataImporter
 
     # Generate configuration settings
     config = JSON.parse('{
-      "endpoint": "https://tddb-website.prismic.io/api"
+      "endpoint": "https://ddb-website.prismic.io/api"
     }')
 
     # Create Prismic API object
@@ -23,7 +23,7 @@ class DataImporter
 
     # Get raw data from Prismic.io
     begin
-      url = "https://tddb-website.prismic.io/api/documents/search?ref=#{@prismic_api.master_ref.ref}&format=json"
+      url = "https://ddb-website.prismic.io/api/documents/search?ref=#{@prismic_api.master_ref.ref}&format=json"
       puts ">> Querying '#{url}'..."
       uri = URI(url)
       response = Net::HTTP.get(uri)

@@ -6,6 +6,7 @@ GEM
     colorator (1.1.0)
     ffi (1.9.17)
     forwardable-extended (2.6.0)
+    hashery (2.1.2)
     htmlbeautifier (1.2.1)
     htmlcompressor (0.3.1)
     jekyll (3.3.1)
@@ -35,6 +36,8 @@ GEM
     mercenary (0.3.6)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
+    prismic.io (1.4.3)
+      hashery (~> 2.1.1)
     public_suffix (2.0.5)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
@@ -49,6 +52,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.3.1)
   jekyll-tidy
+  prismic.io
 
 RUBY VERSION
    ruby 2.3.3p222
