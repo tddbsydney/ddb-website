@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+      maximum-scale=1.0,user-scalable=no">
+    <meta name="description" content="Can we sell a Golf to a town that doesn't need its city technology?">
+    <meta name="keywords" content="Tribal,DDB,Sydney">
+    <title>Volkswagen Golf</title>
+    <script src="../../assets/js/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+  </head>
+  <body>
+    <section class="section-header">
+    </section>
+    <section class="section-tiles">
+      <div class="tiles">
+        <div class="tile-sizer"></div>
+        <div class="comp-tile">
+          <div class="tile-outer">
+            <div class="tile-inner">
+              <div class="tile-content">
+                <p class="tile-heading">Volkswagen</p>
+                <p class="tile-text">Can we sell a Golf to a town that doesn't need its city technology?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="../../assets/js/masonry.pkgd.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+          var $msn = $('.tiles').masonry({
+                  columnWidth: '.tile-sizer',
+                  itemSelector: '.comp-tile',
+                  percentPosition: true,
+                  transitionDuration: 0,
+                });
+                $(window).resize(function(){
+                  $msn.masonry('layout');
+                });
+                $(document).ready(function(){
+                  $msn.masonry('layout');
+                  setTimeout( (function() {
+                    $msn.masonry('layout');
+                  }), 100);
+                });
+        </script>
+      </div>
+    </section>
+    <section class="section-tiles">
+      <div class="tiles">
+        <div class="tile-sizer"></div>
+        <div class="comp-tile width-half">
+          <div class="tile-outer tile-style-yellow">
+            <div class="tile-inner">
+              <div class="tile-content">
+                <p class="tile-heading">New Business</p>
+                <p class="tile-text">Interested in working with us?<span class="tile-link-arrow">&gt;</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-tile width-half">
+          <div class="tile-outer tile-style-black">
+            <div class="tile-inner">
+              <div class="tile-content">
+                <p class="tile-heading">Social Creative</p>
+                <p class="tile-text">The caption for the creative idea.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-tile">
+          <div class="tile-outer tile-style-black">
+            <div class="tile-inner tile-fade-grad">
+              <div class="tile-content">
+                <p class="tile-heading">The Sydney Opera House</p>
+                <p class="tile-text">We needed to get more people inside the Sydney Opera House during summer.<span class="tile-link-arrow">&gt;</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-tile">
+          <div class="tile-outer">
+            <div class="tile-inner">
+              <div class="tile-content">
+                <p class="tile-heading">Volkswagen</p>
+                <p class="tile-text">Aussie blokes didn't think the Amarok was tough enough o cope with Australian conditions.<span class="tile-link-arrow">&gt;</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="../../assets/js/masonry.pkgd.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+          var $msn = $('.tiles').masonry({
+                  columnWidth: '.tile-sizer',
+                  itemSelector: '.comp-tile',
+                  percentPosition: true,
+                  transitionDuration: 0,
+                });
+                $(window).resize(function(){
+                  $msn.masonry('layout');
+                });
+                $(document).ready(function(){
+                  $msn.masonry('layout');
+                  setTimeout( (function() {
+                    $msn.masonry('layout');
+                  }), 100);
+                });
+        </script>
+      </div>
+    </section>
+    <section class="section-footer">
+    </section>
+  </body>
+</html>
