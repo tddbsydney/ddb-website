@@ -3,6 +3,10 @@
   $style-black-text-col: #fff;
   $style-yellow-bg-col: #ffd107;
   $style-yellow-text-col: #000;
+  $style-white-bg-col: #fff;
+  $style-white-text-col: #000;
+  $style-lightblue-bg-col: #afc9e2;
+  $style-lightblue-text-col: #fff;
 
   display: block;
   width: 100%;
@@ -37,6 +41,44 @@
     &.tile-style-black {
       background-color: $style-black-bg-col;
       color: $style-black-text-col;
+
+      .tile-inner {
+        .tile-content {
+          .tile-link {
+            border-color: $style-black-text-col;
+          }
+        }
+      }
+    }
+
+    &.tile-style-lightblue {
+      background-color: $style-lightblue-bg-col;
+      color: $style-lightblue-text-col;
+
+      .tile-inner {
+        .tile-content {
+          .tile-link {
+            border-color: $style-lightblue-text-col;
+          }
+        }
+      }
+    }
+
+    &.tile-style-white {
+      background-color: $style-white-bg-col;
+      color: $style-white-text-col;
+
+      .tile-inner {
+        .tile-content {
+          .tile-link {
+            border-color: $style-white-text-col;
+          }
+
+          p {
+            text-shadow: none;
+          }
+        }
+      }
     }
 
     &.tile-style-yellow {
@@ -45,6 +87,10 @@
 
       .tile-inner {
         .tile-content {
+          .tile-link {
+            border-color: $style-yellow-text-col;
+          }
+
           p {
             text-shadow: none;
           }
@@ -175,13 +221,12 @@
             font-weight: bold;
           }
 
-          .tile-link-arrow {
+          &.tile-link {
             display: inline-block;
-            font-size: inherit;
-            text-shadow: none;
-            padding-left: 15px;
-            font-weight: normal;
-            @include transform(scaley(1.5) scalex(0.75) translateY(-0.05em));
+            margin-top: 2vw;
+            font-size: 1.75vw;
+            line-height: 3vw;
+            border-bottom: 2px solid #fff;
           }
         }
 
@@ -189,9 +234,11 @@
           margin: 5vw;
 
           p {
-            &.tile-heading { font-size: 5.5vw; }
-            &.tile-text    { font-size: 7vw; }
+            &.tile-heading { font-size: 4vw; }
+            &.tile-text    { font-size: 6vw; }
+            &.tile-link    { font-size: 4vw; line-height: 6vw;}
           }
+
         }
       }
     }

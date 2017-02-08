@@ -5,7 +5,7 @@
       "data": {
         "title": {
           "type": "Text",
-          "value": "Volkswagen Golf"
+          "value": "Volkswagen Golf | Case Study | Tribal DDB"
         },
         "description": {
           "type": "Text",
@@ -26,6 +26,26 @@
                     "type": "Text",
                     "value": "Can we sell a Golf to a town that doesn't need its city technology?"
                   },
+                  "background-image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1023,
+                          "height": 640
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/c951373530bc461d67cfffce58464fc3f4fc46f3_vw0.jpg"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  },
                   "desktop-aspect-ratio": {
                     "type": "Select",
                     "value": "16-9"
@@ -43,7 +63,7 @@
                 {
                   "title": {
                     "type": "Text",
-                    "value": "So what was teh brief then?"
+                    "value": "So what was the brief then?"
                   },
                   "text": {
                     "type": "Text",
@@ -69,12 +89,12 @@
                     "value": {
                       "main": {
                         "dimensions": {
-                          "width": 280,
-                          "height": 280
+                          "width": 1019,
+                          "height": 564
                         },
                         "alt": null,
                         "copyright": null,
-                        "url": "https://prismic-io.s3.amazonaws.com/tddb-website/3c08c85ffcb8eac361e02c0b597dd5216c804a95_auazfff.png"
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/7a5155edfc5579cf711653ce4eeae8891100e3f5_vw1.jpg"
                       },
                       "views": {
                       }
@@ -97,7 +117,7 @@
                   },
                   "text": {
                     "type": "Text",
-                    "value": "An online series about a Volkswagen dealer given an impossible task. The premise was to sell the ultimate city car in an outback town filled with folks with no want or need for it."
+                    "value": "We developed an online series about a Volkswagen dealer given an impossible task. The premise was to sell the ultimate city car in an outback town filled with folks with no want or need for it."
                   },
                   "background-style": {
                     "type": "Select",
@@ -114,21 +134,15 @@
               "type": "case-study-video",
               "value": [
                 {
-                  "background-image": {
-                    "type": "Image",
+                  "video": {
+                    "type": "Link.web",
                     "value": {
-                      "main": {
-                        "dimensions": {
-                          "width": 280,
-                          "height": 280
-                        },
-                        "alt": null,
-                        "copyright": null,
-                        "url": "https://prismic-io.s3.amazonaws.com/tddb-website/3c08c85ffcb8eac361e02c0b597dd5216c804a95_auazfff.png"
-                      },
-                      "views": {
-                      }
+                      "url": "https://www.youtube.com/watch?v=6wEFjop9mEY"
                     }
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
                   }
                 }
               ]
@@ -160,22 +174,6 @@
               "type": "case-study-video",
               "value": [
                 {
-                  "background-image": {
-                    "type": "Image",
-                    "value": {
-                      "main": {
-                        "dimensions": {
-                          "width": 280,
-                          "height": 280
-                        },
-                        "alt": null,
-                        "copyright": null,
-                        "url": "https://prismic-io.s3.amazonaws.com/tddb-website/3c08c85ffcb8eac361e02c0b597dd5216c804a95_auazfff.png"
-                      },
-                      "views": {
-                      }
-                    }
-                  },
                   "background-style": {
                     "type": "Select",
                     "value": "black"
@@ -189,7 +187,7 @@
                 {
                   "title": {
                     "type": "Text",
-                    "value": "Facebook turns into a broadcast channel."
+                    "value": "Facebook becomes a broadcast channel"
                   },
                   "text": {
                     "type": "Text",
@@ -215,12 +213,12 @@
                     "value": {
                       "main": {
                         "dimensions": {
-                          "width": 280,
-                          "height": 280
+                          "width": 1023,
+                          "height": 512
                         },
                         "alt": null,
                         "copyright": null,
-                        "url": "https://prismic-io.s3.amazonaws.com/tddb-website/3c08c85ffcb8eac361e02c0b597dd5216c804a95_auazfff.png"
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/a8fd843b4572f294a0754363b0eb2e2635d6b858_vw2.jpg"
                       },
                       "views": {
                       }
@@ -245,21 +243,6 @@
                     "type": "Text",
                     "value": "Interested in working with us?"
                   },
-                  "link": {
-                    "type": "Link.document",
-                    "value": {
-                      "document": {
-                        "id": "WJkzUSgAAExBf8eX",
-                        "type": "page-latest",
-                        "tags": [
-
-                        ],
-                        "slug": "latest-from-tribal-ddb",
-                        "uid": "latest"
-                      },
-                      "isBroken": false
-                    }
-                  },
                   "link-text": {
                     "type": "Text",
                     "value": "Get in contact"
@@ -270,25 +253,27 @@
                   },
                   "background-style": {
                     "type": "Select",
-                    "value": "yellow"
-                  },
-                  "desktop-aspect-ratio": {
-                    "type": "Select",
-                    "value": "4-3"
-                  },
-                  "mobile-aspect-ratio": {
-                    "type": "Select",
-                    "value": "16-9"
+                    "value": "black"
                   }
                 },
                 {
                   "title": {
                     "type": "Text",
-                    "value": "Social Creative"
+                    "value": "Creativity"
                   },
                   "text": {
                     "type": "Text",
-                    "value": "The caption for the creative idea."
+                    "value": "Prototypes over Presentations"
+                  },
+                  "link": {
+                    "type": "Link.web",
+                    "value": {
+                      "url": "https://medium.com/ddb-sydney"
+                    }
+                  },
+                  "link-text": {
+                    "type": "Text",
+                    "value": "Read on Medium"
                   },
                   "width": {
                     "type": "Select",
@@ -296,138 +281,7 @@
                   },
                   "background-style": {
                     "type": "Select",
-                    "value": "black"
-                  },
-                  "desktop-aspect-ratio": {
-                    "type": "Select",
-                    "value": "4-3"
-                  },
-                  "mobile-aspect-ratio": {
-                    "type": "Select",
-                    "value": "16-9"
-                  }
-                },
-                {
-                  "title": {
-                    "type": "Text",
-                    "value": "The Sydney Opera House"
-                  },
-                  "text": {
-                    "type": "Text",
-                    "value": "We needed to get more people inside the Sydney Opera House during summer."
-                  },
-                  "link": {
-                    "type": "Link.document",
-                    "value": {
-                      "document": {
-                        "id": "WJkzUSgAAExBf8eX",
-                        "type": "page-latest",
-                        "tags": [
-
-                        ],
-                        "slug": "latest-from-tribal-ddb",
-                        "uid": "latest"
-                      },
-                      "isBroken": false
-                    }
-                  },
-                  "link-text": {
-                    "type": "Text",
-                    "value": "View the work"
-                  },
-                  "background-fade": {
-                    "type": "Select",
-                    "value": "grad"
-                  },
-                  "background-style": {
-                    "type": "Select",
-                    "value": "black"
-                  },
-                  "desktop-aspect-ratio": {
-                    "type": "Select",
-                    "value": "16-9"
-                  },
-                  "mobile-aspect-ratio": {
-                    "type": "Select",
-                    "value": "16-9"
-                  }
-                },
-                {
-                  "title": {
-                    "type": "Text",
-                    "value": "Volkswagen"
-                  },
-                  "text": {
-                    "type": "Text",
-                    "value": "Aussie blokes didn't think the Amarok was tough enough o cope with Australian conditions."
-                  },
-                  "link": {
-                    "type": "Link.document",
-                    "value": {
-                      "document": {
-                        "id": "WJkzUSgAAExBf8eX",
-                        "type": "page-latest",
-                        "tags": [
-
-                        ],
-                        "slug": "latest-from-tribal-ddb",
-                        "uid": "latest"
-                      },
-                      "isBroken": false
-                    }
-                  },
-                  "link-text": {
-                    "type": "Text",
-                    "value": "View the work"
-                  },
-                  "desktop-aspect-ratio": {
-                    "type": "Select",
-                    "value": "16-9"
-                  },
-                  "mobile-aspect-ratio": {
-                    "type": "Select",
-                    "value": "16-9"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      }
-    }
-  ],
-  "page-latest": [
-    {
-      "uid": "latest",
-      "data": {
-        "title": {
-          "type": "Text",
-          "value": "Latest from Tribal DDB"
-        },
-        "description": {
-          "type": "Text",
-          "value": "The latest news from Tribal DDB."
-        },
-        "sections": {
-          "type": "SectionList",
-          "value": [
-            {
-              "type": "promo",
-              "value": [
-                {
-                  "heading": {
-                    "type": "Text",
-                    "value": "Feeling conquers thinking."
-                  },
-                  "background-video": {
-                    "type": "Link.web",
-                    "value": {
-                      "url": "http://content.volkswagen-commercial.com.au/Amarok/Content/videos/VW_The_Naked_Reveal_Loop.mp4"
-                    }
-                  },
-                  "background-style": {
-                    "type": "Select",
-                    "value": "black"
+                    "value": "yellow"
                   }
                 }
               ]
@@ -443,11 +297,454 @@
       "data": {
         "title": {
           "type": "Text",
-          "value": "Work from Tribal DDB"
+          "value": "Work | Tribal DDB"
         },
         "description": {
           "type": "Text",
-          "value": "Work from Tribal DDB."
+          "value": "Work that we do here at Tribal DDB."
+        },
+        "sections": {
+          "type": "SectionList",
+          "value": [
+            {
+              "type": "tiles",
+              "value": [
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "Volkswagen"
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "Aussie blokes didn't think the Amarok was tough enough to cope with Australian conditions."
+                  },
+                  "link": {
+                    "type": "Link.document",
+                    "value": {
+                      "document": {
+                        "id": "WJp4BSgAAFNhhV-u",
+                        "type": "case-study",
+                        "tags": [
+
+                        ],
+                        "slug": "volkswagen-golf--case-study--tribal-ddb",
+                        "uid": "volkswagen-golf"
+                      },
+                      "isBroken": false
+                    }
+                  },
+                  "link-text": {
+                    "type": "Text",
+                    "value": "View the work"
+                  },
+                  "background-image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 892,
+                          "height": 483
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/85e1372264bb89217be868e146257c06192fcdf9_vw3.jpg"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  },
+                  "desktop-aspect-ratio": {
+                    "type": "Select",
+                    "value": "16-9"
+                  },
+                  "mobile-aspect-ratio": {
+                    "type": "Select",
+                    "value": "4-3"
+                  }
+                },
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "The Sydney Opera House"
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "We needed to get more people inside the Sydney Opera House during summer."
+                  },
+                  "link-text": {
+                    "type": "Text",
+                    "value": "View the work"
+                  },
+                  "background-image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1024,
+                          "height": 666
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/f57cb18f9962644f08f40e7926d433ae66b60ccc_opera1.jpg"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  },
+                  "desktop-aspect-ratio": {
+                    "type": "Select",
+                    "value": "16-9"
+                  },
+                  "mobile-aspect-ratio": {
+                    "type": "Select",
+                    "value": "4-3"
+                  }
+                },
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "Westpac"
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "Dear bump, a little something is coming"
+                  },
+                  "link-text": {
+                    "type": "Text",
+                    "value": "View the work"
+                  },
+                  "background-image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1024,
+                          "height": 640
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/2f77bddae8ecae05cc57279d27c4358e989f16e0_bump1.jpg"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  },
+                  "desktop-aspect-ratio": {
+                    "type": "Select",
+                    "value": "16-9"
+                  },
+                  "mobile-aspect-ratio": {
+                    "type": "Select",
+                    "value": "4-3"
+                  }
+                },
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "Volkswagen"
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "Four model launches, alway on social, a prorotype vechicle and an innovative sponsorship."
+                  },
+                  "link-text": {
+                    "type": "Text",
+                    "value": "View the work"
+                  },
+                  "background-image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1024,
+                          "height": 500
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/512488fade1708f2fdf2be0f1050b665584a9d5a_vw4.jpg"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  },
+                  "desktop-aspect-ratio": {
+                    "type": "Select",
+                    "value": "16-9"
+                  },
+                  "mobile-aspect-ratio": {
+                    "type": "Select",
+                    "value": "4-3"
+                  }
+                },
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "McDonald's"
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "McDonald’s was modifying their famous, golden Fries for the first time in their history."
+                  },
+                  "link-text": {
+                    "type": "Text",
+                    "value": "View the work"
+                  },
+                  "background-image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1024,
+                          "height": 641
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/2ca4a07be00010e52946ed6c05b4053003ba596a_mcd1.jpg"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  },
+                  "desktop-aspect-ratio": {
+                    "type": "Select",
+                    "value": "16-9"
+                  },
+                  "mobile-aspect-ratio": {
+                    "type": "Select",
+                    "value": "4-3"
+                  }
+                },
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "Volkswagen"
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "Can we get a Golf to a town that doesn't need its city technology?"
+                  },
+                  "link": {
+                    "type": "Link.document",
+                    "value": {
+                      "document": {
+                        "id": "WJp4BSgAAFNhhV-u",
+                        "type": "case-study",
+                        "tags": [
+
+                        ],
+                        "slug": "volkswagen-golf--case-study--tribal-ddb",
+                        "uid": "volkswagen-golf"
+                      },
+                      "isBroken": false
+                    }
+                  },
+                  "link-text": {
+                    "type": "Text",
+                    "value": "View the work"
+                  },
+                  "background-image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1023,
+                          "height": 640
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/c951373530bc461d67cfffce58464fc3f4fc46f3_vw0.jpg"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  },
+                  "desktop-aspect-ratio": {
+                    "type": "Select",
+                    "value": "16-9"
+                  },
+                  "mobile-aspect-ratio": {
+                    "type": "Select",
+                    "value": "4-3"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "page-latest": [
+    {
+      "uid": "latest",
+      "data": {
+        "title": {
+          "type": "Text",
+          "value": "Latest | Tribal DDB"
+        },
+        "description": {
+          "type": "Text",
+          "value": "Latest news from Tribal DDB."
+        },
+        "sections": {
+          "type": "SectionList",
+          "value": [
+            {
+              "type": "promo",
+              "value": [
+                {
+                  "heading": {
+                    "type": "Text",
+                    "value": "Feeling conquers Thinking"
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "tiles",
+              "value": [
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "Volkswagen Golf"
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "Case Study"
+                  },
+                  "link": {
+                    "type": "Link.document",
+                    "value": {
+                      "document": {
+                        "id": "WJp4BSgAAFNhhV-u",
+                        "type": "case-study",
+                        "tags": [
+
+                        ],
+                        "slug": "volkswagen-golf--case-study--tribal-ddb",
+                        "uid": "volkswagen-golf"
+                      },
+                      "isBroken": false
+                    }
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "yellow"
+                  },
+                  "desktop-aspect-ratio": {
+                    "type": "Select",
+                    "value": "16-9"
+                  },
+                  "mobile-aspect-ratio": {
+                    "type": "Select",
+                    "value": "4-3"
+                  }
+                },
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "Tile 2"
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "Second tile"
+                  },
+                  "width": {
+                    "type": "Select",
+                    "value": "half"
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  },
+                  "desktop-aspect-ratio": {
+                    "type": "Select",
+                    "value": "4-3"
+                  },
+                  "mobile-aspect-ratio": {
+                    "type": "Select",
+                    "value": "4-3"
+                  }
+                },
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "Tile 3"
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "Third tile"
+                  },
+                  "width": {
+                    "type": "Select",
+                    "value": "half"
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  },
+                  "desktop-aspect-ratio": {
+                    "type": "Select",
+                    "value": "4-3"
+                  },
+                  "mobile-aspect-ratio": {
+                    "type": "Select",
+                    "value": "4-3"
+                  }
+                },
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "Tile 4"
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "Fourth tile"
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "white"
+                  },
+                  "desktop-aspect-ratio": {
+                    "type": "Select",
+                    "value": "16-9"
+                  },
+                  "mobile-aspect-ratio": {
+                    "type": "Select",
+                    "value": "4-3"
+                  }
+                }
+              ]
+            }
+          ]
         }
       }
     }

@@ -7,11 +7,11 @@
 {% endcapture %}
 
 {% capture capTileOuter %}
-  {% if tile.aspect-mobile.value %}
-    mobile-aspect-{{ tile.aspect-mobile.value }}
+  {% if tile.mobile-aspect-ratio.value %}
+    mobile-aspect-{{ tile.mobile-aspect-ratio.value }}
   {% endif %}
-  {% if tile.aspect-desktop.value %}
-    desktop-aspect-{{ tile.aspect-desktop.value }}
+  {% if tile.desktop-aspect-ratio.value %}
+    desktop-aspect-{{ tile.desktop-aspect-ratio.value }}
   {% endif %}
   {% if tile.background-style.value %}
     tile-style-{{ tile.background-style.value }}
@@ -23,7 +23,7 @@
 
 {% capture capTileOuterBg %}
   {% if tile.background-image.value %}
-    style="background-image: url('https://{{ tile.background-image.value.main.url }}');"
+    style="background-image: url('{{ tile.background-image.value.main.url }}');"
   {% endif %}
 {% endcapture %}
 
@@ -33,8 +33,18 @@
   {% endif %}
 {% endcapture %}
 
+{% if tile.link.value %}
+  {% capture linkValue %}
+    {% case tile.link.value.document.type %}
+      {% when "case-study" %}
+        {{base}}/work/{{tile.link.value.document.uid}}
+    {% endcase %}
+  {% endcapture %}
+<a href="{{linkValue | normalize_whitespace}}" class="{{ 'comp-tile' | append: capCompTile | normalize_whitespace }}">
+{% else %}
 <div class="{{ 'comp-tile' | append: capCompTile | normalize_whitespace }}">
-  <div class="{{ 'tile-outer' | append: capTileOuter | normalize_whitespace }}"{{ capTileOuterBg | normalize_whitespace }}>
+{% endif %}
+  <div class="{{ 'tile-outer' | append: capTileOuter | normalize_whitespace }}" {{ capTileOuterBg | normalize_whitespace }}>
     <div class="{{ 'tile-inner' | append: capTileInner | normalize_whitespace }}">
       {% if tile.background-video.value %}
       <div class="tile-background">
@@ -54,9 +64,16 @@
         </div>
         {% else %}
         <p class="tile-heading">{{ tile.title.value }}</p>
-        <p class="tile-text">{{ tile.text.value }}{% if tile.link.value %}<span class="tile-link-arrow">&gt;</span>{% endif %}</p>
+        <p class="tile-text">{{ tile.text.value }}</p>
+        {% if tile.link.value %}
+        <p class="tile-link">{{ tile.link-text.value | default: "View >" }}</p>
+        {% endif %}
         {% endcase %}
       </div>
     </div>
   </div>
+{% if tile.link.value %}
+</a>
+{% else %}
 </div>
+{% endif %}
