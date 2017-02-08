@@ -426,8 +426,9 @@ h3 {
   display: block;
   width: 100%;
   overflow: hidden; }
-  .comp-tile.width-half {
-    width: 50%; }
+  @media only screen and (min-width: 768px) {
+    .comp-tile.width-half {
+      width: 50%; } }
   .comp-tile .tile-outer {
     position: relative;
     height: 0;
@@ -463,6 +464,8 @@ h3 {
       color: #fff; }
       .comp-tile .tile-outer.tile-style-skyblue .tile-inner .tile-content .tile-link {
         border-color: #fff; }
+      .comp-tile .tile-outer.tile-style-skyblue .tile-inner .tile-content p {
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.1); }
     .comp-tile .tile-outer.tile-style-white {
       background-color: #fff;
       color: #000; }
@@ -658,7 +661,7 @@ h3 {
                 margin: 0 0 0 auto; } }
           .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box {
             padding: 2.5vw;
-            margin: 0 auto;
+            margin: 0 auto 0 0;
             max-width: 100%;
             text-align: left; }
             @media only screen and (min-width: 768px) {
@@ -677,129 +680,112 @@ h3 {
               .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-half {
                 max-width: 50%; } }
             @media only screen and (max-width: 767px) {
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-align-left {
-                text-align: left; }
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-align-center {
-                text-align: center; }
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-align-right {
-                text-align: right; }
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-full {
-                max-width: 100%; }
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-three-quarter {
-                max-width: 75%; }
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-two-third {
-                max-width: 66%; }
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-half {
-                max-width: 50%; } }
-            .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-two-column-wrapper,
-            .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-three-column-wrapper {
-              display: table;
-              margin-top: 3vw; }
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-two-column-wrapper .cst-two-column-wrapper-left,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-two-column-wrapper .cst-two-column-wrapper-right,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-two-column-wrapper .cst-three-column-wrapper-left,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-two-column-wrapper .cst-three-column-wrapper-middle,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-two-column-wrapper .cst-three-column-wrapper-right,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-three-column-wrapper .cst-two-column-wrapper-left,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-three-column-wrapper .cst-two-column-wrapper-right,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-three-column-wrapper .cst-three-column-wrapper-left,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-three-column-wrapper .cst-three-column-wrapper-middle,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-three-column-wrapper .cst-three-column-wrapper-right {
-                display: table-cell; }
-        .comp-tile .tile-outer .tile-inner .tile-content p {
-          margin: 0;
-          line-height: 1.2em; }
-          .comp-tile .tile-outer .tile-inner .tile-content p.tile-heading {
-            font-size: 1.75vw;
-            min-height: 1.1em; }
-          .comp-tile .tile-outer .tile-inner .tile-content p.tile-text {
-            font-size: 2.5vw;
-            font-weight: bold; }
-          .comp-tile .tile-outer .tile-inner .tile-content p.tile-link {
-            display: inline-block;
-            margin-top: 2vw;
-            font-size: 1.75vw;
-            line-height: 3vw;
-            border-bottom: 2px solid #fff; }
-          .comp-tile .tile-outer .tile-inner .tile-content p.cst-title {
-            font-size: 1.75vw;
-            line-height: 2vw;
-            margin-bottom: 1vw; }
-          .comp-tile .tile-outer .tile-inner .tile-content p.cst-text {
-            font-size: 2.5vw; }
-          .comp-tile .tile-outer .tile-inner .tile-content p.cst-subtext {
-            font-size: 2vw;
-            margin-top: 1vw; }
-          .comp-tile .tile-outer .tile-inner .tile-content p.cst-three-column-left, .comp-tile .tile-outer .tile-inner .tile-content p.cst-three-column-middle, .comp-tile .tile-outer .tile-inner .tile-content p.cst-three-column-right {
-            font-size: 2vw; }
-        @media only screen and (max-width: 767px) {
-          .comp-tile .tile-outer .tile-inner .tile-content p.tile-heading {
-            font-size: 4vw; }
-          .comp-tile .tile-outer .tile-inner .tile-content p.tile-text {
-            font-size: 6vw; }
-          .comp-tile .tile-outer .tile-inner .tile-content p.tile-link {
-            font-size: 4vw;
-            line-height: 6vw; }
-          .comp-tile .tile-outer .tile-inner .tile-content p.cst-title {
-            font-size: 3.5vw;
-            margin-bottom: 3vw; }
-          .comp-tile .tile-outer .tile-inner .tile-content p.cst-text {
-            font-size: 5vw; }
-          .comp-tile .tile-outer .tile-inner .tile-content p.cst-subtext {
-            font-size: 4.5vw;
-            margin-bottom: 3vw; }
-          .comp-tile .tile-outer .tile-inner .tile-content p.cst-three-column-left, .comp-tile .tile-outer .tile-inner .tile-content p.cst-three-column-middle, .comp-tile .tile-outer .tile-inner .tile-content p.cst-three-column-right {
-            font-size: 4.5vw; }
-          .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box {
-            margin: 5vw; }
-            .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-two-column-wrapper,
-            .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-three-column-wrapper {
-              display: block;
-              margin-top: 5vw; }
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-two-column-wrapper .cst-two-column-wrapper-left,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-two-column-wrapper .cst-two-column-wrapper-right,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-two-column-wrapper .cst-three-column-wrapper-left,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-two-column-wrapper .cst-three-column-wrapper-middle,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-two-column-wrapper .cst-three-column-wrapper-right,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-three-column-wrapper .cst-two-column-wrapper-left,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-three-column-wrapper .cst-two-column-wrapper-right,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-three-column-wrapper .cst-three-column-wrapper-left,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-three-column-wrapper .cst-three-column-wrapper-middle,
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box .cst-three-column-wrapper .cst-three-column-wrapper-right {
-                display: block;
-                margin-top: 3vw; } }
-
-.section-promo .comp-tile .tile-outer .tile-inner {
-  display: table;
-  width: 100%;
-  height: 100%; }
-  .section-promo .comp-tile .tile-outer .tile-inner .tile-content {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center; }
-    .section-promo .comp-tile .tile-outer .tile-inner .tile-content .promo-roller .promo-left,
-    .section-promo .comp-tile .tile-outer .tile-inner .tile-content .promo-roller .promo-middle,
-    .section-promo .comp-tile .tile-outer .tile-inner .tile-content .promo-roller .promo-right {
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box {
+                padding: 5vw; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-align-left {
+                  text-align: left; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-align-center {
+                  text-align: center; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-align-right {
+                  text-align: right; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-full {
+                  max-width: 100%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-three-quarter {
+                  max-width: 75%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-two-third {
+                  max-width: 66%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-half {
+                  max-width: 50%; } }
+  .comp-tile p {
+    margin: 0;
+    line-height: 1.2em; }
+    .comp-tile p.tile-heading {
+      font-size: 1.75vw;
+      min-height: 1.1em; }
+    .comp-tile p.tile-text {
+      font-size: 2.5vw;
+      font-weight: bold; }
+    .comp-tile p.tile-link {
       display: inline-block;
+      margin-top: 2vw;
+      font-size: 1.75vw;
+      line-height: 3vw;
+      border-bottom: 2px solid #fff; }
+  @media only screen and (max-width: 767px) {
+    .comp-tile p.tile-heading {
+      font-size: 4vw; }
+    .comp-tile p.tile-text {
+      font-size: 6vw; }
+    .comp-tile p.tile-link {
       font-size: 4vw;
-      line-height: 1em;
-      font-weight: bold;
-      padding: 5px; }
-    .section-promo .comp-tile .tile-outer .tile-inner .tile-content .promo-roller .promo-middle {
-      background-color: #f3c34f;
-      margin: 0 -5px; }
-    @media only screen and (max-width: 767px) {
-      .section-promo .comp-tile .tile-outer .tile-inner .tile-content {
-        text-align: left; }
-        .section-promo .comp-tile .tile-outer .tile-inner .tile-content .promo-roller {
-          display: inline-block; }
-          .section-promo .comp-tile .tile-outer .tile-inner .tile-content .promo-roller .promo-left,
-          .section-promo .comp-tile .tile-outer .tile-inner .tile-content .promo-roller .promo-middle,
-          .section-promo .comp-tile .tile-outer .tile-inner .tile-content .promo-roller .promo-right {
-            width: auto;
-            margin-left: 10vw;
-            font-size: 10vw;
-            display: block; } }
+      line-height: 6vw; } }
+
+.section-case-study-text .tile-content .cst-two-column-wrapper,
+.section-case-study-text .tile-content .cst-three-column-wrapper {
+  display: table;
+  margin-top: 3vw; }
+  .section-case-study-text .tile-content .cst-two-column-wrapper .cst-two-column-wrapper-left,
+  .section-case-study-text .tile-content .cst-two-column-wrapper .cst-two-column-wrapper-right,
+  .section-case-study-text .tile-content .cst-two-column-wrapper .cst-three-column-wrapper-left,
+  .section-case-study-text .tile-content .cst-two-column-wrapper .cst-three-column-wrapper-middle,
+  .section-case-study-text .tile-content .cst-two-column-wrapper .cst-three-column-wrapper-right,
+  .section-case-study-text .tile-content .cst-three-column-wrapper .cst-two-column-wrapper-left,
+  .section-case-study-text .tile-content .cst-three-column-wrapper .cst-two-column-wrapper-right,
+  .section-case-study-text .tile-content .cst-three-column-wrapper .cst-three-column-wrapper-left,
+  .section-case-study-text .tile-content .cst-three-column-wrapper .cst-three-column-wrapper-middle,
+  .section-case-study-text .tile-content .cst-three-column-wrapper .cst-three-column-wrapper-right {
+    display: table-cell; }
+.section-case-study-text .tile-content .cst-title {
+  font-size: 1.75vw;
+  line-height: 2vw;
+  margin-bottom: 1vw; }
+.section-case-study-text .tile-content .cst-text {
+  font-size: 2.5vw; }
+.section-case-study-text .tile-content .cst-subtext {
+  font-size: 2vw;
+  margin-top: 1vw; }
+.section-case-study-text .tile-content .cst-three-column-left,
+.section-case-study-text .tile-content .cst-three-column-middle,
+.section-case-study-text .tile-content .cst-three-column-right {
+  font-size: 2vw; }
+@media only screen and (max-width: 767px) {
+  .section-case-study-text .tile-content .cst-two-column-wrapper,
+  .section-case-study-text .tile-content .cst-three-column-wrapper {
+    display: block;
+    margin-top: 5vw; }
+    .section-case-study-text .tile-content .cst-two-column-wrapper .cst-two-column-wrapper-left,
+    .section-case-study-text .tile-content .cst-two-column-wrapper .cst-two-column-wrapper-right,
+    .section-case-study-text .tile-content .cst-two-column-wrapper .cst-three-column-wrapper-left,
+    .section-case-study-text .tile-content .cst-two-column-wrapper .cst-three-column-wrapper-middle,
+    .section-case-study-text .tile-content .cst-two-column-wrapper .cst-three-column-wrapper-right,
+    .section-case-study-text .tile-content .cst-three-column-wrapper .cst-two-column-wrapper-left,
+    .section-case-study-text .tile-content .cst-three-column-wrapper .cst-two-column-wrapper-right,
+    .section-case-study-text .tile-content .cst-three-column-wrapper .cst-three-column-wrapper-left,
+    .section-case-study-text .tile-content .cst-three-column-wrapper .cst-three-column-wrapper-middle,
+    .section-case-study-text .tile-content .cst-three-column-wrapper .cst-three-column-wrapper-right {
+      display: block;
+      margin-top: 3vw; }
+  .section-case-study-text .tile-content .cst-title {
+    font-size: 3.5vw;
+    margin-bottom: 3vw; }
+  .section-case-study-text .tile-content .cst-text {
+    font-size: 5vw; }
+  .section-case-study-text .tile-content .cst-subtext {
+    font-size: 4.5vw;
+    margin-bottom: 3vw; }
+  .section-case-study-text .tile-content .cst-three-column-left,
+  .section-case-study-text .tile-content .cst-three-column-middle,
+  .section-case-study-text .tile-content .cst-three-column-right {
+    font-size: 4.5vw; } }
+
+.section-promo .promo-roller span {
+  font-size: 4vw;
+  line-height: 1em;
+  font-weight: bold; }
+@media only screen and (max-width: 767px) {
+  .section-promo .promo-roller span {
+    font-size: 10vw;
+    line-height: 1em; } }
 
 .section-tiles .tile-sizer {
   width: 50%; }
