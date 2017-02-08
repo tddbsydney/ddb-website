@@ -268,7 +268,7 @@
           "case-study-text" : {
             "type" : "Group",
             "config" : {
-              "label" : "Case-Study text section",
+              "label" : "Case Study: Text section",
               "repeat" : false,
               "fields" : {
                 "title" : {
@@ -372,7 +372,7 @@
           "case-study-image" : {
             "type" : "Group",
             "config" : {
-              "label" : "Case-Study image section",
+              "label" : "Case Study: Image section",
               "repeat" : false,
               "fields" : {
                 "background-image" : {
@@ -405,7 +405,7 @@
           "case-study-video" : {
             "type" : "Group",
             "config" : {
-              "label" : "Case Study: video section",
+              "label" : "Case Study: Video section",
               "repeat" : false,
               "fields" : {
                 "video" : {
@@ -433,7 +433,7 @@
           "case-study-video-multi" : {
             "type" : "Group",
             "config" : {
-              "label" : "Case Study: multi video section",
+              "label" : "Case Study: Multi-video section",
               "repeat" : true,
               "fields" : {
                 "background-style" : {
