@@ -11,7 +11,7 @@
       "id": "WJp4BSgAAFNhhV-u",
       "uid": "volkswagen-golf",
       "type": "case-study",
-      "href": "https://ddb-website.prismic.io/api/documents/search?ref=WJqzHSgAAHZvhmPM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJp4BSgAAFNhhV-u%22%29+%5D%5D",
+      "href": "https://ddb-website.prismic.io/api/documents/search?ref=WJunsygAAHiAipoT&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJp4BSgAAFNhhV-u%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -367,7 +367,7 @@
       "id": "WJpzFCgAAFFhhUns",
       "uid": "work",
       "type": "page-work",
-      "href": "https://ddb-website.prismic.io/api/documents/search?ref=WJqzHSgAAHZvhmPM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJpzFCgAAFFhhUns%22%29+%5D%5D",
+      "href": "https://ddb-website.prismic.io/api/documents/search?ref=WJunsygAAHiAipoT&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJpzFCgAAFFhhUns%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -708,12 +708,12 @@
       "id": "WJporigAALxIhRwn",
       "uid": "latest",
       "type": "page-latest",
-      "href": "https://ddb-website.prismic.io/api/documents/search?ref=WJqzHSgAAHZvhmPM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJporigAALxIhRwn%22%29+%5D%5D",
+      "href": "https://ddb-website.prismic.io/api/documents/search?ref=WJunsygAAHiAipoT&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJporigAALxIhRwn%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-08T00:39:14+0000",
-      "last_publication_date": "2017-02-08T05:56:45+0000",
+      "last_publication_date": "2017-02-08T23:20:19+0000",
       "slugs": [
         "latest--tribal-ddb"
       ],
@@ -750,7 +750,13 @@
                     {
                       "heading": {
                         "type": "Text",
-                        "value": "Feeling conquers Thinking"
+                        "value": "Feeling conquers thinking.||Heading 2||Third Heading"
+                      },
+                      "background-video": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "http://content.volkswagen-commercial.com.au/Amarok/Content/videos/VW_The_Naked_Reveal_Loop.mp4"
+                        }
                       },
                       "background-style": {
                         "type": "Select",
@@ -791,9 +797,29 @@
                           "isBroken": false
                         }
                       },
+                      "link-text": {
+                        "type": "Text",
+                        "value": "Click here to see the Volkswagen Case Study"
+                      },
+                      "background-image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1023,
+                              "height": 640
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/c951373530bc461d67cfffce58464fc3f4fc46f3_vw0.jpg"
+                          },
+                          "views": {
+                          }
+                        }
+                      },
                       "background-style": {
                         "type": "Select",
-                        "value": "skyblue"
+                        "value": "black"
                       },
                       "desktop-aspect-ratio": {
                         "type": "Select",
@@ -801,7 +827,11 @@
                       },
                       "desktop-content-align": {
                         "type": "Select",
-                        "value": "right"
+                        "value": "center"
+                      },
+                      "desktop-content-alignment": {
+                        "type": "Select",
+                        "value": "center"
                       },
                       "desktop-content-width": {
                         "type": "Select",
@@ -813,69 +843,45 @@
                       },
                       "mobile-aspect-ratio": {
                         "type": "Select",
-                        "value": "16-9"
+                        "value": "2-3"
+                      },
+                      "mobile-text-align": {
+                        "type": "Select",
+                        "value": "center"
+                      },
+                      "mobile-content-align": {
+                        "type": "Select",
+                        "value": "center"
+                      },
+                      "mobile-content-alignment": {
+                        "type": "Select",
+                        "value": "center"
+                      },
+                      "mobile-content-width": {
+                        "type": "Select",
+                        "value": "two-third"
+                      },
+                      "mobile-text-position": {
+                        "type": "Select",
+                        "value": "mid-center"
+                      },
+                      "mobile-content-position": {
+                        "type": "Select",
+                        "value": "mid-center"
                       }
                     },
                     {
                       "title": {
                         "type": "Text",
-                        "value": "Tile 2"
+                        "value": "Bottom Right"
                       },
                       "text": {
                         "type": "Text",
-                        "value": "Second tile"
+                        "value": "Aligned to the bottom right."
                       },
                       "width": {
                         "type": "Select",
                         "value": "half"
-                      },
-                      "background-style": {
-                        "type": "Select",
-                        "value": "black"
-                      },
-                      "desktop-aspect-ratio": {
-                        "type": "Select",
-                        "value": "4-3"
-                      },
-                      "mobile-aspect-ratio": {
-                        "type": "Select",
-                        "value": "4-3"
-                      }
-                    },
-                    {
-                      "title": {
-                        "type": "Text",
-                        "value": "Tile 3"
-                      },
-                      "text": {
-                        "type": "Text",
-                        "value": "Third tile"
-                      },
-                      "width": {
-                        "type": "Select",
-                        "value": "half"
-                      },
-                      "background-style": {
-                        "type": "Select",
-                        "value": "black"
-                      },
-                      "desktop-aspect-ratio": {
-                        "type": "Select",
-                        "value": "4-3"
-                      },
-                      "mobile-aspect-ratio": {
-                        "type": "Select",
-                        "value": "4-3"
-                      }
-                    },
-                    {
-                      "title": {
-                        "type": "Text",
-                        "value": "Tile 4"
-                      },
-                      "text": {
-                        "type": "Text",
-                        "value": "Fourth tile"
                       },
                       "background-style": {
                         "type": "Select",
@@ -883,11 +889,241 @@
                       },
                       "desktop-aspect-ratio": {
                         "type": "Select",
-                        "value": "16-9"
+                        "value": "4-3"
+                      },
+                      "desktop-content-width": {
+                        "type": "Select",
+                        "value": "half"
+                      },
+                      "desktop-content-position": {
+                        "type": "Select",
+                        "value": "bot-right"
                       },
                       "mobile-aspect-ratio": {
                         "type": "Select",
                         "value": "4-3"
+                      },
+                      "mobile-text-align": {
+                        "type": "Select",
+                        "value": "right"
+                      },
+                      "mobile-content-width": {
+                        "type": "Select",
+                        "value": "half"
+                      },
+                      "mobile-text-position": {
+                        "type": "Select",
+                        "value": "bot-right"
+                      },
+                      "mobile-content-position": {
+                        "type": "Select",
+                        "value": "bot-right"
+                      }
+                    },
+                    {
+                      "title": {
+                        "type": "Text",
+                        "value": "Bottom Left"
+                      },
+                      "text": {
+                        "type": "Text",
+                        "value": "Aligned to the bottom left."
+                      },
+                      "link": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "http://www.google.com.au"
+                        }
+                      },
+                      "link-text": {
+                        "type": "Text",
+                        "value": "www.google.com.au"
+                      },
+                      "width": {
+                        "type": "Select",
+                        "value": "half"
+                      },
+                      "background-style": {
+                        "type": "Select",
+                        "value": "black"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      },
+                      "desktop-content-align": {
+                        "type": "Select",
+                        "value": "right"
+                      },
+                      "desktop-content-alignment": {
+                        "type": "Select",
+                        "value": "right"
+                      },
+                      "desktop-content-width": {
+                        "type": "Select",
+                        "value": "half"
+                      },
+                      "desktop-content-position": {
+                        "type": "Select",
+                        "value": "bot-left"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      },
+                      "mobile-content-align": {
+                        "type": "Select",
+                        "value": "right"
+                      },
+                      "mobile-content-alignment": {
+                        "type": "Select",
+                        "value": "right"
+                      },
+                      "mobile-content-width": {
+                        "type": "Select",
+                        "value": "half"
+                      },
+                      "mobile-text-position": {
+                        "type": "Select",
+                        "value": "bot-left"
+                      },
+                      "mobile-content-position": {
+                        "type": "Select",
+                        "value": "bot-left"
+                      }
+                    },
+                    {
+                      "title": {
+                        "type": "Text",
+                        "value": "Top Right"
+                      },
+                      "text": {
+                        "type": "Text",
+                        "value": "Aligned to the top right."
+                      },
+                      "width": {
+                        "type": "Select",
+                        "value": "half"
+                      },
+                      "background-style": {
+                        "type": "Select",
+                        "value": "yellow"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      },
+                      "desktop-content-width": {
+                        "type": "Select",
+                        "value": "half"
+                      },
+                      "desktop-content-position": {
+                        "type": "Select",
+                        "value": "top-right"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      },
+                      "mobile-text-align": {
+                        "type": "Select",
+                        "value": "right"
+                      },
+                      "mobile-content-width": {
+                        "type": "Select",
+                        "value": "half"
+                      },
+                      "mobile-text-position": {
+                        "type": "Select",
+                        "value": "top-right"
+                      },
+                      "mobile-content-position": {
+                        "type": "Select",
+                        "value": "top-right"
+                      }
+                    },
+                    {
+                      "title": {
+                        "type": "Text",
+                        "value": "Top Left"
+                      },
+                      "text": {
+                        "type": "Text",
+                        "value": "Aligned to the top left."
+                      },
+                      "width": {
+                        "type": "Select",
+                        "value": "half"
+                      },
+                      "background-style": {
+                        "type": "Select",
+                        "value": "skyblue"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      },
+                      "desktop-content-align": {
+                        "type": "Select",
+                        "value": "right"
+                      },
+                      "desktop-content-alignment": {
+                        "type": "Select",
+                        "value": "right"
+                      },
+                      "desktop-content-width": {
+                        "type": "Select",
+                        "value": "half"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      },
+                      "mobile-content-align": {
+                        "type": "Select",
+                        "value": "right"
+                      },
+                      "mobile-content-alignment": {
+                        "type": "Select",
+                        "value": "right"
+                      },
+                      "mobile-content-width": {
+                        "type": "Select",
+                        "value": "half"
+                      }
+                    },
+                    {
+                      "title": {
+                        "type": "Text",
+                        "value": "Last Tile"
+                      },
+                      "text": {
+                        "type": "Text",
+                        "value": "The last tile on this list"
+                      },
+                      "background-fade": {
+                        "type": "Select",
+                        "value": "grad"
+                      },
+                      "background-style": {
+                        "type": "Select",
+                        "value": "white"
+                      },
+                      "desktop-content-align": {
+                        "type": "Select",
+                        "value": "right"
+                      },
+                      "desktop-content-width": {
+                        "type": "Select",
+                        "value": "three-quarter"
+                      },
+                      "desktop-content-position": {
+                        "type": "Select",
+                        "value": "bot-center"
+                      },
+                      "mobile-text-position": {
+                        "type": "Select",
+                        "value": "mid-left"
                       }
                     }
                   ]

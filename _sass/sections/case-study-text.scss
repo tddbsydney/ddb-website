@@ -1,3 +1,65 @@
 .section-case-study-text {
+  .tile-content {
+    .cst-two-column-wrapper,
+    .cst-three-column-wrapper {
+      display: table;
+      margin-top: 3vw;
 
+      .cst-two-column-wrapper-left,
+      .cst-two-column-wrapper-right,
+      .cst-three-column-wrapper-left,
+      .cst-three-column-wrapper-middle,
+      .cst-three-column-wrapper-right {
+        display: table-cell;
+      }
+    }
+
+    .cst-title {
+      font-size: 1.75vw;
+      line-height: 2vw;
+      margin-bottom: 1vw;
+    }
+
+    .cst-text {
+      font-size: 2.5vw;
+    }
+
+    .cst-subtext {
+      font-size: 2vw;
+      margin-top: 1vw;
+    }
+
+    .cst-three-column-left,
+    .cst-three-column-middle,
+    .cst-three-column-right {
+      font-size: 2vw;
+    }
+
+    @include mobile {
+      .cst-two-column-wrapper,
+      .cst-three-column-wrapper {
+        display: block;
+        margin-top: 5vw;
+
+        .cst-two-column-wrapper-left,
+        .cst-two-column-wrapper-right,
+        .cst-three-column-wrapper-left,
+        .cst-three-column-wrapper-middle,
+        .cst-three-column-wrapper-right {
+          display: block;
+          margin-top: 3vw;
+        }
+      }
+
+      .cst-title    { font-size: 3.5vw; margin-bottom: 3vw; }
+      .cst-text     { font-size: 5vw; }
+      .cst-subtext  { font-size: 4.5vw; margin-bottom: 3vw; }
+
+      .cst-three-column-left,
+      .cst-three-column-middle,
+      .cst-three-column-right {
+        font-size: 4.5vw;
+      }
+    }
+  }
 }

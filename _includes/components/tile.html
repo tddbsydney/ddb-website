@@ -59,9 +59,15 @@
 
 {% if tile.link.value %}
   {% capture linkValue %}
-    {% case tile.link.value.document.type %}
-      {% when "case-study" %}
-        {{base}}/work/{{tile.link.value.document.uid}}
+    {% case tile.link.type %}
+      {% when "Link.web" %}
+        {{ tile.link.value.url }}
+      {% when "Link.document" %}
+        {% if tile.link.value.document.type == "case-study" %}
+          {{base}}/work/{{tile.link.value.document.uid}}
+        {% else %}
+          {{base}}/{{tile.link.value.document.uid}}
+        {% endif %}
     {% endcase %}
   {% endcapture %}
 <a href="{{linkValue | normalize_whitespace}}" class="{{ 'comp-tile' | append: capCompTile | normalize_whitespace }}">

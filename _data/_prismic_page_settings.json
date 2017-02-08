@@ -189,7 +189,7 @@
                     ]
                   }
                 },
-                "desktop-content-align" : {
+                "desktop-content-alignment" : {
                   "type" : "Select",
                   "config" : {
                     "label" : "Desktop: Alignment of text",
@@ -246,7 +246,7 @@
                     ]
                   }
                 },
-                "mobile-text-align" : {
+                "mobile-content-alignment" : {
                   "type" : "Select",
                   "config" : {
                     "label" : "Mobile: Alignment of text",
@@ -269,7 +269,7 @@
                     ]
                   }
                 },
-                "mobile-text-position" : {
+                "mobile-content-position" : {
                   "type" : "Select",
                   "config" : {
                     "label" : "Mobile: Position of text",
@@ -381,7 +381,7 @@
                     ]
                   }
                 },
-                "desktop-content-align" : {
+                "desktop-content-alignment" : {
                   "type" : "Select",
                   "config" : {
                     "label" : "Desktop: Alignment of text",
@@ -438,7 +438,7 @@
                     ]
                   }
                 },
-                "mobile-text-align" : {
+                "mobile-content-alignment" : {
                   "type" : "Select",
                   "config" : {
                     "label" : "Mobile: Alignment of text",
@@ -461,7 +461,7 @@
                     ]
                   }
                 },
-                "mobile-text-position" : {
+                "mobile-content-position" : {
                   "type" : "Select",
                   "config" : {
                     "label" : "Mobile: Position of text",

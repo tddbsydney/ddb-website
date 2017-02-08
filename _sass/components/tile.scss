@@ -12,7 +12,9 @@
   width: 100%;
   overflow: hidden;
 
-  &.width-half  { width: 50%; }
+  @include non-mobile {
+    &.width-half  { width: 50%; }
+  }
 
   .tile-outer {
     position: relative;
@@ -385,7 +387,7 @@
 
           .tile-content-box {
             padding: 2.5vw;
-            margin: 0 auto;
+            margin: 0 auto 0 0;
             max-width: 100%;
             text-align: left;
 
@@ -420,6 +422,8 @@
             }
 
             @include mobile {
+              padding: 5vw;
+
               &.mobile-cont-align-left {
                 text-align: left;
               }
@@ -448,105 +452,40 @@
                 max-width: 50%;
               }
             }
-
-            .cst-two-column-wrapper,
-            .cst-three-column-wrapper {
-              display: table;
-              margin-top: 3vw;
-
-              .cst-two-column-wrapper-left,
-              .cst-two-column-wrapper-right,
-              .cst-three-column-wrapper-left,
-              .cst-three-column-wrapper-middle,
-              .cst-three-column-wrapper-right {
-                display: table-cell;
-              }
-            }
-          }
-        }
-
-        p {
-          margin: 0;
-          line-height: 1.2em;
-
-          &.tile-heading {
-            font-size: 1.75vw;
-            min-height: 1.1em;
-          }
-
-          &.tile-text {
-            font-size: 2.5vw;
-            font-weight: bold;
-          }
-
-          &.tile-link {
-            display: inline-block;
-            margin-top: 2vw;
-            font-size: 1.75vw;
-            line-height: 3vw;
-            border-bottom: 2px solid #fff;
-          }
-
-          &.cst-title {
-            font-size: 1.75vw;
-            line-height: 2vw;
-            margin-bottom: 1vw;
-          }
-
-          &.cst-text {
-            font-size: 2.5vw;
-          }
-
-          &.cst-subtext {
-            font-size: 2vw;
-            margin-top: 1vw;
-          }
-
-          &.cst-three-column-left,
-          &.cst-three-column-middle,
-          &.cst-three-column-right {
-            font-size: 2vw;
-          }
-        }
-
-        @include mobile {
-          p {
-            &.tile-heading { font-size: 4vw; }
-            &.tile-text    { font-size: 6vw; }
-            &.tile-link    { font-size: 4vw; line-height: 6vw;}
-            &.cst-title    { font-size: 3.5vw; margin-bottom: 3vw; }
-            &.cst-text     { font-size: 5vw; }
-            &.cst-subtext  { font-size: 4.5vw; margin-bottom: 3vw; }
-
-            &.cst-three-column-left,
-            &.cst-three-column-middle,
-            &.cst-three-column-right {
-              font-size: 4.5vw;
-            }
-          }
-
-          .tile-content-wrapper {
-            .tile-content-box {
-              margin: 5vw;
-
-              .cst-two-column-wrapper,
-              .cst-three-column-wrapper {
-                display: block;
-                margin-top: 5vw;
-
-                .cst-two-column-wrapper-left,
-                .cst-two-column-wrapper-right,
-                .cst-three-column-wrapper-left,
-                .cst-three-column-wrapper-middle,
-                .cst-three-column-wrapper-right {
-                  display: block;
-                  margin-top: 3vw;
-                }
-              }
-            }
           }
         }
       }
+    }
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.2em;
+
+    &.tile-heading {
+      font-size: 1.75vw;
+      min-height: 1.1em;
+    }
+
+    &.tile-text {
+      font-size: 2.5vw;
+      font-weight: bold;
+    }
+
+    &.tile-link {
+      display: inline-block;
+      margin-top: 2vw;
+      font-size: 1.75vw;
+      line-height: 3vw;
+      border-bottom: 2px solid #fff;
+    }
+  }
+
+  @include mobile {
+    p {
+      &.tile-heading { font-size: 4vw; }
+      &.tile-text    { font-size: 6vw; }
+      &.tile-link    { font-size: 4vw; line-height: 6vw;}
     }
   }
 }
