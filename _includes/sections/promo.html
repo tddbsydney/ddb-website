@@ -1,0 +1,32 @@
+<section class="section-promo">
+  {% assign tile = include.data[0] %}
+  <div class="comp-tile">
+    <div class="tile-outer mobile-aspect-1-1 desktop-aspect-16-9
+    {% if tile.background-image.value.main.url %}
+      tile-bg
+    {% endif %}
+    "
+    {% if tile.background-image.value.main.url %}
+      style="background-image: url('{{ tile.background-image.value.main.url }}');"
+    {% endif %}
+    >
+      <div class="tile-inner">
+        {% if tile.background-video.value.url %}
+        <div class="tile-background">
+          <video loop="" autoplay=""{% if tile.background-image.value.main.url %} poster="{{ tile.background-image.value.main.url }}"{% endif %}>
+            <source src="{{ tile.background-video.value.url }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        {% endif %}
+        <div class="tile-content">
+          <div class="promo-roller">
+            <span class="promo-left">Feeling</span>
+            <span class="promo-middle">conquers</span>
+            <span class="promo-right">thinking.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

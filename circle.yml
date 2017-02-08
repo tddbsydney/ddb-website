@@ -1,0 +1,17 @@
+machine:
+  ruby:
+    version: 2.3.3
+dependencies:
+  pre:
+    - gem install bundler
+checkout:
+  post:
+    - bundle install
+    - bash automated_build.sh
+test:
+  override:
+    - echo "Intentionally overriding tests with an echo."
+general:
+  branches:
+    only:
+      - gh-pages-ci

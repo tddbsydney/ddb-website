@@ -1,0 +1,62 @@
+{% assign tile = include.data %}
+
+{% capture capCompTile %}
+  {% if tile.width.value %}
+    width-{{ tile.width.value }}
+  {% endif %}
+{% endcapture %}
+
+{% capture capTileOuter %}
+  {% if tile.aspect-mobile.value %}
+    mobile-aspect-{{ tile.aspect-mobile.value }}
+  {% endif %}
+  {% if tile.aspect-desktop.value %}
+    desktop-aspect-{{ tile.aspect-desktop.value }}
+  {% endif %}
+  {% if tile.background-style.value %}
+    tile-style-{{ tile.background-style.value }}
+  {% endif %}
+  {% if tile.background-image.value %}
+    tile-bg
+  {% endif %}
+{% endcapture %}
+
+{% capture capTileOuterBg %}
+  {% if tile.background-image.value %}
+    style="background-image: url('https://{{ tile.background-image.value.main.url }}');"
+  {% endif %}
+{% endcapture %}
+
+{% capture capTileInner %}
+  {% if tile.background-fade.value %}
+    tile-fade-{{ tile.background-fade.value }}
+  {% endif %}
+{% endcapture %}
+
+<div class="{{ 'comp-tile' | append: capCompTile | normalize_whitespace }}">
+  <div class="{{ 'tile-outer' | append: capTileOuter | normalize_whitespace }}"{{ capTileOuterBg | normalize_whitespace }}>
+    <div class="{{ 'tile-inner' | append: capTileInner | normalize_whitespace }}">
+      {% if tile.background-video.value %}
+      <div class="tile-background">
+        <video loop="" autoplay=""{% if tile.background-video-poster.value %} poster="https://{{ tile.background-video-poster.value }}"{% endif %}>
+          <source src="{{ tile.background-video.value }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      {% endif %}
+      <div class="tile-content">
+        {% case tile.type %}
+        {% when 'promo' %}
+        <div class="promo-roller">
+          <span class="promo-left">Feeling</span>
+          <span class="promo-middle">conquers</span>
+          <span class="promo-right">thinking.</span>
+        </div>
+        {% else %}
+        <p class="tile-heading">{{ tile.title.value }}</p>
+        <p class="tile-text">{{ tile.text.value }}{% if tile.link.value %}<span class="tile-link-arrow">&gt;</span>{% endif %}</p>
+        {% endcase %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+.page-latest {
+  $tile-scale-norm: 1.00;
+  // $tile-scale-hover: 1.00;
+  $tile-scale-press: .98;
+  $tile-scale-time: 100ms;
+
+  width: 100%;
+  // max-width: 1024px;
+  height: auto;
+  margin: 0 auto;
+
+  a,
+  a:link,
+  a:hover,
+  a:active,
+  a:visited {
+    text-decoration: none;
+    cursor: pointer;
+
+    .tile-outer {
+      @include transition(transform $tile-scale-time);
+    }
+  }
+
+  a:hover {
+    .tile-outer {
+      // // Disabled because mobile has sticky hover
+      // @include transform(scale($tile-scale-hover));
+    }
+  }
+
+  a:active {
+    .tile-outer {
+      // Scales background, too
+      @include transform(scale($tile-scale-press));
+    }
+  }
+
+  .tile-comp {
+    .tile-outer {
+      @include transform(scale($tile-scale-norm) translate3d(0, 0, 0));
+    }
+  }
+}

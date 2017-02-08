@@ -1,0 +1,11 @@
+{% for section in include.data %}
+  {% case section.type %}
+
+    {% when "promo" %}
+      {% include sections/promo.html data=section.value %}
+
+    {% when "tiles" %}
+      {% include sections/tiles.html data=section.value %}
+
+  {% endcase %}
+{% endfor %}

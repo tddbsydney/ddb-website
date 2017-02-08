@@ -1,0 +1,507 @@
+{
+  "Metadata" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "placeholder" : "unique-identifier-for-page-url"
+      }
+    },
+    "title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Title",
+        "placeholder" : "Page title"
+      }
+    },
+    "description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Description",
+        "placeholder" : "Page description"
+      }
+    },
+    "header" : {
+      "type" : "Select",
+      "config" : {
+        "label" : "Header Visibility",
+        "placeholder" : "shown",
+        "options" : [
+          "hidden"
+        ]
+      }
+    },
+    "footer" : {
+      "type" : "Select",
+      "config" : {
+        "label" : "Footer Visibility",
+        "placeholder" : "shown",
+        "options" : [
+          "hidden"
+        ]
+      }
+    }
+  },
+  "Content" : {
+    "sections" : {
+      "fieldset" : "Sections",
+      "type" : "Slices",
+      "config" : {
+        "choices" : {
+          "promo" : {
+            "type" : "Group",
+            "config" : {
+              "label" : "Promo section",
+              "repeat" : false,
+              "fields" : {
+                "heading" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Promo Heading",
+                    "placeholder" : "Promo heading"
+                  }
+                },
+                "background-video" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Promo Background Video"
+                  }
+                },
+                "background-image" : {
+                  "type" : "Image",
+                  "config" : {
+                    "label" : "Promo Background Image",
+                    "constraint" : {
+                      "width" : null,
+                      "height" : null
+                    },
+                    "thumbnails" : [ ]
+                  }
+                },
+                "background-style" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Promo Background Style",
+                    "placeholder" : "No style",
+                    "options" : [
+                      "white",
+                      "black",
+                      "yellow",
+                      "skyblue"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "tiles" : {
+            "type" : "Group",
+            "config" : {
+              "label" : "Tile section",
+              "repeat" : true,
+              "fields" : {
+                "title" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Title",
+                    "placeholder" : "Tile's title/heading"
+                  }
+                },
+                "text" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Text",
+                    "placeholder" : "Tile's main text"
+                  }
+                },
+                "link" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Link",
+                    "placeholder" : "Tile's link to somewhere"
+                  }
+                },
+                "link-text" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Link Text",
+                    "placeholder" : "Tile's link text"
+                  }
+                },
+                "width" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Width",
+                    "placeholder" : "full",
+                    "options" : [
+                      "half"
+                    ]
+                  }
+                },
+                "background-image" : {
+                  "type" : "Image",
+                  "config" : {
+                    "label" : "Background Image",
+                    "constraint" : {
+                      "width" : null,
+                      "height" : null
+                    },
+                    "thumbnails" : [ ]
+                  }
+                },
+                "background-fade" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Background Fade",
+                    "placeholder" : "No fade",
+                    "options" : [
+                      "solid",
+                      "grad"
+                    ]
+                  }
+                },
+                "background-style" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Background Style",
+                    "placeholder" : "No style",
+                    "options" : [
+                      "white",
+                      "black",
+                      "yellow",
+                      "skyblue"
+                    ]
+                  }
+                },
+
+
+
+
+                "desktop-aspect-ratio" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Desktop: Aspect Ratio",
+                    "placeholder" : "fullscreen",
+                    "options" : [
+                      "1-1",
+                      "16-9",
+                      "4-3",
+                      "2-3"
+                    ]
+                  }
+                },
+                "desktop-text-align" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Desktop: Alignment of text",
+                    "placeholder" : "left",
+                    "options" : [
+                      "center",
+                      "right"
+                    ]
+                  }
+                },
+                "desktop-text-position" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Desktop: Position of text",
+                    "placeholder" : "top-left",
+                    "options" : [
+                      "top-center",
+                      "top-right",
+                      "mid-left",
+                      "mid-center",
+                      "mid-right",
+                      "bot-left",
+                      "bot-center",
+                      "bot-right"
+                    ]
+                  }
+                },
+
+
+
+
+                "mobile-aspect-ratio" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Mobile: Aspect Ratio",
+                    "placeholder" : "fullscreen",
+                    "options" : [
+                      "1-1",
+                      "16-9",
+                      "4-3",
+                      "2-3"
+                    ]
+                  }
+                },
+                "mobile-text-align" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Mobile: Alignment of text",
+                    "placeholder" : "left",
+                    "options" : [
+                      "center",
+                      "right"
+                    ]
+                  }
+                },
+                "mobile-text-position" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Mobile: Position of text",
+                    "placeholder" : "top-left",
+                    "options" : [
+                      "top-center",
+                      "top-right",
+                      "mid-left",
+                      "mid-center",
+                      "mid-right",
+                      "bot-left",
+                      "bot-center",
+                      "bot-right"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "case-study-text" : {
+            "type" : "Group",
+            "config" : {
+              "label" : "Case-Study text section",
+              "repeat" : false,
+              "fields" : {
+                "title" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Title",
+                    "placeholder" : "Title/heading"
+                  }
+                },
+                "text" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Text",
+                    "placeholder" : "Main text"
+                  }
+                },
+                "subtext" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Subtext",
+                    "placeholder" : "Subtext"
+                  }
+                },
+                "two-column-left" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Two-Column Left",
+                    "placeholder" : "Left side of a double-collumn"
+                  }
+                },
+                "two-column-right" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Two-Column Right",
+                    "placeholder" : "Right side of a double-collumn"
+                  }
+                },
+                "three-column-left" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Three-Column Left",
+                    "placeholder" : "Left side of a triple-collumn"
+                  }
+                },
+                "three-column-middle" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Three-Column Middle",
+                    "placeholder" : "Middle side of a triple-collumn"
+                  }
+                },
+                "three-column-right" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Three-Column Right",
+                    "placeholder" : "Right side of a triple-collumn"
+                  }
+                },
+                "background-style" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Background Style",
+                    "placeholder" : "No style",
+                    "options" : [
+                      "white",
+                      "black",
+                      "yellow",
+                      "skyblue"
+                    ]
+                  }
+                },
+                "desktop-aspect-ratio" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Desktop: Aspect Ratio",
+                    "placeholder" : "fullscreen",
+                    "options" : [
+                      "1-1",
+                      "16-9",
+                      "4-3",
+                      "2-3"
+                    ]
+                  }
+                },
+                "mobile-aspect-ratio" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Mobile: Aspect Ratio",
+                    "placeholder" : "fullscreen",
+                    "options" : [
+                      "1-1",
+                      "16-9",
+                      "4-3",
+                      "2-3"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "case-study-image" : {
+            "type" : "Group",
+            "config" : {
+              "label" : "Case-Study image section",
+              "repeat" : false,
+              "fields" : {
+                "background-image" : {
+                  "type" : "Image",
+                  "config" : {
+                    "label" : "Background Image",
+                    "constraint" : {
+                      "width" : null,
+                      "height" : null
+                    },
+                    "thumbnails" : [ ]
+                  }
+                },
+                "background-style" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Background Style",
+                    "placeholder" : "No style",
+                    "options" : [
+                      "white",
+                      "black",
+                      "yellow",
+                      "skyblue"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "case-study-video" : {
+            "type" : "Group",
+            "config" : {
+              "label" : "Case Study: video section",
+              "repeat" : false,
+              "fields" : {
+                "video" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Background Video"
+                  }
+                },
+                "background-style" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Background Style",
+                    "placeholder" : "No style",
+                    "options" : [
+                      "white",
+                      "black",
+                      "yellow",
+                      "skyblue"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "case-study-video-multi" : {
+            "type" : "Group",
+            "config" : {
+              "label" : "Case Study: multi video section",
+              "repeat" : true,
+              "fields" : {
+                "background-style" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Background Style",
+                    "placeholder" : "No style",
+                    "options" : [
+                      "white",
+                      "black",
+                      "yellow",
+                      "skyblue"
+                    ]
+                  }
+                },
+                "video1" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "First video"
+                  }
+                },
+                "video2" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Second video"
+                  }
+                },
+                "video3" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Third video"
+                  }
+                },
+                "video4" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Fourth video"
+                  }
+                },
+                "video5" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Fifth video"
+                  }
+                },
+                "video6" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Sixth video"
+                  }
+                },
+                "video7" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Seventh video"
+                  }
+                },
+                "video8" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Eighth video"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

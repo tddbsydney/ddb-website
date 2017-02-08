@@ -1,0 +1,199 @@
+.comp-tile {
+  $style-black-bg-col: #000;
+  $style-black-text-col: #fff;
+  $style-yellow-bg-col: #ffd107;
+  $style-yellow-text-col: #000;
+
+  display: block;
+  width: 100%;
+  overflow: hidden;
+
+  &.width-half  { width: 50%; }
+
+  .tile-outer {
+    position: relative;
+    height: 0;
+    padding-top: 100vh;  // fullscreen
+
+    @include desktop {
+      &.desktop-aspect-1-1   { padding-top: 100%; }
+      &.desktop-aspect-16-9  { padding-top: 56.25%; }
+      &.desktop-aspect-4-3   { padding-top: 75%; }
+      &.desktop-aspect-2-3   { padding-top: 150%; }
+    }
+
+    @include mobile {
+      &.mobile-aspect-1-1    { padding-top: 100%; }
+      &.mobile-aspect-16-9   { padding-top: 56.25%; }
+      &.mobile-aspect-4-3    { padding-top: 75%; }
+      &.mobile-aspect-2-3    { padding-top: 150%; }
+    }
+
+    &.tile-bg {
+      background-position: center center;
+      background-size: cover;
+    }
+
+    &.tile-style-black {
+      background-color: $style-black-bg-col;
+      color: $style-black-text-col;
+    }
+
+    &.tile-style-yellow {
+      background-color: $style-yellow-bg-col;
+      color: $style-yellow-text-col;
+
+      .tile-inner {
+        .tile-content {
+          p {
+            text-shadow: none;
+          }
+        }
+      }
+    }
+
+    .tile-inner {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+
+      @mixin gradient-fade($col-from, $col-to, $grad-start, $grad-end) {
+        $_start: $col-from $grad-start;
+        $_end: $col-to $grad-end;
+        background: -webkit-linear-gradient(top,       $_start, $_end);
+        background:    -moz-linear-gradient(top,       $_start, $_end);
+        background:         linear-gradient(to bottom, $_start, $_end);
+        // filter: progid:DXImageTransform.Microsoft.gradient(
+        //   startColorstr='#a8000000', endColorstr='#00000000', GradientType=0);
+      }
+
+      @include desktop {
+        &.tile-fade-grad-lightest {
+          @include gradient-fade(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0), 0%, 33%);
+        }
+
+        &.tile-fade-grad-light {
+          @include gradient-fade(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0), 0%, 33%);
+        }
+
+        &.tile-fade-grad-half {
+          @include gradient-fade(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0), 0%, 33%);
+        }
+
+        &.tile-fade-grad,
+        &.tile-fade-grad-dark {
+          @include gradient-fade(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0), 0%, 33%);
+        }
+
+        &.tile-fade-grad-darkest {
+          @include gradient-fade(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0), 0%, 33%);
+        }
+      }
+
+      @include mobile {
+        &.tile-fade-grad-lightest {
+          @include gradient-fade(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0), 0%, 100%);
+        }
+
+        &.tile-fade-grad-light {
+          @include gradient-fade(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0), 0%, 100%);
+        }
+
+        &.tile-fade-grad-half {
+          @include gradient-fade(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0), 0%, 100%);
+        }
+
+        &.tile-fade-grad,
+        &.tile-fade-grad-dark {
+          @include gradient-fade(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0), 0%, 100%);
+        }
+
+        &.tile-fade-grad-darkest {
+          @include gradient-fade(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0), 0%, 100%);
+        }
+      }
+
+      &.tile-fade-solid,
+      &.tile-fade-solid-lightest {
+        background-color: rgba(0, 0, 0, 0.20);
+      }
+
+      &.tile-fade-solid-light    {
+        background-color: rgba(0, 0, 0, 0.33);
+      }
+
+      &.tile-fade-solid-half     {
+        background-color: rgba(0, 0, 0, 0.50);
+      }
+
+      &.tile-fade-solid-dark     {
+        background-color: rgba(0, 0, 0, 0.66);
+      }
+
+      &.tile-fade-solid-darkest  {
+        background-color: rgba(0, 0, 0, 0.80);
+      }
+
+      .tile-background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: 1;
+
+        video {
+          width: 100%;
+          height: 100%;
+
+          @include mobile {
+            @include transform(scale(1.8));
+          }
+        }
+      }
+
+      .tile-content {
+        position: relative;
+        z-index: 2;
+
+        margin: 2.5vw;
+
+        p {
+          margin: 0;
+          line-height: 1.2em;
+
+          &.tile-heading {
+            font-size: 1.75vw;
+            min-height: 1.1em;
+          }
+
+          &.tile-text {
+            font-size: 2.5vw;
+            font-weight: bold;
+          }
+
+          .tile-link-arrow {
+            display: inline-block;
+            font-size: inherit;
+            text-shadow: none;
+            padding-left: 15px;
+            font-weight: normal;
+            @include transform(scaley(1.5) scalex(0.75) translateY(-0.05em));
+          }
+        }
+
+        @include mobile {
+          margin: 5vw;
+
+          p {
+            &.tile-heading { font-size: 5.5vw; }
+            &.tile-text    { font-size: 7vw; }
+          }
+        }
+      }
+    }
+  }
+}

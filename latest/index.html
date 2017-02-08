@@ -1,0 +1,7 @@
+---
+  layout: default
+  data: page-latest
+---
+
+{% assign page_data = site.data.prismic[page.data][0].data %}
+{% include _section_handler.html data=page_data.sections.value %}
