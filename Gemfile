@@ -3,7 +3,8 @@ ruby "2.3.3"
 
 gem "jekyll", "~> 3.3.1"
 # gem 'github-pages', group: :jekyll_plugins
+gem "prismic"
 
 group :jekyll_plugins do
-   gem 'jekyll-tidy'
+  gem "jekyll-tidy"
 end
