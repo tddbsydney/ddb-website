@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
       maximum-scale=1.0,user-scalable=no">
-    <meta name="description" content="The latest news from Tribal DDB.">
+    <meta name="description" content="Latest news from Tribal DDB.">
     <meta name="keywords" content="Tribal,DDB,Sydney">
-    <title>Latest from Tribal DDB</title>
+    <title>Latest | Tribal DDB</title>
     <script src="../assets/js/jquery.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
@@ -22,12 +22,6 @@
     
     >
           <div class="tile-inner">
-            <div class="tile-background">
-              <video loop="" autoplay="">
-                <source src="http://content.volkswagen-commercial.com.au/Amarok/Content/videos/VW_The_Naked_Reveal_Loop.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-          </video>
-            </div>
             <div class="tile-content">
               <div class="promo-roller">
                 <span class="promo-left">Feeling</span>
@@ -37,6 +31,69 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="section-tiles">
+      <div class="tiles">
+        <div class="tile-sizer"></div>
+        <div class="comp-tile">
+          <div class="tile-outer tile-style-yellow">
+            <div class="tile-inner">
+              <div class="tile-content">
+                <p class="tile-heading">Volkswagen Golf</p>
+                <p class="tile-text">Case Study<span class="tile-link-arrow">&gt;</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-tile width-half">
+          <div class="tile-outer tile-style-black">
+            <div class="tile-inner">
+              <div class="tile-content">
+                <p class="tile-heading">Tile 2</p>
+                <p class="tile-text">Second tile</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-tile width-half">
+          <div class="tile-outer tile-style-black">
+            <div class="tile-inner">
+              <div class="tile-content">
+                <p class="tile-heading">Tile 3</p>
+                <p class="tile-text">Third tile</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-tile">
+          <div class="tile-outer tile-style-white">
+            <div class="tile-inner">
+              <div class="tile-content">
+                <p class="tile-heading">Tile 4</p>
+                <p class="tile-text">Fourth tile</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="/assets/js/masonry.pkgd.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+          var $msn = $('.tiles').masonry({
+                  columnWidth: '.tile-sizer',
+                  itemSelector: '.comp-tile',
+                  percentPosition: true,
+                  transitionDuration: 0,
+                });
+                $(window).resize(function(){
+                  $msn.masonry('layout');
+                });
+                $(document).ready(function(){
+                  $msn.masonry('layout');
+                  setTimeout( (function() {
+                    $msn.masonry('layout');
+                  }), 100);
+                });
+        </script>
       </div>
     </section>
     <section class="section-footer">
