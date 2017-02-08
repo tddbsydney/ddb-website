@@ -456,9 +456,25 @@ h3 {
     .comp-tile .tile-outer.tile-style-black {
       background-color: #000;
       color: #fff; }
+      .comp-tile .tile-outer.tile-style-black .tile-inner .tile-content .tile-link {
+        border-color: #fff; }
+    .comp-tile .tile-outer.tile-style-lightblue {
+      background-color: #afc9e2;
+      color: #fff; }
+      .comp-tile .tile-outer.tile-style-lightblue .tile-inner .tile-content .tile-link {
+        border-color: #fff; }
+    .comp-tile .tile-outer.tile-style-white {
+      background-color: #fff;
+      color: #000; }
+      .comp-tile .tile-outer.tile-style-white .tile-inner .tile-content .tile-link {
+        border-color: #000; }
+      .comp-tile .tile-outer.tile-style-white .tile-inner .tile-content p {
+        text-shadow: none; }
     .comp-tile .tile-outer.tile-style-yellow {
       background-color: #ffd107;
       color: #000; }
+      .comp-tile .tile-outer.tile-style-yellow .tile-inner .tile-content .tile-link {
+        border-color: #000; }
       .comp-tile .tile-outer.tile-style-yellow .tile-inner .tile-content p {
         text-shadow: none; }
     .comp-tile .tile-outer .tile-inner {
@@ -551,25 +567,22 @@ h3 {
           .comp-tile .tile-outer .tile-inner .tile-content p.tile-text {
             font-size: 2.5vw;
             font-weight: bold; }
-          .comp-tile .tile-outer .tile-inner .tile-content p .tile-link-arrow {
+          .comp-tile .tile-outer .tile-inner .tile-content p.tile-link {
             display: inline-block;
-            font-size: inherit;
-            text-shadow: none;
-            padding-left: 15px;
-            font-weight: normal;
-            -webkit-transform: scaley(1.5) scalex(0.75) translateY(-0.05em);
-            -khtml-transform: scaley(1.5) scalex(0.75) translateY(-0.05em);
-            -moz-transform: scaley(1.5) scalex(0.75) translateY(-0.05em);
-            -ms-transform: scaley(1.5) scalex(0.75) translateY(-0.05em);
-            -o-transform: scaley(1.5) scalex(0.75) translateY(-0.05em);
-            transform: scaley(1.5) scalex(0.75) translateY(-0.05em); }
+            margin-top: 2vw;
+            font-size: 1.75vw;
+            line-height: 3vw;
+            border-bottom: 2px solid #fff; }
         @media only screen and (max-width: 767px) {
           .comp-tile .tile-outer .tile-inner .tile-content {
             margin: 5vw; }
             .comp-tile .tile-outer .tile-inner .tile-content p.tile-heading {
-              font-size: 5.5vw; }
+              font-size: 4vw; }
             .comp-tile .tile-outer .tile-inner .tile-content p.tile-text {
-              font-size: 7vw; } }
+              font-size: 6vw; }
+            .comp-tile .tile-outer .tile-inner .tile-content p.tile-link {
+              font-size: 4vw;
+              line-height: 6vw; } }
 
 .section-promo .comp-tile .tile-outer .tile-inner {
   display: table;
