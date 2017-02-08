@@ -657,15 +657,27 @@
                   },
                   "background-style": {
                     "type": "Select",
-                    "value": "yellow"
+                    "value": "skyblue"
                   },
                   "desktop-aspect-ratio": {
                     "type": "Select",
                     "value": "16-9"
                   },
+                  "desktop-content-align": {
+                    "type": "Select",
+                    "value": "right"
+                  },
+                  "desktop-content-width": {
+                    "type": "Select",
+                    "value": "half"
+                  },
+                  "desktop-content-position": {
+                    "type": "Select",
+                    "value": "mid-center"
+                  },
                   "mobile-aspect-ratio": {
                     "type": "Select",
-                    "value": "4-3"
+                    "value": "16-9"
                   }
                 },
                 {

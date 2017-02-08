@@ -189,7 +189,7 @@
                     ]
                   }
                 },
-                "desktop-text-align" : {
+                "desktop-content-align" : {
                   "type" : "Select",
                   "config" : {
                     "label" : "Desktop: Alignment of text",
@@ -200,7 +200,19 @@
                     ]
                   }
                 },
-                "desktop-text-position" : {
+                "desktop-content-width" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Desktop: Width of text",
+                    "placeholder" : "full",
+                    "options" : [
+                      "three-quarter",
+                      "two-third",
+                      "half"
+                    ]
+                  }
+                },
+                "desktop-content-position" : {
                   "type" : "Select",
                   "config" : {
                     "label" : "Desktop: Position of text",
@@ -242,6 +254,18 @@
                     "options" : [
                       "center",
                       "right"
+                    ]
+                  }
+                },
+                "mobile-content-width" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Mobile: Width of text",
+                    "placeholder" : "full",
+                    "options" : [
+                      "three-quarter",
+                      "two-third",
+                      "half"
                     ]
                   }
                 },
@@ -340,6 +364,10 @@
                     ]
                   }
                 },
+
+
+
+
                 "desktop-aspect-ratio" : {
                   "type" : "Select",
                   "config" : {
@@ -353,6 +381,50 @@
                     ]
                   }
                 },
+                "desktop-content-align" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Desktop: Alignment of text",
+                    "placeholder" : "left",
+                    "options" : [
+                      "center",
+                      "right"
+                    ]
+                  }
+                },
+                "desktop-content-width" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Desktop: Width of text",
+                    "placeholder" : "full",
+                    "options" : [
+                      "three-quarter",
+                      "two-third",
+                      "half"
+                    ]
+                  }
+                },
+                "desktop-content-position" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Desktop: Position of text",
+                    "placeholder" : "top-left",
+                    "options" : [
+                      "top-center",
+                      "top-right",
+                      "mid-left",
+                      "mid-center",
+                      "mid-right",
+                      "bot-left",
+                      "bot-center",
+                      "bot-right"
+                    ]
+                  }
+                },
+
+
+
+
                 "mobile-aspect-ratio" : {
                   "type" : "Select",
                   "config" : {
@@ -363,6 +435,46 @@
                       "16-9",
                       "4-3",
                       "2-3"
+                    ]
+                  }
+                },
+                "mobile-text-align" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Mobile: Alignment of text",
+                    "placeholder" : "left",
+                    "options" : [
+                      "center",
+                      "right"
+                    ]
+                  }
+                },
+                "mobile-content-width" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Mobile: Width of text",
+                    "placeholder" : "full",
+                    "options" : [
+                      "three-quarter",
+                      "two-third",
+                      "half"
+                    ]
+                  }
+                },
+                "mobile-text-position" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Mobile: Position of text",
+                    "placeholder" : "top-left",
+                    "options" : [
+                      "top-center",
+                      "top-right",
+                      "mid-left",
+                      "mid-center",
+                      "mid-right",
+                      "bot-left",
+                      "bot-center",
+                      "bot-right"
                     ]
                   }
                 }

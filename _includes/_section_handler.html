@@ -7,5 +7,8 @@
     {% when "tiles" %}
       {% include sections/tiles.html data=section.value %}
 
+    {% when "case-study-text" %}
+      {% include sections/case-study-text.html data=section.value %}
+
   {% endcase %}
 {% endfor %}

@@ -11,7 +11,7 @@
       "id": "WJp4BSgAAFNhhV-u",
       "uid": "volkswagen-golf",
       "type": "case-study",
-      "href": "https://ddb-website.prismic.io/api/documents/search?ref=WJqNDigAALxIhbxK&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJp4BSgAAFNhhV-u%22%29+%5D%5D",
+      "href": "https://ddb-website.prismic.io/api/documents/search?ref=WJqzHSgAAHZvhmPM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJp4BSgAAFNhhV-u%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -367,7 +367,7 @@
       "id": "WJpzFCgAAFFhhUns",
       "uid": "work",
       "type": "page-work",
-      "href": "https://ddb-website.prismic.io/api/documents/search?ref=WJqNDigAALxIhbxK&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJpzFCgAAFFhhUns%22%29+%5D%5D",
+      "href": "https://ddb-website.prismic.io/api/documents/search?ref=WJqzHSgAAHZvhmPM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJpzFCgAAFFhhUns%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -708,12 +708,12 @@
       "id": "WJporigAALxIhRwn",
       "uid": "latest",
       "type": "page-latest",
-      "href": "https://ddb-website.prismic.io/api/documents/search?ref=WJqNDigAALxIhbxK&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJporigAALxIhRwn%22%29+%5D%5D",
+      "href": "https://ddb-website.prismic.io/api/documents/search?ref=WJqzHSgAAHZvhmPM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJporigAALxIhRwn%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-08T00:39:14+0000",
-      "last_publication_date": "2017-02-08T01:45:43+0000",
+      "last_publication_date": "2017-02-08T05:56:45+0000",
       "slugs": [
         "latest--tribal-ddb"
       ],
@@ -793,15 +793,27 @@
                       },
                       "background-style": {
                         "type": "Select",
-                        "value": "yellow"
+                        "value": "skyblue"
                       },
                       "desktop-aspect-ratio": {
                         "type": "Select",
                         "value": "16-9"
                       },
+                      "desktop-content-align": {
+                        "type": "Select",
+                        "value": "right"
+                      },
+                      "desktop-content-width": {
+                        "type": "Select",
+                        "value": "half"
+                      },
+                      "desktop-content-position": {
+                        "type": "Select",
+                        "value": "mid-center"
+                      },
                       "mobile-aspect-ratio": {
                         "type": "Select",
-                        "value": "4-3"
+                        "value": "16-9"
                       }
                     },
                     {

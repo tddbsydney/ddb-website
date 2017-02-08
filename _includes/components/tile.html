@@ -1,4 +1,4 @@
-{% assign tile = include.data %}
+{% assign tile = include.data[0] %}
 
 {% capture capCompTile %}
   {% if tile.width.value %}
@@ -33,6 +33,30 @@
   {% endif %}
 {% endcapture %}
 
+{% capture capTileContentWrapper %}
+  {% if tile.desktop-content-position.value %}
+    desktop-cont-pos-{{ tile.desktop-content-position.value }}
+  {% endif %}
+  {% if tile.mobile-content-position.value %}
+    mobile-cont-pos-{{ tile.mobile-content-position.value }}
+  {% endif %}
+{% endcapture %}
+
+{% capture capTileContentBox %}
+  {% if tile.desktop-content-width.value %}
+    desktop-cont-width-{{ tile.desktop-content-width.value }}
+  {% endif %}
+  {% if tile.mobile-content-width.value %}
+    mobile-cont-width-{{ tile.mobile-content-width.value }}
+  {% endif %}
+  {% if tile.desktop-content-alignment.value %}
+    desktop-cont-align-{{ tile.desktop-content-alignment.value }}
+  {% endif %}
+  {% if tile.mobile-content-alignment.value %}
+    mobile-cont-align-{{ tile.mobile-content-alignment.value }}
+  {% endif %}
+{% endcapture %}
+
 {% if tile.link.value %}
   {% capture linkValue %}
     {% case tile.link.value.document.type %}
@@ -48,27 +72,22 @@
     <div class="{{ 'tile-inner' | append: capTileInner | normalize_whitespace }}">
       {% if tile.background-video.value %}
       <div class="tile-background">
-        <video loop="" autoplay=""{% if tile.background-video-poster.value %} poster="https://{{ tile.background-video-poster.value }}"{% endif %}>
+        <video loop="" autoplay=""{% if tile.background-video-poster.value %} poster="{{ tile.background-video-poster.value }}"{% endif %}>
           <source src="{{ tile.background-video.value }}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
       {% endif %}
       <div class="tile-content">
-        {% case tile.type %}
-        {% when 'promo' %}
-        <div class="promo-roller">
-          <span class="promo-left">Feeling</span>
-          <span class="promo-middle">conquers</span>
-          <span class="promo-right">thinking.</span>
+        <div class="{{ 'tile-content-wrapper' | append: capTileContentWrapper | normalize_whitespace }}">
+          <div class="{{ 'tile-content-box' | append: capTileContentBox | normalize_whitespace }}">
+            <p class="tile-heading">{{ tile.title.value }}</p>
+            <p class="tile-text">{{ tile.text.value }}</p>
+            {% if tile.link.value %}
+            <p class="tile-link">{{ tile.link-text.value | default: "View" }}</p>
+            {% endif %}
+          </div>
         </div>
-        {% else %}
-        <p class="tile-heading">{{ tile.title.value }}</p>
-        <p class="tile-text">{{ tile.text.value }}</p>
-        {% if tile.link.value %}
-        <p class="tile-link">{{ tile.link-text.value | default: "View >" }}</p>
-        {% endif %}
-        {% endcase %}
       </div>
     </div>
   </div>
