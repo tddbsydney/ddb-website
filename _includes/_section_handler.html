@@ -10,5 +10,11 @@
     {% when "case-study-text" %}
       {% include sections/case-study-text.html data=section.value %}
 
+    {% when "case-study-image" %}
+      {% include sections/case-study-image.html data=section.value %}
+
+    {% when "case-study-video" %}
+      {% include sections/case-study-video.html data=section.value %}
+
   {% endcase %}
 {% endfor %}

@@ -1,0 +1,40 @@
+{% assign tile = include.data[0] %}
+
+{% capture capTileOuter %}
+  {% if tile.background-style.value %}
+    tile-style-{{ tile.background-style.value }}
+  {% endif %}
+  {% if tile.video-aspect-ratio.value %}
+    desktop-aspect-{{ tile.video-aspect-ratio.value }}
+    mobile-aspect-{{ tile.video-aspect-ratio.value }}
+  {% endif %}
+{% endcapture %}
+
+{% if tile.video %}
+  {% assign segs = tile.video.value.url | split: "/" %}
+  {% for seg in segs %}
+    {% if seg == "www.youtube.com" %}
+      {% assign isYoutube = true %}
+    {% endif %}
+  {% endfor %}
+  {% if isYoutube == true %}
+    {% assign youUrl = tile.video.value.url | replace_first "watch?v=", "embed?" %}
+  {% endif %}
+
+<section class="section-case-study-video">
+  <div class="comp-tile">
+    <div class="{{ 'tile-outer' | append: capTileOuter | normalize_whitespace }}">
+      <div class="csv-video-wrapper">
+        {% if isYoutube == true %}
+          <iframe class="csv-youtube" type="text/html" src="{{ tile.video.value.url | replace_first: 'watch?v=', 'embed/' }}?modestbranding=1&controls=1&iv_load_policy=3&rel=0&showinfo=0" frameborder="0"></iframe>
+        {% else %}
+          <video class="csv-native">
+            <source src="{{ tile.video.value.url }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}

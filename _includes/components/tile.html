@@ -90,7 +90,9 @@
             <p class="tile-heading">{{ tile.title.value }}</p>
             <p class="tile-text">{{ tile.text.value }}</p>
             {% if tile.link.value %}
-            <p class="tile-link">{{ tile.link-text.value | default: "View" }}</p>
+            <div class="tile-link-wrapper{% if tile.link.type == 'Link.web' %} external{% endif %}">
+              <p class="tile-link">{{ tile.link-text.value | default: "View" }}</p>
+            </div>
             {% endif %}
           </div>
         </div>
