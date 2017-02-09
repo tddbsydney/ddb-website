@@ -2,17 +2,19 @@
 {% include _relative_links_base_url.html %}
 {% assign page_data = page.page_data.data %}
 <html>
+
   <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
-      maximum-scale=1.0,user-scalable=no">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <title>{{ page_data.title.value | default: 'Tribal DDB Sydney' }}</title>
     <meta name="description" content="{{ page_data.description.value | default: 'Tribal DDB Sydney' }}">
     <meta name="keywords" content="{{ page_data.keywords.value | default: 'Tribal,DDB,Sydney' }}">
-    <title>{{ page_data.title.value | default: 'Tribal DDB Sydney' }}</title>
-    <script src="{{base}}/assets/js/jquery.min.js" type="text/javascript"></script>
+
     <link rel="stylesheet" href="{{base}}/assets/css/style.css">
   </head>
+
   <body>
 
     {% unless page_data.header.value == 'hidden' %}
@@ -26,4 +28,6 @@
     {% endunless %}
 
   </body>
+
+  <script src="{{base}}/assets/js/jquery.min.js" type="text/javascript"></script>
 </html>
