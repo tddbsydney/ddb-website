@@ -457,26 +457,26 @@ h3 {
     .comp-tile .tile-outer.tile-style-black {
       background-color: #000;
       color: #fff; }
-      .comp-tile .tile-outer.tile-style-black .tile-inner .tile-content .tile-link {
+      .comp-tile .tile-outer.tile-style-black .tile-inner .tile-content .tile-link-wrapper {
         border-color: #fff; }
     .comp-tile .tile-outer.tile-style-skyblue {
       background-color: #afc9e2;
       color: #fff; }
-      .comp-tile .tile-outer.tile-style-skyblue .tile-inner .tile-content .tile-link {
+      .comp-tile .tile-outer.tile-style-skyblue .tile-inner .tile-content .tile-link-wrapper {
         border-color: #fff; }
       .comp-tile .tile-outer.tile-style-skyblue .tile-inner .tile-content p {
         text-shadow: 1px 1px rgba(0, 0, 0, 0.1); }
     .comp-tile .tile-outer.tile-style-white {
       background-color: #fff;
       color: #000; }
-      .comp-tile .tile-outer.tile-style-white .tile-inner .tile-content .tile-link {
+      .comp-tile .tile-outer.tile-style-white .tile-inner .tile-content .tile-link-wrapper {
         border-color: #000; }
       .comp-tile .tile-outer.tile-style-white .tile-inner .tile-content p {
         text-shadow: none; }
     .comp-tile .tile-outer.tile-style-yellow {
       background-color: #ffd107;
       color: #000; }
-      .comp-tile .tile-outer.tile-style-yellow .tile-inner .tile-content .tile-link {
+      .comp-tile .tile-outer.tile-style-yellow .tile-inner .tile-content .tile-link-wrapper {
         border-color: #000; }
       .comp-tile .tile-outer.tile-style-yellow .tile-inner .tile-content p {
         text-shadow: none; }
@@ -487,6 +487,10 @@ h3 {
       top: 0;
       bottom: 0; }
       @media only screen and (min-width: 768px) {
+        .comp-tile .tile-outer .tile-inner.tile-fade-grad {
+          background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.66) 0%, transparent 33%);
+          background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.66) 0%, transparent 33%);
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.66) 0%, transparent 33%); }
         .comp-tile .tile-outer .tile-inner.tile-fade-grad-lightest {
           background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 33%);
           background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 33%);
@@ -499,7 +503,7 @@ h3 {
           background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, transparent 33%);
           background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, transparent 33%);
           background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, transparent 33%); }
-        .comp-tile .tile-outer .tile-inner.tile-fade-grad, .comp-tile .tile-outer .tile-inner.tile-fade-grad-dark {
+        .comp-tile .tile-outer .tile-inner.tile-fade-grad-dark {
           background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.66) 0%, transparent 33%);
           background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.66) 0%, transparent 33%);
           background: linear-gradient(to bottom, rgba(0, 0, 0, 0.66) 0%, transparent 33%); }
@@ -508,6 +512,10 @@ h3 {
           background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, transparent 33%);
           background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, transparent 33%); } }
       @media only screen and (max-width: 767px) {
+        .comp-tile .tile-outer .tile-inner.tile-fade-grad {
+          background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.66) 0%, transparent 100%);
+          background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.66) 0%, transparent 100%);
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.66) 0%, transparent 100%); }
         .comp-tile .tile-outer .tile-inner.tile-fade-grad-lightest {
           background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
           background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
@@ -520,7 +528,7 @@ h3 {
           background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
           background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
           background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, transparent 100%); }
-        .comp-tile .tile-outer .tile-inner.tile-fade-grad, .comp-tile .tile-outer .tile-inner.tile-fade-grad-dark {
+        .comp-tile .tile-outer .tile-inner.tile-fade-grad-dark {
           background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.66) 0%, transparent 100%);
           background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.66) 0%, transparent 100%);
           background: linear-gradient(to bottom, rgba(0, 0, 0, 0.66) 0%, transparent 100%); }
@@ -528,7 +536,9 @@ h3 {
           background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
           background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
           background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, transparent 100%); } }
-      .comp-tile .tile-outer .tile-inner.tile-fade-solid, .comp-tile .tile-outer .tile-inner.tile-fade-solid-lightest {
+      .comp-tile .tile-outer .tile-inner.tile-fade-solid {
+        background-color: rgba(0, 0, 0, 0.2); }
+      .comp-tile .tile-outer .tile-inner.tile-fade-solid-lightest {
         background-color: rgba(0, 0, 0, 0.2); }
       .comp-tile .tile-outer .tile-inner.tile-fade-solid-light {
         background-color: rgba(0, 0, 0, 0.33); }
@@ -673,12 +683,52 @@ h3 {
                 text-align: right; }
               .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-full {
                 max-width: 100%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-half {
+                max-width: 50%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-four-quarter {
+                max-width: 100%; }
               .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-three-quarter {
                 max-width: 75%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-two-quarter {
+                max-width: 50%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-one-quarter {
+                max-width: 25%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-three-third {
+                max-width: 100%; }
               .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-two-third {
                 max-width: 66%; }
-              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-half {
-                max-width: 50%; } }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-one-third {
+                max-width: 33%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-five-fifth {
+                max-width: 100%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-four-fifth {
+                max-width: 80%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-three-fifth {
+                max-width: 60%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-two-fifth {
+                max-width: 40%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-one-fifth {
+                max-width: 20%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-100-perc {
+                max-width: 100%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-90-perc {
+                max-width: 90%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-80-perc {
+                max-width: 80%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-70-perc {
+                max-width: 70%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-60-perc {
+                max-width: 60%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-50-perc {
+                max-width: 50%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-40-perc {
+                max-width: 40%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-30-perc {
+                max-width: 30%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-20-perc {
+                max-width: 20%; }
+              .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.desktop-cont-width-10-perc {
+                max-width: 10%; } }
             @media only screen and (max-width: 767px) {
               .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box {
                 padding: 5vw; }
@@ -690,12 +740,52 @@ h3 {
                   text-align: right; }
                 .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-full {
                   max-width: 100%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-half {
+                  max-width: 50%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-four-quarter {
+                  max-width: 100%; }
                 .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-three-quarter {
                   max-width: 75%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-two-quarter {
+                  max-width: 50%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-one-quarter {
+                  max-width: 25%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-three-third {
+                  max-width: 100%; }
                 .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-two-third {
                   max-width: 66%; }
-                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-half {
-                  max-width: 50%; } }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-one-third {
+                  max-width: 33%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-five-fifth {
+                  max-width: 100%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-four-fifth {
+                  max-width: 80%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-three-fifth {
+                  max-width: 60%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-two-fifth {
+                  max-width: 40%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-one-fifth {
+                  max-width: 20%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-100-perc {
+                  max-width: 100%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-90-perc {
+                  max-width: 90%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-80-perc {
+                  max-width: 80%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-70-perc {
+                  max-width: 70%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-60-perc {
+                  max-width: 60%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-50-perc {
+                  max-width: 50%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-40-perc {
+                  max-width: 40%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-30-perc {
+                  max-width: 30%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-20-perc {
+                  max-width: 20%; }
+                .comp-tile .tile-outer .tile-inner .tile-content .tile-content-wrapper .tile-content-box.mobile-cont-width-10-perc {
+                  max-width: 10%; } }
   .comp-tile p {
     margin: 0;
     line-height: 1.2em; }
@@ -705,20 +795,33 @@ h3 {
     .comp-tile p.tile-text {
       font-size: 2.5vw;
       font-weight: bold; }
-    .comp-tile p.tile-link {
-      display: inline-block;
-      margin-top: 2vw;
+  .comp-tile .tile-link-wrapper {
+    display: inline-block;
+    margin-top: 2vw;
+    border-bottom: 2px solid #fff; }
+    .comp-tile .tile-link-wrapper .tile-link {
       font-size: 1.75vw;
-      line-height: 3vw;
-      border-bottom: 2px solid #fff; }
+      line-height: 3vw; }
+    .comp-tile .tile-link-wrapper.external {
+      border: 2px solid #fff;
+      padding: 0 0.5vw; }
   @media only screen and (max-width: 767px) {
     .comp-tile p.tile-heading {
       font-size: 4vw; }
     .comp-tile p.tile-text {
       font-size: 6vw; }
-    .comp-tile p.tile-link {
+    .comp-tile .tile-link-wrapper .tile-link {
       font-size: 4vw;
       line-height: 6vw; } }
+
+.section-case-study-image .comp-tile .tile-outer {
+  padding: 0;
+  height: auto; }
+  .section-case-study-image .comp-tile .tile-outer img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0; }
 
 .section-case-study-text .tile-content .cst-two-column-wrapper,
 .section-case-study-text .tile-content .cst-three-column-wrapper {
@@ -777,6 +880,22 @@ h3 {
   .section-case-study-text .tile-content .cst-three-column-middle,
   .section-case-study-text .tile-content .cst-three-column-right {
     font-size: 4.5vw; } }
+
+.section-case-study-video .comp-tile .tile-outer {
+  padding-top: 56.25%;
+  height: auto; }
+  .section-case-study-video .comp-tile .tile-outer .csv-video-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+    .section-case-study-video .comp-tile .tile-outer .csv-video-wrapper .csv-youtube {
+      width: 100%;
+      height: 100%; }
+    .section-case-study-video .comp-tile .tile-outer .csv-video-wrapper .csv-native {
+      width: 100%;
+      height: 100%; }
 
 .section-promo .promo-roller span {
   font-size: 4vw;

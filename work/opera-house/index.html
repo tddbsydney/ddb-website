@@ -1,14 +1,12 @@
 <!doctype html>
 <html>
   <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
-      maximum-scale=1.0,user-scalable=no">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>The Sydney Opera House | Case Study | Tribal DDB</title>
     <meta name="description" content="We needed to get more people inside the Sydney Opera House during summer.">
     <meta name="keywords" content="Tribal,DDB,Sydney">
-    <title>The Sydney Opera House | Case Study | Tribal DDB</title>
-    <script src="../../assets/js/jquery.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="../../assets/css/style.css">
   </head>
   <body>
@@ -31,24 +29,6 @@
             </div>
           </div>
         </div>
-        <script src="../../assets/js/masonry.pkgd.min.js" type="text/javascript"></script>
-        <script type="text/javascript">
-          var $msn = $('.tiles').masonry({
-                  columnWidth: '.tile-sizer',
-                  itemSelector: '.comp-tile',
-                  percentPosition: true,
-                  transitionDuration: 0,
-                });
-                $(window).resize(function(){
-                  $msn.masonry('layout');
-                });
-                $(document).ready(function(){
-                  $msn.masonry('layout');
-                  setTimeout( (function() {
-                    $msn.masonry('layout');
-                  }), 100);
-                });
-        </script>
       </div>
     </section>
     <section class="section-case-study-text">
@@ -66,6 +46,13 @@
         </div>
       </div>
     </section>
+    <section class="section-case-study-image">
+      <div class="comp-tile">
+        <div class="tile-outer tile-style-skyblue">
+          <img src="https://prismic-io.s3.amazonaws.com/ddb-website/d7820d8b3697552106128c0359ba157257724742_opera2.jpg" />
+        </div>
+      </div>
+    </section>
     <section class="section-case-study-text">
       <div class="comp-tile">
         <div class="tile-outer mobile-aspect-1-1 tile-style-skyblue">
@@ -79,6 +66,15 @@ People were a stick away. We selected photos using computer vision, inviting the
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-case-study-video">
+      <div class="comp-tile">
+        <div class="tile-outer tile-style-skyblue">
+          <div class="csv-video-wrapper">
+            <iframe class="csv-youtube" type="text/html" src="https://www.youtube.com/embed/KjoEFnQJE3s?modestbranding=1&controls=1&iv_load_policy=3&rel=0&showinfo=0" frameborder="0"></iframe>
           </div>
         </div>
       </div>
@@ -137,6 +133,13 @@ Analytics &amp; Reporting</p>
         </div>
       </div>
     </section>
+    <section class="section-case-study-image">
+      <div class="comp-tile">
+        <div class="tile-outer tile-style-black">
+          <img src="https://prismic-io.s3.amazonaws.com/ddb-website/190c62a83bcd60a793f665d042bfa98bd77e8dbb_opera3.jpg" />
+        </div>
+      </div>
+    </section>
     <section class="section-tiles">
       <div class="tiles">
         <div class="tile-sizer"></div>
@@ -162,34 +165,19 @@ Analytics &amp; Reporting</p>
                   <div class="tile-content-box">
                     <p class="tile-heading">Creativity</p>
                     <p class="tile-text">Prototypes over Presentations</p>
-                    <p class="tile-link">Read on Medium</p>
+                    <div class="tile-link-wrapper external">
+                      <p class="tile-link">Read on Medium</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </a>
-        <script src="../../assets/js/masonry.pkgd.min.js" type="text/javascript"></script>
-        <script type="text/javascript">
-          var $msn = $('.tiles').masonry({
-                  columnWidth: '.tile-sizer',
-                  itemSelector: '.comp-tile',
-                  percentPosition: true,
-                  transitionDuration: 0,
-                });
-                $(window).resize(function(){
-                  $msn.masonry('layout');
-                });
-                $(document).ready(function(){
-                  $msn.masonry('layout');
-                  setTimeout( (function() {
-                    $msn.masonry('layout');
-                  }), 100);
-                });
-        </script>
       </div>
     </section>
     <section class="section-footer">
     </section>
   </body>
+  <script src="../../assets/js/jquery.min.js" type="text/javascript"></script>
 </html>
