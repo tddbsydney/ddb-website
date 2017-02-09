@@ -654,6 +654,16 @@
                       "skyblue"
                     ]
                   }
+                },
+                "video-aspect-ratio" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Video Asepct Ratio",
+                    "placeholder" : "16-9",
+                    "options" : [
+                      "4-3"
+                    ]
+                  }
                 }
               }
             }
