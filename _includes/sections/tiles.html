@@ -5,24 +5,6 @@
     {% for tile in include.data %}
       {% include components/tile.html data=tile %}
     {% endfor %}
-
-    <script src="{{base}}/assets/js/masonry.pkgd.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      var $msn = $('.tiles').masonry({
-        columnWidth: '.tile-sizer',
-        itemSelector: '.comp-tile',
-        percentPosition: true,
-        transitionDuration: 0,
-      });
-      $(window).resize(function(){
-        $msn.masonry('layout');
-      });
-      $(document).ready(function(){
-        $msn.masonry('layout');
-        setTimeout( (function() {
-          $msn.masonry('layout');
-        }), 100);
-      });
-    </script>
+    
   </div>
 </section>

@@ -1,296 +1,4 @@
 {
-  "case-study": [
-    {
-      "uid": "volkswagen-golf",
-      "data": {
-        "title": {
-          "type": "Text",
-          "value": "Volkswagen Golf | Case Study | Tribal DDB"
-        },
-        "description": {
-          "type": "Text",
-          "value": "Can we sell a Golf to a town that doesn't need its city technology?"
-        },
-        "sections": {
-          "type": "SectionList",
-          "value": [
-            {
-              "type": "tiles",
-              "value": [
-                {
-                  "title": {
-                    "type": "Text",
-                    "value": "Volkswagen"
-                  },
-                  "text": {
-                    "type": "Text",
-                    "value": "Can we sell a Golf to a town that doesn't need its city technology?"
-                  },
-                  "background-image": {
-                    "type": "Image",
-                    "value": {
-                      "main": {
-                        "dimensions": {
-                          "width": 1023,
-                          "height": 640
-                        },
-                        "alt": null,
-                        "copyright": null,
-                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/c951373530bc461d67cfffce58464fc3f4fc46f3_vw0.jpg"
-                      },
-                      "views": {
-                      }
-                    }
-                  },
-                  "background-style": {
-                    "type": "Select",
-                    "value": "black"
-                  },
-                  "desktop-aspect-ratio": {
-                    "type": "Select",
-                    "value": "16-9"
-                  },
-                  "mobile-aspect-ratio": {
-                    "type": "Select",
-                    "value": "2-3"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "case-study-text",
-              "value": [
-                {
-                  "title": {
-                    "type": "Text",
-                    "value": "So what was the brief then?"
-                  },
-                  "text": {
-                    "type": "Text",
-                    "value": "The job was to raise the consideration of the new model Golf, boost understanding of its advanced tech features and deliver more test-drives to Volkswagen dealers."
-                  },
-                  "background-style": {
-                    "type": "Select",
-                    "value": "black"
-                  },
-                  "mobile-aspect-ratio": {
-                    "type": "Select",
-                    "value": "1-1"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "case-study-image",
-              "value": [
-                {
-                  "background-image": {
-                    "type": "Image",
-                    "value": {
-                      "main": {
-                        "dimensions": {
-                          "width": 1019,
-                          "height": 564
-                        },
-                        "alt": null,
-                        "copyright": null,
-                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/7a5155edfc5579cf711653ce4eeae8891100e3f5_vw1.jpg"
-                      },
-                      "views": {
-                      }
-                    }
-                  },
-                  "background-style": {
-                    "type": "Select",
-                    "value": "black"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "case-study-text",
-              "value": [
-                {
-                  "title": {
-                    "type": "Text",
-                    "value": "An idea that was destined to fail..."
-                  },
-                  "text": {
-                    "type": "Text",
-                    "value": "We developed an online series about a Volkswagen dealer given an impossible task. The premise was to sell the ultimate city car in an outback town filled with folks with no want or need for it."
-                  },
-                  "background-style": {
-                    "type": "Select",
-                    "value": "black"
-                  },
-                  "mobile-aspect-ratio": {
-                    "type": "Select",
-                    "value": "1-1"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "case-study-video",
-              "value": [
-                {
-                  "video": {
-                    "type": "Link.web",
-                    "value": {
-                      "url": "https://www.youtube.com/watch?v=6wEFjop9mEY"
-                    }
-                  },
-                  "background-style": {
-                    "type": "Select",
-                    "value": "black"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "case-study-text",
-              "value": [
-                {
-                  "title": {
-                    "type": "Text",
-                    "value": "Just as we expected..."
-                  },
-                  "text": {
-                    "type": "Text",
-                    "value": "Our rep Tom, made a grand total of zero sales in the town but on Facebook where the series was shown, viewers loved every awkward minute."
-                  },
-                  "background-style": {
-                    "type": "Select",
-                    "value": "black"
-                  },
-                  "mobile-aspect-ratio": {
-                    "type": "Select",
-                    "value": "1-1"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "case-study-video",
-              "value": [
-                {
-                  "background-style": {
-                    "type": "Select",
-                    "value": "black"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "case-study-text",
-              "value": [
-                {
-                  "title": {
-                    "type": "Text",
-                    "value": "Facebook becomes a broadcast channel"
-                  },
-                  "text": {
-                    "type": "Text",
-                    "value": "We turned Facebook into our broadcast channel, so we could directly target potential buyers with the 6-month series."
-                  },
-                  "background-style": {
-                    "type": "Select",
-                    "value": "black"
-                  },
-                  "mobile-aspect-ratio": {
-                    "type": "Select",
-                    "value": "1-1"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "case-study-image",
-              "value": [
-                {
-                  "background-image": {
-                    "type": "Image",
-                    "value": {
-                      "main": {
-                        "dimensions": {
-                          "width": 1023,
-                          "height": 512
-                        },
-                        "alt": null,
-                        "copyright": null,
-                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/a8fd843b4572f294a0754363b0eb2e2635d6b858_vw2.jpg"
-                      },
-                      "views": {
-                      }
-                    }
-                  },
-                  "background-style": {
-                    "type": "Select",
-                    "value": "black"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "tiles",
-              "value": [
-                {
-                  "title": {
-                    "type": "Text",
-                    "value": "New Business"
-                  },
-                  "text": {
-                    "type": "Text",
-                    "value": "Interested in working with us?"
-                  },
-                  "link-text": {
-                    "type": "Text",
-                    "value": "Get in contact"
-                  },
-                  "width": {
-                    "type": "Select",
-                    "value": "half"
-                  },
-                  "background-style": {
-                    "type": "Select",
-                    "value": "black"
-                  }
-                },
-                {
-                  "title": {
-                    "type": "Text",
-                    "value": "Creativity"
-                  },
-                  "text": {
-                    "type": "Text",
-                    "value": "Prototypes over Presentations"
-                  },
-                  "link": {
-                    "type": "Link.web",
-                    "value": {
-                      "url": "https://medium.com/ddb-sydney"
-                    }
-                  },
-                  "link-text": {
-                    "type": "Text",
-                    "value": "Read on Medium"
-                  },
-                  "width": {
-                    "type": "Select",
-                    "value": "half"
-                  },
-                  "background-style": {
-                    "type": "Select",
-                    "value": "yellow"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      }
-    }
-  ],
   "page-work": [
     {
       "uid": "work",
@@ -593,6 +301,327 @@
                 }
               ]
             }
+          ]
+        }
+      }
+    }
+  ],
+  "case-study": [
+    {
+      "uid": "volkswagen-golf",
+      "data": {
+        "title": {
+          "type": "Text",
+          "value": "Volkswagen Golf | Case Study | Tribal DDB"
+        },
+        "description": {
+          "type": "Text",
+          "value": "Can we sell a Golf to a town that doesn't need its city technology?"
+        },
+        "sections": {
+          "type": "SectionList",
+          "value": [
+            {
+              "type": "tiles",
+              "value": [
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "Volkswagen"
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "Can we sell a Golf to a town that doesn't need its city technology?"
+                  },
+                  "background-image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1023,
+                          "height": 640
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/c951373530bc461d67cfffce58464fc3f4fc46f3_vw0.jpg"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  },
+                  "desktop-aspect-ratio": {
+                    "type": "Select",
+                    "value": "16-9"
+                  },
+                  "desktop-content-width": {
+                    "type": "Select",
+                    "value": "half"
+                  },
+                  "desktop-content-position": {
+                    "type": "Select",
+                    "value": "top-center"
+                  },
+                  "mobile-aspect-ratio": {
+                    "type": "Select",
+                    "value": "2-3"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "case-study-text",
+              "value": [
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "So what was the brief then?"
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "The job was to raise the consideration of the new model Golf, boost understanding of its advanced tech features and deliver more test-drives to Volkswagen dealers."
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "white"
+                  },
+                  "mobile-aspect-ratio": {
+                    "type": "Select",
+                    "value": "1-1"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "case-study-image",
+              "value": [
+                {
+                  "background-image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1019,
+                          "height": 564
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/7a5155edfc5579cf711653ce4eeae8891100e3f5_vw1.jpg"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "case-study-text",
+              "value": [
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "An idea that was destined to fail..."
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "We developed an online series about a Volkswagen dealer given an impossible task. The premise was to sell the ultimate city car in an outback town filled with folks with no want or need for it."
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "white"
+                  },
+                  "mobile-aspect-ratio": {
+                    "type": "Select",
+                    "value": "1-1"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "case-study-video",
+              "value": [
+                {
+                  "video": {
+                    "type": "Link.web",
+                    "value": {
+                      "url": "https://www.youtube.com/watch?v=6wEFjop9mEY"
+                    }
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "case-study-text",
+              "value": [
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "Just as we expected..."
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "Our rep Tom, made a grand total of zero sales in the town but on Facebook where the series was shown, viewers loved every awkward minute."
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  },
+                  "mobile-aspect-ratio": {
+                    "type": "Select",
+                    "value": "1-1"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "case-study-video",
+              "value": [
+                {
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "case-study-text",
+              "value": [
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "Facebook becomes a broadcast channel"
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "We turned Facebook into our broadcast channel, so we could directly target potential buyers with the 6-month series."
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  },
+                  "mobile-aspect-ratio": {
+                    "type": "Select",
+                    "value": "1-1"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "case-study-image",
+              "value": [
+                {
+                  "background-image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1023,
+                          "height": 512
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/a8fd843b4572f294a0754363b0eb2e2635d6b858_vw2.jpg"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "tiles",
+              "value": [
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "New Business"
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "Interested in working with us?"
+                  },
+                  "link-text": {
+                    "type": "Text",
+                    "value": "Get in contact"
+                  },
+                  "width": {
+                    "type": "Select",
+                    "value": "half"
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "black"
+                  }
+                },
+                {
+                  "title": {
+                    "type": "Text",
+                    "value": "Creativity"
+                  },
+                  "text": {
+                    "type": "Text",
+                    "value": "Prototypes over Presentations"
+                  },
+                  "link": {
+                    "type": "Link.web",
+                    "value": {
+                      "url": "https://medium.com/ddb-sydney"
+                    }
+                  },
+                  "link-text": {
+                    "type": "Text",
+                    "value": "Read on Medium"
+                  },
+                  "width": {
+                    "type": "Select",
+                    "value": "half"
+                  },
+                  "background-style": {
+                    "type": "Select",
+                    "value": "yellow"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "style-guide": [
+    {
+      "uid": "style-guide",
+      "data": {
+        "title": {
+          "type": "Text",
+          "value": "Style Guide"
+        },
+        "description": {
+          "type": "Text",
+          "value": "style guide"
+        },
+        "sections": {
+          "type": "SectionList",
+          "value": [
+
           ]
         }
       }
