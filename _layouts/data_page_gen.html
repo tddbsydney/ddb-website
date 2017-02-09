@@ -18,7 +18,7 @@
   <body>
 
     {% unless page_data.header.value == 'hidden' %}
-      {% include sections/header.html %}
+      {% include components/header.html %}
     {% endunless %}
 
     {% include _section_handler.html data=page_data.sections.value %}

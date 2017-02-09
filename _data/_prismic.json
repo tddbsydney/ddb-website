@@ -1,8 +1,8 @@
 {
   "page": 1,
   "results_per_page": 20,
-  "results_size": 4,
-  "total_results_size": 4,
+  "results_size": 5,
+  "total_results_size": 5,
   "total_pages": 1,
   "next_page": null,
   "prev_page": null,
@@ -11,12 +11,12 @@
       "id": "WJpzFCgAAFFhhUns",
       "uid": "work",
       "type": "page-work",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJu5RCgAAHqAiuey&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJpzFCgAAFFhhUns%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJvtWigAAHmAi80d&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJpzFCgAAFFhhUns%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-08T01:27:40+0000",
-      "last_publication_date": "2017-02-08T03:14:22+0000",
+      "last_publication_date": "2017-02-09T01:45:42+0000",
       "slugs": [
         "work--tribal-ddb"
       ],
@@ -28,6 +28,14 @@
           ],
           "type": "case-study",
           "slug": "volkswagen-golf--case-study--tribal-ddb"
+        },
+        {
+          "id": "WJuwpygAAHmAisGm",
+          "tags": [
+
+          ],
+          "type": "case-study",
+          "slug": "the-sydney-opera-house--case-study--tribal-ddb"
         },
         {
           "id": "WJp4BSgAAFNhhV-u",
@@ -123,6 +131,21 @@
                       "text": {
                         "type": "Text",
                         "value": "We needed to get more people inside the Sydney Opera House during summer."
+                      },
+                      "link": {
+                        "type": "Link.document",
+                        "value": {
+                          "document": {
+                            "id": "WJuwpygAAHmAisGm",
+                            "type": "case-study",
+                            "tags": [
+
+                            ],
+                            "slug": "the-sydney-opera-house--case-study--tribal-ddb",
+                            "uid": "opera-house"
+                          },
+                          "isBroken": false
+                        }
                       },
                       "link-text": {
                         "type": "Text",
@@ -352,12 +375,12 @@
       "id": "WJp4BSgAAFNhhV-u",
       "uid": "volkswagen-golf",
       "type": "case-study",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJu5RCgAAHqAiuey&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJp4BSgAAFNhhV-u%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJvtWigAAHmAi80d&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJp4BSgAAFNhhV-u%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-08T01:44:51+0000",
-      "last_publication_date": "2017-02-09T00:26:14+0000",
+      "last_publication_date": "2017-02-09T04:15:18+0000",
       "slugs": [
         "volkswagen-golf--case-study--tribal-ddb"
       ],
@@ -453,9 +476,13 @@
                         "type": "Select",
                         "value": "white"
                       },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
+                      },
                       "mobile-aspect-ratio": {
                         "type": "Select",
-                        "value": "1-1"
+                        "value": "4-3"
                       }
                     }
                   ]
@@ -470,6 +497,22 @@
                   "value": [
                     {
                       "background-image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1019,
+                              "height": 564
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/7a5155edfc5579cf711653ce4eeae8891100e3f5_vw1.jpg"
+                          },
+                          "views": {
+                          }
+                        }
+                      },
+                      "image": {
                         "type": "Image",
                         "value": {
                           "main": {
@@ -513,9 +556,13 @@
                         "type": "Select",
                         "value": "white"
                       },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
+                      },
                       "mobile-aspect-ratio": {
                         "type": "Select",
-                        "value": "1-1"
+                        "value": "4-3"
                       }
                     }
                   ]
@@ -561,11 +608,15 @@
                       },
                       "background-style": {
                         "type": "Select",
-                        "value": "black"
+                        "value": "white"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
                       },
                       "mobile-aspect-ratio": {
                         "type": "Select",
-                        "value": "1-1"
+                        "value": "4-3"
                       }
                     }
                   ]
@@ -605,11 +656,15 @@
                       },
                       "background-style": {
                         "type": "Select",
-                        "value": "black"
+                        "value": "white"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
                       },
                       "mobile-aspect-ratio": {
                         "type": "Select",
-                        "value": "1-1"
+                        "value": "4-3"
                       }
                     }
                   ]
@@ -624,6 +679,22 @@
                   "value": [
                     {
                       "background-image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1023,
+                              "height": 512
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/a8fd843b4572f294a0754363b0eb2e2635d6b858_vw2.jpg"
+                          },
+                          "views": {
+                          }
+                        }
+                      },
+                      "image": {
                         "type": "Image",
                         "value": {
                           "main": {
@@ -674,6 +745,14 @@
                       "background-style": {
                         "type": "Select",
                         "value": "black"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
                       }
                     },
                     {
@@ -702,6 +781,14 @@
                       "background-style": {
                         "type": "Select",
                         "value": "yellow"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
                       }
                     }
                   ]
@@ -716,7 +803,7 @@
       "id": "WJuuTSgAALxIirdE",
       "uid": "style-guide",
       "type": "style-guide",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJu5RCgAAHqAiuey&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJuuTSgAALxIirdE%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJvtWigAAHmAi80d&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJuuTSgAALxIirdE%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -751,12 +838,12 @@
       "id": "WJporigAALxIhRwn",
       "uid": "latest",
       "type": "page-latest",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJu5RCgAAHqAiuey&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJporigAALxIhRwn%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJvtWigAAHmAi80d&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJporigAALxIhRwn%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-08T00:39:14+0000",
-      "last_publication_date": "2017-02-08T23:20:19+0000",
+      "last_publication_date": "2017-02-09T01:19:26+0000",
       "slugs": [
         "latest--tribal-ddb"
       ],
@@ -842,7 +929,7 @@
                       },
                       "link-text": {
                         "type": "Text",
-                        "value": "Click here to see the Volkswagen Case Study"
+                        "value": "Click here to see the Volkswagen Case Study<br/>"
                       },
                       "background-image": {
                         "type": "Image",
@@ -860,6 +947,10 @@
                           }
                         }
                       },
+                      "background-fade": {
+                        "type": "Select",
+                        "value": "grad-lightest"
+                      },
                       "background-style": {
                         "type": "Select",
                         "value": "black"
@@ -875,10 +966,6 @@
                       "desktop-content-alignment": {
                         "type": "Select",
                         "value": "center"
-                      },
-                      "desktop-content-width": {
-                        "type": "Select",
-                        "value": "half"
                       },
                       "desktop-content-position": {
                         "type": "Select",
@@ -1167,6 +1254,424 @@
                       "mobile-text-position": {
                         "type": "Select",
                         "value": "mid-left"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "WJuwpygAAHmAisGm",
+      "uid": "opera-house",
+      "type": "case-study",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJvtWigAAHmAi80d&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJuwpygAAHmAisGm%22%29+%5D%5D",
+      "tags": [
+
+      ],
+      "first_publication_date": "2017-02-09T01:37:46+0000",
+      "last_publication_date": "2017-02-09T04:17:30+0000",
+      "slugs": [
+        "the-sydney-opera-house--case-study--tribal-ddb",
+        "the-sydney-opera-house",
+        "volkswagen-golf--case-study--tribal-ddb"
+      ],
+      "linked_documents": [
+
+      ],
+      "data": {
+        "case-study": {
+          "title": {
+            "type": "Text",
+            "value": "The Sydney Opera House | Case Study | Tribal DDB"
+          },
+          "description": {
+            "type": "Text",
+            "value": "We needed to get more people inside the Sydney Opera House during summer."
+          },
+          "sections": {
+            "type": "SliceZone",
+            "value": [
+              {
+                "type": "Slice",
+                "slice_type": "tiles",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "title": {
+                        "type": "Text",
+                        "value": "The Sydney Opera House"
+                      },
+                      "text": {
+                        "type": "Text",
+                        "value": "Live response social, powered by a smart application of technology."
+                      },
+                      "background-image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1024,
+                              "height": 666
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/0c604664e2287e8951d7a2f7606b4435809820a8_opera1.jpg"
+                          },
+                          "views": {
+                          }
+                        }
+                      },
+                      "background-style": {
+                        "type": "Select",
+                        "value": "skyblue"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
+                      },
+                      "desktop-content-width": {
+                        "type": "Select",
+                        "value": "half"
+                      },
+                      "desktop-content-position": {
+                        "type": "Select",
+                        "value": "mid-left"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "2-3"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-text",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "text": {
+                        "type": "Text",
+                        "value": "We need to get more people inside the Sydney Opera House during summer."
+                      },
+                      "background-style": {
+                        "type": "Select",
+                        "value": "skyblue"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-image",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "background-image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1023,
+                              "height": 530
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/d7820d8b3697552106128c0359ba157257724742_opera2.jpg"
+                          },
+                          "views": {
+                          }
+                        }
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1023,
+                              "height": 530
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/d7820d8b3697552106128c0359ba157257724742_opera2.jpg"
+                          },
+                          "views": {
+                          }
+                        }
+                      },
+                      "background-style": {
+                        "type": "Select",
+                        "value": "skyblue"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-text",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "text": {
+                        "type": "Text",
+                        "value": "8.2 million people visit the site of the Sydney Opera House every year."
+                      },
+                      "subtext": {
+                        "type": "Text",
+                        "value": "Most take photo if the outside and move on, making it the most Instagrammed icon in Australia.\nPeople were a stick away. We selected photos using computer vision, inviting them inside with Instagram."
+                      },
+                      "background-style": {
+                        "type": "Select",
+                        "value": "skyblue"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-video",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "video": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "https://www.youtube.com/watch?v=KjoEFnQJE3s"
+                        }
+                      },
+                      "background-style": {
+                        "type": "Select",
+                        "value": "skyblue"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-text",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "title": {
+                        "type": "Text",
+                        "value": "Solution"
+                      },
+                      "text": {
+                        "type": "Text",
+                        "value": "Turn photos of the Sydney Opera House on Instagram into incredible experiences inside by inviting users to #comeonin."
+                      },
+                      "background-style": {
+                        "type": "Select",
+                        "value": "skyblue"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-text",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "text": {
+                        "type": "Text",
+                        "value": "Live response social, powered by a smart application of technology."
+                      },
+                      "three-column-left": {
+                        "type": "Text",
+                        "value": "Social\n\nContent creation\nLive Response\nMonitoring"
+                      },
+                      "three-column-middle": {
+                        "type": "Text",
+                        "value": "Engineering\n\nComputer Vision\nCloud Infrastructure\nInstagram API"
+                      },
+                      "three-column-right": {
+                        "type": "Text",
+                        "value": "Digital\n\nMobile First Design\nMobile first Development\nAnalytics &amp; Reporting"
+                      },
+                      "background-style": {
+                        "type": "Select",
+                        "value": "skyblue"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-image",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "background-image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 959,
+                              "height": 530
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/190c62a83bcd60a793f665d042bfa98bd77e8dbb_opera3.jpg"
+                          },
+                          "views": {
+                          }
+                        }
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 959,
+                              "height": 530
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/190c62a83bcd60a793f665d042bfa98bd77e8dbb_opera3.jpg"
+                          },
+                          "views": {
+                          }
+                        }
+                      },
+                      "background-style": {
+                        "type": "Select",
+                        "value": "black"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "tiles",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "title": {
+                        "type": "Text",
+                        "value": "New Business"
+                      },
+                      "text": {
+                        "type": "Text",
+                        "value": "Interested in working with us?"
+                      },
+                      "link-text": {
+                        "type": "Text",
+                        "value": "Get in contact"
+                      },
+                      "width": {
+                        "type": "Select",
+                        "value": "half"
+                      },
+                      "background-style": {
+                        "type": "Select",
+                        "value": "black"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      }
+                    },
+                    {
+                      "title": {
+                        "type": "Text",
+                        "value": "Creativity"
+                      },
+                      "text": {
+                        "type": "Text",
+                        "value": "Prototypes over Presentations"
+                      },
+                      "link": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "https://medium.com/ddb-sydney"
+                        }
+                      },
+                      "link-text": {
+                        "type": "Text",
+                        "value": "Read on Medium"
+                      },
+                      "width": {
+                        "type": "Select",
+                        "value": "half"
+                      },
+                      "background-style": {
+                        "type": "Select",
+                        "value": "yellow"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
                       }
                     }
                   ]

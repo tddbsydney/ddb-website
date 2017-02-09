@@ -1,0 +1,30 @@
+// -------------------------------------
+//   Variables
+// -------------------------------------
+/**
+  * @name variables
+  * @desc Used for management of sass variables 
+          to be used with all elements that 
+          spread across the entire site.
+**/
+
+// -------------------------------------
+//   Variables - Base - Color
+// -------------------------------------
+$base-bg-col: #000;
+$base-text-col: #fff;
+$base-text-shadow: rgba(0, 0, 0, 0.33);
+
+// -------------------------------------
+//   Variables - Base - Font
+// -------------------------------------
+$base-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size: 18px;
+
+$base-font-line-height: 1.2em;
+$base-font-letter-space: -0.2px;
+
+$base-font-weight-light: 100;
+$base-font-weight-regular: 400;
+$base-font-weight-medium: 500;
+$base-font-weight-bold: 600;
