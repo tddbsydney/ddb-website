@@ -10,15 +10,16 @@
   {% endif %}
 {% endcapture %}
 
-{% assign segs = tile.video.value.url | split: "/" %}
-{% for seg in segs %}
-  {% if seg == "www.youtube.com" %}
-    {% assign isYoutube = true %}
+{% if tile.video %}
+  {% assign segs = tile.video.value.url | split: "/" %}
+  {% for seg in segs %}
+    {% if seg == "www.youtube.com" %}
+      {% assign isYoutube = true %}
+    {% endif %}
+  {% endfor %}
+  {% if isYoutube == true %}
+    {% assign youUrl = tile.video.value.url | replace_first "watch?v=", "embed?" %}
   {% endif %}
-{% endfor %}
-{% if isYoutube == true %}
-  {% assign youUrl = tile.video.value.url | replace_first "watch?v=", "embed?" %}
-{% endif %}
 
 <section class="section-case-study-video">
   <div class="comp-tile">
@@ -36,3 +37,4 @@
     </div>
   </div>
 </section>
+{% endif %}

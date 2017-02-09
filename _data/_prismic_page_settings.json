@@ -603,10 +603,10 @@
               "label" : "Case Study: Image section",
               "repeat" : false,
               "fields" : {
-                "background-image" : {
+                "image" : {
                   "type" : "Image",
                   "config" : {
-                    "label" : "Background Image",
+                    "label" : "Image",
                     "constraint" : {
                       "width" : null,
                       "height" : null
@@ -639,7 +639,7 @@
                 "video" : {
                   "type" : "Link",
                   "config" : {
-                    "label" : "Background Video"
+                    "label" : "Video"
                   }
                 },
                 "background-style" : {

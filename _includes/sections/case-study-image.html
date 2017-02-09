@@ -6,6 +6,7 @@
   {% endif %}
 {% endcapture %}
 
+{% if tile.background-image.value %}
 <section class="section-case-study-image">
   <div class="comp-tile">
     <div class="{{ 'tile-outer' | append: capTileOuter | normalize_whitespace }}">
@@ -13,3 +14,4 @@
     </div>
   </div>
 </section>
+{% endif %}

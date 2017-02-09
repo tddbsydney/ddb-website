@@ -11,7 +11,7 @@
       "id": "WJpzFCgAAFFhhUns",
       "uid": "work",
       "type": "page-work",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJvKkygAAHiAizP2&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJpzFCgAAFFhhUns%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJvtWigAAHmAi80d&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJpzFCgAAFFhhUns%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -375,12 +375,12 @@
       "id": "WJp4BSgAAFNhhV-u",
       "uid": "volkswagen-golf",
       "type": "case-study",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJvKkygAAHiAizP2&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJp4BSgAAFNhhV-u%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJvtWigAAHmAi80d&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJp4BSgAAFNhhV-u%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-08T01:44:51+0000",
-      "last_publication_date": "2017-02-09T00:26:14+0000",
+      "last_publication_date": "2017-02-09T04:15:18+0000",
       "slugs": [
         "volkswagen-golf--case-study--tribal-ddb"
       ],
@@ -476,9 +476,13 @@
                         "type": "Select",
                         "value": "white"
                       },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
+                      },
                       "mobile-aspect-ratio": {
                         "type": "Select",
-                        "value": "1-1"
+                        "value": "4-3"
                       }
                     }
                   ]
@@ -493,6 +497,22 @@
                   "value": [
                     {
                       "background-image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1019,
+                              "height": 564
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/7a5155edfc5579cf711653ce4eeae8891100e3f5_vw1.jpg"
+                          },
+                          "views": {
+                          }
+                        }
+                      },
+                      "image": {
                         "type": "Image",
                         "value": {
                           "main": {
@@ -536,9 +556,13 @@
                         "type": "Select",
                         "value": "white"
                       },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
+                      },
                       "mobile-aspect-ratio": {
                         "type": "Select",
-                        "value": "1-1"
+                        "value": "4-3"
                       }
                     }
                   ]
@@ -584,11 +608,15 @@
                       },
                       "background-style": {
                         "type": "Select",
-                        "value": "black"
+                        "value": "white"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
                       },
                       "mobile-aspect-ratio": {
                         "type": "Select",
-                        "value": "1-1"
+                        "value": "4-3"
                       }
                     }
                   ]
@@ -628,11 +656,15 @@
                       },
                       "background-style": {
                         "type": "Select",
-                        "value": "black"
+                        "value": "white"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
                       },
                       "mobile-aspect-ratio": {
                         "type": "Select",
-                        "value": "1-1"
+                        "value": "4-3"
                       }
                     }
                   ]
@@ -647,6 +679,22 @@
                   "value": [
                     {
                       "background-image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1023,
+                              "height": 512
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/a8fd843b4572f294a0754363b0eb2e2635d6b858_vw2.jpg"
+                          },
+                          "views": {
+                          }
+                        }
+                      },
+                      "image": {
                         "type": "Image",
                         "value": {
                           "main": {
@@ -697,6 +745,14 @@
                       "background-style": {
                         "type": "Select",
                         "value": "black"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
                       }
                     },
                     {
@@ -725,6 +781,14 @@
                       "background-style": {
                         "type": "Select",
                         "value": "yellow"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
                       }
                     }
                   ]
@@ -739,7 +803,7 @@
       "id": "WJuuTSgAALxIirdE",
       "uid": "style-guide",
       "type": "style-guide",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJvKkygAAHiAizP2&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJuuTSgAALxIirdE%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJvtWigAAHmAi80d&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJuuTSgAALxIirdE%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -774,7 +838,7 @@
       "id": "WJporigAALxIhRwn",
       "uid": "latest",
       "type": "page-latest",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJvKkygAAHiAizP2&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJporigAALxIhRwn%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJvtWigAAHmAi80d&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJporigAALxIhRwn%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1204,12 +1268,12 @@
       "id": "WJuwpygAAHmAisGm",
       "uid": "opera-house",
       "type": "case-study",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJvKkygAAHiAizP2&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJuwpygAAHmAisGm%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WJvtWigAAHmAi80d&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WJuwpygAAHmAisGm%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-09T01:37:46+0000",
-      "last_publication_date": "2017-02-09T01:49:07+0000",
+      "last_publication_date": "2017-02-09T04:17:30+0000",
       "slugs": [
         "the-sydney-opera-house--case-study--tribal-ddb",
         "the-sydney-opera-house",
@@ -1303,9 +1367,13 @@
                         "type": "Select",
                         "value": "skyblue"
                       },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
+                      },
                       "mobile-aspect-ratio": {
                         "type": "Select",
-                        "value": "1-1"
+                        "value": "4-3"
                       }
                     }
                   ]
@@ -1320,6 +1388,22 @@
                   "value": [
                     {
                       "background-image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1023,
+                              "height": 530
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/d7820d8b3697552106128c0359ba157257724742_opera2.jpg"
+                          },
+                          "views": {
+                          }
+                        }
+                      },
+                      "image": {
                         "type": "Image",
                         "value": {
                           "main": {
@@ -1363,9 +1447,13 @@
                         "type": "Select",
                         "value": "skyblue"
                       },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
+                      },
                       "mobile-aspect-ratio": {
                         "type": "Select",
-                        "value": "1-1"
+                        "value": "4-3"
                       }
                     }
                   ]
@@ -1411,11 +1499,15 @@
                       },
                       "background-style": {
                         "type": "Select",
-                        "value": "black"
+                        "value": "skyblue"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
                       },
                       "mobile-aspect-ratio": {
                         "type": "Select",
-                        "value": "1-1"
+                        "value": "4-3"
                       }
                     }
                   ]
@@ -1449,9 +1541,13 @@
                         "type": "Select",
                         "value": "skyblue"
                       },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "16-9"
+                      },
                       "mobile-aspect-ratio": {
                         "type": "Select",
-                        "value": "1-1"
+                        "value": "4-3"
                       }
                     }
                   ]
@@ -1466,6 +1562,22 @@
                   "value": [
                     {
                       "background-image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 959,
+                              "height": 530
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/190c62a83bcd60a793f665d042bfa98bd77e8dbb_opera3.jpg"
+                          },
+                          "views": {
+                          }
+                        }
+                      },
+                      "image": {
                         "type": "Image",
                         "value": {
                           "main": {
@@ -1516,6 +1628,14 @@
                       "background-style": {
                         "type": "Select",
                         "value": "black"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
                       }
                     },
                     {
@@ -1544,6 +1664,14 @@
                       "background-style": {
                         "type": "Select",
                         "value": "yellow"
+                      },
+                      "desktop-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
+                      },
+                      "mobile-aspect-ratio": {
+                        "type": "Select",
+                        "value": "4-3"
                       }
                     }
                   ]
