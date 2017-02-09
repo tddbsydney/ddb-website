@@ -155,7 +155,19 @@
                     "placeholder" : "No fade",
                     "options" : [
                       "solid",
-                      "grad"
+                      "grad",
+                      "",
+                      "solid-lightest",
+                      "solid-light",
+                      "solid-half",
+                      "solid-dark",
+                      "solid-darkest",
+                      "",
+                      "grad-lightest",
+                      "grad-light",
+                      "grad-half",
+                      "grad-dark",
+                      "grad-darkest"
                     ]
                   }
                 },
@@ -206,9 +218,33 @@
                     "label" : "Desktop: Width of text",
                     "placeholder" : "full",
                     "options" : [
-                      "three-quarter",
+                      "half",
+                      "",
+                      "three-third",
                       "two-third",
-                      "half"
+                      "one-third",
+                      "",
+                      "four-quarter",
+                      "three-quarter",
+                      "two-quarter",
+                      "one-quarter",
+                      "",
+                      "five-fifth",
+                      "four-fifth",
+                      "three-fifth",
+                      "two-fifth",
+                      "one-fifth",
+                      "",
+                      "100-perc",
+                      "90-perc",
+                      "80-perc",
+                      "70-perc",
+                      "60-perc",
+                      "50-perc",
+                      "40-perc",
+                      "30-perc",
+                      "20-perc",
+                      "10-perc"
                     ]
                   }
                 },
@@ -220,9 +256,11 @@
                     "options" : [
                       "top-center",
                       "top-right",
+                      "",
                       "mid-left",
                       "mid-center",
                       "mid-right",
+                      "",
                       "bot-left",
                       "bot-center",
                       "bot-right"
@@ -263,9 +301,33 @@
                     "label" : "Mobile: Width of text",
                     "placeholder" : "full",
                     "options" : [
-                      "three-quarter",
+                      "half",
+                      "",
+                      "three-third",
                       "two-third",
-                      "half"
+                      "one-third",
+                      "",
+                      "four-quarter",
+                      "three-quarter",
+                      "two-quarter",
+                      "one-quarter",
+                      "",
+                      "five-fifth",
+                      "four-fifth",
+                      "three-fifth",
+                      "two-fifth",
+                      "one-fifth",
+                      "",
+                      "100-perc",
+                      "90-perc",
+                      "80-perc",
+                      "70-perc",
+                      "60-perc",
+                      "50-perc",
+                      "40-perc",
+                      "30-perc",
+                      "20-perc",
+                      "10-perc"
                     ]
                   }
                 },
@@ -277,9 +339,11 @@
                     "options" : [
                       "top-center",
                       "top-right",
+                      "",
                       "mid-left",
                       "mid-center",
                       "mid-right",
+                      "",
                       "bot-left",
                       "bot-center",
                       "bot-right"
@@ -320,35 +384,35 @@
                   "type" : "Text",
                   "config" : {
                     "label" : "Two-Column Left",
-                    "placeholder" : "Left side of a double-collumn"
+                    "placeholder" : "Left side of a double-column"
                   }
                 },
                 "two-column-right" : {
                   "type" : "Text",
                   "config" : {
                     "label" : "Two-Column Right",
-                    "placeholder" : "Right side of a double-collumn"
+                    "placeholder" : "Right side of a double-column"
                   }
                 },
                 "three-column-left" : {
                   "type" : "Text",
                   "config" : {
                     "label" : "Three-Column Left",
-                    "placeholder" : "Left side of a triple-collumn"
+                    "placeholder" : "Left side of a triple-column"
                   }
                 },
                 "three-column-middle" : {
                   "type" : "Text",
                   "config" : {
                     "label" : "Three-Column Middle",
-                    "placeholder" : "Middle side of a triple-collumn"
+                    "placeholder" : "Middle side of a triple-column"
                   }
                 },
                 "three-column-right" : {
                   "type" : "Text",
                   "config" : {
                     "label" : "Three-Column Right",
-                    "placeholder" : "Right side of a triple-collumn"
+                    "placeholder" : "Right side of a triple-column"
                   }
                 },
                 "background-style" : {
@@ -398,9 +462,33 @@
                     "label" : "Desktop: Width of text",
                     "placeholder" : "full",
                     "options" : [
-                      "three-quarter",
+                      "half",
+                      "",
+                      "three-third",
                       "two-third",
-                      "half"
+                      "one-third",
+                      "",
+                      "four-quarter",
+                      "three-quarter",
+                      "two-quarter",
+                      "one-quarter",
+                      "",
+                      "five-fifth",
+                      "four-fifth",
+                      "three-fifth",
+                      "two-fifth",
+                      "one-fifth",
+                      "",
+                      "100-perc",
+                      "90-perc",
+                      "80-perc",
+                      "70-perc",
+                      "60-perc",
+                      "50-perc",
+                      "40-perc",
+                      "30-perc",
+                      "20-perc",
+                      "10-perc"
                     ]
                   }
                 },
@@ -412,9 +500,11 @@
                     "options" : [
                       "top-center",
                       "top-right",
+                      "",
                       "mid-left",
                       "mid-center",
                       "mid-right",
+                      "",
                       "bot-left",
                       "bot-center",
                       "bot-right"
@@ -455,9 +545,33 @@
                     "label" : "Mobile: Width of text",
                     "placeholder" : "full",
                     "options" : [
-                      "three-quarter",
+                      "half",
+                      "",
+                      "three-third",
                       "two-third",
-                      "half"
+                      "one-third",
+                      "",
+                      "four-quarter",
+                      "three-quarter",
+                      "two-quarter",
+                      "one-quarter",
+                      "",
+                      "five-fifth",
+                      "four-fifth",
+                      "three-fifth",
+                      "two-fifth",
+                      "one-fifth",
+                      "",
+                      "100-perc",
+                      "90-perc",
+                      "80-perc",
+                      "70-perc",
+                      "60-perc",
+                      "50-perc",
+                      "40-perc",
+                      "30-perc",
+                      "20-perc",
+                      "10-perc"
                     ]
                   }
                 },
@@ -469,9 +583,11 @@
                     "options" : [
                       "top-center",
                       "top-right",
+                      "",
                       "mid-left",
                       "mid-center",
                       "mid-right",
+                      "",
                       "bot-left",
                       "bot-center",
                       "bot-right"
