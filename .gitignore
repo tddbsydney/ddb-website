@@ -12,6 +12,12 @@
 /.sass-cache
 /.cache
 
+# Ignore bower
+/bower_components
+
+# Ignore compiled assets
+/_src/_compiled_assets/
+
 
 
 #######################################

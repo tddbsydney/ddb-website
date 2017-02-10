@@ -25,14 +25,26 @@ markdown: kramdown
 gems:
   - jekyll-tidy
 exclude:
+  - _app
+  - _src
+  - bower_components
+  - gulp
+  - node_custom
+  - node_modules
+  - .ruby-version
+  - .bowerrc
+  - .gitignore
+  - automated_build.sh
+  - bower.json
+  - circle.yml
+  - data_importer.rb
   - Gemfile
   - Gemfile.lock
-  - vendor/
-  - automated_build.sh
-  - data_importer.rb
-  - circle.yml
-  - .ruby-version
+  - gulpfile.js
+  - npm-debug.log
+  - package.json
   - readme.md
+  - vendor/
 page_gen:
   - data: prismic.case-study
     template: data_page_gen

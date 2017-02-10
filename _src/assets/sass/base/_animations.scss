@@ -1,0 +1,114 @@
+// -------------------------------------
+//   Base - Animations
+// -------------------------------------
+/**
+  * @name animations
+  * @desc Used for setting animations and animation
+          properties used with all elements that 
+          spread across the entire app.
+**/
+
+// -------------------------------------
+//   Animations - JS
+// -------------------------------------
+// JS based animations
+// are prefixed with "animate-"
+
+// CSS based animations
+// are prefixed with "animation-"
+
+// JS based animations are only meant
+// to be used with angular ngAnimate
+
+// -------------------------------------
+//   Animations - JS - In
+// -------------------------------------
+.animate-fade-in,
+.animate-height-in,
+.animate-expand-in,
+.animate-slide-up-in,
+.animate-slide-down-in,
+.animate-translate-right-in,
+
+[animate-fade-in],
+[animate-height-in],
+[animate-expand-in],
+[animate-slide-up-in],
+[animate-slide-down-in],
+[animate-translate-right-in] {
+    outline: 1px solid transparent;
+}
+
+.animate-fade-in,
+.animate-height-in,
+.animate-expand-in,
+.animate-slide-up-in,
+.animate-slide-down-in {
+    &.ng-enter-prepare, 
+    &.velocity-animating { 
+        opacity: 0; 
+    }
+}
+
+.animate-height-in { 
+    overflow: hidden; 
+    box-sizing: border-box;
+}
+
+.animate-translate-right-in {
+    &.ng-enter-prepare, 
+    &.velocity-animating { 
+        transform: translateX(100%);
+    }
+}
+
+[animate-fade-in],
+[animate-height-in],
+[animate-expand-in],
+[animate-slide-up-in], 
+[animate-slide-down-in] {
+    opacity: 0;
+}
+
+[animate-height-in] { overflow: hidden; box-sizing: border-box; }
+[animate-translate-right-in] { transform: translateX(100%); }
+
+// -------------------------------------
+//   Animations - JS - Out
+// -------------------------------------
+.animate-fade-out,
+.animate-height-out,
+.animate-expand-out,
+.animate-slide-up-out,
+.animate-slide-down-out,
+.animate-translate-right-out,
+
+[animate-fade-out],
+[animate-height-out],
+[animate-expand-out],
+[animate-slide-up-out], 
+[animate-slide-down-out],
+[animate-translate-right-out] {
+    outline: 1px solid transparent;
+}
+
+.animate-fade-out,
+.animate-height-out,
+.animate-expand-out,
+.animate-slide-up-out,
+.animate-slide-down-out {
+    &.ng-enter-prepare, 
+    &.velocity-animating { }
+}
+
+.animate-height-out { overflow: hidden; box-sizing: border-box; }
+.animate-translate-right-out { }
+
+[animate-fade-out],
+[animate-height-out],
+[animate-expand-out],
+[animate-slide-up-out], 
+[animate-slide-down-out] { }
+
+[animate-height-out] { overflow: hidden; box-sizing: border-box; }
+[animate-translate-right-out] { }

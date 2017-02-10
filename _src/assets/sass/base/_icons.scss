@@ -1,0 +1,92 @@
+@font-face {
+	font-family: "icons-vw-pricing";
+	src: url('../assets/fonts/icons-vw-pricing.eot');
+	src: url('../assets/fonts/icons-vw-pricing.eot?#iefix') format('eot'),
+		url('../assets/fonts/icons-vw-pricing.woff') format('woff'),
+		url('../assets/fonts/icons-vw-pricing.ttf') format('truetype'),
+		url('../assets/fonts/icons-vw-pricing.svg#icons-vw-pricing') format('svg');
+}
+
+.icon__vwp:before {
+	font-family: "icons-vw-pricing";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon__vwp-icon-arrow-doubledown:before {
+	content: "\E070";
+}
+
+.icon__vwp-icon-arrow-doubleup:before {
+	content: "\E071";
+}
+
+.icon__vwp-icon-arrow-down:before {
+	content: "\E072";
+}
+
+.icon__vwp-icon-arrow-up:before {
+	content: "\E073";
+}
+
+.icon__vwp-icon-brochure:before {
+	content: "\E074";
+}
+
+.icon__vwp-icon-close:before {
+	content: "\E075";
+}
+
+.icon__vwp-icon-disclaimer-plus:before {
+	content: "\E076";
+}
+
+.icon__vwp-icon-explore:before {
+	content: "\E077";
+}
+
+.icon__vwp-icon-link-config:before {
+	content: "\E078";
+}
+
+.icon__vwp-icon-link-email:before {
+	content: "\E079";
+}
+
+.icon__vwp-icon-link-locate:before {
+	content: "\E07A";
+}
+
+.icon__vwp-icon-link-mail:before {
+	content: "\E07B";
+}
+
+.icon__vwp-icon-navigation-phone:before {
+	content: "\E07C";
+}
+
+.icon__vwp-icon-navigation-toggle1:before {
+	content: "\E07D";
+}
+
+.icon__vwp-icon-navigation-toggle2:before {
+	content: "\E07E";
+}
+
+.icon__vwp-icon-nextstep-calculator:before {
+	content: "\E07F";
+}
+
+.icon__vwp-icon-question-mark:before {
+	content: "\E080";
+}
+
+.icon__vwp-icon-support:before {
+	content: "\E081";
+}
