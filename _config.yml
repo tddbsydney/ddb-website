@@ -29,6 +29,8 @@ exclude:
   - _src
   - _dist
   - _build
+  - _assets_src
+  - _assets_dist
   - _site
   - _gulp
   - _node

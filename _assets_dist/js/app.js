@@ -1,3 +1,98 @@
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+"use strict";
+
+// -------------------------------------
+//   Dependencies
+// -------------------------------------
+/** 
+  * @plugins
+**/
+
+// base
+/* empty block */
+
+// services
+/* empty block */
+
+// directives
+/* empty block */
+
+// components
+/* empty block */
+
+// controllers
+/* empty block */
+
+// config
+var CONFIG = require("./config");
+console.log("CONFIG options are:");
+console.log(CONFIG);
+
+// -------------------------------------
+//   App
+// -------------------------------------
+/** 
+  * @name app
+  * @desc The main js file that contains the 
+          run options and functions for the app.
+**/
+
+(function() {
+  console.log("app.js loaded.");
+
+  /** 
+    * @name App
+    * @desc the main class for the app
+    * @return {Object} - the instance of the app class
+    **/
+    function App() {
+      // ---------------------------------------------
+      //   Private members
+      // ---------------------------------------------
+      /* empty block */
+      // ---------------------------------------------
+      //   Public members
+      // ---------------------------------------------
+      /* empty block */
+
+      // ---------------------------------------------
+      //   Private methods
+      // ---------------------------------------------
+      /* empty block */
+
+      // ---------------------------------------------
+      //   Public methods
+      // ---------------------------------------------
+      // @name init
+      // @desc init function to initialize the app
+      function init() { }
+
+      // @name destory
+      // @desc destory function to destroy the app
+      function destroy() { }
+
+      // ---------------------------------------------
+      //   Constructor block
+      // ---------------------------------------------
+      /* empty block */
+
+      // ---------------------------------------------
+      //   Instance block
+      // ---------------------------------------------
+      return {
+        init: init, // init function for the controller
+        destroy: destroy // destory function for the controller
+      };
+    }
+
+  // ---------------------------------------------
+  //   Run block
+  // ---------------------------------------------
+  var app = new App(); // create a new app
+  app.init(); // initiate the created app
+
+})();
+},{"./config":2}],2:[function(require,module,exports){
 "use strict";
 
 // -------------------------------------
@@ -291,7 +386,7 @@
     // function to get the path for images
     // @return {String} - returns the path
     function getImagesPath() {
-      var imagesPath = "assets/images/";
+      var imagesPath = "images/";
       return !_bd.isProd ? _src + imagesPath : _dist + imagesPath;
     }
 
@@ -299,7 +394,7 @@
     // function to get the path for videos
     // @return {String} - returns the path
     function getVideosPath() {
-      var videosPath = "assets/videos/";
+      var videosPath = "videos/";
       return !_bd.isProd ? _src + videosPath : _dist + videosPath;
     }
 
@@ -384,3 +479,4 @@
   module.exports = new CONFIG();
 
 })();
+},{}]},{},[1]);
