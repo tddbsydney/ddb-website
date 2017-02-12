@@ -29,7 +29,6 @@ var buffer = require('vinyl-buffer');
 var browserify = require('browserify');
 
 var uglify = require('gulp-uglify');
-var replace = require('gulp-replace');
 var ngAnnotate = require('gulp-ng-annotate');
 var stripDebug = require('gulp-strip-debug');
 
@@ -77,15 +76,15 @@ gulp.task('scripts:default', function(callback) {
 gulp.task('scripts:clean', function () {
   // source folders / files for the task
   var source = [
-    config.files.root.prod + config.files.scripts.js, // app files
-    config.files.root.prod + config.files.scripts.dependencies // dependency files
+    config.files.root.prod + config.files.scripts.dependencies, // dependency files
+    config.files.root.prod + config.files.scripts.js // app files
   ];
 
   // add deploy folders / files into 
   // source in deployment mode
   if(config.mode.isDeploy) {
-    source.push(config.files.root.deploy + config.files.scripts.js); // app files
     source.push(config.files.root.deploy + config.files.scripts.dependencies); // dependency files
+    source.push(config.files.root.deploy + config.files.scripts.js); // app files
   }
 
   //  return task stream

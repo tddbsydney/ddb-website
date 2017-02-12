@@ -1,12 +1,12 @@
 'use strict';
 
 // -------------------------------------
-//   Gulp - Site
+//   Gulp - Jekyll
 // -------------------------------------
 /** 
-  * @name site
+  * @name jekyll
   * @desc The js file that contains the functions 
-          for compiling files for the site.
+          for compiling files for the jekyll site.
 **/
 
 // -------------
@@ -33,32 +33,32 @@ var watchers = require('../config.js').getWatchers();
 // ----------------------------------------------------------------------
 // ----------------------------------------------------------------------
 // ----------------------------------------
-// SITE - MAIN TASK
+// JEKYLL - MAIN TASK
 // ----------------------------------------
-gulp.task('site', function(callback) {
+gulp.task('jekyll', function(callback) {
   // run the default task first, 
   // and then the watch task, and
   // finally the callback on complete
   return runSequence(
-    'site:default',
-    'site:watch', 
+    'jekyll:default',
+    'jekyll:watch', 
     callback
   );
 });
 
-// 0. SITE - DEFAULT TASK
-gulp.task('site:default', function(callback) {
+// 0. JEKYLL - DEFAULT TASK
+gulp.task('jekyll:default', function(callback) {
   // run all tasks in sequence
   // and the callback on complete
   return runSequence(
-    'site:clean',
-    'site:copy',
+    'jekyll:clean',
+    'jekyll:copy',
     callback
   );
 });
 
-// 1. SITE - CLEAN
-gulp.task('site:clean', function () {
+// 1. JEKYLL - CLEAN
+gulp.task('jekyll:clean', function () {
   // only clean files when
   // in deployment mode
   if(!config.mode.isDeploy) {
@@ -67,26 +67,30 @@ gulp.task('site:clean', function () {
 
   // source folders / files for the task
   var source = [
-    config.files.root.site + config.files.styles.css, // app files
-    config.files.root.site + config.files.scripts.js, // app files
-    config.files.root.site + config.files.styles.dependencies,  // dependency files
-    config.files.root.site + config.files.scripts.dependencies, // dependency files
+    config.files.root.jekyll + config.files.styles.dependencies,  // dependency files
+    config.files.root.jekyll + config.files.scripts.dependencies, // dependency files
+    config.files.root.jekyll + config.files.styles.css, // app files
+    config.files.root.jekyll + config.files.scripts.js, // app files
 
-    config.files.root.site + config.files.assets.fonts,  // font files
-    config.files.root.site + config.files.assets.icons,  // icon files
-    config.files.root.site + config.files.assets.images, // image files
-    config.files.root.site + config.files.assets.videos  // video files
+    config.files.root.jekyll + config.files.assets.fonts,  // font files
+    config.files.root.jekyll + config.files.assets.icons,  // icon files
+    config.files.root.jekyll + config.files.assets.images, // image files
+    config.files.root.jekyll + config.files.assets.videos  // video files
   ];
 
   //  return task stream
   return gulp.src(source, { read: false })
 
+    // the delay is to ensure
+    // that no tasks are pending
+    .pipe(wait(config.wait.jekyll))
+
     // clean the folders / files
     .pipe(rimraf({ force: true }));
 });
 
-// 2. SITE - COPY
-gulp.task('site:copy', function() {
+// 2. JEKYLL - COPY
+gulp.task('jekyll:copy', function() {
   // only copy files when
   // in deployment mode
   if(!config.mode.isDeploy) {
@@ -99,31 +103,29 @@ gulp.task('site:copy', function() {
   ];
 
   // destination folder for the task
-  var destination = config.files.root.site;
+  var destination = config.files.root.jekyll;
 
   // return task stream
   return gulp.src(source)
-
-    // the delay is to ensure
-    // that no tasks are pending
-    .pipe(wait(config.wait))
 
     // copy files to new folder ( in deployment mode )
     .pipe(gulpif(config.mode.isDeploy, gulp.dest(destination)));
 });
 
-// 3. SITE - WATCH
-gulp.task('site:watch', function() {
+// 3. JEKYLL - WATCH
+gulp.task('jekyll:watch', function() {
   // source folders / files for the task
   var source = [
-    config.files.root.site + '**/*.html' // app files
+    config.files.root.dev + config.files.styles.sass + '**/*.*', // app sass files
+    config.files.root.dev + config.files.scripts.js + '**/*.*', // app js files
+    config.files.root.jekyll + '**/*.html' // jekyll html files
   ];
 
   // push watcher into the main
   // array, and return the new size
   return watchers.push(gulp.watch(
     source,  // files to watch for
-    ['site:default'] // tasks to run on change
+    ['jekyll:default'] // tasks to run on change
   ));
 });
 

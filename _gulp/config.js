@@ -16,15 +16,15 @@ var config = {
   // flags for gulp mode
   // ( and mode options )
   mode: {
-    isProd: false, // turn production mode on/off,
+    isProd: false,   // turn production mode on/off,
     isDeploy: false, // turn deployment mode on/off
 
-    isMapped: true, // turn creating source maps on/off
-    isWatched: true, // turn watchers on files, assets on/off
+    isMapped: true,    // turn creating source maps on/off
+    isWatched: true,   // turn watchers on files, assets on/off
     isStripped: false, // turn stripping comments, logs on/off
 
-    hasPHP: false, // turn creating php index file on/off
-    hasASPX: false, // turn creating aspx index file on/off
+    hasPHP: false,    // turn creating php index file on/off
+    hasASPX: false,   // turn creating aspx index file on/off
     hasPartial: false // turn creating partial index file on/off
   },
 
@@ -32,7 +32,10 @@ var config = {
   // wait to ensure all pending
   // tasks in the thread have
   // been completed
-  wait: 2000,
+  wait: {  
+    jekyll: 2000, // the wait time for jekyll
+    complete: 1000 // the wait time for complete
+  },
 
   // files to exclude while
   // wiring dependencies
@@ -46,8 +49,8 @@ var config = {
     root: {
       dev: "_src/", // for development files
       prod: "_dist/", // for compiled production files
-      site: "_site/", // for the integrated site files
-      deploy: "_build/" // for compiled deployment files
+      deploy: "_build/", // for compiled deployment files
+      jekyll: "_site/",  // for the generated jekyll files
     },
 
     // for styles
@@ -72,10 +75,10 @@ var config = {
 
     // for assets
     assets: {
-      fonts : "assets/fonts/", // for fonts
-      icons : "assets/icons/", // for icons
+      fonts : "assets/fonts/",  // for fonts
+      icons : "assets/icons/",  // for icons
       images: "assets/images/", // for images
-      videos: "assets/videos/" // for videos
+      videos: "assets/videos/"  // for videos
     }
   },
 

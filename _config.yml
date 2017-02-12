@@ -29,10 +29,11 @@ exclude:
   - _src
   - _dist
   - _build
-  - gulp
-  - bower_components
+  - _site
+  - _gulp
+  - _node
   - node_modules
-  - node_custom
+  - bower_components
   - automated_build.sh
   - data_importer.rb
   - npm-debug.log

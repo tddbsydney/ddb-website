@@ -119,9 +119,9 @@ gulp.task('default', function(callback) {
     /*'index',*/ // index files
     /*'serve',*/ // serve files
 
-    'site', // site integration
+    'jekyll',   // jekyll files
     'complete', // run complete
-    callback // run the callback
+    callback    // run callback
   );
 });
 
@@ -198,7 +198,7 @@ gulp.task('complete', function() {
 
     // the delay is to ensure
     // that no tasks are pending
-    .pipe(wait(config.wait))
+    .pipe(wait(config.wait.complete))
 
     // output the complete notification message
     // if no error occurred in any of the tasks

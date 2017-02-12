@@ -73,15 +73,15 @@ gulp.task('styles:default', function(callback) {
 gulp.task('styles:clean', function () {
   // source folders / files for the task
   var source = [
-    config.files.root.prod + config.files.styles.css, // app files
-    config.files.root.prod + config.files.styles.dependencies // dependency files
+    config.files.root.prod + config.files.styles.dependencies, // dependency files
+    config.files.root.prod + config.files.styles.css // app files
   ];
 
   // add deploy folders / files into 
   // source in deployment mode
   if(config.mode.isDeploy) {
-    source.push(config.files.root.deploy + config.files.styles.css); // app files
     source.push(config.files.root.deploy + config.files.styles.dependencies); // dependency files
+    source.push(config.files.root.deploy + config.files.styles.css); // app files
   }
 
   //  return task stream
