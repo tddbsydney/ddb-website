@@ -28,6 +28,12 @@ var config = {
     hasPartial: false // turn creating partial index file on/off
   },
 
+  // the time used by a task to
+  // wait to ensure all pending
+  // tasks in the thread have
+  // been completed
+  wait: 2000,
+
   // files to exclude while
   // wiring dependencies
   // ( uses regex )
@@ -40,7 +46,8 @@ var config = {
     root: {
       dev: "_src/", // for development files
       prod: "_dist/", // for compiled production files
-      deploy: "_site/", // for compiled deployment files
+      site: "_site/", // for the integrated site files
+      deploy: "_build/" // for compiled deployment files
     },
 
     // for styles

@@ -106,19 +106,20 @@ gulp.task('default', function(callback) {
   // run all tasks in squence
   // and the callback on complete
   return runSequence(
-    'assets:icons', // compile icons
-    'assets:fonts', // compile fonts
+    'assets:icons',  // compile icons
+    'assets:fonts',  // compile fonts
     'assets:images', // compile images
     'assets:videos', // compile videos
 
     /*'data',*/ // compile data
     /*'html',*/ // compile html
-    'styles', // compile styles
+    'styles',  // compile styles
     'scripts', // compile scripts
 
     /*'index',*/ // index files
     /*'serve',*/ // serve files
 
+    'site', // site integration
     'complete', // run complete
     callback // run the callback
   );
@@ -197,7 +198,7 @@ gulp.task('complete', function() {
 
     // the delay is to ensure
     // that no tasks are pending
-    .pipe(wait(2000))
+    .pipe(wait(config.wait))
 
     // output the complete notification message
     // if no error occurred in any of the tasks
