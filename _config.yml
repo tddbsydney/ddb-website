@@ -27,24 +27,25 @@ gems:
 exclude:
   - _app
   - _src
-  - bower_components
+  - _dist
+  - _build
   - gulp
-  - node_custom
+  - bower_components
   - node_modules
+  - node_custom
+  - automated_build.sh
+  - data_importer.rb
+  - npm-debug.log
+  - circle.yml
+  - Gemfile.lock
+  - Gemfile
+  - package.json
+  - gulpfile.js
+  - bower.json
+  - readme.md
   - .ruby-version
   - .bowerrc
   - .gitignore
-  - automated_build.sh
-  - bower.json
-  - circle.yml
-  - data_importer.rb
-  - Gemfile
-  - Gemfile.lock
-  - gulpfile.js
-  - npm-debug.log
-  - package.json
-  - readme.md
-  - vendor/
 page_gen:
   - data: prismic.case-study
     template: data_page_gen

@@ -1,8 +1,11 @@
-{% comment %} <!--
+{% comment %} 
+<!--
   http://ricostacruz.com/til/relative-paths-in-jekyll
-
+  
   Allows us to use a variable to create pseudo-relative links
---> {% endcomment %}
+--> 
+{% endcomment %}
+
 {% assign base = '' %}
 {% assign depth = page.url | split: '/' | size %}
 {% if    depth <= 1 %}{% assign base = '.' %}

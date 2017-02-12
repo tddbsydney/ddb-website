@@ -15,17 +15,15 @@
 # Ignore bower
 /bower_components
 
-# Ignore compiled assets
-/_src/_compiled_assets/
-
+# Ignore compiled files
+/_dist
+/_build
 
 
 #######################################
 # The rest of these are from:         #
 # https://github.com/github/gitignore #
 #######################################
-
-
 
 # -------------------------------------
 # Ruby

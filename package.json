@@ -2,8 +2,8 @@
   "name": "ddb-website",
   "version": "1.0.0",
   "private": true,
-
-  "author": "Pradeep",
+  
+  "author": "Pradeep & Chris",
   "description": "DDB Website",
   "license": "ISC",
 
@@ -28,7 +28,7 @@
     "gulp-exit": "0.0.2",
     "gulp-file-include": "^1.0.0",
     "gulp-iconfont": "^8.0.1",
-    "gulp-iconfont-css": "./node_custom/gulp-iconfont-css",
+    "gulp-iconfont-css": "./_node/gulp-iconfont-css",
     "gulp-if": "^2.0.1",
     "gulp-imagemin": "^3.1.0",
     "gulp-inject": "^4.1.0",
@@ -48,6 +48,7 @@
     "gulp-strip-debug": "^1.1.0",
     "gulp-uglify": "^1.5.4",
     "gulp-util": "^3.0.7",
+    "gulp-wait": "0.0.2",
     "gulp-webserver": "^0.9.1",
     "jimp": "^0.2.24",
     "jsonfile": "^2.3.1",
@@ -61,6 +62,5 @@
     "vinyl-source-stream": "^1.1.0",
     "wiredep": "^4.0.0"
   },
-
   "ignoredDependencies": []
 }
