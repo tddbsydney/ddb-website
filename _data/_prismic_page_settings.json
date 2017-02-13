@@ -1,75 +1,67 @@
 {
-  "Metadata" : {
+  "Page" : {
     "uid" : {
       "type" : "UID",
       "config" : {
         "placeholder" : "unique-identifier-for-page-url"
       }
     },
-    "title" : {
+    "meta-title" : {
       "type" : "Text",
       "config" : {
-        "label" : "Title",
+        "label" : "Meta: Title",
         "placeholder" : "Page title"
       }
     },
-    "description" : {
+    "meta-description" : {
       "type" : "Text",
       "config" : {
-        "label" : "Description",
+        "label" : "Meta: Description",
         "placeholder" : "Page description"
       }
     },
-    "header" : {
-      "type" : "Select",
-      "config" : {
-        "label" : "Header Visibility",
-        "placeholder" : "shown",
-        "options" : [
-          "hidden"
-        ]
+    "foregroundColor": {
+      "type": "Color",
+      "config": {
+        "label": "Foreground Colour"
       }
     },
-    "footer" : {
-      "type" : "Select",
-      "config" : {
-        "label" : "Footer Visibility",
-        "placeholder" : "shown",
-        "options" : [
-          "hidden"
-        ]
+    "backgroundColor": {
+      "type": "Color",
+      "config": {
+        "label": "Background Colour"
       }
     }
   },
+
+
+
   "Content" : {
     "sections" : {
       "fieldset" : "Sections",
       "type" : "Slices",
       "config" : {
         "choices" : {
-          "promo" : {
+
+
+
+          "promo-video" : {
             "type" : "Group",
             "config" : {
-              "label" : "Promo section",
+              "label" : "Promo video",
               "repeat" : false,
               "fields" : {
-                "heading" : {
+                "headline" : {
                   "type" : "Text",
                   "config" : {
-                    "label" : "Promo Heading",
-                    "placeholder" : "Promo heading"
+                    "label" : "Headline",
+                    "placeholder" : "Headline text"
                   }
                 },
-                "background-video" : {
-                  "type" : "Link",
-                  "config" : {
-                    "label" : "Promo Background Video"
-                  }
-                },
-                "background-image" : {
+                "image" : {
                   "type" : "Image",
                   "config" : {
-                    "label" : "Promo Background Image",
+                    "label" : "Image",
                     "constraint" : {
                       "width" : null,
                       "height" : null
@@ -77,70 +69,209 @@
                     "thumbnails" : [ ]
                   }
                 },
-                "background-style" : {
-                  "type" : "Select",
+                "video" : {
+                  "type" : "Link",
                   "config" : {
-                    "label" : "Promo Background Style",
-                    "placeholder" : "No style",
-                    "options" : [
-                      "white",
-                      "black",
-                      "yellow",
-                      "skyblue"
-                    ]
+                    "label" : "Video"
+                  }
+                },
+                "foregroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Foreground Colour"
+                  }
+                },
+                "backgroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Background Colour"
                   }
                 }
               }
             }
           },
-          "tiles" : {
+
+
+
+          "case-study-tile" : {
             "type" : "Group",
             "config" : {
-              "label" : "Tile section",
-              "repeat" : true,
+              "label" : "Case Study tile",
+              "repeat" : false,
               "fields" : {
-                "title" : {
+                "headline" : {
                   "type" : "Text",
                   "config" : {
-                    "label" : "Title",
-                    "placeholder" : "Tile's title/heading"
+                    "label" : "Headline",
+                    "placeholder" : "Headline text"
                   }
                 },
-                "text" : {
+                "copy" : {
                   "type" : "Text",
                   "config" : {
-                    "label" : "Text",
-                    "placeholder" : "Tile's main text"
+                    "label" : "Copy",
+                    "placeholder" : "Copy text"
                   }
                 },
-                "link" : {
+                "image" : {
+                  "type" : "Image",
+                  "config" : {
+                    "label" : "Image",
+                    "constraint" : {
+                      "width" : null,
+                      "height" : null
+                    },
+                    "thumbnails" : [ ]
+                  }
+                },
+                "linkUrl" : {
                   "type" : "Link",
                   "config" : {
-                    "label" : "Link",
-                    "placeholder" : "Tile's link to somewhere"
+                    "label" : "Link URL",
+                    "placeholder" : "Link URL"
                   }
                 },
-                "link-text" : {
+                "linkText" : {
                   "type" : "Text",
                   "config" : {
                     "label" : "Link Text",
-                    "placeholder" : "Tile's link text"
+                    "placeholder" : "Link text"
                   }
                 },
-                "width" : {
+                "align" : {
                   "type" : "Select",
                   "config" : {
-                    "label" : "Width",
-                    "placeholder" : "full",
+                    "label" : "Alignment",
+                    "placeholder" : "left",
                     "options" : [
-                      "half"
+                      "center",
+                      "right",
+                      "",
+                      "topLeft",
+                      "topCenter",
+                      "topRight",
+                      "",
+                      "bottomLeft",
+                      "bottomCenter",
+                      "bottomRight"
                     ]
                   }
                 },
-                "background-image" : {
+                "foregroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Foreground Colour"
+                  }
+                },
+                "backgroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Background Colour"
+                  }
+                }
+              }
+            }
+          },
+
+
+
+          "article-tile" : {
+            "type" : "Group",
+            "config" : {
+              "label" : "Article tiles",
+              "repeat" : true,
+              "fields" : {
+                "headline" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Headline",
+                    "placeholder" : "Headline text"
+                  }
+                },
+                "copy" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Copy",
+                    "placeholder" : "Copy text"
+                  }
+                },
+                "linkUrl" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Link URL",
+                    "placeholder" : "Link URL"
+                  }
+                },
+                "linkText" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Link Text",
+                    "placeholder" : "Link text"
+                  }
+                },
+                "foregroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Foreground Colour"
+                  }
+                },
+                "backgroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Background Colour"
+                  }
+                }
+              }
+            }
+          },
+
+
+
+
+
+
+
+
+
+
+          "content-tile" : {
+            "type" : "Group",
+            "config" : {
+              "label" : "Content tile",
+              "repeat" : false,
+              "fields" : {
+                "headline" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Headline",
+                    "placeholder" : "Headline text"
+                  }
+                },
+                "subline" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Subline",
+                    "placeholder" : "Subline text"
+                  }
+                },
+                "copy" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Copy",
+                    "placeholder" : "Copy text"
+                  }
+                },
+                "list": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "List",
+                    "multi": "list-item, o-list-item"
+                  }
+                },
+                "image" : {
                   "type" : "Image",
                   "config" : {
-                    "label" : "Background Image",
+                    "label" : "Image",
                     "constraint" : {
                       "width" : null,
                       "height" : null
@@ -148,459 +279,28 @@
                     "thumbnails" : [ ]
                   }
                 },
-                "background-fade" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Background Fade",
-                    "placeholder" : "No fade",
-                    "options" : [
-                      "solid",
-                      "grad",
-                      "",
-                      "solid-lightest",
-                      "solid-light",
-                      "solid-half",
-                      "solid-dark",
-                      "solid-darkest",
-                      "",
-                      "grad-lightest",
-                      "grad-light",
-                      "grad-half",
-                      "grad-dark",
-                      "grad-darkest"
-                    ]
+                "foregroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Foreground Colour"
                   }
                 },
-                "background-style" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Background Style",
-                    "placeholder" : "No style",
-                    "options" : [
-                      "white",
-                      "black",
-                      "yellow",
-                      "skyblue"
-                    ]
-                  }
-                },
-
-
-
-
-                "desktop-aspect-ratio" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Desktop: Aspect Ratio",
-                    "placeholder" : "fullscreen",
-                    "options" : [
-                      "1-1",
-                      "16-9",
-                      "4-3",
-                      "2-3"
-                    ]
-                  }
-                },
-                "desktop-content-alignment" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Desktop: Alignment of text",
-                    "placeholder" : "left",
-                    "options" : [
-                      "center",
-                      "right"
-                    ]
-                  }
-                },
-                "desktop-content-width" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Desktop: Width of text",
-                    "placeholder" : "full",
-                    "options" : [
-                      "half",
-                      "",
-                      "three-third",
-                      "two-third",
-                      "one-third",
-                      "",
-                      "four-quarter",
-                      "three-quarter",
-                      "two-quarter",
-                      "one-quarter",
-                      "",
-                      "five-fifth",
-                      "four-fifth",
-                      "three-fifth",
-                      "two-fifth",
-                      "one-fifth",
-                      "",
-                      "100-perc",
-                      "90-perc",
-                      "80-perc",
-                      "70-perc",
-                      "60-perc",
-                      "50-perc",
-                      "40-perc",
-                      "30-perc",
-                      "20-perc",
-                      "10-perc"
-                    ]
-                  }
-                },
-                "desktop-content-position" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Desktop: Position of text",
-                    "placeholder" : "top-left",
-                    "options" : [
-                      "top-center",
-                      "top-right",
-                      "",
-                      "mid-left",
-                      "mid-center",
-                      "mid-right",
-                      "",
-                      "bot-left",
-                      "bot-center",
-                      "bot-right"
-                    ]
-                  }
-                },
-
-
-
-
-                "mobile-aspect-ratio" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Mobile: Aspect Ratio",
-                    "placeholder" : "fullscreen",
-                    "options" : [
-                      "1-1",
-                      "16-9",
-                      "4-3",
-                      "2-3"
-                    ]
-                  }
-                },
-                "mobile-content-alignment" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Mobile: Alignment of text",
-                    "placeholder" : "left",
-                    "options" : [
-                      "center",
-                      "right"
-                    ]
-                  }
-                },
-                "mobile-content-width" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Mobile: Width of text",
-                    "placeholder" : "full",
-                    "options" : [
-                      "half",
-                      "",
-                      "three-third",
-                      "two-third",
-                      "one-third",
-                      "",
-                      "four-quarter",
-                      "three-quarter",
-                      "two-quarter",
-                      "one-quarter",
-                      "",
-                      "five-fifth",
-                      "four-fifth",
-                      "three-fifth",
-                      "two-fifth",
-                      "one-fifth",
-                      "",
-                      "100-perc",
-                      "90-perc",
-                      "80-perc",
-                      "70-perc",
-                      "60-perc",
-                      "50-perc",
-                      "40-perc",
-                      "30-perc",
-                      "20-perc",
-                      "10-perc"
-                    ]
-                  }
-                },
-                "mobile-content-position" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Mobile: Position of text",
-                    "placeholder" : "top-left",
-                    "options" : [
-                      "top-center",
-                      "top-right",
-                      "",
-                      "mid-left",
-                      "mid-center",
-                      "mid-right",
-                      "",
-                      "bot-left",
-                      "bot-center",
-                      "bot-right"
-                    ]
+                "backgroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Background Colour"
                   }
                 }
               }
             }
           },
-          "case-study-text" : {
+
+
+
+          "image-tile" : {
             "type" : "Group",
             "config" : {
-              "label" : "Case Study: Text section",
-              "repeat" : false,
-              "fields" : {
-                "title" : {
-                  "type" : "Text",
-                  "config" : {
-                    "label" : "Title",
-                    "placeholder" : "Title/heading"
-                  }
-                },
-                "text" : {
-                  "type" : "Text",
-                  "config" : {
-                    "label" : "Text",
-                    "placeholder" : "Main text"
-                  }
-                },
-                "subtext" : {
-                  "type" : "Text",
-                  "config" : {
-                    "label" : "Subtext",
-                    "placeholder" : "Subtext"
-                  }
-                },
-                "two-column-left" : {
-                  "type" : "Text",
-                  "config" : {
-                    "label" : "Two-Column Left",
-                    "placeholder" : "Left side of a double-column"
-                  }
-                },
-                "two-column-right" : {
-                  "type" : "Text",
-                  "config" : {
-                    "label" : "Two-Column Right",
-                    "placeholder" : "Right side of a double-column"
-                  }
-                },
-                "three-column-left" : {
-                  "type" : "Text",
-                  "config" : {
-                    "label" : "Three-Column Left",
-                    "placeholder" : "Left side of a triple-column"
-                  }
-                },
-                "three-column-middle" : {
-                  "type" : "Text",
-                  "config" : {
-                    "label" : "Three-Column Middle",
-                    "placeholder" : "Middle side of a triple-column"
-                  }
-                },
-                "three-column-right" : {
-                  "type" : "Text",
-                  "config" : {
-                    "label" : "Three-Column Right",
-                    "placeholder" : "Right side of a triple-column"
-                  }
-                },
-                "background-style" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Background Style",
-                    "placeholder" : "No style",
-                    "options" : [
-                      "white",
-                      "black",
-                      "yellow",
-                      "skyblue"
-                    ]
-                  }
-                },
-
-
-
-
-                "desktop-aspect-ratio" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Desktop: Aspect Ratio",
-                    "placeholder" : "fullscreen",
-                    "options" : [
-                      "1-1",
-                      "16-9",
-                      "4-3",
-                      "2-3"
-                    ]
-                  }
-                },
-                "desktop-content-alignment" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Desktop: Alignment of text",
-                    "placeholder" : "left",
-                    "options" : [
-                      "center",
-                      "right"
-                    ]
-                  }
-                },
-                "desktop-content-width" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Desktop: Width of text",
-                    "placeholder" : "full",
-                    "options" : [
-                      "half",
-                      "",
-                      "three-third",
-                      "two-third",
-                      "one-third",
-                      "",
-                      "four-quarter",
-                      "three-quarter",
-                      "two-quarter",
-                      "one-quarter",
-                      "",
-                      "five-fifth",
-                      "four-fifth",
-                      "three-fifth",
-                      "two-fifth",
-                      "one-fifth",
-                      "",
-                      "100-perc",
-                      "90-perc",
-                      "80-perc",
-                      "70-perc",
-                      "60-perc",
-                      "50-perc",
-                      "40-perc",
-                      "30-perc",
-                      "20-perc",
-                      "10-perc"
-                    ]
-                  }
-                },
-                "desktop-content-position" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Desktop: Position of text",
-                    "placeholder" : "top-left",
-                    "options" : [
-                      "top-center",
-                      "top-right",
-                      "",
-                      "mid-left",
-                      "mid-center",
-                      "mid-right",
-                      "",
-                      "bot-left",
-                      "bot-center",
-                      "bot-right"
-                    ]
-                  }
-                },
-
-
-
-
-                "mobile-aspect-ratio" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Mobile: Aspect Ratio",
-                    "placeholder" : "fullscreen",
-                    "options" : [
-                      "1-1",
-                      "16-9",
-                      "4-3",
-                      "2-3"
-                    ]
-                  }
-                },
-                "mobile-content-alignment" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Mobile: Alignment of text",
-                    "placeholder" : "left",
-                    "options" : [
-                      "center",
-                      "right"
-                    ]
-                  }
-                },
-                "mobile-content-width" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Mobile: Width of text",
-                    "placeholder" : "full",
-                    "options" : [
-                      "half",
-                      "",
-                      "three-third",
-                      "two-third",
-                      "one-third",
-                      "",
-                      "four-quarter",
-                      "three-quarter",
-                      "two-quarter",
-                      "one-quarter",
-                      "",
-                      "five-fifth",
-                      "four-fifth",
-                      "three-fifth",
-                      "two-fifth",
-                      "one-fifth",
-                      "",
-                      "100-perc",
-                      "90-perc",
-                      "80-perc",
-                      "70-perc",
-                      "60-perc",
-                      "50-perc",
-                      "40-perc",
-                      "30-perc",
-                      "20-perc",
-                      "10-perc"
-                    ]
-                  }
-                },
-                "mobile-content-position" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Mobile: Position of text",
-                    "placeholder" : "top-left",
-                    "options" : [
-                      "top-center",
-                      "top-right",
-                      "",
-                      "mid-left",
-                      "mid-center",
-                      "mid-right",
-                      "",
-                      "bot-left",
-                      "bot-center",
-                      "bot-right"
-                    ]
-                  }
-                }
-              }
-            }
-          },
-          "case-study-image" : {
-            "type" : "Group",
-            "config" : {
-              "label" : "Case Study: Image section",
+              "label" : "Image tile",
               "repeat" : false,
               "fields" : {
                 "image" : {
@@ -614,26 +314,22 @@
                     "thumbnails" : [ ]
                   }
                 },
-                "background-style" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Background Style",
-                    "placeholder" : "No style",
-                    "options" : [
-                      "white",
-                      "black",
-                      "yellow",
-                      "skyblue"
-                    ]
+                "backgroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Background Colour"
                   }
                 }
               }
             }
           },
-          "case-study-video" : {
+
+
+
+          "video-tile" : {
             "type" : "Group",
             "config" : {
-              "label" : "Case Study: Video section",
+              "label" : "Video tile",
               "repeat" : false,
               "fields" : {
                 "video" : {
@@ -642,102 +338,130 @@
                     "label" : "Video"
                   }
                 },
-                "background-style" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Background Style",
-                    "placeholder" : "No style",
-                    "options" : [
-                      "white",
-                      "black",
-                      "yellow",
-                      "skyblue"
-                    ]
-                  }
-                },
-                "video-aspect-ratio" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Video Asepct Ratio",
-                    "placeholder" : "16-9",
-                    "options" : [
-                      "4-3"
-                    ]
+                "backgroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Background Colour"
                   }
                 }
               }
             }
           },
-          "case-study-video-multi" : {
+
+
+
+
+
+
+
+
+
+
+          "about-tile" : {
             "type" : "Group",
             "config" : {
-              "label" : "Case Study: Multi-video section",
-              "repeat" : true,
+              "label" : "About tile",
+              "repeat" : false,
               "fields" : {
-                "background-style" : {
-                  "type" : "Select",
+                "headline" : {
+                  "type" : "Text",
                   "config" : {
-                    "label" : "Background Style",
-                    "placeholder" : "No style",
-                    "options" : [
-                      "white",
-                      "black",
-                      "yellow",
-                      "skyblue"
-                    ]
+                    "label" : "Headline",
+                    "placeholder" : "Headline text"
                   }
                 },
-                "video1" : {
-                  "type" : "Link",
+                "copy" : {
+                  "type" : "Text",
                   "config" : {
-                    "label" : "First video"
+                    "label" : "Copy",
+                    "placeholder" : "Copy text"
                   }
                 },
-                "video2" : {
-                  "type" : "Link",
+                "image" : {
+                  "type" : "Image",
                   "config" : {
-                    "label" : "Second video"
+                    "label" : "Image",
+                    "constraint" : {
+                      "width" : null,
+                      "height" : null
+                    },
+                    "thumbnails" : [ ]
                   }
                 },
-                "video3" : {
-                  "type" : "Link",
-                  "config" : {
-                    "label" : "Third video"
+                "foregroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Foreground Colour"
                   }
                 },
-                "video4" : {
-                  "type" : "Link",
+                "backgroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Background Colour"
+                  }
+                }
+              }
+            }
+          },
+
+
+
+
+
+
+
+
+
+
+          "rules-tile" : {
+            "type" : "Group",
+            "config" : {
+              "label" : "Rules tile",
+              "repeat" : false,
+              "fields" : {
+                "headline" : {
+                  "type" : "Text",
                   "config" : {
-                    "label" : "Fourth video"
+                    "label" : "Headline",
+                    "placeholder" : "Headline text"
                   }
                 },
-                "video5" : {
-                  "type" : "Link",
+                "copy" : {
+                  "type" : "Text",
                   "config" : {
-                    "label" : "Fifth video"
+                    "label" : "Copy",
+                    "placeholder" : "Copy text"
                   }
                 },
-                "video6" : {
-                  "type" : "Link",
+                "image" : {
+                  "type" : "Image",
                   "config" : {
-                    "label" : "Sixth video"
+                    "label" : "Image",
+                    "constraint" : {
+                      "width" : null,
+                      "height" : null
+                    },
+                    "thumbnails" : [ ]
                   }
                 },
-                "video7" : {
-                  "type" : "Link",
-                  "config" : {
-                    "label" : "Seventh video"
+                "foregroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Foreground Colour"
                   }
                 },
-                "video8" : {
-                  "type" : "Link",
-                  "config" : {
-                    "label" : "Eighth video"
+                "backgroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Background Colour"
                   }
                 }
               }
             }
           }
+
+
+
         }
       }
     }
