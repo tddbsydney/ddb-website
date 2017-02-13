@@ -1,0 +1,36 @@
+{% assign tile = include.data[0] %}
+
+<section class="section-promo-video">
+
+  {% if tile.headline.value %}
+    <p>{{ tile.headline.value }}</p>
+  {% endif %}
+
+  {% if tile.image.main.value %}
+    <img src="{{ tile.image.main.value }}">
+  {% endif %}
+
+  {% if tile.video.value.url %}
+    {% assign segs = tile.video.value.url | split: "/" %}
+
+    {% for seg in segs %}
+      {% if seg == "www.youtube.com" %}
+        {% assign isYoutube = true %}
+      {% endif %}
+    {% endfor %}
+
+    {% if isYoutube == true %}
+      {% assign youUrl = tile.video.value.url | replace_first "watch?v=", "embed?" %}
+    {% endif %}
+
+    {% if isYoutube == true %}
+      <iframe type="text/html" src="{{ tile.video.value.url | replace_first: 'watch?v=', 'embed/' }}?modestbranding=1&controls=1&iv_load_policy=3&rel=0&showinfo=0" frameborder="0"></iframe>
+    {% else %}
+      <video>
+        <source src="{{ tile.video.value.url }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    {% endif %}
+  {% endif %}
+
+</section>
