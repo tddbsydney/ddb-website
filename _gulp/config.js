@@ -13,11 +13,12 @@
 // GLOBAL CONFIG VARIABLE
 // -----------------------
 var config = {
+
   // flags for gulp mode
   // ( and mode options )
   mode: {
     isProd: false,   // turn production mode on/off,
-    isDeploy: false, // turn deployment mode on/off
+    isDeploy: true, // turn deployment mode on/off
 
     isMapped: true,    // turn creating source maps on/off
     isWatched: true,   // turn watchers on files, assets on/off
@@ -47,10 +48,10 @@ var config = {
   files: {
     // root
     root: {
-      dev: "_src/", // for development files
-      prod: "_dist/", // for compiled production files
-      deploy: "_build/", // for compiled deployment files
-      jekyll: "_site/",  // for the generated jekyll files
+      dev: "_assets_src/", // for development files
+      prod: "_assets_dist/", // for compiled production files
+      deploy: "assets/", // for compiled deployment files
+      /*jekyll: "_site/",*/  // for the generated jekyll files
     },
 
     // for styles
@@ -75,10 +76,10 @@ var config = {
 
     // for assets
     assets: {
-      fonts : "assets/fonts/",  // for fonts
-      icons : "assets/icons/",  // for icons
-      images: "assets/images/", // for images
-      videos: "assets/videos/"  // for videos
+      fonts : "fonts/",  // for fonts
+      icons : "icons/",  // for icons
+      images: "images/", // for images
+      videos: "videos/"  // for videos
     }
   },
 

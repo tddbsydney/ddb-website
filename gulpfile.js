@@ -113,15 +113,15 @@ gulp.task('default', function(callback) {
 
     /*'data',*/ // compile data
     /*'html',*/ // compile html
-    'styles',  // compile styles
-    'scripts', // compile scripts
+    'styles',   // compile styles
+    'scripts',  // compile scripts
 
     /*'index',*/ // index files
     /*'serve',*/ // serve files
 
-    'jekyll',   // jekyll files
-    'complete', // run complete
-    callback    // run callback
+    /*'jekyll',*/ // jekyll files
+    'complete',   // run complete
+    callback      // run callback
   );
 });
 
