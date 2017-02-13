@@ -344,6 +344,60 @@
 
 
 
+          "quote-tile" : {
+            "type" : "Group",
+            "config" : {
+              "label" : "Quote tile",
+              "repeat" : false,
+              "fields" : {
+                "quote" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Quote",
+                    "placeholder" : "Quote text"
+                  }
+                },
+                "author" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Author",
+                    "placeholder" : "Author of quote"
+                  }
+                },
+                "image" : {
+                  "type" : "Image",
+                  "config" : {
+                    "label" : "Image",
+                    "constraint" : {
+                      "width" : null,
+                      "height" : null
+                    },
+                    "thumbnails": [
+                      {
+                        "name": "Desktop",
+                        "width": "1920",
+                        "height": "900"
+                      },
+                      {
+                        "name": "Mobile",
+                        "width": "800",
+                        "height": "820"
+                      }
+                    ]
+                  }
+                },
+                "textColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Text Colour (default #000 black is ignored)"
+                  }
+                }
+              }
+            }
+          },
+
+
+
 
 
 
