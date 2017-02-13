@@ -1,0 +1,17 @@
+{% assign tile = include.data[0] %}
+
+<section class="section-quote-tile">
+
+  {% if tile.image.main.value %}
+    <img src="{{ tile.image.main.value }}">
+  {% endif %}
+
+  {% if tile.quote.value %}
+    <p>{{ tile.quote.value }}</p>
+  {% endif %}
+
+  {% if tile.author.value %}
+    <p>{{ tile.author.value }}</p>
+  {% endif %}
+
+</section>
