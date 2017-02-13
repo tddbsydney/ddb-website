@@ -1,0 +1,29 @@
+{% assign tiles = include.data %}
+
+<section class="section-article-tile">
+
+  {% for tile in tiles %}
+
+    <div class="tile">
+
+      {% if tile.headline.value %}
+        <p>{{ tile.headline.value }}</p>
+      {% endif %}
+
+      {% if tile.copy.value %}
+        <p>{{ tile.copy.value }}</p>
+      {% endif %}
+
+      {% if tile.linkUrl.value %}
+        <p>{{ tile.linkUrl.value }}</p>
+      {% endif %}
+
+      {% if tile.linkText.value %}
+        <p>{{ tile.linkText.value }}</p>
+      {% endif %}
+
+    </div>
+
+  {% endfor %}
+
+</section>
