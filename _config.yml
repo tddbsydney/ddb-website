@@ -48,7 +48,7 @@ exclude:
   - .bowerrc
   - .gitignore
 page_gen:
-  - data: prismic.case-study
+  - data: prismic.case-studies
     template: data_page_gen
     name: uid
     dir: work
