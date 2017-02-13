@@ -1,0 +1,17 @@
+{% assign tile = include.data[0] %}
+
+<section class="section-rules-tile">
+
+  {% if tile.image.main.value %}
+    <img src="{{ tile.image.main.value }}">
+  {% endif %}
+
+  {% if tile.headline.value %}
+    <p>{{ tile.headline.value }}</p>
+  {% endif %}
+
+  {% if tile.copy.value %}
+    <p>{{ tile.copy.value }}</p>
+  {% endif %}
+
+</section>
