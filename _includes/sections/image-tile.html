@@ -3,7 +3,11 @@
 <section class="section-image-tile">
 
   {% if tile.image.main.value %}
-    <img src="{{ tile.image.main.value }}">
+    <img src="{{ tile.image.main.value }}" />
+  {% endif %}
+
+  {% for image in tile.image %}
+    <img class="{{ image.name }}" src="{{ image.value }}" />
   {% endif %}
 
 </section>
