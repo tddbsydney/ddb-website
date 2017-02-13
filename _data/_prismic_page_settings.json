@@ -23,13 +23,13 @@
     "foregroundColor": {
       "type": "Color",
       "config": {
-        "label": "Foreground Colour"
+        "label": "Foreground Colour (default #000 black is ignored)"
       }
     },
     "backgroundColor": {
       "type": "Color",
       "config": {
-        "label": "Background Colour"
+        "label": "Background Colour (default #000 black is ignored)"
       }
     }
   },
@@ -66,25 +66,24 @@
                       "width" : null,
                       "height" : null
                     },
-                    "thumbnails" : [ ]
+                    "thumbnails": [
+                      {
+                        "name": "Desktop",
+                        "width": "1920",
+                        "height": "900"
+                      },
+                      {
+                        "name": "Mobile",
+                        "width": "800",
+                        "height": "820"
+                      }
+                    ]
                   }
                 },
                 "video" : {
                   "type" : "Link",
                   "config" : {
                     "label" : "Video"
-                  }
-                },
-                "foregroundColor": {
-                  "type": "Color",
-                  "config": {
-                    "label": "Foreground Colour"
-                  }
-                },
-                "backgroundColor": {
-                  "type": "Color",
-                  "config": {
-                    "label": "Background Colour"
                   }
                 }
               }
@@ -121,7 +120,18 @@
                       "width" : null,
                       "height" : null
                     },
-                    "thumbnails" : [ ]
+                    "thumbnails": [
+                      {
+                        "name": "Desktop",
+                        "width": "1920",
+                        "height": "900"
+                      },
+                      {
+                        "name": "Mobile",
+                        "width": "800",
+                        "height": "820"
+                      }
+                    ]
                   }
                 },
                 "linkUrl" : {
@@ -155,18 +165,6 @@
                       "bottomCenter",
                       "bottomRight"
                     ]
-                  }
-                },
-                "foregroundColor": {
-                  "type": "Color",
-                  "config": {
-                    "label": "Foreground Colour"
-                  }
-                },
-                "backgroundColor": {
-                  "type": "Color",
-                  "config": {
-                    "label": "Background Colour"
                   }
                 }
               }
@@ -209,16 +207,14 @@
                     "placeholder" : "Link text"
                   }
                 },
-                "foregroundColor": {
-                  "type": "Color",
-                  "config": {
-                    "label": "Foreground Colour"
-                  }
-                },
-                "backgroundColor": {
-                  "type": "Color",
-                  "config": {
-                    "label": "Background Colour"
+                "style" : {
+                  "type" : "Select",
+                   "config" : {
+                    "label" : "Style",
+                    "placeholder" : "black",
+                    "options" : [
+                      "yellow"
+                    ]
                   }
                 }
               }
@@ -276,19 +272,18 @@
                       "width" : null,
                       "height" : null
                     },
-                    "thumbnails" : [ ]
-                  }
-                },
-                "foregroundColor": {
-                  "type": "Color",
-                  "config": {
-                    "label": "Foreground Colour"
-                  }
-                },
-                "backgroundColor": {
-                  "type": "Color",
-                  "config": {
-                    "label": "Background Colour"
+                    "thumbnails": [
+                      {
+                        "name": "Desktop",
+                        "width": "1920",
+                        "height": "900"
+                      },
+                      {
+                        "name": "Mobile",
+                        "width": "800",
+                        "height": "820"
+                      }
+                    ]
                   }
                 }
               }
@@ -311,13 +306,18 @@
                       "width" : null,
                       "height" : null
                     },
-                    "thumbnails" : [ ]
-                  }
-                },
-                "backgroundColor": {
-                  "type": "Color",
-                  "config": {
-                    "label": "Background Colour"
+                    "thumbnails": [
+                      {
+                        "name": "Desktop",
+                        "width": "1920",
+                        "height": "900"
+                      },
+                      {
+                        "name": "Mobile",
+                        "width": "800",
+                        "height": "820"
+                      }
+                    ]
                   }
                 }
               }
@@ -336,12 +336,6 @@
                   "type" : "Link",
                   "config" : {
                     "label" : "Video"
-                  }
-                },
-                "backgroundColor": {
-                  "type": "Color",
-                  "config": {
-                    "label": "Background Colour"
                   }
                 }
               }
@@ -385,19 +379,18 @@
                       "width" : null,
                       "height" : null
                     },
-                    "thumbnails" : [ ]
-                  }
-                },
-                "foregroundColor": {
-                  "type": "Color",
-                  "config": {
-                    "label": "Foreground Colour"
-                  }
-                },
-                "backgroundColor": {
-                  "type": "Color",
-                  "config": {
-                    "label": "Background Colour"
+                    "thumbnails": [
+                      {
+                        "name": "Desktop",
+                        "width": "1920",
+                        "height": "900"
+                      },
+                      {
+                        "name": "Mobile",
+                        "width": "800",
+                        "height": "820"
+                      }
+                    ]
                   }
                 }
               }
@@ -441,19 +434,18 @@
                       "width" : null,
                       "height" : null
                     },
-                    "thumbnails" : [ ]
-                  }
-                },
-                "foregroundColor": {
-                  "type": "Color",
-                  "config": {
-                    "label": "Foreground Colour"
-                  }
-                },
-                "backgroundColor": {
-                  "type": "Color",
-                  "config": {
-                    "label": "Background Colour"
+                    "thumbnails": [
+                      {
+                        "name": "Desktop",
+                        "width": "1920",
+                        "height": "900"
+                      },
+                      {
+                        "name": "Mobile",
+                        "width": "800",
+                        "height": "820"
+                      }
+                    ]
                   }
                 }
               }
