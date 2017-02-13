@@ -1,0 +1,210 @@
+// -------------------------------------
+//   Module - Section
+// -------------------------------------
+/**
+  * @name section
+  * @desc Styles for the section module.
+**/
+
+$section_pad: 80px;
+
+$section_pad_tab: 60px;
+$section_pad_tab_sm: 50px;
+
+$section_pad_mob: 40px;
+$section_pad_mob_sm: 20px;
+
+$container_w_max: $tablet_w + ($section_pad * 2);
+$container_w_max_md: $tablet_w_sm - ($section_pad_tab_sm * 0);
+$container_w_max_sm: $mobile_w_sm + ($section_pad_mob_sm * 2);
+
+@mixin section--padding-top {
+	padding-top: $section_pad;
+	@include tablet { padding-top: $section_pad_tab; }
+	@include tablet-sm { padding-top: $section_pad_tab_sm; }
+
+	@include mobile { padding-top: $section_pad_mob; }
+	@include mobile-sm { padding-top: $section_pad_mob; }
+}
+
+// to be used by elements nested 
+// inside sections if necessary
+@mixin section--margin-top {
+	margin-top: $section_pad;
+	@include tablet { margin-top: $section_pad_tab; }
+	@include tablet-sm { margin-top: $section_pad_tab_sm; }
+
+	@include mobile { margin-top: $section_pad_mob; }
+	@include mobile-sm { margin-top: $section_pad_mob; }
+}
+
+@mixin section--padding-bottom {
+	padding-bottom: $section_pad;
+	@include tablet { padding-bottom: $section_pad_tab; }
+	@include tablet-sm { padding-bottom: $section_pad_tab_sm; }
+
+	@include mobile { padding-bottom: $section_pad_mob; }
+	@include mobile-sm { padding-bottom: $section_pad_mob; }
+}
+
+// to be used by elements nested 
+// inside sections if necessary
+@mixin section--margin-bottom {
+	margin-bottom: $section_pad;
+	@include tablet { margin-bottom: $section_pad_tab; }
+	@include tablet-sm { margin-bottom: $section_pad_tab_sm; }
+
+	@include mobile { margin-bottom: $section_pad_mob; }
+	@include mobile-sm { margin-bottom: $section_pad_mob; }
+}
+
+// modifiers - padding - vertical
+%section--padding-v { 
+	@include section--padding-top; 
+	@include section--padding-bottom; 
+}
+
+// to be used by elements nested 
+// inside sections if necessary
+%section--margin-v-top { @include section--margin-top; }
+%section--margin-v-bottom { @include section--margin-bottom; }
+
+@mixin section--padding-left {
+	padding-left: $section_pad;
+	@include tablet { padding-left: $section_pad_tab; }
+	@include tablet-sm { padding-left: $section_pad_tab_sm; }
+
+	@include mobile { padding-left: $section_pad_mob_sm; }
+	@include mobile-sm { padding-left: $section_pad_mob_sm; }
+}
+
+@mixin section--padding-right {
+	padding-right: $section_pad;
+	@include tablet { padding-right: $section_pad_tab; }
+	@include tablet-sm { padding-right: $section_pad_tab_sm; }
+
+	@include mobile { padding-right: $section_pad_mob_sm; }
+	@include mobile-sm { padding-right: $section_pad_mob_sm; }
+}
+
+// modifiers - padding - horizontal
+%section--padding-h {
+	@include section--padding-left;
+	@include section--padding-right;
+}
+
+// section
+%section {
+	@extend %section--padding-v;
+	@extend %section--padding-h;
+	box-sizing: border-box;
+}
+
+// section
+.section {
+	// extend default section
+	@extend %section;
+
+	// default background color
+	background-color: transparent;
+
+	// modifiers - color
+	&--color-default { background-color: transparent; }          // modifier - color default
+	&--color-light   { background-color: $color_grey_sky; }      // modifier - color light
+	&--color-dark    { background-color: $color_grey_midnight; } // modifier - color dark
+	&--color-yellow  { background-color: $color_yellow_ddb_pr; } // modifier - color yellow
+
+	// modifiers - reset
+	&--reset   { padding: 0 !important; overflow-y: hidden; } // modifier - reset both
+	&--reset-v { padding-top: 0 !important; padding-bottom: 0 !important; overflow-y: hidden; }  // modifier - reset vertical
+	&--reset-h { padding-left: 0 !important; padding-right: 0 !important; overflow-x: hidden; }  // modifier - reset horizontal
+
+	// adjescent sections
+	& + & { padding-top: 0; }
+
+	// adjescent sections ( with modifiers - color )
+	& + &--color-light, & + &--color-dark,
+	& + &--color-yellow { @include section--padding-top; }
+
+	&--color-light  + &, &--color-dark + &,
+	&--color-yellow + & { @include section--padding-top; }
+
+	&--color-light  + &--color-light  { padding-top: 0; }
+	&--color-dark   + &--color-dark   { padding-top: 0; } 
+	&--color-yellow + &--color-yellow { padding-top: 0; } 
+
+	// adjescent sections ( with modifiers - reset )
+	&--reset + &   { @include section--padding-top; }
+	&--reset-v + & { @include section--padding-top; }
+}
+
+// -------------------------------------
+//   Container - Inside Sections
+// -------------------------------------
+// container
+%container {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+
+	box-sizing: border-box;
+	max-width: $container_w_max;
+	background-color: transparent;
+	@include mobile { max-width: $container_w_max_sm; }
+}
+
+// container
+.container {
+	@extend %container;
+}
+
+// --------------------------------------------
+//   Typography - Inside Sections
+// --------------------------------------------
+.section,
+.container {
+	> h1, > h2, > h3, > h4, 
+	> ul li, > ol li, > p, > a {
+		/* empty block */
+	}
+
+	> h1, > h2, > h3, > h4, > p {
+		@extend %center;
+		text-align: center;
+		max-width: $container_w_max_md;
+	}
+
+	> p ul, p ol {
+		@extend %center;
+		list-style: none;
+		max-width: $container_w_max_sm;
+
+		padding-left: 0;
+		padding-right: 0;
+		li { padding-left: 0; }
+		/* + br { display: none; } */
+	}
+}
+
+.section {
+	// modifiers - color
+	&--color-yellow,
+	&--color-dark,
+	&--color-yellow .container,
+	&--color-dark .container {
+		> h1, > h2, > h3, > h4, 
+		> ul li, > ol li, > p, 
+		> a:not(.button) {
+			color: white;
+		}
+
+		> ul li a, > ol li a, 
+		> p a, > a:not(.button)  { 
+			color: white;
+			text-decoration: underline; 
+			
+			&:visited { color: white; }
+			&:hover, &:active { color: white; }
+		}
+	}
+}
