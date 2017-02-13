@@ -2,7 +2,7 @@
 
 <section class="section-video-tile">
 
-  {% if tile.video %}
+  {% if tile.video.value.url %}
     {% assign segs = tile.video.value.url | split: "/" %}
 
     {% for seg in segs %}

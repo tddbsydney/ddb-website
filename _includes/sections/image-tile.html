@@ -1,0 +1,9 @@
+{% assign tile = include.data[0] %}
+
+<section class="section-image-tile">
+
+  {% if tile.image.main.value %}
+    <img src="{{ tile.image.main.value }}">
+  {% endif %}
+
+</section>
