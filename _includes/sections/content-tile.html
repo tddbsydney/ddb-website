@@ -1,0 +1,29 @@
+{% assign tile = include.data[0] %}
+
+<section class="section-content-tile">
+
+  {% if tile.headline.value %}
+    <p>{{ tile.headline.value }}"</p>
+  {% endif %}
+
+  {% if tile.subline.value %}
+    <p>{{ tile.subline.value }}"</p>
+  {% endif %}
+
+  {% if tile.copy.value %}
+    <p>{{ tile.copy.value }}"</p>
+  {% endif %}
+
+  {% if tile.list.value %}
+    <ul>
+      {% for item in tile.list.value %}
+      <li>{{ item.value }}"</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if tile.image.main.value %}
+    <img src="{{ tile.image.main.value }}">
+  {% endif %}
+
+</section>
