@@ -4,32 +4,39 @@
 /**
   * @name app
   * @desc The main sass file that is used to
-        import and consolidate all the other
-        sass across the entire app in their
-        required order.
+   		  import and consolidate all the other
+   		  sass across the entire app in their
+   		  required order.
 **/
 
 // -------------------------------------
 //   App - Base
 // -------------------------------------
-@import "variables";
-@import "global";
+@import "base/fonts";
+@import "base/icons";
 
-@import "mixins/css3-mixins";
-@import "mixins/responsive";
+@import "base/colors";
+@import "base/helpers";
+@import "base/zindices";
+@import "base/breakpoints";
+
+@import "base/transitions";
+@import "base/animations";
+
+@import "base/typography";
+@import "base/layout";
+
+// -------------------------------------
+//   App - Modules
+// -------------------------------------
+/* empty block */
+
+// -------------------------------------
+//   App - Directives
+// -------------------------------------
+/* empty block */
 
 // -------------------------------------
 //   App - Components
 // -------------------------------------
-@import "components/tile";
-
-// -------------------------------------
-//   App - Sections
-// -------------------------------------
-@import "sections/case-study-image";
-@import "sections/case-study-text";
-@import "sections/case-study-video";
-@import "sections/header";
-@import "sections/footer";
-@import "sections/promo";
-@import "sections/tiles";
+/* empty block */
