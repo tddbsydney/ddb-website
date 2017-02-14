@@ -9,7 +9,7 @@
 **/
 
 // -------------------------------------
-//   Typography - Mixins - font Sizes
+//   Typography - Mixins - Font Sizes
 // -------------------------------------
 // mixin to create the font-size-root placeholder 
 // to overcome when used inside media queries
@@ -19,8 +19,10 @@
   @if $extend { @extend %font-size-root; }
 
   @else {
-    font-size: 1em; // 16px
-    @include tablet-sm { font-size: 0.938em; } // 15px
+    font-size: 15px; // 15px
+    @include tablet    { font-size: 14px; } // 14px
+    @include tablet-sm { font-size: 13px; } // 13px
+    @include mobile    { font-size: 12px; } // 12px
   }
 }
 
@@ -32,10 +34,10 @@
   @if $extend { @extend %font-size-h1; }
 
   @else {
-    font-size: 3.75rem; // 60px
-    @include tablet-sm { font-size: 3rem;   } // 45px
-    @include mobile    { font-size: 2.4rem; } // 36px
-    @include mobile-sm { font-size: 2rem;   } // 30px
+    font-size: get-vw-desktop(45px); // 45px
+    @include tablet    { font-size: get-vw-tablet(42px);    } // 42px
+    @include tablet-sm { font-size: get-vw-tablet-sm(39px); } // 39px
+    @include mobile    { font-size: get-vw-mobile(36px);    } // 36px
   }
 }
 
@@ -47,10 +49,10 @@
   @if $extend { @extend %font-size-h2; }
 
   @else {
-    font-size: 2.812rem; // 45px
-    @include tablet-sm { font-size: 2.333rem; } // 35px
-    @include mobile    { font-size: 1.733rem; } // 26px
-    @include mobile-sm { font-size: 1.533rem; } // 23px
+    font-size: get-vw-desktop(35px); // 35px
+    @include tablet    { font-size: get-vw-tablet(32px);    } // 32px
+    @include tablet-sm { font-size: get-vw-tablet-sm(27px); } // 27px
+    @include mobile    { font-size: get-vw-mobile(24px);    } // 24px
   }
 }
 
@@ -62,8 +64,10 @@
   @if $extend { @extend %font-size-h3; }
 
   @else {
-    font-size: 1.72rem; // 28px
-    @include tablet-sm { font-size: 1.4rem; } // 21px
+    font-size: get-vw-desktop(31px); // 31px
+    @include tablet    { font-size: get-vw-tablet(28px);    } // 28px
+    @include tablet-sm { font-size: get-vw-tablet-sm(25px); } // 25px
+    @include mobile    { font-size: get-vw-mobile(22px);    } // 22px
   }
 }
 
@@ -75,8 +79,25 @@
   @if $extend { @extend %font-size-h4; }
 
   @else {
-    font-size: 1.125rem; // 18px
-    @include tablet-sm { font-size: 1.133rem; } // 17px
+    font-size: get-vw-desktop(25px); // 25px
+    @include tablet    { font-size: get-vw-tablet(22px);    } // 22px
+    @include tablet-sm { font-size: get-vw-tablet-sm(19px); } // 19px
+    @include mobile    { font-size: get-vw-mobile(16px);    } // 16px
+  }
+}
+
+// mixin to create the font-size-h5 placeholder 
+// to overcome when used inside media queries
+// e.g. @input @include font-size-h5(false);
+// e.g. @output ..content of @else block comes here..
+@mixin font-size-h5($extend: true) {
+  @if $extend { @extend %font-size-h5; }
+
+  @else {
+    font-size: get-vw-desktop(20px); // 20px
+    @include tablet    { font-size: get-vw-tablet(18px);    } // 18px
+    @include tablet-sm { font-size: get-vw-tablet-sm(16px); } // 16px
+    @include mobile    { font-size: get-vw-mobile(14px);    } // 14px
   }
 }
 
@@ -88,8 +109,10 @@
   @if $extend { @extend %font-size-p; }
 
   @else {
-    font-size: 1rem; // 16px
-    @include tablet-sm { font-size: 1rem; } // 15px
+    font-size: get-vw-desktop(15px); // 15px
+    @include tablet    { font-size: get-vw-tablet(14px);    } // 14px
+    @include tablet-sm { font-size: get-vw-tablet-sm(13px); } // 13px
+    @include mobile    { font-size: get-vw-mobile(12px);    } // 12px
   }
 }
 
@@ -98,15 +121,16 @@
 %font-size-h2 { @include font-size-h2(false); }
 %font-size-h3 { @include font-size-h3(false); }
 %font-size-h4 { @include font-size-h4(false); }
+%font-size-h5 { @include font-size-h5(false); }
 %font-size-p  { @include font-size-p (false); }
 
 // -------------------------------------
-//   Typography - Font Sizes
+//   Typography - Font Sizes, Colors
 // -------------------------------------
 html, body { 
-  color: $color_grey_midnight;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.5625em;
+  color: white;
 }
 
 html { @extend %font-size-root; }
@@ -115,21 +139,24 @@ h1 { @extend %font-size-h1; }
 h2 { @extend %font-size-h2; }
 h3 { @extend %font-size-h3; }
 h4 { @extend %font-size-h4; }
+h5 { @extend %font-size-h5; }
 
-h1, h2, h3, h4 {
-  line-height: 1.12em;
-  letter-spacing: -0.02em;
-  color: $color_grey_night;
+h1, h2     { line-height: 1.12em; }
+h3, h4, h5 { line-height: 1.20em; }
+
+h1, h2, h3, h4, h5 {
+  color: white;
 
   &:first-child { margin-top: 0; }
-  &:last-child { margin-bottom: 0; }
-  @include mobile { text-align: center; }
+  &:last-child  { margin-bottom: 0; }
 }
 
 ul, ol, li, p, a {
   @extend %font-size-p;
+  line-height: inherit;
+
   &:first-child { margin-top: 0; }
-  &:last-child { margin-bottom: 0; }
+  &:last-child  { margin-bottom: 0; }
 }
 
 ul, ol {
@@ -139,7 +166,7 @@ ul, ol {
     margin-top: 0.25em;
     padding-left: 0.25em;
     &:first-child { margin-top: 0; }
-    &:last-child { margin-bottom: 0; }
+    &:last-child  { margin-bottom: 0; }
   }
 }
 
@@ -147,20 +174,11 @@ a {
   text-decoration: none;
   @include transitions(color);
   
-  color:  $color_yellow_ddb_pr;
+  color: white;
   outline: 0;
   
-  &:hover, &:active, { color: $color_yellow_ddb_sc; }
+  &:hover, &:active, { color: white; }
   &:hover, &:focus, &:active { outline: 0; }
-}
-
-p.disclaimer {  
-  font-size: 0.75rem;
-  color: $color_grey_warm;
-}
-
-p.error {
-  color: $color_red_warning;
 }
 
 // -------------------------------------
@@ -174,9 +192,8 @@ i, .icon {
   vertical-align: middle;
 }
 
-h1, h2, h3, h4, p, a {
-  font-weight: normal;
-
+h1, h2, h3, 
+h4, h5, li, p, a {
   span, a, i, .icon {
     font-size: inherit;
     line-height: inherit;
@@ -190,30 +207,30 @@ h1, h2, h3, h4, p, a {
 }
 
 
-h1, h2, h3, h4 {
-    span, a {
-      & + i, & + .icon {
-        margin-left: $icon_spacing_header;
+h1, h2, h3, h4, h5 {
+  span, a {
+    & + i, & + .icon {
+      margin-left: $icon_spacing_header;
 
-        @include mobile {
-          display: block;
-          margin-left: 0;
-          margin-top: $icon_spacing_header; 
-        }
+      @include mobile {
+        display: block;
+        margin-left: 0;
+        margin-top: $icon_spacing_header; 
       }
     }
+  }
 
-    i, .icon {
-      & + a, & + span {
-        margin-left: $icon_spacing_header;
+  i, .icon {
+    & + a, & + span {
+      margin-left: $icon_spacing_header;
 
-        @include mobile {
-          display: block;
-          margin-left: 0;
-          margin-top: $icon_spacing_header;
-        }
+      @include mobile {
+        display: block;
+        margin-left: 0;
+        margin-top: $icon_spacing_header;
       }
     }
+  }
 }
 
 
@@ -234,9 +251,20 @@ li, p, a {
 }
 
 // -------------------------------------
-//   Typography - Font Families
+//   Typography - Font Families, Weight
 // -------------------------------------
-h1, h2 { font-family: inherit; }
-h3, h4 { font-family: inherit; }
-li, p, a, { font-family: inherit; }
+$font_wt_bold: 700;
+$font_wt_medium: 500;
+$font_wt_regular: 400;
+
+h1, h2, h3, 
+h4, h5, li, p, a {
+  font-smoothing: antialiased;
+}
+
+h1, { font-family: inherit; font-weight: $font_wt_bold; }
+h2  { font-family: inherit; font-weight: $font_wt_medium; }
+
+h3, h4, h5 { font-family: inherit; font-weight: $font_wt_regular; }
+li, p, a   { font-family: inherit; font-weight: $font_wt_regular; }
 

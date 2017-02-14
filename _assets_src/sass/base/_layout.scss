@@ -16,8 +16,8 @@ $base_html_h_min: 100vh;
 
 // html, body
 html, body {
-  position: relative;
   display: block;
+  position: relative;
 
   width: 100%;
   height: auto !important;
@@ -34,14 +34,14 @@ html, body {
   min-height: $base_html_h_min;
   
   box-sizing: border-box;
-  background-color: $color_grey_midnight;
+  background-color: black;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 // image
 img {
-  position: relative;
   display: block;
+  position: relative;
   
   width: 100%;
   height: auto;
@@ -76,82 +76,4 @@ br {
   &.mobile:not(.all) {
       @include mobile-up { display: none; }
   }
-}
-
-// -------------------------------------
-//   App - Main
-// -------------------------------------
-%app__main {
-  position: relative;
-  display: block;
-
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-  min-height: $base_html_h_min;
-}
-
-.app__main {
-  @extend %app__main;
-}
-
-// -------------------------------------
-//   App - Content
-// -------------------------------------
-$header_w: 96px;
-$header_h: 100vh;
-$header_w_mob: 100vw;
-$header_h_mob: 50px;
-
-%app__content {
-  position: relative;
-  display: block;
-
-  width: 100%;
-  height: auto;
-  min-height: auto;
-  box-sizing: border-box;
-}
-
-.app__content {
-  @extend %app__content;
-
-  padding-left: $header_w;
-  @include mobile { padding-left: 0; }
-}
-
-// -------------------------------------
-//   App - Scroll
-// -------------------------------------
-%app__scroll {
-  position: relative;
-  display: block;
-  
-  width: 100%;
-  height: 100vh;
-  box-sizing: border-box;
-  min-height: $base_html_h_min;
-  
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.app__scroll {
-  @extend %app__scroll;
-
-  // modifier - disabled
-  // used to disable both the default 
-  // scrollbar and the touch scrollbar
-  &--disabled { 
-    overflow: hidden; 
-    -webkit-overflow-scrolling: none;
-  }
-}
-
-// -------------------------------------
-//   App - View
-// -------------------------------------
-.app__view {
-  @extend %app__content;
-  &[ui-view="main"]{ @extend %app__main; }
 }

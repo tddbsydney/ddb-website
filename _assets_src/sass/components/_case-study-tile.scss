@@ -1,0 +1,56 @@
+// -------------------------------------
+//   Component - Case Study Tile
+// -------------------------------------
+/**
+  * @name case-study-tile
+  * @desc Styles for the case study tile component.
+**/
+
+.case-study-tile { @extend %section; }
+
+// -------------------------------------
+//   Case Study Tile - Content
+// -------------------------------------
+$cs_tile_content_w_max: 50%;
+$cs_tile_content_inner_w_max: 80%;
+$cs_tile_content_inner_w_max_tab: 95%;
+$cs_tile_content_inner_w_max_mob: 80%;
+
+.case-study-tile__content {
+	display: block;
+	position: absolute;
+	box-sizing: border-box;
+	@extend %section--padding;
+
+	width: 100%;
+	max-width: $cs_tile_content_w_max;
+
+	@include mobile { 
+		max-width: 100%;
+		top: 0 !important; 
+		left: 0 !important;
+		transform: none !important;
+	}
+
+	> h2, > p, > a {
+		display: block;
+		max-width: $cs_tile_content_inner_w_max;
+		@include tablet-sm { max-width: $cs_tile_content_inner_w_max_tab; }
+		@include mobile    { max-width: $cs_tile_content_inner_w_max_mob; }
+	}
+	
+	> h2 { margin: 0; }
+	> a  { margin-top: 1em; }
+
+	&[data-align="left"]   { @extend %transform-center-v; left: 0;  }
+	&[data-align="right"]  { @extend %transform-center-v; right: 0; }
+	&[data-align="center"] { @extend %transform-center; }
+
+	&[data-align="topLeft"]   { top: 0; left: 0; }
+	&[data-align="topRight"]  { top: 0; right: 0; }
+	&[data-align="topCenter"] { @extend %transform-center-h; top: 0; }
+
+	&[data-align="bottomLeft"]   { bottom: 0; left: 0; }
+	&[data-align="bottomRight"]  { bottom: 0; right: 0; }
+	&[data-align="bottomCenter"] { @extend %transform-center-h; bottom: 0; }
+}

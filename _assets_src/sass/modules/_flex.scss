@@ -1,0 +1,29 @@
+// -------------------------------------
+//   Module - Section
+// -------------------------------------
+/**
+  * @name section
+  * @desc Styles for the flex module.
+**/
+
+// flex
+%flex {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+// modifier - row
+%flex--row {
+  @extend %flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+// modifier - col
+%flex--col {
+  flex-basis: 100%;
+  position: relative;
+  box-sizing: border-box;
+  @include mobile-up { flex: 1; }
+}

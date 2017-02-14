@@ -1,0 +1,60 @@
+// -------------------------------------
+//   Component - Article Tiles
+// -------------------------------------
+/**
+  * @name article-tiles
+  * @desc Styles for the article tiles component.
+**/
+
+.article-tiles { @extend %flex--row; }
+
+// -------------------------------------
+//   Article Tile
+// -------------------------------------
+$art_tile_h_min: 35vw - ($section_pad * 2);
+$art_tile_h_min_tab: 45vw - ($section_pad * 2);
+$art_tile_h_min_mob: 55vw - ($section_pad * 2);
+
+.article-tile {
+  @extend %flex--col;
+  @extend %section--padding;
+
+  min-height: $art_tile_h_min;
+  @include tablet { min-height: $art_tile_h_min_tab; }
+  @include mobile { min-height: $art_tile_h_min_mob; }
+
+  &[data-style="yellow"] { color: black; background-color: $color_yellow_ddb; }
+  &[data-style="black"]  { color: white; background-color: black; }
+}
+
+// -------------------------------------
+//   Article Tile - Content
+// -------------------------------------
+$art_tile_content_w_max: 100%;
+$art_tile_content_inner_w_max: 50%;
+$art_tile_content_inner_w_max_tab: 70%;
+$art_tile_content_inner_w_max_mob: 50%;
+
+.article-tile__content {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  @extend %section--padding;
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: $art_tile_content_w_max;
+
+  > h4, > p, > a {
+    color: inherit;
+    display: block;
+
+    max-width: $art_tile_content_inner_w_max;
+    @include tablet-sm { max-width: $art_tile_content_inner_w_max_tab; }
+    @include mobile    { max-width: $art_tile_content_inner_w_max_mob; }
+  }
+  
+  > h4 { margin: 0; }
+  > a  { margin-top: 1em; }
+}

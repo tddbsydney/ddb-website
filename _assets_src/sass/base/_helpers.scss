@@ -40,6 +40,9 @@
   }
 }
 
+// -------------------------------------
+//   Helpers - Mixins, Extends
+// -------------------------------------
 // mixin to create the clear placeholder 
 // to overcome when used inside media queries
 // e.g. @input @include clear(false);
@@ -151,3 +154,38 @@
 }
 
 %background-image { @include background-image(false); } // background image
+
+// -------------------------------------
+//   Helpers - Functions
+// -------------------------------------
+// @name get-vw-desktop
+// @desc function to convert px to vw for desktop
+// @param $target - the px value to be converted to vw
+@function get-vw-desktop($target) { 
+  $vw-context: (1350*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+// @name get-vw-tablet
+// @desc function to convert px to vw for tablet
+// @param $target - the px value to be converted to vw
+@function get-vw-tablet($target) { 
+  $vw-context: (1020*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+// @name get-vw-tablet-sm
+// @desc function to convert px to vw for tablet small
+// @param $target - the px value to be converted to vw
+@function get-vw-tablet-sm($target) { 
+  $vw-context: (690*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+// @name get-vw-mobile
+// @desc function to convert px to vw for mobile
+// @param $target - the px value to be converted to vw
+@function get-vw-mobile($target) { 
+  $vw-context: (360*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}

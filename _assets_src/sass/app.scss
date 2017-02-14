@@ -30,6 +30,8 @@
 //   App - Modules
 // -------------------------------------
 @import "modules/section";
+@import "modules/flex";
+
 @import "modules/image";
 
 // -------------------------------------
@@ -40,4 +42,5 @@
 // -------------------------------------
 //   App - Components
 // -------------------------------------
-/* empty block */
+@import "components/case-study-tile";
+@import "components/article-tiles";
