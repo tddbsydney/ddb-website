@@ -18,6 +18,7 @@
 # Ignore compiled files
 /_dist
 /_build
+/_assets_dist
 
 
 #######################################
