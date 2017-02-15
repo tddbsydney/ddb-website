@@ -1,13 +1,37 @@
-// -------------------------------------
-//   Base - Icons
-// -------------------------------------
-/**
-  * @name fonts
-  * @desc Used for setting available icon types
-          used with all elements that spread 
-          across the entire app.
-**/
+@font-face {
+	font-family: "icons-ddb-website";
+	src: url('../fonts/icons-ddb-website.eot');
+	src: url('../fonts/icons-ddb-website.eot?#iefix') format('eot'),
+		url('../fonts/icons-ddb-website.woff') format('woff'),
+		url('../fonts/icons-ddb-website.ttf') format('truetype'),
+		url('../fonts/icons-ddb-website.svg#icons-ddb-website') format('svg');
+}
 
-// base paths for the url 
-// used in the sass files
-$base_path_icons: "../fonts/";
+.icon:before {
+	font-family: "icons-ddb-website";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-chevron-down:before {
+	content: "\E001";
+}
+
+.icon-close:before {
+	content: "\E002";
+}
+
+.icon-medium:before {
+	content: "\E003";
+}
+
+.icon-menu:before {
+	content: "\E004";
+}
+

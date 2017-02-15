@@ -90,11 +90,11 @@ var config = {
     // font name
     name: "icons-ddb-website",
 
-    className: "icon__ddbw", // scss class prefix
+    className: "icon", // scss class prefix
     fileName: "_icons.scss", // icon file name
 
-    fontPath: "../assets/fonts/", // relative font path
-    stylePath: "../../sass/base/", // relative scss path
+    fontPath: "../fonts/", // relative font path
+    stylePath: "../sass/base/", // relative scss path
     formats: ['svg', 'ttf', 'eot', 'woff'] // icon formats
   },
 

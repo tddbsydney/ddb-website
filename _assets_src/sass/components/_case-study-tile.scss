@@ -32,16 +32,18 @@ $cs_tile_content_inner_w_max_mob: 80%;
     transform: none !important;
   }
 
+  > h2, > p { display: block;  }
+  > a { display: inline-block; }
+
   > h2, > p, > a {
-    display: block;
+    color: inherit;
     max-width: $cs_tile_content_inner_w_max;
     @include tablet-sm { max-width: $cs_tile_content_inner_w_max_tab; }
     @include mobile    { max-width: $cs_tile_content_inner_w_max_mob; }
   }
   
-  > h2 { margin: 0; }
-  > a  { margin-top: 1em; }
-
+  > h2  { margin: 0; }
+  > a   { margin-top: 1em; }
   .link { @extend %link--active; }
 
   &[data-align="left"]   { @extend %transform-center-v; left: 0;  }
