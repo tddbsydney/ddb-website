@@ -4,9 +4,9 @@
 /**
   * @name app
   * @desc The main sass file that is used to
-   		  import and consolidate all the other
-   		  sass across the entire app in their
-   		  required order.
+        import and consolidate all the other
+        sass across the entire app in their
+        required order.
 **/
 
 // -------------------------------------
@@ -29,9 +29,10 @@
 // -------------------------------------
 //   App - Modules
 // -------------------------------------
-@import "modules/section";
 @import "modules/flex";
+@import "modules/section";
 
+@import "modules/link";
 @import "modules/image";
 
 // -------------------------------------

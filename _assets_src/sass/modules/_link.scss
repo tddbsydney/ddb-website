@@ -1,0 +1,95 @@
+// -------------------------------------
+//   Module - Link
+// -------------------------------------
+/**
+  * @name link
+  * @desc Styles for the link module.
+**/
+
+// link
+%link {
+  position: relative;
+  display: inline-block;
+
+  span { 
+    color: inherit;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5em; 
+
+    &:before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      height: 2px;
+      background-color: white;
+
+      @include transitions(all);
+      transform: scaleX(0);
+      visibility: hidden;
+    }
+  }
+
+  &:hover span {
+    &:before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+  }
+}
+
+// -------------------------------------
+//   Link - Colors
+// -------------------------------------
+// modifer - white
+%link--white {
+  span {
+    color: white;
+    &:before { background-color: white; }
+  }
+}
+
+
+// modifier - black
+%link--black {
+  span {
+    color: black;
+    &:before { background-color: black; }
+  }
+}
+
+// modifer - yellow
+%link--yellow {
+  span {
+    color: $color_yellow_ddb;
+    &:before { background-color: $color_yellow_ddb; }
+  }
+}
+
+// -------------------------------------
+//   Link - States
+// -------------------------------------
+// modifer - active
+%link--active {
+  span {
+    &:before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+  }
+}
+
+// -------------------------------------
+//   Link - Classes
+// -------------------------------------
+// link
+.link {
+  @extend %link;
+
+  [data-style="white"]  & { @extend %link--black; }
+  [data-style="black"]  & { @extend %link--white; }
+  [data-style="yellow"] & { @extend %link--black; }
+}
