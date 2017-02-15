@@ -23,8 +23,12 @@ $art_tile_h_min_mob: 55vw - ($section_pad * 2);
   @include tablet { min-height: $art_tile_h_min_tab; }
   @include mobile { min-height: $art_tile_h_min_mob; }
 
+  .link { @extend %link--active; }
+  
   &[data-style="yellow"] { color: black; background-color: $color_yellow_ddb; }
   &[data-style="black"]  { color: white; background-color: black; }
+
+
 }
 
 // -------------------------------------
