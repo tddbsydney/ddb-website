@@ -58,3 +58,18 @@ $cs_tile_content_inner_w_max_mob: 80%;
   &[data-align="bottomLeft"]  { bottom: 0; left: 0;  }
   &[data-align="bottomRight"] { bottom: 0; right: 0; }
 }
+
+// -------------------------------------
+//   Case Study Tile - Scroll
+// -------------------------------------
+$cst_scroll_margin: 0.5em;
+
+.case-study-tile__scroll {
+  @extend %transform-center-h;
+  @extend %font-size-h1;
+
+  &:last-child {
+    bottom: 0;
+    margin-bottom: $cst_scroll_margin;
+  }
+}

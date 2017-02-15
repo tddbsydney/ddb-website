@@ -14,6 +14,9 @@ $section_margin: $section_pad; // default
 $section_margin_mob: $section_pad_mob; // mobile
 $section_margin_ret: $section_pad_ret; // retina
 
+// -------------------------------------
+//   Section - Padding
+// -------------------------------------
 // mixin - padding - top
 @mixin section--padding-top {
   padding-top: $section_pad;
@@ -68,6 +71,66 @@ $section_margin_ret: $section_pad_ret; // retina
   @extend %section--padding-h;
 }
 
+// -------------------------------------
+//   Section - Margin
+// -------------------------------------
+// mixin - margin - top
+@mixin section--margin-top {
+  margin-top: $section_margin;
+  @include mobile { margin-top: $section_margin_mob; }
+  @include desktop-lg-up { margin-top: $section_margin_ret; }
+}
+
+// mixin - margin - bottom
+@mixin section--margin-bottom {
+  margin-bottom: $section_margin;
+  @include mobile { margin-bottom: $section_margin_mob; }
+  @include desktop-lg-up { margin-bottom: $section_margin_ret; }
+}
+
+// modifier - margin - top, bottom
+%section--margin-top { @include section--margin-top; }
+%section--margin-bottom { @include section--margin-bottom; }
+
+// modifier - margin - vertical
+%section--margin-v { 
+  @extend %section--margin-top; 
+  @extend %section--margin-bottom; 
+}
+
+// mixin - margin - left
+@mixin section--margin-left {
+  margin-left: $section_margin;
+  @include mobile { margin-left: $section_margin_mob; }
+  @include desktop-lg-up { margin-left: $section_margin_ret; }
+}
+
+// mixin - margin - right
+@mixin section--margin-right {
+  margin-right: $section_margin;
+  @include mobile { margin-right: $section_margin_mob; }
+  @include desktop-lg-up { margin-right: $section_margin_ret; }
+}
+
+// modifier - margin - left, right
+%section--margin-left { @include section--margin-left; }
+%section--margin-right { @include section--margin-right; }
+
+// modifier - margin - horizontal
+%section--margin-h { 
+  @extend %section--margin-left; 
+  @extend %section--margin-right; 
+}
+
+// modifier - margin
+%section--margin {
+  @extend %section--margin-v;
+  @extend %section--margin-h;
+}
+
+// -------------------------------------
+//   Section - Tags
+// -------------------------------------
 // section
 %section {
   display: block;
