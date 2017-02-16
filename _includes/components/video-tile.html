@@ -1,6 +1,6 @@
 {% assign tile = include.data[0] %}
 
-<section class="section-video-tile">
+<div class="video-tile">
 
   {% if tile.video.value.url %}
     {% assign segs = tile.video.value.url | split: "/" %}
@@ -25,4 +25,4 @@
     {% endif %}
   {% endif %}
 
-</section>
+</div>

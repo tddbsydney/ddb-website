@@ -1,29 +1,32 @@
 {% assign tiles = include.data %}
 
-<section class="section-article-tile">
+<!-- article tiles -->
+<div class="article-tiles">
 
   {% for tile in tiles %}
 
-    <div class="tile">
+    <!-- tile -->
+    <div class="article-tile"{% if tile.style.value %} data-style="{{ tile.style.value }}"{% endif %}>
 
-      {% if tile.headline.value %}
-        <p>{{ tile.headline.value }}</p>
-      {% endif %}
+      <!-- content -->
+      <div class="article-tile__content">
 
-      {% if tile.copy.value %}
-        <p>{{ tile.copy.value }}</p>
-      {% endif %}
+        {% if tile.headline.value %}
+          <p>{{ tile.headline.value }}</p>
+        {% endif %}
 
-      {% if tile.linkUrl.value %}
-        <p>{{ tile.linkUrl.value }}</p>
-      {% endif %}
+        {% if tile.copy.value %}
+          <h4>{{ tile.copy.value }}</h4>
+        {% endif %}
 
-      {% if tile.linkText.value %}
-        <p>{{ tile.linkText.value }}</p>
-      {% endif %}
+        {% if tile.linkUrl.value.url %}
+          {% include modules/link-button.html link=tile.linkUrl label=tile.linkText.value %}
+        {% endif %}
 
-    </div>
+      </div><!-- content end -->
+
+    </div><!-- tile end -->
 
   {% endfor %}
 
-</section>
+</div><!-- article tiles end -->

@@ -1,6 +1,6 @@
 {% assign tile = include.data[0] %}
 
-<section class="section-quote-tile">
+<div class="quote-tile">
 
   {% if tile.image.main.value %}
     <img src="{{ tile.image.main.value }}">
@@ -14,4 +14,4 @@
     <p>{{ tile.author.value }}</p>
   {% endif %}
 
-</section>
+</div>

@@ -1,0 +1,50 @@
+{% assign link = include.link %}
+{% assign label = include.label %}
+
+{% if link.value.url %}
+  {% assign segs = link.value.url | split: "/" %}
+  {% for seg in segs %}
+    {% if seg == "medium.com" %}
+      {% assign isMedium = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% capture linkUrl %}
+    {% case link.type %}
+
+      {% when "Link.web" %}
+        {% assign isExternalLink = true %}
+        {{ link.value.url }}
+
+      {% when "Link.document" %}
+        {% if link.value.document.type == "case-studies" %}
+          {{base}}/work/{{link.value.document.uid}}
+        {% else %}
+          {{base}}/{{link.value.document.uid}}
+        {% endif %}
+
+    {% endcase %}
+  {% endcapture %}
+
+  {% capture linkClass %}
+    {% if isExternalLink %}
+      button
+    {% else %}
+      link
+    {% endif %}
+  {% endcapture %}
+
+  {% capture linkLabel %}
+    {% if label %}
+      title="{{ label }}"
+    {% endif %}
+  {% endcapture %}
+
+  <a class="{{ linkClass | normalize_whitespace }}" href="{{ linkUrl | normalize_whitespace }}" {{ linkLabel | normalize_whitespace }} >
+    {% if isMedium %}
+      <span> Read on <i class="icon icon-medium"></i> Medium </span>
+    {% else %}
+      <span> {{ label | default: "View" }} </span>
+    {% endif %}
+  </a>
+{% endif %}

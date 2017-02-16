@@ -5,16 +5,16 @@
 
 <!-- html -->
 <html>
-  
+
   <!-- head -->
   <head>
-    
+
     <!-- browser meta data -->
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
-    
+
     <!-- default meta data -->
     <title>{{ page_data.title.value | default: 'Tribal DDB Sydney' }}</title>
     <meta name="description" content="{{ page_data.description.value | default: 'Tribal DDB Sydney' }}">
@@ -26,25 +26,25 @@
 
     <!-- inject:css -->
     <!-- endinject -->
-    
+
     <!-- custom:css -->
     <link rel="stylesheet" href="{{base}}/assets/css/dependencies/dependencies.min.css">
     <link rel="stylesheet" href="{{base}}/assets/css/app.min.css">
     <!-- endcustom -->
 
   </head><!-- head end -->
-  
+
   <!-- body -->
   <body>
 
     {% unless page_data.header.value == 'hidden' %}
-      {% include sections/header.html %}
+      {% include components/header.html %}
     {% endunless %}
 
     {% include _section_handler.html data=page_data.sections.value %}
 
     {% unless page_data.footer.value == 'hidden' %}
-      {% include sections/footer.html %}
+      {% include components/footer.html %}
     {% endunless %}
 
   </body><!-- body end -->
@@ -54,7 +54,7 @@
 
   <!-- inject:js -->
   <!-- endinject -->
-  
+
   <!-- custom:js -->
   <script type="text/javascript" src="{{base}}/assets/js/dependencies/dependencies.min.js"></script>
   <script type="text/javascript" src="{{base}}/assets/js/app.min.js"></script>

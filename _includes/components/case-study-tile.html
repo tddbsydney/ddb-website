@@ -1,0 +1,44 @@
+{% assign tile = include.data[0] %}
+
+<!-- case study tile -->
+<div class="case-study-tile">
+
+  <!-- image -->
+  <div class="image">
+
+    <!-- image layout - desktop -->
+    <img class="image__layout image__layout--desktop" src="{{base}}/assets/images/layout_1920x900.png" alt="">
+
+    <!-- image layout - mobile -->
+    <img class="image__layout image__layout--mobile" src="{{base}}/assets/images/layout_800x820.png" alt="">
+
+    <!-- image cover - desktop -->
+    {% if tile.image.value.views.desktop.url %}
+    <div class="image__cover image__cover--desktop" style="background-image: url('{{ tile.image.value.views.desktop.url }}');"></div>
+    {% endif %}
+
+    <!-- image cover - mobile -->
+    {% if tile.image.value.views.mobile.url %}
+    <div class="image__cover image__cover--mobile" style="background-image: url('{{ tile.image.value.views.mobile.url }}');"></div>
+    {% endif %}
+
+  </div><!-- image end -->
+
+  <!-- content -->
+  <div class="case-study-tile__content" data-align="{{ tile.align.value | default: 'left' }}">
+
+    {% if tile.headline.value %}
+      <p>{{ tile.headline.value }}</p>
+    {% endif %}
+
+    {% if tile.copy.value %}
+      <h2>{{ tile.copy.value }}</h2>
+    {% endif %}
+
+    {% if tile.linkUrl.value.url %}
+      {% include modules/link-button.html link=tile.linkUrl label=tile.linkText.value %}
+    {% endif %}
+
+  </div><!-- content end -->
+
+</div><!-- case study tile end -->

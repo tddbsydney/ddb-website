@@ -1,20 +1,45 @@
 {% for section in include.data %}
-  {% case section.type %}
 
-    {% when "promo" %}
-      {% include sections/promo.html data=section.value %}
+  <section>
 
-    {% when "tiles" %}
-      {% include sections/tiles.html data=section.value %}
+    {% case section.type %}
 
-    {% when "case-study-text" %}
-      {% include sections/case-study-text.html data=section.value %}
+      {% comment %} <!-- Latest & Work page --> {% endcomment %}
+      {% when "promo-video" %}
+        {% include components/promo-video.html data=section.value %}
 
-    {% when "case-study-image" %}
-      {% include sections/case-study-image.html data=section.value %}
+      {% when "case-study-tile" %}
+        {% include components/case-study-tile.html data=section.value %}
 
-    {% when "case-study-video" %}
-      {% include sections/case-study-video.html data=section.value %}
+      {% when "article-tile" %}
+        {% include components/article-tile.html data=section.value %}
 
-  {% endcase %}
+
+
+      {% comment %} <!-- Case Study pages --> {% endcomment %}
+      {% when "content-tile" %}
+        {% include components/content-tile.html data=section.value %}
+
+      {% when "image-tile" %}
+        {% include components/image-tile.html data=section.value %}
+
+      {% when "video-tile" %}
+        {% include components/video-tile.html data=section.value %}
+
+
+
+      {% comment %} <!-- About page --> {% endcomment %}
+      {% when "about-tile" %}
+        {% include components/about-tile.html data=section.value %}
+
+
+
+      {% comment %} <!-- Contact page --> {% endcomment %}
+      {% when "rules-tile" %}
+        {% include components/rules-tile.html data=section.value %}
+
+    {% endcase %}
+
+  </section>
+
 {% endfor %}

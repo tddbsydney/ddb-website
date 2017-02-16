@@ -1,6 +1,6 @@
 {% assign tile = include.data[0] %}
 
-<section class="section-content-tile">
+<div class="content-tile">
 
   {% if tile.headline.value %}
     <p>{{ tile.headline.value }}"</p>
@@ -26,4 +26,4 @@
     <img src="{{ tile.image.main.value }}">
   {% endif %}
 
-</section>
+</div>

@@ -1,8 +1,8 @@
 {
   "page": 1,
   "results_per_page": 20,
-  "results_size": 3,
-  "total_results_size": 3,
+  "results_size": 4,
+  "total_results_size": 4,
   "total_pages": 1,
   "next_page": null,
   "prev_page": null,
@@ -11,12 +11,12 @@
       "id": "WKEQFSUAAEUiq5ZX",
       "uid": "work",
       "type": "work",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKFGwCUAAEUirIdo&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKT70SoAAK8d_8jf&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:07+0000",
-      "last_publication_date": "2017-02-13T05:17:39+0000",
+      "last_publication_date": "2017-02-16T01:09:36+0000",
       "slugs": [
         "work---tribal-ddb"
       ],
@@ -50,17 +50,353 @@
                     {
                       "headline": {
                         "type": "Text",
-                        "value": "Case Study Tile"
+                        "value": "Volkswagen"
                       },
                       "copy": {
                         "type": "Text",
-                        "value": "Lorem ipsum dolor sit amet"
+                        "value": "Aussie blokes were judging the Amarok by its cover, so we removed it.\nSee how we created The Naked Ute"
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1662,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/592c78ebdfecdd8f841943163e15e80f02df75e3_vw3.jpg"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/ca51a12bfc2d64cc8ca91f71a7d120fb49e45def_vw3.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/f7d543d2e270b839a54d5cf12e1ee38d59f8717c_vw3.jpg"
+                            }
+                          }
+                        }
                       },
                       "linkUrl": {
                         "type": "Link.web",
                         "value": {
                           "url": ""
                         }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "View the work"
+                      },
+                      "align": {
+                        "type": "Select",
+                        "value": "right"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "The Sydney Opera House"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "We needed to get more people inside the Sydney Opera House during summer."
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 1249
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/c301b60951d26040de565c63846cc97494103455_opera1.jpg"
+                          },
+                          "views": {
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/9d7a706fb240a7b127c38764990c7ea9b32257c5_opera1.jpg"
+                            },
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/41227de60810b5fc91f7f4a8d9537f5ef97d412b_opera1.jpg"
+                            }
+                          }
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "View the work"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Westpac"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Dear bump, a little somthing is coming."
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/d2a013a78395ce92d09bba2e352ac9a214eeda4f_bump1.jpg"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/7736ff72f79bcd742c6b70995981ea186d81e566_bump1.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/d2a013a78395ce92d09bba2e352ac9a214eeda4f_bump1.jpg"
+                            }
+                          }
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "View the work"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Volkswagen"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "We needed to remind people that Volkswagen is entrenched in Aussie culture.\nWe asked when is a car more than a car?"
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/60e4b4b88f31b73a9bb5178bbf2e02120b2beb47_vw5.jpg"
+                          },
+                          "views": {
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/60e4b4b88f31b73a9bb5178bbf2e02120b2beb47_vw5.jpg"
+                            },
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/2d8c90f2dc719bb1057728c1300ba28dbe3f80b7_vw5.jpg"
+                            }
+                          }
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "View the work"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "McDonald's"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "McDonald’s was modifying their famous, golden Fries for the first time in their history."
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/1ced36afc00d89593c64c726777cf498a87a6ad2_mcd1.jpg"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/68edc81f2b5096c0b198d714771891fdd75a1c84_mcd1.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/1ced36afc00d89593c64c726777cf498a87a6ad2_mcd1.jpg"
+                            }
+                          }
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "View the work"
+                      },
+                      "align": {
+                        "type": "Select",
+                        "value": "center"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Volkswagen"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Can we sell a Golf to town that doesn’t need its city technology?"
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 1201
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/8b60104ff46d4cdc7a975e68342d633cd2d50dd3_vw0.jpg"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/9df1c682387e86e5631a1904916e014f77199fd8_vw0.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/1515c66099db2fd1148a4e551e17efb948e62eac_vw0.jpg"
+                            }
+                          }
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "View the work"
                       }
                     }
                   ]
@@ -75,7 +411,7 @@
       "id": "WKEQcCUAAKomq5fv",
       "uid": "volkswagen",
       "type": "case-studies",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKFGwCUAAEUirIdo&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKT70SoAAK8d_8jf&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -158,15 +494,167 @@
       }
     },
     {
+      "id": "WKTjByoAAIcc_1uc",
+      "uid": "design-guide",
+      "type": "design-guide",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKT70SoAAK8d_8jf&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
+      "tags": [
+
+      ],
+      "first_publication_date": "2017-02-15T23:33:33+0000",
+      "last_publication_date": "2017-02-15T23:33:33+0000",
+      "slugs": [
+        "design-guide"
+      ],
+      "linked_documents": [
+
+      ],
+      "data": {
+        "design-guide": {
+          "meta-title": {
+            "type": "Text",
+            "value": "Design Guide"
+          },
+          "meta-description": {
+            "type": "Text",
+            "value": "The design style guide for the applicaiton."
+          },
+          "sections": {
+            "type": "SliceZone",
+            "value": [
+              {
+                "type": "Slice",
+                "slice_type": "case-study-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Case study tile"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Allignment left lorem ipsum dolor sit amet."
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/4fdf08589c760e275d1335ca7b01aa5e46434b46_placeholder-1920x900-191919.png"
+                          },
+                          "views": {
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/4fdf08589c760e275d1335ca7b01aa5e46434b46_placeholder-1920x900-191919.png"
+                            },
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/52af91158493f4a7cbf59c80992628cfb467a313_placeholder-800x820-191919.png"
+                            }
+                          }
+                        }
+                      },
+                      "linkUrl": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "http://#"
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "Lorem ipsum dolor"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "article-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Article tile external"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Style black dolor consectetur elit."
+                      },
+                      "linkUrl": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "http://#"
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "Read on Medium"
+                      },
+                      "style": {
+                        "type": "Select",
+                        "value": "yellow"
+                      }
+                    },
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Article tile internal"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Style yellow dolor consectetur elit."
+                      },
+                      "linkUrl": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "http://#"
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "Lorem ipsum dolor"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
       "id": "WKEP8CUAAOgdq5Ww",
       "uid": "latest",
       "type": "latest",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKFGwCUAAEUirIdo&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKT70SoAAK8d_8jf&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:26+0000",
-      "last_publication_date": "2017-02-13T05:14:33+0000",
+      "last_publication_date": "2017-02-16T01:09:37+0000",
       "slugs": [
         "latest---tribal-ddb"
       ],
@@ -220,11 +708,103 @@
                     {
                       "headline": {
                         "type": "Text",
-                        "value": "Case Study Tile"
+                        "value": "Westpac"
                       },
                       "copy": {
                         "type": "Text",
-                        "value": "Lorem ipsum dolor sit amet"
+                        "value": "Dear bump, a little somthing is coming."
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/d2a013a78395ce92d09bba2e352ac9a214eeda4f_bump1.jpg"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/7736ff72f79bcd742c6b70995981ea186d81e566_bump1.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/d2a013a78395ce92d09bba2e352ac9a214eeda4f_bump1.jpg"
+                            }
+                          }
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "View the work"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Volkswagen"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Aussie blokes were judging the Amarok by its cover, so we removed it.\nSee how we created The Naked Ute"
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1662,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/592c78ebdfecdd8f841943163e15e80f02df75e3_vw3.jpg"
+                          },
+                          "views": {
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/f7d543d2e270b839a54d5cf12e1ee38d59f8717c_vw3.jpg"
+                            },
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/9236885291fcd19dd94d674429026c46b6180c2f_vw3.jpg"
+                            }
+                          }
+                        }
                       },
                       "linkUrl": {
                         "type": "Link.web",
@@ -234,7 +814,11 @@
                       },
                       "linkText": {
                         "type": "Text",
-                        "value": "Lorem ipsum"
+                        "value": "View the work"
+                      },
+                      "align": {
+                        "type": "Select",
+                        "value": "right"
                       },
                       "foregroundColor": {
                         "type": "Color",
@@ -254,21 +838,21 @@
                     {
                       "headline": {
                         "type": "Text",
-                        "value": "Article Tile 1"
+                        "value": "Culture"
                       },
                       "copy": {
                         "type": "Text",
-                        "value": "Lorem ipsum dolor sit amet"
+                        "value": "Building Teams to Solve Problems"
                       },
                       "linkUrl": {
                         "type": "Link.web",
                         "value": {
-                          "url": "http://#"
+                          "url": "https://medium.com/ddb-sydney/creative-technology-internship-3ad34b4f8807#.e3swtfp20"
                         }
                       },
                       "linkText": {
                         "type": "Text",
-                        "value": "Lorem ipsum"
+                        "value": "Read on Medium"
                       },
                       "foregroundColor": {
                         "type": "Color",
@@ -278,21 +862,21 @@
                     {
                       "headline": {
                         "type": "Text",
-                        "value": "Article Tile 2"
+                        "value": "Creativity"
                       },
                       "copy": {
                         "type": "Text",
-                        "value": "Lorem ipsum dolor sit amet"
+                        "value": "Prototypes over Presentations"
                       },
                       "linkUrl": {
                         "type": "Link.web",
                         "value": {
-                          "url": "http://#"
+                          "url": "https://medium.com/ddb-sydney/creative-technology-internship-3ad34b4f8807#.e3swtfp20"
                         }
                       },
                       "linkText": {
                         "type": "Text",
-                        "value": "Lorem ipsum"
+                        "value": "Medium"
                       },
                       "style": {
                         "type": "Select",
@@ -301,6 +885,434 @@
                       "foregroundColor": {
                         "type": "Color",
                         "value": "#ffffff"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Volkswagen"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "We needed to remind people that Volkswagen is entrenched in Aussie culture.\nWe asked when is a car more than a car?"
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/60e4b4b88f31b73a9bb5178bbf2e02120b2beb47_vw5.jpg"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/213a0e7b38665488f2f1cd40ef0586fc159abb6a_vw5.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/60e4b4b88f31b73a9bb5178bbf2e02120b2beb47_vw5.jpg"
+                            }
+                          }
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "View the work"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "article-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Innovation"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "SXSW Innovation in Connecting People"
+                      },
+                      "linkUrl": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "https://medium.com/ddb-sydney/creative-technology-internship-3ad34b4f8807#.e3swtfp20"
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "Read on Medium"
+                      },
+                      "style": {
+                        "type": "Select",
+                        "value": "yellow"
+                      }
+                    },
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Careers"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Lead Experience Designer wanted"
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "Join the team"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "The Sydney Opera House"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "We needed to get more people inside the Sydney Opera House during summer."
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 1249
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/c301b60951d26040de565c63846cc97494103455_opera1.jpg"
+                          },
+                          "views": {
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/9d7a706fb240a7b127c38764990c7ea9b32257c5_opera1.jpg"
+                            },
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/41227de60810b5fc91f7f4a8d9537f5ef97d412b_opera1.jpg"
+                            }
+                          }
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "View the work"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "article-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Careers"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Lead Experience Designer wanted"
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "Join the team"
+                      }
+                    },
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Strategy"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Culture drawfts category"
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "Read more"
+                      },
+                      "style": {
+                        "type": "Select",
+                        "value": "yellow"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "McDonald's"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "McDonald’s was modifying their famous, golden Fries for the first time in their history."
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/1ced36afc00d89593c64c726777cf498a87a6ad2_mcd1.jpg"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/ef21f6b8d451161829e289507f1178d56b777706_mcd1.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/1ced36afc00d89593c64c726777cf498a87a6ad2_mcd1.jpg"
+                            }
+                          }
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "View the work"
+                      },
+                      "align": {
+                        "type": "Select",
+                        "value": "center"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "article-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Culture"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Building Teams to Solve Problems"
+                      },
+                      "linkUrl": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "https://medium.com/ddb-sydney/creative-technology-internship-3ad34b4f8807#.e3swtfp20"
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "Read on Medium"
+                      }
+                    },
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Technology"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Prototypes over Presentations"
+                      },
+                      "linkUrl": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "https://medium.com/ddb-sydney/creative-technology-internship-3ad34b4f8807#.e3swtfp20"
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "Read on Medium"
+                      },
+                      "style": {
+                        "type": "Select",
+                        "value": "yellow"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "case-study-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Volkswagen"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Can we sell a Golf to town that doesn’t need its city technology?"
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 1201
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/8b60104ff46d4cdc7a975e68342d633cd2d50dd3_vw0.jpg"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/5f34991da029144a7086fd8691fdbacd218af499_vw0.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/1515c66099db2fd1148a4e551e17efb948e62eac_vw0.jpg"
+                            }
+                          }
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "View the work"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "article-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Strategy"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Culture dwarfs category"
+                      },
+                      "linkUrl": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "https://medium.com/ddb-sydney/creative-technology-internship-3ad34b4f8807#.e3swtfp20"
+                        }
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "Read on Medium"
+                      },
+                      "style": {
+                        "type": "Select",
+                        "value": "yellow"
+                      }
+                    },
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Careers"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Lead Experience Designer wanted"
+                      },
+                      "linkText": {
+                        "type": "Text",
+                        "value": "Join the team"
                       }
                     }
                   ]

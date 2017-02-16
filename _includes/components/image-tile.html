@@ -1,6 +1,6 @@
 {% assign tile = include.data[0] %}
 
-<section class="section-image-tile">
+<div class="image-tile">
 
   {% if tile.image.main.value %}
     <img src="{{ tile.image.main.value }}" />
@@ -10,4 +10,4 @@
     <img class="{{ image.name }}" src="{{ image.value }}" />
   {% endif %}
 
-</section>
+</div>
