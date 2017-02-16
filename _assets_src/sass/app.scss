@@ -33,8 +33,10 @@
 @import "modules/section";
 
 @import "modules/link";
-@import "modules/image";
 @import "modules/button";
+
+@import "modules/image";
+@import "modules/video";
 
 // -------------------------------------
 //   App - Directives
@@ -44,6 +46,8 @@
 // -------------------------------------
 //   App - Components
 // -------------------------------------
-@import "components/article-tiles";
 @import "components/case-study-tile";
 @import "components/case-study-work";
+@import "components/promo-video";
+
+@import "components/article-tiles";

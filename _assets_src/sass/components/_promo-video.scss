@@ -1,0 +1,64 @@
+// -------------------------------------
+//   Component - Promo Video
+// -------------------------------------
+/**
+  * @name promo-video
+  * @desc Styles for the case study Work component.
+**/
+
+.promo-video { @extend %section; }
+
+// -------------------------------------
+//   Promo Video - Content
+// -------------------------------------
+$promov_content_w_max: $cs_tile_content_w_max; // 50%
+$promov_content_inner_w_max: $cs_tile_content_inner_w_max; // 80%
+$promov_content_inner_w_max_tab: $cs_tile_content_inner_w_max_tab; // 95%
+$promov_content_inner_w_max_mob: $cs_tile_content_inner_w_max_mob; // 80%
+$promov_content_margin_mob: $csw_content_margin_mob; // 20vw
+
+.promo-video__content {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  @extend %section--padding;
+
+  width: 100%;
+  max-width: $promov_content_w_max;
+
+  @include mobile { 
+    max-width: 100%;
+    transform: none !important;
+
+    left: 0 !important;
+    top: $promov_content_margin_mob !important; 
+  }
+
+  > h1 {
+    margin: 0;
+    display: block;
+
+    color: inherit;
+    max-width: $promov_content_inner_w_max;
+    @include tablet-sm { max-width: $promov_content_inner_w_max_tab; }
+    @include mobile    { max-width: $promov_content_inner_w_max_mob; }
+  }
+
+  &[data-align="left"]   { @extend %transform-center-v; left: 0;  }
+  &[data-align="right"]  { @extend %transform-center-v; right: 0; }
+}
+
+// -------------------------------------
+//   Promo Video - Scroll
+// -------------------------------------
+$promov_scroll_margin: $csw_scroll_margin; // 0.5em
+
+.promo-video__scroll {
+  @extend %transform-center-h;
+  @extend %font-size-h1;
+
+  &:last-child {
+    bottom: 0;
+    margin-bottom: $promov_scroll_margin;
+  }
+}
