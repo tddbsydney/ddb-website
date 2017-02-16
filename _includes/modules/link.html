@@ -2,12 +2,6 @@
 {% assign label = include.label %}
 
 {% if link.value.url %}
-  {% assign segs = link.value.url | split: "/" %}
-  {% for seg in segs %}
-    {% if seg == "medium.com" %}
-      {% assign isMedium = true %}
-    {% endif %}
-  {% endfor %}
 
   {% capture linkUrl %}
     {% case link.type %}
@@ -26,14 +20,6 @@
     {% endcase %}
   {% endcapture %}
 
-  {% capture linkClass %}
-    {% if isExternalLink %}
-      button
-    {% else %}
-      link
-    {% endif %}
-  {% endcapture %}
-
   {% capture linkTarget %}
     {% if isExternalLink %}
       target="_blank"
@@ -46,11 +32,7 @@
     {% endif %}
   {% endcapture %}
 
-  <a class="{{ linkClass | normalize_whitespace }}" href="{{ linkUrl | normalize_whitespace }}" {{ linkTarget | normalize_whitespace }} {{ linkLabel | normalize_whitespace }} >
-    {% if isMedium %}
-      <span> Read on <i class="icon icon-medium"></i> Medium </span>
-    {% else %}
-      <span> {{ label | default: "View" }} </span>
-    {% endif %}
+  <a class="link" href="{{ linkUrl | normalize_whitespace }}" {{ linkTarget | normalize_whitespace }} {{ linkLabel | normalize_whitespace }} >
+    <span> {{ label | default: "View" }} </span>
   </a>
 {% endif %}
