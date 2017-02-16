@@ -12,10 +12,13 @@
   padding-top: $section_pad * 2;
   @include mobile { padding-top: $section_pad_mob * 2; }
   @include desktop-lg-up { padding-top: $section_pad_ret * 2; }
-
-  padding-bottom: $section_pad * 3;
-  @include mobile { padding-bottom: $section_pad_mob * 3; }
-  @include desktop-lg-up { padding-bottom: $section_pad_ret * 3; }
+  
+  // @chris: 
+  // make the top and bottom padding the same 
+  // ( the design is just an inconsistency )
+  padding-bottom: $section_pad * 2;
+  @include mobile { padding-bottom: $section_pad_mob * 2; }
+  @include desktop-lg-up { padding-bottom: $section_pad_ret * 2; }
 
   padding-left: $section_pad / 2;
   @include mobile { padding-left: $section_pad_mob / 2; }
