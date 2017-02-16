@@ -24,8 +24,10 @@
   </head><!-- head end -->
   <!-- body -->
   <body>
-    <div class="section-header">
-    </div>
+    <section>
+      <header>
+      </header>
+    </section>
     <!-- 
 
 
@@ -43,13 +45,35 @@
             <img class="video__layout video__layout--desktop" src="/assets/images/layout_1920x900.png" alt="">
             <!-- video layout - mobile -->
             <img class="video__layout video__layout--mobile" src="/assets/images/layout_800x820.png" alt="">
+            <!-- video cover - desktop -->
+            <video class="video__cover video__cover--desktop" poster="/assets/images/video-poster-performance_desktop.jpg" muted loop autoplay playsinline>
+              <source src="/assets/videos/performance.mp4" type="video/mp4">
+            </video>
+            <!-- video cover - mobile -->
+            <video class="video__cover video__cover--mobile" poster="/assets/images/video-poster-performance_mobile.jpg" muted loop autoplay playsinline>
+              <source src="/assets/videos/performance.mp4" type="video/mp4">
+            </video>
           </div>
           <!-- video end -->
           <!-- content -->
           <div class="promo-video__content" data-align="left">
-            <h1> Promo video <br>
-               allignment left <br>
-               lorem ipsum </h1>
+            <h1>
+              <span> Promo video <br>
+                 allignment left <br>
+                 lorem ipsum One </span>
+              <span style="display: none; opacity: 0;"> Promo video <br>
+                 allignment left <br>
+                 lorem ipsum Two   </span>
+              <span style="display: none; opacity: 0;"> Promo video <br>
+                 allignment left <br>
+                 lorem ipsum Three </span>
+              <span style="display: none; opacity: 0;"> Promo video <br>
+                 allignment left <br>
+                 lorem ipsum Four  </span>
+              <span style="display: none; opacity: 0;"> Promo video <br>
+                 allignment left <br>
+                 lorem ipsum Five  </span>
+            </h1>
           </div>
           <!-- content end -->
           <!-- scroll down -->
@@ -428,8 +452,71 @@
       </section>
       <!-- section end -->
     </main>
-    <div class="section-footer">
-    </div>
+    <section>
+      <footer class="footer">
+        <div class="footer__col">
+          <p>Contact</p>
+          <ul>
+            <li>
+              <a href="https://goo.gl/maps/aAmAd4ZJe5Q2" target="_blank">
+                <span>3/46-52 Mountain St</span><br class="all" />
+                <span>Ultimo NSW 2007</span><br class="all" />
+                <span>Sydney, Australia</span>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="tel:0282302222" target="_blank">
+                <span>(02) 8230 2222</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p>Social</p>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/ddbgroupsydney/" target="_blank">
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/ddbaustralia" target="_blank">
+                <span>Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/ddb-sydney" target="_blank">
+                <span>Medium</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/ddb-sydney" target="_blank">
+                <span>LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+        </div>
+        <div class="footer__col">
+          <p>&copy; DDB Sydney 2017</p>
+          <ul>
+            <li>
+              <a href="../careers" target="_blank">
+                <span>Careers</span>
+              </a>
+            </li>
+            <li>
+              <a href="../privacy" target="_blank">
+                <span>Privacy Policy</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </section>
   </body><!-- body end -->
   <!-- bower:js -->
   <!-- endbower -->
