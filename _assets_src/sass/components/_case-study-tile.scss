@@ -50,11 +50,11 @@ $cs_tile_content_inner_w_max_mob: 80%;
   &[data-align="right"]  { @extend %transform-center-v; right: 0; }
   &[data-align="center"] { @extend %transform-center; }
 
-  &[data-align="topLeft"]  { top: 0; left: 0;  }
-  &[data-align="topRight"] { top: 0; right: 0; }
-  &[data-align="top"]      { @extend %transform-center-h; top: 0; }
+  &[data-align="topLeft"]   { top: 0; left: 0;  }
+  &[data-align="topRight"]  { top: 0; right: 0; }
+  &[data-align="topCenter"] { @extend %transform-center-h; top: 0; }
 
-  &[data-align="bottom"]      { @extend %transform-center-h; bottom: 0; }
-  &[data-align="bottomLeft"]  { bottom: 0; left: 0;  }
-  &[data-align="bottomRight"] { bottom: 0; right: 0; }
+  &[data-align="bottomLeft"]   { bottom: 0; left: 0;  }
+  &[data-align="bottomRight"]  { bottom: 0; right: 0; }
+  &[data-align="bottomCenter"] { @extend %transform-center-h; bottom: 0; }
 }
