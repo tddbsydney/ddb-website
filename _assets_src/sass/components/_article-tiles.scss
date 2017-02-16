@@ -30,11 +30,15 @@ $art_tile_h_min_mob: 55vw - ($section_pad * 2);
     .button { @extend %button--black; }
   }
 
-  &[data-style="black"]  { 
-    color: white; background-color: black;
+  &[data-style="black"],
+  &[data-style="grey"] { 
+    color: white;
     .link { @extend %link--active-white; }
     .button { @extend %button--white; }
   }
+
+  &[data-style="black"] { background-color: black; }
+  &[data-style="grey"]  { background-color: $color_grey_night; }
 }
 
 // -------------------------------------

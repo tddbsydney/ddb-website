@@ -9,21 +9,21 @@
 .footer {
   @extend %flex--row;
 
-  padding-top: $section_pad*2;
-  @include mobile { padding-top: $section_pad_mob*2; }
-  @include desktop-lg-up { padding-top: $section_pad_ret*2; }
+  padding-top: $section_pad * 2;
+  @include mobile { padding-top: $section_pad_mob * 2; }
+  @include desktop-lg-up { padding-top: $section_pad_ret * 2; }
 
-  padding-bottom: $section_pad*3;
-  @include mobile { padding-bottom: $section_pad_mob*3; }
-  @include desktop-lg-up { padding-bottom: $section_pad_ret*3; }
+  padding-bottom: $section_pad * 3;
+  @include mobile { padding-bottom: $section_pad_mob * 3; }
+  @include desktop-lg-up { padding-bottom: $section_pad_ret * 3; }
 
-  padding-left: $section_pad/2;
-  @include mobile { padding-left: $section_pad_mob/2; }
-  @include desktop-lg-up { padding-left: $section_pad_ret/2; }
+  padding-left: $section_pad / 2;
+  @include mobile { padding-left: $section_pad_mob / 2; }
+  @include desktop-lg-up { padding-left: $section_pad_ret / 2; }
 
-  padding-right: $section_pad/2;
-  @include mobile { padding-right: $section_pad_mob/2; }
-  @include desktop-lg-up { padding-right: $section_pad_ret/2; }
+  padding-right: $section_pad / 2;
+  @include mobile { padding-right: $section_pad_mob / 2; }
+  @include desktop-lg-up { padding-right: $section_pad_ret / 2; }
 
   // $section_pad: (100 / (12 * 2)) * 1vw; // default
   // $section_pad_mob: (100 / (12 * 1.5)) * 1vw; // mobile
@@ -33,13 +33,13 @@
 .footer__col {
   @extend %flex--col;
 
-  padding-left: $section_pad/2;
-  @include mobile { padding-left: $section_pad_mob/2; }
-  @include desktop-lg-up { padding-left: $section_pad_ret/2; }
+  padding-left: $section_pad / 2;
+  @include mobile { padding-left: $section_pad_mob / 2; }
+  @include desktop-lg-up { padding-left: $section_pad_ret / 2; }
 
-  padding-right: $section_pad/2;
-  @include mobile { padding-right: $section_pad_mob/2; }
-  @include desktop-lg-up { padding-right: $section_pad_ret/2; }
+  padding-right: $section_pad / 2;
+  @include mobile { padding-right: $section_pad_mob / 2; }
+  @include desktop-lg-up { padding-right: $section_pad_ret / 2; }
 
   &:last-child() {
     text-align: right;
@@ -53,8 +53,8 @@
       list-style-type: none;
 
       span {
-        border-bottom: 2px solid white;
         line-height: 1.5em;
+        border-bottom: 2px solid white;
       }
     }
   }

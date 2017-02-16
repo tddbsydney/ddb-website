@@ -26,6 +26,9 @@
 // -------------------------------------
 //   Video - Cover
 // -------------------------------------
+$video_overlay_color: black;
+$video_overlay_opacity: 0.25;
+
 // videos used purely for the purpose of
 // covering an entrire parent element in 
 // html ( used along with layout videos )
@@ -37,18 +40,24 @@
   
   // modifiers for switching of 
   // responsive images with CSS
+  // desktop
   &--desktop { 
     @extend %image__cover--desktop;
     width: 100%;
     height: auto;
   }
-
+  
+  // mobile
   &--mobile  { 
     @extend %image__cover--mobile;
     @include transform-center-h(false);
     width: auto;
     height: 100%;
-    min-width: 100%;
-    min-height: 100%;
+  }
+
+  // overlay
+  &--overlay {
+    opacity: $video_overlay_opacity;
+    background-color: $video_overlay_color;
   }
 }
