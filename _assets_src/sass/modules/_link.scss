@@ -25,7 +25,7 @@ $link_line_h: 2px;
     color: white;
 
     &:before {
-      @include transitions(width);
+      @include transitions(width, visibility);
       position: absolute;
       visibility: hidden;
 
@@ -44,7 +44,7 @@ $link_line_h: 2px;
     @include transitions(color);
 
     &:before {
-      @include transitions(width);
+      @include transitions(width, visibility);
       visibility: visible;
       width: 100%;
     }

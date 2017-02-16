@@ -34,7 +34,7 @@ $btn_bdr_w: 2px;
     font-size: $btn_font_size;
 
     &:before {
-      @include transitions(width);
+      @include transitions(width, visibility);
       position: absolute;
       visibility: hidden;
 
@@ -60,7 +60,7 @@ $btn_bdr_w: 2px;
     color: black;
 
     &:before {
-      @include transitions(width);
+      @include transitions(width, visibility);
       visibility: visible;
       width: 100%;
     }
