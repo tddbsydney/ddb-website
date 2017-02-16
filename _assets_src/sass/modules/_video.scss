@@ -31,10 +31,20 @@
 // html ( used along with layout videos )
 .video__cover { 
   @extend %image__cover;
-  background-color: black;
   
   // modifiers for switching of 
   // responsive images with CSS
-  &--desktop { @extend %image__cover--desktop; }
-  &--mobile  { @extend %image__cover--mobile;  }
+  &--desktop { 
+    @extend %image__cover--desktop;
+    height: auto;
+    width: 100%;
+  }
+
+  &--mobile  { 
+    @extend %image__cover--mobile;
+    @include transform-center-h(false);
+    height: 100%;
+    width: auto;
+
+  }
 }

@@ -20,7 +20,7 @@ $btn_bdr_w: 2px;
   position: relative;
   
   span { 
-    @include transitions(all);
+    @include transitions(color);
     display: inline-block;
     position: relative;
     z-index: 0;
@@ -34,7 +34,7 @@ $btn_bdr_w: 2px;
     font-size: $btn_font_size;
 
     &:before {
-      @include transitions(all);
+      @include transitions(width);
       position: absolute;
       visibility: hidden;
 
@@ -56,9 +56,11 @@ $btn_bdr_w: 2px;
   }
 
   &:hover span {
+    @include transitions(color);
     color: black;
 
     &:before {
+      @include transitions(width);
       visibility: visible;
       width: 100%;
     }
