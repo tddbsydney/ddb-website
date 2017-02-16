@@ -38,13 +38,17 @@
   <body>
 
     {% unless page_data.header.value == 'hidden' %}
+      <section>
       {% include components/header.html %}
+      </section>
     {% endunless %}
 
     {{ content }}
 
     {% unless page_data.footer.value == 'hidden' %}
+      <section>
       {% include components/footer.html %}
+      </section>
     {% endunless %}
 
   </body><!-- body end -->
