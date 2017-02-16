@@ -19,8 +19,8 @@
           <h4>{{ tile.copy.value }}</h4>
         {% endif %}
 
-        {% if tile.linkUrl.value.url %}
-          {% include modules/link-button.html link=tile.linkUrl label=tile.linkText.value %}
+        {% if tile.linkUrl.value %}
+          {% include modules/button.html link=tile.linkUrl label=tile.linkText.value %}
         {% endif %}
 
       </div><!-- content end -->

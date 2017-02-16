@@ -35,7 +35,7 @@
       <h2>{{ tile.copy.value }}</h2>
     {% endif %}
 
-    {% if tile.linkUrl.value.url %}
+    {% if tile.linkUrl.value %}
       {% include modules/link.html link=tile.linkUrl label=tile.linkText.value %}
     {% endif %}
 

@@ -11,17 +11,64 @@
       "id": "WKEQFSUAAEUiq5ZX",
       "uid": "work",
       "type": "work",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKT70SoAAK8d_8jf&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKURxioAAK8dACmM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:07+0000",
-      "last_publication_date": "2017-02-16T01:09:36+0000",
+      "last_publication_date": "2017-02-16T02:42:52+0000",
       "slugs": [
         "work---tribal-ddb"
       ],
       "linked_documents": [
+        {
+          "id": "WKEQFSUAAEUiq5ZX",
+          "tags": [
 
+          ],
+          "type": "work",
+          "slug": "work---tribal-ddb"
+        },
+        {
+          "id": "WKEQFSUAAEUiq5ZX",
+          "tags": [
+
+          ],
+          "type": "work",
+          "slug": "work---tribal-ddb"
+        },
+        {
+          "id": "WKEQFSUAAEUiq5ZX",
+          "tags": [
+
+          ],
+          "type": "work",
+          "slug": "work---tribal-ddb"
+        },
+        {
+          "id": "WKEQFSUAAEUiq5ZX",
+          "tags": [
+
+          ],
+          "type": "work",
+          "slug": "work---tribal-ddb"
+        },
+        {
+          "id": "WKEQFSUAAEUiq5ZX",
+          "tags": [
+
+          ],
+          "type": "work",
+          "slug": "work---tribal-ddb"
+        },
+        {
+          "id": "WKEQFSUAAEUiq5ZX",
+          "tags": [
+
+          ],
+          "type": "work",
+          "slug": "work---tribal-ddb"
+        }
       ],
       "data": {
         "work": {
@@ -91,9 +138,18 @@
                         }
                       },
                       "linkUrl": {
-                        "type": "Link.web",
+                        "type": "Link.document",
                         "value": {
-                          "url": ""
+                          "document": {
+                            "id": "WKEQFSUAAEUiq5ZX",
+                            "type": "work",
+                            "tags": [
+
+                            ],
+                            "slug": "work---tribal-ddb",
+                            "uid": "work"
+                          },
+                          "isBroken": false
                         }
                       },
                       "linkText": {
@@ -102,7 +158,7 @@
                       },
                       "align": {
                         "type": "Select",
-                        "value": "right"
+                        "value": "topRight"
                       }
                     }
                   ]
@@ -156,6 +212,21 @@
                               "url": "https://prismic-io.s3.amazonaws.com/ddb-website/41227de60810b5fc91f7f4a8d9537f5ef97d412b_opera1.jpg"
                             }
                           }
+                        }
+                      },
+                      "linkUrl": {
+                        "type": "Link.document",
+                        "value": {
+                          "document": {
+                            "id": "WKEQFSUAAEUiq5ZX",
+                            "type": "work",
+                            "tags": [
+
+                            ],
+                            "slug": "work---tribal-ddb",
+                            "uid": "work"
+                          },
+                          "isBroken": false
                         }
                       },
                       "linkText": {
@@ -216,9 +287,28 @@
                           }
                         }
                       },
+                      "linkUrl": {
+                        "type": "Link.document",
+                        "value": {
+                          "document": {
+                            "id": "WKEQFSUAAEUiq5ZX",
+                            "type": "work",
+                            "tags": [
+
+                            ],
+                            "slug": "work---tribal-ddb",
+                            "uid": "work"
+                          },
+                          "isBroken": false
+                        }
+                      },
                       "linkText": {
                         "type": "Text",
                         "value": "View the work"
+                      },
+                      "align": {
+                        "type": "Select",
+                        "value": "topLeft"
                       }
                     }
                   ]
@@ -272,6 +362,21 @@
                               "url": "https://prismic-io.s3.amazonaws.com/ddb-website/2d8c90f2dc719bb1057728c1300ba28dbe3f80b7_vw5.jpg"
                             }
                           }
+                        }
+                      },
+                      "linkUrl": {
+                        "type": "Link.document",
+                        "value": {
+                          "document": {
+                            "id": "WKEQFSUAAEUiq5ZX",
+                            "type": "work",
+                            "tags": [
+
+                            ],
+                            "slug": "work---tribal-ddb",
+                            "uid": "work"
+                          },
+                          "isBroken": false
                         }
                       },
                       "linkText": {
@@ -330,6 +435,21 @@
                               "url": "https://prismic-io.s3.amazonaws.com/ddb-website/1ced36afc00d89593c64c726777cf498a87a6ad2_mcd1.jpg"
                             }
                           }
+                        }
+                      },
+                      "linkUrl": {
+                        "type": "Link.document",
+                        "value": {
+                          "document": {
+                            "id": "WKEQFSUAAEUiq5ZX",
+                            "type": "work",
+                            "tags": [
+
+                            ],
+                            "slug": "work---tribal-ddb",
+                            "uid": "work"
+                          },
+                          "isBroken": false
                         }
                       },
                       "linkText": {
@@ -394,9 +514,28 @@
                           }
                         }
                       },
+                      "linkUrl": {
+                        "type": "Link.document",
+                        "value": {
+                          "document": {
+                            "id": "WKEQFSUAAEUiq5ZX",
+                            "type": "work",
+                            "tags": [
+
+                            ],
+                            "slug": "work---tribal-ddb",
+                            "uid": "work"
+                          },
+                          "isBroken": false
+                        }
+                      },
                       "linkText": {
                         "type": "Text",
                         "value": "View the work"
+                      },
+                      "align": {
+                        "type": "Select",
+                        "value": "topLeft"
                       }
                     }
                   ]
@@ -411,12 +550,12 @@
       "id": "WKEQcCUAAKomq5fv",
       "uid": "volkswagen",
       "type": "case-studies",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKT70SoAAK8d_8jf&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKURxioAAK8dACmM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:48:38+0000",
-      "last_publication_date": "2017-02-13T05:40:16+0000",
+      "last_publication_date": "2017-02-16T02:10:47+0000",
       "slugs": [
         "volkswagen-case-study---tribal-ddb"
       ],
@@ -454,7 +593,7 @@
                     {
                       "headline": {
                         "type": "Text",
-                        "value": "Case Study Tile"
+                        "value": "Case study tile"
                       },
                       "copy": {
                         "type": "Text",
@@ -474,11 +613,11 @@
                     {
                       "headline": {
                         "type": "Text",
-                        "value": "Content Tile"
+                        "value": "Content tile"
                       },
                       "subline": {
                         "type": "Text",
-                        "value": "Lorem ipsum dolor"
+                        "value": "Lorem ipsum dolor sit amet"
                       },
                       "copy": {
                         "type": "Text",
@@ -497,7 +636,7 @@
       "id": "WKTjByoAAIcc_1uc",
       "uid": "design-guide",
       "type": "design-guide",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKT70SoAAK8d_8jf&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKURxioAAK8dACmM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -649,17 +788,64 @@
       "id": "WKEP8CUAAOgdq5Ww",
       "uid": "latest",
       "type": "latest",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKT70SoAAK8d_8jf&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKURxioAAK8dACmM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:26+0000",
-      "last_publication_date": "2017-02-16T01:09:37+0000",
+      "last_publication_date": "2017-02-16T02:43:18+0000",
       "slugs": [
         "latest---tribal-ddb"
       ],
       "linked_documents": [
+        {
+          "id": "WKEP8CUAAOgdq5Ww",
+          "tags": [
 
+          ],
+          "type": "latest",
+          "slug": "latest---tribal-ddb"
+        },
+        {
+          "id": "WKEP8CUAAOgdq5Ww",
+          "tags": [
+
+          ],
+          "type": "latest",
+          "slug": "latest---tribal-ddb"
+        },
+        {
+          "id": "WKEP8CUAAOgdq5Ww",
+          "tags": [
+
+          ],
+          "type": "latest",
+          "slug": "latest---tribal-ddb"
+        },
+        {
+          "id": "WKEP8CUAAOgdq5Ww",
+          "tags": [
+
+          ],
+          "type": "latest",
+          "slug": "latest---tribal-ddb"
+        },
+        {
+          "id": "WKEP8CUAAOgdq5Ww",
+          "tags": [
+
+          ],
+          "type": "latest",
+          "slug": "latest---tribal-ddb"
+        },
+        {
+          "id": "WKEP8CUAAOgdq5Ww",
+          "tags": [
+
+          ],
+          "type": "latest",
+          "slug": "latest---tribal-ddb"
+        }
       ],
       "data": {
         "latest": {
@@ -688,7 +874,7 @@
                     {
                       "headline": {
                         "type": "Text",
-                        "value": "Promo Video"
+                        "value": "Promo video"
                       },
                       "foregroundColor": {
                         "type": "Color",
@@ -748,9 +934,28 @@
                           }
                         }
                       },
+                      "linkUrl": {
+                        "type": "Link.document",
+                        "value": {
+                          "document": {
+                            "id": "WKEP8CUAAOgdq5Ww",
+                            "type": "latest",
+                            "tags": [
+
+                            ],
+                            "slug": "latest---tribal-ddb",
+                            "uid": "latest"
+                          },
+                          "isBroken": false
+                        }
+                      },
                       "linkText": {
                         "type": "Text",
                         "value": "View the work"
+                      },
+                      "align": {
+                        "type": "Select",
+                        "value": "topLeft"
                       }
                     }
                   ]
@@ -807,9 +1012,18 @@
                         }
                       },
                       "linkUrl": {
-                        "type": "Link.web",
+                        "type": "Link.document",
                         "value": {
-                          "url": "http://#"
+                          "document": {
+                            "id": "WKEP8CUAAOgdq5Ww",
+                            "type": "latest",
+                            "tags": [
+
+                            ],
+                            "slug": "latest---tribal-ddb",
+                            "uid": "latest"
+                          },
+                          "isBroken": false
                         }
                       },
                       "linkText": {
@@ -818,7 +1032,7 @@
                       },
                       "align": {
                         "type": "Select",
-                        "value": "right"
+                        "value": "topRight"
                       },
                       "foregroundColor": {
                         "type": "Color",
@@ -854,6 +1068,10 @@
                         "type": "Text",
                         "value": "Read on Medium"
                       },
+                      "style": {
+                        "type": "Select",
+                        "value": "yellow"
+                      },
                       "foregroundColor": {
                         "type": "Color",
                         "value": "#ffffff"
@@ -877,10 +1095,6 @@
                       "linkText": {
                         "type": "Text",
                         "value": "Medium"
-                      },
-                      "style": {
-                        "type": "Select",
-                        "value": "yellow"
                       },
                       "foregroundColor": {
                         "type": "Color",
@@ -938,6 +1152,21 @@
                               "url": "https://prismic-io.s3.amazonaws.com/ddb-website/60e4b4b88f31b73a9bb5178bbf2e02120b2beb47_vw5.jpg"
                             }
                           }
+                        }
+                      },
+                      "linkUrl": {
+                        "type": "Link.document",
+                        "value": {
+                          "document": {
+                            "id": "WKEP8CUAAOgdq5Ww",
+                            "type": "latest",
+                            "tags": [
+
+                            ],
+                            "slug": "latest---tribal-ddb",
+                            "uid": "latest"
+                          },
+                          "isBroken": false
                         }
                       },
                       "linkText": {
@@ -1046,6 +1275,21 @@
                           }
                         }
                       },
+                      "linkUrl": {
+                        "type": "Link.document",
+                        "value": {
+                          "document": {
+                            "id": "WKEP8CUAAOgdq5Ww",
+                            "type": "latest",
+                            "tags": [
+
+                            ],
+                            "slug": "latest---tribal-ddb",
+                            "uid": "latest"
+                          },
+                          "isBroken": false
+                        }
+                      },
                       "linkText": {
                         "type": "Text",
                         "value": "View the work"
@@ -1144,6 +1388,21 @@
                               "url": "https://prismic-io.s3.amazonaws.com/ddb-website/1ced36afc00d89593c64c726777cf498a87a6ad2_mcd1.jpg"
                             }
                           }
+                        }
+                      },
+                      "linkUrl": {
+                        "type": "Link.document",
+                        "value": {
+                          "document": {
+                            "id": "WKEP8CUAAOgdq5Ww",
+                            "type": "latest",
+                            "tags": [
+
+                            ],
+                            "slug": "latest---tribal-ddb",
+                            "uid": "latest"
+                          },
+                          "isBroken": false
                         }
                       },
                       "linkText": {
@@ -1262,9 +1521,28 @@
                           }
                         }
                       },
+                      "linkUrl": {
+                        "type": "Link.document",
+                        "value": {
+                          "document": {
+                            "id": "WKEP8CUAAOgdq5Ww",
+                            "type": "latest",
+                            "tags": [
+
+                            ],
+                            "slug": "latest---tribal-ddb",
+                            "uid": "latest"
+                          },
+                          "isBroken": false
+                        }
+                      },
                       "linkText": {
                         "type": "Text",
                         "value": "View the work"
+                      },
+                      "align": {
+                        "type": "Select",
+                        "value": "topLeft"
                       }
                     }
                   ]

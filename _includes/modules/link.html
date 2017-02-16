@@ -1,7 +1,6 @@
 {% assign link = include.link %}
 {% assign label = include.label %}
 
-{% if link.value.url %}
 
   {% capture linkUrl %}
     {% case link.type %}
@@ -35,4 +34,3 @@
   <a class="link" href="{{ linkUrl | normalize_whitespace }}" {{ linkTarget | normalize_whitespace }} {{ linkLabel | normalize_whitespace }} >
     <span> {{ label | default: "View" }} </span>
   </a>
-{% endif %}
