@@ -1,0 +1,34 @@
+// -------------------------------------
+//   Component - Case Study Work
+// -------------------------------------
+/**
+  * @name case-study-work
+  * @desc Styles for the case study Work component.
+**/
+
+.case-study-work { @extend .case-study-tile; }
+
+// -------------------------------------
+//   Case Study Work - Content
+// -------------------------------------
+$csw_content_margin_mob: 20vw;
+
+.case-study-work__content { 
+  @extend .case-study-tile__content;
+  @include mobile { top: $csw_content_margin_mob !important; }
+}
+
+// -------------------------------------
+//   Case Study Work - Scroll
+// -------------------------------------
+$csw_scroll_margin: 0.5em;
+
+.case-study-work__scroll {
+  @extend %transform-center-h;
+  @extend %font-size-h1;
+
+  &:last-child {
+    bottom: 0;
+    margin-bottom: $csw_scroll_margin;
+  }
+}

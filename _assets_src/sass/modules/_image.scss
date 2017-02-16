@@ -6,48 +6,58 @@
   * @desc Styles for the image module.
 **/
 
-.image {
-  position: relative;
-  display: block;
-  
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  box-sizing: border-box;
-  
-  // to prevent alt text
-  // from displayed while
-  // the img is loaded
-  color: transparent;
+%image {
+  .image {
+    position: relative;
+    display: block;
+    
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    
+    // to prevent alt text
+    // from displayed while
+    // the img is loaded
+    color: transparent;
+  }
 }
+
+.image { @extend %image; }
 
 // -------------------------------------
 //   Image - Layout
 // -------------------------------------
 // images used purely for the purpose of
 // layout in html ( also the elements that
-// contain the dominant-color of the image )
-.image__layout {
+// contains the dominant-color of the image )
+%image__layout {
   @extend .image;
   background-color: black;
+}
+
+// modifer - desktop
+%image__layout--desktop {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+// modifer - mobile
+%image__layout--mobile {
+  @include mobile-up {
+    display: none !important;
+  }
+}
+
+// image - layout
+.image__layout {
+  @extend %image__layout;
 
   // modifiers for switching of 
   // responsive images with CSS
-  &--desktop, &--mobile { }
-
-  // modifier - desktop
-  &--desktop { 
-    @include mobile {
-      display: none !important;
-    }
-  }
-  
-  // modifier - mobile
-  &--mobile { 
-    @include mobile-up {
-      display: none !important;
-    }
-  }
+  &--desktop { @extend %image__layout--desktop; }
+  &--mobile  { @extend %image__layout--mobile;  }
 }
 
 // -------------------------------------
@@ -56,7 +66,7 @@
 // images used purely for the purpose of
 // covering an entrire parent element in 
 // html ( used along with layout images )
-.image__cover {
+%image__cover {
   position: absolute;
   z-index: $zi_default;
   left: 0;
@@ -66,25 +76,31 @@
   height: 100%;
 
   @extend %background-image;
-  background-color: black;
+  background-color: transparent;
+}
+
+// modifer - desktop
+%image__cover--desktop {
+  @include mobile {
+    display: none !important;
+    background-image: none !important;
+  }
+}
+
+// modifer - mobile
+%image__cover--mobile {
+  @include mobile-up {
+    display: none !important;
+    background-image: none !important;
+  }
+}
+
+// image - cover
+.image__cover {
+  @extend %image__cover;
   
   // modifiers for switching of 
   // responsive images with CSS
-  &--desktop, &--mobile { }
-  
-  // modifier - desktop
-  &--desktop { 
-    @include mobile {
-      display: none !important;
-      background-image: none !important;
-    }
-  }
-  
-  // modifier - mobile
-  &--mobile { 
-    @include mobile-up {
-      display: none !important;
-      background-image: none !important;
-    }
-  }
+  &--desktop { @extend %image__cover--desktop; }
+  &--mobile  { @extend %image__cover--mobile;  }
 }

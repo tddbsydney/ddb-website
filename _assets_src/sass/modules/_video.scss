@@ -1,0 +1,40 @@
+// -------------------------------------
+//   Module - Video
+// -------------------------------------
+/**
+  * @name video
+  * @desc Styles for the video module.
+**/
+
+.video { @extend %image; }
+
+// -------------------------------------
+//   Video - Layout
+// -------------------------------------
+// videos used purely for the purpose of
+// layout in html ( also the elements that
+// contains the dominant-color of the video )
+.video__layout {
+  @extend %image__layout;
+
+  // modifiers for switching of 
+  // responsive images with CSS
+  &--desktop { @extend %image__layout--desktop; }
+  &--mobile  { @extend %image__layout--mobile;  }
+}
+
+// -------------------------------------
+//   Video - Cover
+// -------------------------------------
+// videos used purely for the purpose of
+// covering an entrire parent element in 
+// html ( used along with layout videos )
+.video__cover { 
+  @extend %image__cover;
+  background-color: black;
+  
+  // modifiers for switching of 
+  // responsive images with CSS
+  &--desktop { @extend %image__cover--desktop; }
+  &--mobile  { @extend %image__cover--mobile;  }
+}

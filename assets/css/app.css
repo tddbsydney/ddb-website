@@ -55,7 +55,7 @@
   * @desc SASS helper classes that can be
           extended to apply basic styles
 **/
-.case-study-tile__content[data-align="top"], .case-study-tile__content[data-align="bottom"], .case-study-tile__scroll {
+.case-study-tile__content[data-align="top"], [data-align="top"].case-study-work__content, .case-study-tile__content[data-align="bottom"], [data-align="bottom"].case-study-work__content, .case-study-work__scroll, .promo-video__scroll {
   -webkit-transform: translateX(-50%);
      -moz-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -65,7 +65,7 @@
   left: 50%;
 }
 
-.case-study-tile__content[data-align="left"], .case-study-tile__content[data-align="right"] {
+.case-study-tile__content[data-align="left"], [data-align="left"].case-study-work__content, .case-study-tile__content[data-align="right"], [data-align="right"].case-study-work__content, .promo-video__content[data-align="left"], .promo-video__content[data-align="right"] {
   -webkit-transform: translateY(-50%);
      -moz-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -75,7 +75,7 @@
   top: 50%;
 }
 
-.case-study-tile__content[data-align="center"] {
+.case-study-tile__content[data-align="center"], [data-align="center"].case-study-work__content {
   -webkit-transform: translate(-50%, -50%);
      -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -86,7 +86,7 @@
   top: 50%;
 }
 
-.image__cover {
+.image__cover, .video__cover {
   background-position: center top;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -182,24 +182,24 @@ html, body {
   }
 }
 
-h1, .case-study-tile__scroll {
+h1, .case-study-work__scroll, .promo-video__scroll {
   font-size: 3.333333vw;
 }
 
 @media (max-width: 1279px) {
-  h1, .case-study-tile__scroll {
+  h1, .case-study-work__scroll, .promo-video__scroll {
     font-size: 4.117647vw;
   }
 }
 
 @media (max-width: 1023px) {
-  h1, .case-study-tile__scroll {
+  h1, .case-study-work__scroll, .promo-video__scroll {
     font-size: 5.652174vw;
   }
 }
 
 @media (max-width: 767px) {
-  h1, .case-study-tile__scroll {
+  h1, .case-study-work__scroll, .promo-video__scroll {
     font-size: 10vw;
   }
 }
@@ -589,71 +589,71 @@ template {
   * @name section
   * @desc Styles for the grid module.
 **/
-.case-study-tile__content, .article-tile, .article-tile__content {
+.case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
   padding-top: 4.166667vw;
 }
 
 @media (max-width: 767px) {
-  .case-study-tile__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
     padding-top: 5.555556vw;
   }
 }
 
 @media (min-width: 1980px) {
-  .case-study-tile__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
     padding-top: 3.333333vw;
   }
 }
 
-.case-study-tile__content, .article-tile, .article-tile__content {
+.case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
   padding-bottom: 4.166667vw;
 }
 
 @media (max-width: 767px) {
-  .case-study-tile__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
     padding-bottom: 5.555556vw;
   }
 }
 
 @media (min-width: 1980px) {
-  .case-study-tile__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
     padding-bottom: 3.333333vw;
   }
 }
 
-.case-study-tile__content, .article-tile, .article-tile__content {
+.case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
   padding-left: 4.166667vw;
 }
 
 @media (max-width: 767px) {
-  .case-study-tile__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
     padding-left: 5.555556vw;
   }
 }
 
 @media (min-width: 1980px) {
-  .case-study-tile__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
     padding-left: 3.333333vw;
   }
 }
 
-.case-study-tile__content, .article-tile, .article-tile__content {
+.case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
   padding-right: 4.166667vw;
 }
 
 @media (max-width: 767px) {
-  .case-study-tile__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
     padding-right: 5.555556vw;
   }
 }
 
 @media (min-width: 1980px) {
-  .case-study-tile__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
     padding-right: 3.333333vw;
   }
 }
 
-main, section, .case-study-tile {
+main, section, .case-study-tile, .case-study-work, .promo-video {
   display: block;
   position: relative;
   width: 100%;
@@ -721,65 +721,9 @@ main, section, .case-study-tile {
   background-color: black;
 }
 
-.article-tile[data-style="black"] .link span:before, .article-tile[data-style="yellow"] .link span:before, .case-study-tile__content .link span:before, .article-tile .link span:before {
+.article-tile[data-style="black"] .link span:before, .article-tile[data-style="yellow"] .link span:before, .case-study-tile__content .link span:before, .case-study-work__content .link span:before, .article-tile .link span:before {
   visibility: visible;
   width: 100%;
-}
-
-/**
-  * @name image
-  * @desc Styles for the image module.
-**/
-.image, .image__layout {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  color: transparent;
-}
-
-.image__layout {
-  background-color: black;
-}
-
-@media (max-width: 767px) {
-  .image__layout--desktop {
-    display: none !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .image__layout--mobile {
-    display: none !important;
-  }
-}
-
-.image__cover {
-  position: absolute;
-  z-index: 0;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-}
-
-@media (max-width: 767px) {
-  .image__cover--desktop {
-    display: none !important;
-    background-image: none !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .image__cover--mobile {
-    display: none !important;
-    background-image: none !important;
-  }
 }
 
 /**
@@ -867,12 +811,76 @@ main, section, .case-study-tile {
   background-color: black;
 }
 
+/**
+  * @name image
+  * @desc Styles for the image module.
+**/
+.image .image, .image__layout .image, .video__layout .image, .video .image, .image .image__layout, .image__layout .image__layout, .video__layout .image__layout, .video .image__layout, .image .video__layout, .image__layout .video__layout, .video__layout .video__layout, .video .video__layout {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  color: transparent;
+}
+
+.image__layout, .video__layout {
+  background-color: black;
+}
+
+@media (max-width: 767px) {
+  .image__layout--desktop, .video__layout--desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .image__layout--mobile, .video__layout--mobile {
+    display: none !important;
+  }
+}
+
+.image__cover, .video__cover {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+@media (max-width: 767px) {
+  .image__cover--desktop, .video__cover--desktop {
+    display: none !important;
+    background-image: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .image__cover--mobile, .video__cover--mobile {
+    display: none !important;
+    background-image: none !important;
+  }
+}
+
+/**
+  * @name video
+  * @desc Styles for the video module.
+**/
+.video__cover {
+  background-color: black;
+}
+
 /* empty block */
 /**
   * @name case-study-tile
   * @desc Styles for the case study tile component.
 **/
-.case-study-tile__content {
+.case-study-tile__content, .case-study-work__content {
   display: block;
   position: absolute;
   -webkit-box-sizing: border-box;
@@ -883,7 +891,7 @@ main, section, .case-study-tile {
 }
 
 @media (max-width: 767px) {
-  .case-study-tile__content {
+  .case-study-tile__content, .case-study-work__content {
     max-width: 100%;
     top: 0 !important;
     left: 0 !important;
@@ -895,76 +903,145 @@ main, section, .case-study-tile {
   }
 }
 
-.case-study-tile__content > h2, .case-study-tile__content > p {
+.case-study-tile__content > h2, .case-study-work__content > h2, .case-study-tile__content > p, .case-study-work__content > p {
   display: block;
 }
 
-.case-study-tile__content > a {
+.case-study-tile__content > a, .case-study-work__content > a {
   display: inline-block;
 }
 
-.case-study-tile__content > h2, .case-study-tile__content > p, .case-study-tile__content > a {
+.case-study-tile__content > h2, .case-study-work__content > h2, .case-study-tile__content > p, .case-study-work__content > p, .case-study-tile__content > a, .case-study-work__content > a {
   color: inherit;
   max-width: 80%;
 }
 
 @media (max-width: 1023px) {
-  .case-study-tile__content > h2, .case-study-tile__content > p, .case-study-tile__content > a {
+  .case-study-tile__content > h2, .case-study-work__content > h2, .case-study-tile__content > p, .case-study-work__content > p, .case-study-tile__content > a, .case-study-work__content > a {
     max-width: 95%;
   }
 }
 
 @media (max-width: 767px) {
-  .case-study-tile__content > h2, .case-study-tile__content > p, .case-study-tile__content > a {
+  .case-study-tile__content > h2, .case-study-work__content > h2, .case-study-tile__content > p, .case-study-work__content > p, .case-study-tile__content > a, .case-study-work__content > a {
     max-width: 80%;
   }
 }
 
-.case-study-tile__content > h2 {
+.case-study-tile__content > h2, .case-study-work__content > h2 {
   margin: 0;
 }
 
-.case-study-tile__content > a {
+.case-study-tile__content > a, .case-study-work__content > a {
   margin-top: 1em;
 }
 
-.case-study-tile__content[data-align="left"] {
+.case-study-tile__content[data-align="left"], [data-align="left"].case-study-work__content {
   left: 0;
 }
 
-.case-study-tile__content[data-align="right"] {
+.case-study-tile__content[data-align="right"], [data-align="right"].case-study-work__content {
   right: 0;
 }
 
-.case-study-tile__content[data-align="topLeft"] {
+.case-study-tile__content[data-align="topLeft"], [data-align="topLeft"].case-study-work__content {
   top: 0;
   left: 0;
 }
 
-.case-study-tile__content[data-align="topRight"] {
+.case-study-tile__content[data-align="topRight"], [data-align="topRight"].case-study-work__content {
   top: 0;
   right: 0;
 }
 
-.case-study-tile__content[data-align="top"] {
+.case-study-tile__content[data-align="top"], [data-align="top"].case-study-work__content {
   top: 0;
 }
 
-.case-study-tile__content[data-align="bottom"] {
+.case-study-tile__content[data-align="bottom"], [data-align="bottom"].case-study-work__content {
   bottom: 0;
 }
 
-.case-study-tile__content[data-align="bottomLeft"] {
+.case-study-tile__content[data-align="bottomLeft"], [data-align="bottomLeft"].case-study-work__content {
   bottom: 0;
   left: 0;
 }
 
-.case-study-tile__content[data-align="bottomRight"] {
+.case-study-tile__content[data-align="bottomRight"], [data-align="bottomRight"].case-study-work__content {
   bottom: 0;
   right: 0;
 }
 
-.case-study-tile__scroll:last-child {
+/**
+  * @name case-study-work
+  * @desc Styles for the case study Work component.
+**/
+@media (max-width: 767px) {
+  .case-study-work__content {
+    top: 20vw !important;
+  }
+}
+
+.case-study-work__scroll:last-child {
+  bottom: 0;
+  margin-bottom: 0.5em;
+}
+
+/**
+  * @name promo-video
+  * @desc Styles for the case study Work component.
+**/
+.promo-video__content {
+  display: block;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 50%;
+}
+
+@media (max-width: 767px) {
+  .promo-video__content {
+    max-width: 100%;
+    -webkit-transform: none !important;
+       -moz-transform: none !important;
+        -ms-transform: none !important;
+         -o-transform: none !important;
+            transform: none !important;
+    left: 0 !important;
+    top: 20vw !important;
+  }
+}
+
+.promo-video__content > h1 {
+  margin: 0;
+  display: block;
+  color: inherit;
+  max-width: 80%;
+}
+
+@media (max-width: 1023px) {
+  .promo-video__content > h1 {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-video__content > h1 {
+    max-width: 80%;
+  }
+}
+
+.promo-video__content[data-align="left"] {
+  left: 0;
+}
+
+.promo-video__content[data-align="right"] {
+  right: 0;
+}
+
+.promo-video__scroll:last-child {
   bottom: 0;
   margin-bottom: 0.5em;
 }
