@@ -867,7 +867,7 @@
                   },
                   "linkText": {
                     "type": "Text",
-                    "value": "Medium"
+                    "value": "Read on Medium"
                   },
                   "foregroundColor": {
                     "type": "Color",
@@ -980,6 +980,21 @@
                     "type": "Text",
                     "value": "Lead Experience Designer wanted"
                   },
+                  "linkUrl": {
+                    "type": "Link.document",
+                    "value": {
+                      "document": {
+                        "id": "WKEP8CUAAOgdq5Ww",
+                        "type": "latest",
+                        "tags": [
+
+                        ],
+                        "slug": "latest---tribal-ddb",
+                        "uid": "latest"
+                      },
+                      "isBroken": false
+                    }
+                  },
                   "linkText": {
                     "type": "Text",
                     "value": "Join the team"
@@ -1067,6 +1082,21 @@
                     "type": "Text",
                     "value": "Lead Experience Designer wanted"
                   },
+                  "linkUrl": {
+                    "type": "Link.document",
+                    "value": {
+                      "document": {
+                        "id": "WKEP8CUAAOgdq5Ww",
+                        "type": "latest",
+                        "tags": [
+
+                        ],
+                        "slug": "latest---tribal-ddb",
+                        "uid": "latest"
+                      },
+                      "isBroken": false
+                    }
+                  },
                   "linkText": {
                     "type": "Text",
                     "value": "Join the team"
@@ -1080,6 +1110,21 @@
                   "copy": {
                     "type": "Text",
                     "value": "Culture drawfts category"
+                  },
+                  "linkUrl": {
+                    "type": "Link.document",
+                    "value": {
+                      "document": {
+                        "id": "WKEP8CUAAOgdq5Ww",
+                        "type": "latest",
+                        "tags": [
+
+                        ],
+                        "slug": "latest---tribal-ddb",
+                        "uid": "latest"
+                      },
+                      "isBroken": false
+                    }
                   },
                   "linkText": {
                     "type": "Text",
@@ -1320,6 +1365,21 @@
                   "copy": {
                     "type": "Text",
                     "value": "Lead Experience Designer wanted"
+                  },
+                  "linkUrl": {
+                    "type": "Link.document",
+                    "value": {
+                      "document": {
+                        "id": "WKEP8CUAAOgdq5Ww",
+                        "type": "latest",
+                        "tags": [
+
+                        ],
+                        "slug": "latest---tribal-ddb",
+                        "uid": "latest"
+                      },
+                      "isBroken": false
+                    }
                   },
                   "linkText": {
                     "type": "Text",

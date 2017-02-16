@@ -11,7 +11,7 @@
       "id": "WKEQFSUAAEUiq5ZX",
       "uid": "work",
       "type": "work",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKURxioAAK8dACmM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKUVQyoAAOcdADjk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -550,7 +550,7 @@
       "id": "WKEQcCUAAKomq5fv",
       "uid": "volkswagen",
       "type": "case-studies",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKURxioAAK8dACmM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKUVQyoAAOcdADjk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -636,7 +636,7 @@
       "id": "WKTjByoAAIcc_1uc",
       "uid": "design-guide",
       "type": "design-guide",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKURxioAAK8dACmM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKUVQyoAAOcdADjk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -788,16 +788,48 @@
       "id": "WKEP8CUAAOgdq5Ww",
       "uid": "latest",
       "type": "latest",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKURxioAAK8dACmM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKUVQyoAAOcdADjk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:26+0000",
-      "last_publication_date": "2017-02-16T02:43:18+0000",
+      "last_publication_date": "2017-02-16T02:58:11+0000",
       "slugs": [
         "latest---tribal-ddb"
       ],
       "linked_documents": [
+        {
+          "id": "WKEP8CUAAOgdq5Ww",
+          "tags": [
+
+          ],
+          "type": "latest",
+          "slug": "latest---tribal-ddb"
+        },
+        {
+          "id": "WKEP8CUAAOgdq5Ww",
+          "tags": [
+
+          ],
+          "type": "latest",
+          "slug": "latest---tribal-ddb"
+        },
+        {
+          "id": "WKEP8CUAAOgdq5Ww",
+          "tags": [
+
+          ],
+          "type": "latest",
+          "slug": "latest---tribal-ddb"
+        },
+        {
+          "id": "WKEP8CUAAOgdq5Ww",
+          "tags": [
+
+          ],
+          "type": "latest",
+          "slug": "latest---tribal-ddb"
+        },
         {
           "id": "WKEP8CUAAOgdq5Ww",
           "tags": [
@@ -1094,7 +1126,7 @@
                       },
                       "linkText": {
                         "type": "Text",
-                        "value": "Medium"
+                        "value": "Read on Medium"
                       },
                       "foregroundColor": {
                         "type": "Color",
@@ -1217,6 +1249,21 @@
                         "type": "Text",
                         "value": "Lead Experience Designer wanted"
                       },
+                      "linkUrl": {
+                        "type": "Link.document",
+                        "value": {
+                          "document": {
+                            "id": "WKEP8CUAAOgdq5Ww",
+                            "type": "latest",
+                            "tags": [
+
+                            ],
+                            "slug": "latest---tribal-ddb",
+                            "uid": "latest"
+                          },
+                          "isBroken": false
+                        }
+                      },
                       "linkText": {
                         "type": "Text",
                         "value": "Join the team"
@@ -1314,6 +1361,21 @@
                         "type": "Text",
                         "value": "Lead Experience Designer wanted"
                       },
+                      "linkUrl": {
+                        "type": "Link.document",
+                        "value": {
+                          "document": {
+                            "id": "WKEP8CUAAOgdq5Ww",
+                            "type": "latest",
+                            "tags": [
+
+                            ],
+                            "slug": "latest---tribal-ddb",
+                            "uid": "latest"
+                          },
+                          "isBroken": false
+                        }
+                      },
                       "linkText": {
                         "type": "Text",
                         "value": "Join the team"
@@ -1327,6 +1389,21 @@
                       "copy": {
                         "type": "Text",
                         "value": "Culture drawfts category"
+                      },
+                      "linkUrl": {
+                        "type": "Link.document",
+                        "value": {
+                          "document": {
+                            "id": "WKEP8CUAAOgdq5Ww",
+                            "type": "latest",
+                            "tags": [
+
+                            ],
+                            "slug": "latest---tribal-ddb",
+                            "uid": "latest"
+                          },
+                          "isBroken": false
+                        }
                       },
                       "linkText": {
                         "type": "Text",
@@ -1587,6 +1664,21 @@
                       "copy": {
                         "type": "Text",
                         "value": "Lead Experience Designer wanted"
+                      },
+                      "linkUrl": {
+                        "type": "Link.document",
+                        "value": {
+                          "document": {
+                            "id": "WKEP8CUAAOgdq5Ww",
+                            "type": "latest",
+                            "tags": [
+
+                            ],
+                            "slug": "latest---tribal-ddb",
+                            "uid": "latest"
+                          },
+                          "isBroken": false
+                        }
                       },
                       "linkText": {
                         "type": "Text",

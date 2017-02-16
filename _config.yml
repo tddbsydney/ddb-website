@@ -30,6 +30,7 @@ exclude:
   - _gulp
   - _node
   - _site
+  - vendor
   - .bowerrc
   - .gitignore
   - .ruby-version
