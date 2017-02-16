@@ -1,12 +1,20 @@
 {% assign link = include.link %}
 {% assign label = include.label %}
 
+{% if link.value %}
+
+  {% if link.type == "Link.web" %}
+    {% assign isExternalLink = true %}
+  {% else %}
+    {% assign isExternalLink = false %}
+  {% endif %}
+
+  {% assign isMedium = false %}
 
   {% capture linkUrl %}
     {% case link.type %}
 
       {% when "Link.web" %}
-        {% assign isExternalLink = true %}
         {{ link.value.url }}
 
       {% when "Link.document" %}
@@ -34,3 +42,5 @@
   <a class="link" href="{{ linkUrl | normalize_whitespace }}" {{ linkTarget | normalize_whitespace }} {{ linkLabel | normalize_whitespace }} >
     <span> {{ label | default: "View" }} </span>
   </a>
+
+{% endif %}

@@ -2,12 +2,19 @@
 {% assign label = include.label %}
 
 {% if link.value %}
+
+  {% if link.type == "Link.web" %}
+    {% assign isExternalLink = true %}
+  {% else %}
+    {% assign isExternalLink = false %}
+  {% endif %}
+
+  {% assign isMedium = false %}
+
   {% capture linkUrl %}
     {% case link.type %}
 
       {% when "Link.web" %}
-        {% assign isExternalLink = true %}
-
         {% assign segs = link.value.url | split: "/" %}
         {% for seg in segs %}
           {% if seg == "medium.com" %}
