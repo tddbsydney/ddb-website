@@ -11,7 +11,7 @@
       "id": "WKEQFSUAAEUiq5ZX",
       "uid": "work",
       "type": "work",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKZZKioAABgxBc_E&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKZm2SoAAAEyBgwQ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -550,7 +550,7 @@
       "id": "WKEQcCUAAKomq5fv",
       "uid": "volkswagen",
       "type": "case-studies",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKZZKioAABgxBc_E&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKZm2SoAAAEyBgwQ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -951,7 +951,7 @@
       "id": "WKTjByoAAIcc_1uc",
       "uid": "design-guide",
       "type": "design-guide",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKZZKioAABgxBc_E&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKZm2SoAAAEyBgwQ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -986,12 +986,12 @@
       "id": "WKEP8CUAAOgdq5Ww",
       "uid": "latest",
       "type": "latest",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKZZKioAABgxBc_E&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKZm2SoAAAEyBgwQ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:26+0000",
-      "last_publication_date": "2017-02-17T02:00:10+0000",
+      "last_publication_date": "2017-02-17T02:58:33+0000",
       "slugs": [
         "latest---tribal-ddb"
       ],
@@ -1131,6 +1131,46 @@
                             ]
                           }
                         ]
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1023,
+                              "height": 648
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/23f8d13b254fbb884c5b58d9ac0300028c475958_campaign-naked-ute.jpg"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/61ee0c024ccf42b00a18bb824509dfd55e1d738f_campaign-naked-ute.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/7e32771c32d3250aecd437134860e0db90c73434_campaign-naked-ute.jpg"
+                            }
+                          }
+                        }
+                      },
+                      "video": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "http://content.volkswagen-commercial.com.au/Amarok/Content/videos/VW_The_Naked_Reveal_Loop.mp4"
+                        }
                       },
                       "foregroundColor": {
                         "type": "Color",

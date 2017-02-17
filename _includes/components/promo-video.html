@@ -1,46 +1,58 @@
 {% assign tile = include.data[0] %}
 
-<div class="promo-video" style="display: none;">
+<!-- promo video -->
+<div class="promo-video">
 
-  {% if tile.headline.value %}
-    <p>{{ tile.headline.value }}</p>
-  {% endif %}
+  <!-- video -->
+  <div class="video">
 
-  {% if tile.image.main.value %}
-    <img src="{{ tile.image.main.value }}">
-  {% endif %}
+    <!-- video layout - desktop -->
+    <img class="video__layout video__layout--desktop" src="/assets/images/layout_1920x900.png" alt="">
 
-  {% if tile.video.value.url %}
-    {% assign segs = tile.video.value.url | split: "/" %}
+    <!-- video layout - mobile -->
+    <img class="video__layout video__layout--mobile" src="/assets/images/layout_800x820.png" alt="">
 
-    {% for seg in segs %}
-      {% if seg == "www.youtube.com" %}
-        {% assign isYoutube = true %}
-      {% endif %}
-    {% endfor %}
-
-    {% if isYoutube == true %}
-      {% assign youUrl = tile.video.value.url | replace_first "watch?v=", "embed?" %}
-    {% endif %}
-
-    {% if isYoutube == true %}
-      <iframe type="text/html" src="{{ tile.video.value.url | replace_first: 'watch?v=', 'embed/' }}?modestbranding=1&controls=1&iv_load_policy=3&rel=0&showinfo=0" frameborder="0"></iframe>
-    {% else %}
-      <video>
-        <source src="{{ tile.video.value.url }}" type="video/mp4">
-        Your browser does not support the video tag.
+    <!-- video cover - desktop -->
+    {% if tile.video.value.url or tile.image.value.views.desktop.url %}
+      <video class="video__cover video__cover--desktop" poster="/assets/images/layout_1920x900.png" style="background-image: url('{{ tile.image.value.views.desktop.url }}');" muted loop autoplay playsinline>
+        {% if tile.video.value.url %}
+          <source src="{{ tile.video.value.url }}" type="video/mp4">
+        {% endif %}
       </video>
     {% endif %}
-  {% endif %}
 
-</div>
+    <!-- video cover - mobile -->
+    {% if tile.image.value.views.mobile.url %}
+      <video class="video__cover video__cover--mobile" poster="/assets/images/layout_800x820.png" muted loop autoplay playsinline style="background-image: url('{{ tile.image.value.views.mobile.url }}');">
+        <!---->
+      </video>
+    {% endif %}
 
-<div style="display:none;">
-  {% if tile.list.value %}
-    <ul>
-      {% for item in tile.list.value %}
-      <li>{{ item.text }}</li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+    <!-- video cover - overlay -->
+    <div class="video__cover video__cover--overlay"></div>
+
+  </div>
+  <!-- video end -->
+
+  <!-- content -->
+  <div class="promo-video__content" data-align="left">
+    <h1>
+      {% if tile.list.value %}
+        {% for item in tile.list.value %}
+          {% if forloop.first == true %}
+            <span>{{ item.text }}</span>
+          {% else %}
+            <span style="display: none; opacity: 0;">{{ item.text }}</span>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </h1>
+  </div>
+  <!-- content end -->
+
+  <!-- scroll down -->
+  <a class="promo-video__scroll" href="#scroll-down" title="Scroll down"><!--
+    --><i class="icon icon-chevron-down"></i><!--
+  --></a>
 </div>
+<!-- promo video end -->

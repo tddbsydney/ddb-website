@@ -848,6 +848,46 @@
                       }
                     ]
                   },
+                  "image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1023,
+                          "height": 648
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/23f8d13b254fbb884c5b58d9ac0300028c475958_campaign-naked-ute.jpg"
+                      },
+                      "views": {
+                        "mobile": {
+                          "dimensions": {
+                            "width": 800,
+                            "height": 820
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/61ee0c024ccf42b00a18bb824509dfd55e1d738f_campaign-naked-ute.jpg"
+                        },
+                        "desktop": {
+                          "dimensions": {
+                            "width": 1920,
+                            "height": 900
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/7e32771c32d3250aecd437134860e0db90c73434_campaign-naked-ute.jpg"
+                        }
+                      }
+                    }
+                  },
+                  "video": {
+                    "type": "Link.web",
+                    "value": {
+                      "url": "http://content.volkswagen-commercial.com.au/Amarok/Content/videos/VW_The_Naked_Reveal_Loop.mp4"
+                    }
+                  },
                   "foregroundColor": {
                     "type": "Color",
                     "value": "#ffffff"
