@@ -29,20 +29,41 @@
       </header>
     </section>
     <section>
-      <div class="promo-video" style="display: none;">
-        <p>Promo video</p>
-        <video>
-          <source src="http://content.volkswagen-commercial.com.au/Amarok/Content/videos/VW_The_Naked_Reveal_Loop.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-      </video>
+      <!-- promo video -->
+      <div class="promo-video">
+        <!-- video -->
+        <div class="video">
+          <!-- video layout - desktop -->
+          <img class="video__layout video__layout--desktop" src="/assets/images/layout_1920x900.png" alt="">
+          <!-- video layout - mobile -->
+          <img class="video__layout video__layout--mobile" src="/assets/images/layout_800x820.png" alt="">
+          <!-- video cover - desktop -->
+          <video class="video__cover video__cover--desktop" poster="/assets/images/layout_1920x900.png" style="background-image: url('https://prismic-io.s3.amazonaws.com/ddb-website/7e32771c32d3250aecd437134860e0db90c73434_campaign-naked-ute.jpg');" muted loop autoplay playsinline>
+            <source src="http://content.volkswagen-commercial.com.au/Amarok/Content/videos/VW_The_Naked_Reveal_Loop.mp4" type="video/mp4">
+          </video>
+          <!-- video cover - mobile -->
+          <video class="video__cover video__cover--mobile" poster="/assets/images/layout_800x820.png" muted loop autoplay playsinline style="background-image: url('https://prismic-io.s3.amazonaws.com/ddb-website/61ee0c024ccf42b00a18bb824509dfd55e1d738f_campaign-naked-ute.jpg');">
+            <!---->
+          </video>
+          <!-- video cover - overlay -->
+          <div class="video__cover video__cover--overlay"></div>
+        </div>
+        <!-- video end -->
+        <!-- content -->
+        <div class="promo-video__content" data-align="left">
+          <h1>
+            <span>Headline 1</span>
+            <span style="display: none; opacity: 0;">Headline 2</span>
+            <span style="display: none; opacity: 0;">Headline 3</span>
+          </h1>
+        </div>
+        <!-- content end -->
+        <!-- scroll down -->
+        <a class="promo-video__scroll" href="#scroll-down" title="Scroll down"><!--
+    --><i class="icon icon-chevron-down"></i><!--
+  --></a>
       </div>
-      <div style="display:none;">
-        <ul>
-          <li>Headline 1</li>
-          <li>Headline 2</li>
-          <li>Headline 3</li>
-        </ul>
-      </div>
+      <!-- promo video end -->
     </section>
     <section>
       <!-- case study tile -->
