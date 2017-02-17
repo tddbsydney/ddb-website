@@ -24,6 +24,10 @@ $csw_content_margin_mob: 20vw;
 $csw_scroll_margin: 0.5em;
 
 .case-study-work__scroll {
+  // disabled for sprint one
+  // to prevent click events
+  pointer-events: none;
+
   @extend %transform-center-h;
   @extend %font-size-h1;
 

@@ -37,6 +37,7 @@ $promov_content_margin_mob: $csw_content_margin_mob; // 20vw
   > h1 {
     margin: 0;
     display: block;
+    span { display: block; }
 
     color: inherit;
     max-width: $promov_content_inner_w_max;
@@ -54,6 +55,10 @@ $promov_content_margin_mob: $csw_content_margin_mob; // 20vw
 $promov_scroll_margin: $csw_scroll_margin; // 0.5em
 
 .promo-video__scroll {
+  // disabled for sprint one
+  // to prevent click events
+  pointer-events: none;
+
   @extend %transform-center-h;
   @extend %font-size-h1;
 

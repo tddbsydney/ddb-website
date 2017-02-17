@@ -5,11 +5,18 @@
 // -------------------------------------
 /** 
   * @plugins
+  * require("jquery");
+  * require("velocity");
   * require("fastclick");
 **/
 
 // base
-/* empty block */
+require("./base/raf");
+require("./base/print");
+require("./base/query");
+require("./base/promise");
+require("./base/debounce");
+require("./base/template");
 
 // services
 /* empty block */
@@ -18,7 +25,7 @@
 /* empty block */
 
 // components
-/* empty block */
+var PromoVideo = require("./components/promo-video.component");
 
 // controllers
 /* empty block */
@@ -49,6 +56,7 @@ console.log(CONFIG);
     // ---------------------------------------------
     //   Private members
     // ---------------------------------------------
+    var _promoVideos = []; // array to hold reference to all the promo videos
     var _hasFastClickAttached = false; // flag to indicate if fast click was attached
 
     // ---------------------------------------------
@@ -73,7 +81,7 @@ console.log(CONFIG);
     // @name init
     // @desc init function to initialize the app
     function init() {
-      console.log("app.js message: init() called.");
+      console.log("app.js: init() called.");
 
       // instantiate FastClick on the body for eliminating
       // the 300ms delay between a physical tap and the 
@@ -82,6 +90,11 @@ console.log(CONFIG);
         document.addEventListener("DOMContentLoaded", _attachFastClick, false);
         _hasFastClickAttached = true; // set attached flag as true
       }
+
+      // initiate the promo videos
+      query(".promo-video").forEach(function(element, index){
+        _promoVideos.push(new PromoVideo({ element: element }));
+      });
     }
 
     // @name destory
@@ -105,11 +118,11 @@ console.log(CONFIG);
   // ---------------------------------------------
   //   Export block
   // ---------------------------------------------
-  var App = new App();
+  var ddbWebsite = new App();
 
   // ---------------------------------------------
   //   Run block
   // ---------------------------------------------
-  App.init(); // initiate the created app
+  ddbWebsite.init(); // initiate the created app
 
 })();

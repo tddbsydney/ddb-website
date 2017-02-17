@@ -11,6 +11,7 @@
 
   @include section--padding-top(2);
   @include section--padding-bottom(2);
+
   @include section--padding-left(0.5);
   @include section--padding-right(0.5);
 }
@@ -45,6 +46,7 @@
       span {
         margin-top: 0.25em;
         display: inline-block;
+        
         line-height: 1.5em;
         border-bottom: 2px solid white;
         font-weight: $font_wt_light;
@@ -115,8 +117,8 @@
     }
 
     .footer__smaller-text {
-      padding: 0;
       @include font-size-p(false);
+      padding: 0;
     }
 
     span.footer__smaller-text {
