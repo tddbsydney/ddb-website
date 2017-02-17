@@ -4,14 +4,14 @@
 /**
   * @name typography
   * @desc Used for setting various font properties
-          used with common elements that spread 
+          used with common elements that spread
           across the entire app.
 **/
 
 // -------------------------------------
 //   Typography - Mixins - Font Sizes
 // -------------------------------------
-// mixin to create the font-size-root placeholder 
+// mixin to create the font-size-root placeholder
 // to overcome when used inside media queries
 // e.g. @input @include font-size-root(false);
 // e.g. @output ..content of @else block comes here..
@@ -26,7 +26,7 @@
   }
 }
 
-// mixin to create the font-size-h1 placeholder 
+// mixin to create the font-size-h1 placeholder
 // to overcome when used inside media queries
 // e.g. @input @include font-size-h1(false);
 // e.g. @output ..content of @else block comes here..
@@ -41,7 +41,7 @@
   }
 }
 
-// mixin to create the font-size-h2 placeholder 
+// mixin to create the font-size-h2 placeholder
 // to overcome when used inside media queries
 // e.g. @input @include font-size-h2(false);
 // e.g. @output ..content of @else block comes here..
@@ -56,7 +56,7 @@
   }
 }
 
-// mixin to generate the font-size-h3 placeholder 
+// mixin to generate the font-size-h3 placeholder
 // to overcome when used inside media queries
 // e.g. @input @include font-size-h3(false);
 // e.g. @output ..content of @else block comes here..
@@ -71,7 +71,7 @@
   }
 }
 
-// mixin to create the font-size-h4 placeholder 
+// mixin to create the font-size-h4 placeholder
 // to overcome when used inside media queries
 // e.g. @input @include font-size-h4(false);
 // e.g. @output ..content of @else block comes here..
@@ -86,7 +86,7 @@
   }
 }
 
-// mixin to create the font-size-h5 placeholder 
+// mixin to create the font-size-h5 placeholder
 // to overcome when used inside media queries
 // e.g. @input @include font-size-h5(false);
 // e.g. @output ..content of @else block comes here..
@@ -101,7 +101,7 @@
   }
 }
 
-// mixin to create the font-size-p placeholder 
+// mixin to create the font-size-p placeholder
 // to overcome when used inside media queries
 // e.g. @input @include font-size-p(false);
 // e.g. @output ..content of @else block comes here..
@@ -116,6 +116,21 @@
   }
 }
 
+// mixin to create the font-size-p-s placeholder
+// to overcome when used inside media queries
+// e.g. @input @include font-size-p-s(false);
+// e.g. @output ..content of @else block comes here..
+@mixin font-size-p-xs($extend: true) {
+  @if $extend { @extend %font-size-p; }
+
+  @else {
+    font-size: get-vw-desktop(12px); // 12px
+    @include tablet    { font-size: get-vw-tablet(11px);    } // 11px
+    /* @include tablet-sm { font-size: get-vw-tablet-sm(10px); } */ // 10px
+    @include mobile    { font-size: get-vw-mobile(9px);    } // 9px
+  }
+}
+
 %font-size-root  { @include font-size-root (false); }
 %font-size-h1 { @include font-size-h1(false); }
 %font-size-h2 { @include font-size-h2(false); }
@@ -127,7 +142,7 @@
 // -------------------------------------
 //   Typography - Font Sizes, Colors
 // -------------------------------------
-html, body { 
+html, body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.5625em;
   color: white;
@@ -162,7 +177,7 @@ ul, ol, li, p, a {
 ul, ol {
   padding-left: 1em;
 
-  li { 
+  li {
     margin-top: 0.25em;
     padding-left: 0.25em;
     &:first-child { margin-top: 0; }
@@ -173,10 +188,10 @@ ul, ol {
 a {
   text-decoration: none;
   @include transitions(color);
-  
+
   color: white;
   outline: 0;
-  
+
   &:hover, &:active, { color: white; }
   &:hover, &:focus, &:active { outline: 0; }
 }
@@ -192,14 +207,14 @@ i, .icon {
   vertical-align: middle;
 }
 
-h1, h2, h3, 
+h1, h2, h3,
 h4, h5, li, p, a {
   span, a, i, .icon {
     font-size: inherit;
     line-height: inherit;
   }
 
-  span, a { 
+  span, a {
     font-family: inherit;
     font-weight: inherit;
     line-height: inherit;
@@ -215,7 +230,7 @@ h1, h2, h3, h4, h5 {
       @include mobile {
         display: block;
         margin-left: 0;
-        margin-top: $icon_spacing_header; 
+        margin-top: $icon_spacing_header;
       }
     }
   }
@@ -235,7 +250,7 @@ h1, h2, h3, h4, h5 {
 
 
 li, p, a {
-  span, a { 
+  span, a {
     & + i, & + .icon {
       margin-left: $icon_spacing_content;
     }
@@ -257,8 +272,10 @@ $font_wt_bold: 700;
 $font_wt_sbold: 600;
 $font_wt_medium: 500;
 $font_wt_regular: 400;
+$font_wt_light: 300;
+$font_wt_thin: 100;
 
-h1, h2, h3, 
+h1, h2, h3,
 h4, h5, li, p, a {
   font-smoothing: antialiased;
 }

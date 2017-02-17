@@ -9,56 +9,120 @@
 .footer {
   @extend %flex--row;
 
-  padding-top: $section_pad * 2;
-  @include mobile { padding-top: $section_pad_mob * 2; }
-  @include desktop-lg-up { padding-top: $section_pad_ret * 2; }
-  
-  // @chris: 
-  // make the top and bottom padding the same 
-  // ( the design is just an inconsistency )
-  padding-bottom: $section_pad * 2;
-  @include mobile { padding-bottom: $section_pad_mob * 2; }
-  @include desktop-lg-up { padding-bottom: $section_pad_ret * 2; }
+  @include section--padding-top(2);
+  @include section--padding-bottom(2);
 
-  padding-left: $section_pad / 2;
-  @include mobile { padding-left: $section_pad_mob / 2; }
-  @include desktop-lg-up { padding-left: $section_pad_ret / 2; }
-
-  padding-right: $section_pad / 2;
-  @include mobile { padding-right: $section_pad_mob / 2; }
-  @include desktop-lg-up { padding-right: $section_pad_ret / 2; }
-
-  // $section_pad: (100 / (12 * 2)) * 1vw; // default
-  // $section_pad_mob: (100 / (12 * 1.5)) * 1vw; // mobile
-  // $section_pad_ret: (100 / (12 * 2.5)) * 1vw; // retina
+  @include section--padding-left(0.5);
+  @include section--padding-right(0.5);
 }
 
 .footer__col {
   @extend %flex--col;
 
-  padding-left: $section_pad / 2;
-  @include mobile { padding-left: $section_pad_mob / 2; }
-  @include desktop-lg-up { padding-left: $section_pad_ret / 2; }
+  @include section--padding-left(0.5);
+  @include section--padding-right(0.5);
 
-  padding-right: $section_pad / 2;
-  @include mobile { padding-right: $section_pad_mob / 2; }
-  @include desktop-lg-up { padding-right: $section_pad_ret / 2; }
+  .footer__mob-copy {
+    display: none;
+  }
+
+  .footer__des-copy {
+    display: block;
+  }
 
   &:last-child() {
     text-align: right;
   }
 
   ul {
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
 
     li {
-      padding-left: 0;
+      padding: 0;
+      margin: 0;
       list-style-type: none;
 
       span {
+        margin-top: 0.25em;
+        display: inline-block;
+        
         line-height: 1.5em;
         border-bottom: 2px solid white;
+        font-weight: $font_wt_light;
       }
+
+      &:first-child {
+        span:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  ul ~ ul {
+    @include section--padding-top(0.5);
+  }
+
+  p {
+    line-height: 1.5em;
+    margin: 0;
+
+    @include section--padding-bottom;
+  }
+
+  @include mobile {
+    &.footer__col--contact,
+    &.footer__col--empty {
+      flex-basis: 65%;
+    }
+    &.footer__col--social,
+    &.footer__col--ddb {
+      flex-basis: 35%;
+    }
+
+    &.footer__col--empty,
+    &.footer__col--ddb {
+      @include section--padding-top;
+      align-self: flex-end;
+    }
+
+    .footer__mob-copy {
+      display: block;
+    }
+
+    .footer__des-copy {
+      display: none;
+    }
+
+    &:last-child() {
+      text-align: left;
+    }
+
+    p,
+    span {
+      @include font-size-h4(false);
+    }
+
+    ul ~ ul {
+      @include section--padding-top(1.5);
+    }
+
+    ul {
+      li {
+        span {
+          margin-top: 0.35em;
+        }
+      }
+    }
+
+    .footer__smaller-text {
+      @include font-size-p(false);
+      padding: 0;
+    }
+
+    span.footer__smaller-text {
+      margin-top: 0.65em;
     }
   }
 }

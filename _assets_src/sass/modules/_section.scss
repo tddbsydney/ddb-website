@@ -18,17 +18,17 @@ $section_margin_ret: $section_pad_ret; // retina
 //   Section - Padding
 // -------------------------------------
 // mixin - padding - top
-@mixin section--padding-top {
-  padding-top: $section_pad;
-  @include mobile { padding-top: $section_pad_mob; }
-  @include desktop-lg-up { padding-top: $section_pad_ret; }
+@mixin section--padding-top($mult: 1) {
+  padding-top: $section_pad * $mult;
+  @include mobile { padding-top: $section_pad_mob * $mult; }
+  @include desktop-lg-up { padding-top: $section_pad_ret * $mult; }
 }
 
 // mixin - padding - bottom
-@mixin section--padding-bottom {
-  padding-bottom: $section_pad;
-  @include mobile { padding-bottom: $section_pad_mob; }
-  @include desktop-lg-up { padding-bottom: $section_pad_ret; }
+@mixin section--padding-bottom($mult: 1) {
+  padding-bottom: $section_pad * $mult;
+  @include mobile { padding-bottom: $section_pad_mob * $mult; }
+  @include desktop-lg-up { padding-bottom: $section_pad_ret * $mult; }
 }
 
 // modifier - padding - top, bottom
@@ -36,23 +36,23 @@ $section_margin_ret: $section_pad_ret; // retina
 %section--padding-bottom { @include section--padding-bottom; }
 
 // modifier - padding - vertical
-%section--padding-v { 
-  @extend %section--padding-top; 
-  @extend %section--padding-bottom; 
+%section--padding-v {
+  @extend %section--padding-top;
+  @extend %section--padding-bottom;
 }
 
 // mixin - padding - left
-@mixin section--padding-left {
-  padding-left: $section_pad;
-  @include mobile { padding-left: $section_pad_mob; }
-  @include desktop-lg-up { padding-left: $section_pad_ret; }
+@mixin section--padding-left($mult: 1) {
+  padding-left: $section_pad * $mult;
+  @include mobile { padding-left: $section_pad_mob * $mult; }
+  @include desktop-lg-up { padding-left: $section_pad_ret * $mult; }
 }
 
 // mixin - padding - right
-@mixin section--padding-right {
-  padding-right: $section_pad;
-  @include mobile { padding-right: $section_pad_mob; }
-  @include desktop-lg-up { padding-right: $section_pad_ret; }
+@mixin section--padding-right($mult: 1) {
+  padding-right: $section_pad * $mult;
+  @include mobile { padding-right: $section_pad_mob * $mult; }
+  @include desktop-lg-up { padding-right: $section_pad_ret * $mult; }
 }
 
 // modifier - padding - left, right
@@ -60,9 +60,9 @@ $section_margin_ret: $section_pad_ret; // retina
 %section--padding-right { @include section--padding-right; }
 
 // modifier - padding - horizontal
-%section--padding-h { 
-  @extend %section--padding-left; 
-  @extend %section--padding-right; 
+%section--padding-h {
+  @extend %section--padding-left;
+  @extend %section--padding-right;
 }
 
 // modifier - padding
@@ -75,17 +75,17 @@ $section_margin_ret: $section_pad_ret; // retina
 //   Section - Margin
 // -------------------------------------
 // mixin - margin - top
-@mixin section--margin-top {
-  margin-top: $section_margin;
-  @include mobile { margin-top: $section_margin_mob; }
-  @include desktop-lg-up { margin-top: $section_margin_ret; }
+@mixin section--margin-top($mult: 1) {
+  margin-top: $section_margin * $mult;
+  @include mobile { margin-top: $section_margin_mob * $mult; }
+  @include desktop-lg-up { margin-top: $section_margin_ret * $mult; }
 }
 
 // mixin - margin - bottom
-@mixin section--margin-bottom {
-  margin-bottom: $section_margin;
-  @include mobile { margin-bottom: $section_margin_mob; }
-  @include desktop-lg-up { margin-bottom: $section_margin_ret; }
+@mixin section--margin-bottom($mult: 1) {
+  margin-bottom: $section_margin * $mult;
+  @include mobile { margin-bottom: $section_margin_mob * $mult; }
+  @include desktop-lg-up { margin-bottom: $section_margin_ret * $mult; }
 }
 
 // modifier - margin - top, bottom
@@ -93,23 +93,23 @@ $section_margin_ret: $section_pad_ret; // retina
 %section--margin-bottom { @include section--margin-bottom; }
 
 // modifier - margin - vertical
-%section--margin-v { 
-  @extend %section--margin-top; 
-  @extend %section--margin-bottom; 
+%section--margin-v {
+  @extend %section--margin-top;
+  @extend %section--margin-bottom;
 }
 
 // mixin - margin - left
-@mixin section--margin-left {
-  margin-left: $section_margin;
-  @include mobile { margin-left: $section_margin_mob; }
-  @include desktop-lg-up { margin-left: $section_margin_ret; }
+@mixin section--margin-left($mult: 1) {
+  margin-left: $section_margin * $mult;
+  @include mobile { margin-left: $section_margin_mob * $mult; }
+  @include desktop-lg-up { margin-left: $section_margin_ret * $mult; }
 }
 
 // mixin - margin - right
-@mixin section--margin-right {
-  margin-right: $section_margin;
-  @include mobile { margin-right: $section_margin_mob; }
-  @include desktop-lg-up { margin-right: $section_margin_ret; }
+@mixin section--margin-right($mult: 1) {
+  margin-right: $section_margin * $mult;
+  @include mobile { margin-right: $section_margin_mob * $mult; }
+  @include desktop-lg-up { margin-right: $section_margin_ret * $mult; }
 }
 
 // modifier - margin - left, right
@@ -117,9 +117,9 @@ $section_margin_ret: $section_pad_ret; // retina
 %section--margin-right { @include section--margin-right; }
 
 // modifier - margin - horizontal
-%section--margin-h { 
-  @extend %section--margin-left; 
-  @extend %section--margin-right; 
+%section--margin-h {
+  @extend %section--margin-left;
+  @extend %section--margin-right;
 }
 
 // modifier - margin
