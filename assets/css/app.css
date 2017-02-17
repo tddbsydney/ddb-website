@@ -211,19 +211,19 @@ h2 {
   }
 }
 
-h3 {
+h3, .content-tile .content-tile__list {
   font-size: 2.296296vw;
   /* @include tablet-sm { font-size: get-vw-tablet-sm(25px); } */
 }
 
 @media (max-width: 1279px) {
-  h3 {
+  h3, .content-tile .content-tile__list {
     font-size: 2.745098vw;
   }
 }
 
 @media (max-width: 767px) {
-  h3 {
+  h3, .content-tile .content-tile__list {
     font-size: 6.111111vw;
   }
 }
@@ -505,7 +505,7 @@ template {
   * @name flex
   * @desc Styles for the flex module.
 **/
-.footer, .article-tiles {
+.footer, .content-tile .content-tile__flex-row, .article-tiles {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -517,7 +517,7 @@ template {
   position: relative;
 }
 
-.footer, .article-tiles {
+.footer, .content-tile .content-tile__flex-row, .article-tiles {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -530,7 +530,7 @@ template {
           box-sizing: border-box;
 }
 
-.footer__col, .article-tile {
+.footer__col, .content-tile .content-tile__flex-col, .article-tile {
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
@@ -541,7 +541,7 @@ template {
 }
 
 @media (min-width: 768px) {
-  .footer__col, .article-tile {
+  .footer__col, .content-tile .content-tile__flex-col, .article-tile {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
        -moz-box-flex: 1;
@@ -554,71 +554,71 @@ template {
   * @name section
   * @desc Styles for the grid module.
 **/
-.case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
+.case-study-tile__content, .case-study-work__content, .promo-video__content, .content-tile, .article-tile, .article-tile__content {
   padding-top: 4.166667vw;
 }
 
 @media (max-width: 767px) {
-  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .content-tile, .article-tile, .article-tile__content {
     padding-top: 5.555556vw;
   }
 }
 
 @media (min-width: 1980px) {
-  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .content-tile, .article-tile, .article-tile__content {
     padding-top: 3.333333vw;
   }
 }
 
-.case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
+.case-study-tile__content, .case-study-work__content, .promo-video__content, .content-tile, .article-tile, .article-tile__content {
   padding-bottom: 4.166667vw;
 }
 
 @media (max-width: 767px) {
-  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .content-tile, .article-tile, .article-tile__content {
     padding-bottom: 5.555556vw;
   }
 }
 
 @media (min-width: 1980px) {
-  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .content-tile, .article-tile, .article-tile__content {
     padding-bottom: 3.333333vw;
   }
 }
 
-.case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
+.case-study-tile__content, .case-study-work__content, .promo-video__content, .content-tile, .article-tile, .article-tile__content {
   padding-left: 4.166667vw;
 }
 
 @media (max-width: 767px) {
-  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .content-tile, .article-tile, .article-tile__content {
     padding-left: 5.555556vw;
   }
 }
 
 @media (min-width: 1980px) {
-  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .content-tile, .article-tile, .article-tile__content {
     padding-left: 3.333333vw;
   }
 }
 
-.case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
+.case-study-tile__content, .case-study-work__content, .promo-video__content, .content-tile, .article-tile, .article-tile__content {
   padding-right: 4.166667vw;
 }
 
 @media (max-width: 767px) {
-  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .content-tile, .article-tile, .article-tile__content {
     padding-right: 5.555556vw;
   }
 }
 
 @media (min-width: 1980px) {
-  .case-study-tile__content, .case-study-work__content, .promo-video__content, .article-tile, .article-tile__content {
+  .case-study-tile__content, .case-study-work__content, .promo-video__content, .content-tile, .article-tile, .article-tile__content {
     padding-right: 3.333333vw;
   }
 }
 
-main, section, .header, .case-study-tile, .case-study-work, .promo-video, .image-tile {
+main, section, .header, .case-study-tile, .case-study-work, .promo-video, .image-tile, .content-tile {
   display: block;
   position: relative;
   width: 100%;
@@ -1324,6 +1324,10 @@ main, section, .header, .case-study-tile, .case-study-work, .promo-video, .image
 /**
   * @name image-tile
   * @desc Styles for the image tile component.
+**/
+/**
+  * @name content-tile
+  * @desc Styles for the content tile component.
 **/
 /**
   * @name article-tiles
