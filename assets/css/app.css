@@ -618,7 +618,7 @@ template {
   }
 }
 
-main, section, .header, .case-study-tile, .case-study-work, .promo-video {
+main, section, .header, .case-study-tile, .case-study-work, .promo-video, .image-tile {
   display: block;
   position: relative;
   width: 100%;
@@ -1321,6 +1321,10 @@ main, section, .header, .case-study-tile, .case-study-work, .promo-video {
   margin-bottom: 0.5em;
 }
 
+/**
+  * @name image-tile
+  * @desc Styles for the image tile component.
+**/
 /**
   * @name article-tiles
   * @desc Styles for the article tiles component.
