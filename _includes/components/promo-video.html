@@ -34,3 +34,13 @@
   {% endif %}
 
 </div>
+
+<div style="display:none;">
+  {% if tile.list.value %}
+    <ul>
+      {% for item in tile.list.value %}
+      <li>{{ item.text }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>

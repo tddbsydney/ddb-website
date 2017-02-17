@@ -51,11 +51,11 @@
               "label" : "Promo video",
               "repeat" : false,
               "fields" : {
-                "headline" : {
-                  "type" : "Text",
-                  "config" : {
-                    "label" : "Headline",
-                    "placeholder" : "Headline text"
+                "list": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "List",
+                    "multi": "list-item, o-list-item"
                   }
                 },
                 "image" : {

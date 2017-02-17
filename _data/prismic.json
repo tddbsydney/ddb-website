@@ -822,6 +822,32 @@
                     "type": "Text",
                     "value": "Promo video"
                   },
+                  "list": {
+                    "type": "StructuredText",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "text": "Headline 1",
+                        "spans": [
+
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "text": "Headline 2",
+                        "spans": [
+
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "text": "Headline 3",
+                        "spans": [
+
+                        ]
+                      }
+                    ]
+                  },
                   "foregroundColor": {
                     "type": "Color",
                     "value": "#ffffff"
