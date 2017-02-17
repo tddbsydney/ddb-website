@@ -46,7 +46,7 @@
       span {
         margin-top: 0.25em;
         display: inline-block;
-        
+
         line-height: 1.5em;
         border-bottom: 2px solid white;
         font-weight: $font_wt_light;
@@ -70,6 +70,18 @@
 
     @include section--padding-bottom;
   }
+
+  p,
+  span {
+    @include font-size-h5(false);
+  }
+
+
+  // @include mobile-up {
+  //   &.footer__col--ddb {
+  //     padding-left: 0;
+  //   }
+  // }
 
   @include mobile {
     &.footer__col--contact,
@@ -97,11 +109,6 @@
 
     &:last-child() {
       text-align: left;
-    }
-
-    p,
-    span {
-      @include font-size-h4(false);
     }
 
     ul ~ ul {
