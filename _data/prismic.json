@@ -1222,6 +1222,10 @@
                   "linkText": {
                     "type": "Text",
                     "value": "Join the team"
+                  },
+                  "style": {
+                    "type": "Select",
+                    "value": "grey"
                   }
                 }
               ]
@@ -1324,6 +1328,10 @@
                   "linkText": {
                     "type": "Text",
                     "value": "Join the team"
+                  },
+                  "style": {
+                    "type": "Select",
+                    "value": "grey"
                   }
                 },
                 {
@@ -1608,6 +1616,10 @@
                   "linkText": {
                     "type": "Text",
                     "value": "Join the team"
+                  },
+                  "style": {
+                    "type": "Select",
+                    "value": "grey"
                   }
                 }
               ]

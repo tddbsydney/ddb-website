@@ -53,12 +53,13 @@
       title="{{ label }}"
     {% endif %}
   {% endcapture %}
-
+  
+  <!-- button -->
   <a class="{{ linkClass | normalize_whitespace }}" href="{{ linkUrl | normalize_whitespace }}" {{ linkTarget | normalize_whitespace }} {{ linkLabel | normalize_whitespace }} >
     {% if isMedium %}
       <span> Read on <i class="icon icon-medium"></i> Medium </span>
     {% else %}
       <span> {{ label | default: "View" }} </span>
     {% endif %}
-  </a>
+  </a><!-- button end -->
 {% endif %}

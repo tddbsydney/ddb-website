@@ -6,8 +6,8 @@
   * @desc Styles for the link module.
 **/
 
-$link_pad_vert: 0.5em;
-$link_pad_horz: 0.5em;
+$link_pad_vert: 0.46em;
+$link_pad_horz: 0.46em;
 $link_line_h: 2px;
 
 // link
@@ -17,6 +17,8 @@ $link_line_h: 2px;
 
   span { 
     @include transitions(color);
+    transition-duration: $trans_time_instant;
+
     display: inline-block;
     position: relative;
     z-index: 0;
@@ -26,6 +28,8 @@ $link_line_h: 2px;
 
     &:before {
       @include transitions(width, visibility);
+      transition-duration: $trans_time_instant;
+
       position: absolute;
       visibility: hidden;
 
@@ -42,9 +46,12 @@ $link_line_h: 2px;
 
   &:hover span {
     @include transitions(color);
+    transition-duration: $trans_time_instant;
 
     &:before {
       @include transitions(width, visibility);
+      transition-duration: $trans_time_instant;
+
       visibility: visible;
       width: 100%;
     }

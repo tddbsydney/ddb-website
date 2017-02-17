@@ -16,23 +16,21 @@
   @include section--padding-right(0.5);
 }
 
+// -------------------------------------
+//   Footer - Col
+// -------------------------------------
+$footer_span_margin: 0.25em;
+$footer_span_padding: (0.25em / 4);
+
 .footer__col {
   @extend %flex--col;
 
   @include section--padding-left(0.5);
   @include section--padding-right(0.5);
 
-  .footer__mob-copy {
-    display: none;
-  }
-
-  .footer__des-copy {
-    display: block;
-  }
-
-  &:last-child() {
-    text-align: right;
-  }
+  .footer__mob-copy { display: none;  }
+  .footer__des-copy { display: block; }
+  &:last-child { text-align: right; }
 
   ul {
     padding: 0;
@@ -44,12 +42,13 @@
       list-style-type: none;
 
       span {
-        margin-top: 0.25em;
         display: inline-block;
+        margin-top: $footer_span_margin;
+        padding-bottom: $footer_span_padding;
 
-        line-height: 1.5em;
-        border-bottom: 2px solid white;
-        font-weight: $font_wt_light;
+        border-bottom: $link_line_h solid white;
+        line-height: $line_height_root;
+        font-weight: $font_wt_regular;
       }
 
       &:first-child {
@@ -60,37 +59,24 @@
     }
   }
 
-  ul ~ ul {
-    @include section--padding-top(0.5);
-  }
+  ul ~ ul { @include section--padding-top(0.5); }
+  p, span { @include font-size-h5(false); }
 
   p {
-    line-height: 1.5em;
-    margin: 0;
-
     @include section--padding-bottom;
+    line-height: $line_height_root;
+    margin: 0;
   }
-
-  p,
-  span {
-    @include font-size-h5(false);
-  }
-
-
-  // @include mobile-up {
-  //   &.footer__col--ddb {
-  //     padding-left: 0;
-  //   }
-  // }
 
   @include mobile {
     &.footer__col--contact,
     &.footer__col--empty {
-      flex-basis: 65%;
+      flex-basis: 67.5%;
     }
+
     &.footer__col--social,
     &.footer__col--ddb {
-      flex-basis: 35%;
+      flex-basis: (100 - 67.5%);
     }
 
     &.footer__col--empty,
@@ -99,29 +85,12 @@
       align-self: flex-end;
     }
 
-    .footer__mob-copy {
-      display: block;
-    }
+    .footer__mob-copy { display: block; }
+    .footer__des-copy { display: none;  }
+    &:last-child { text-align: left; }
 
-    .footer__des-copy {
-      display: none;
-    }
-
-    &:last-child() {
-      text-align: left;
-    }
-
-    ul ~ ul {
-      @include section--padding-top(1.5);
-    }
-
-    ul {
-      li {
-        span {
-          margin-top: 0.35em;
-        }
-      }
-    }
+    ul ~ ul { @include section--padding-top(1.5); }
+    ul li span { margin-top: $footer_span_margin; }
 
     .footer__smaller-text {
       @include font-size-p(false);
@@ -129,7 +98,7 @@
     }
 
     span.footer__smaller-text {
-      margin-top: 0.65em;
+      margin-top: (1em - $footer_span_margin);
     }
   }
 }

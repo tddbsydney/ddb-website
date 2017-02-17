@@ -38,9 +38,10 @@
       title="{{ label }}"
     {% endif %}
   {% endcapture %}
-
+  
+  <!-- link -->
   <a class="link" href="{{ linkUrl | normalize_whitespace }}" {{ linkTarget | normalize_whitespace }} {{ linkLabel | normalize_whitespace }} >
     <span> {{ label | default: "View" }} </span>
-  </a>
+  </a><!-- link end -->
 
 {% endif %}

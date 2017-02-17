@@ -142,9 +142,13 @@
 // -------------------------------------
 //   Typography - Font Sizes, Colors
 // -------------------------------------
+$line_height_root: 1.5625em;
+$line_height_head: 1.12em;
+$line_height_sub:  1.25em;
+
 html, body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-  line-height: 1.5625em;
+  line-height: $line_height_root;
   color: white;
 }
 
@@ -156,8 +160,9 @@ h3 { @extend %font-size-h3; }
 h4 { @extend %font-size-h4; }
 h5 { @extend %font-size-h5; }
 
-h1, h2     { line-height: 1.12em; }
-h3, h4, h5 { line-height: 1.20em; }
+h1, h2     { line-height: $line_height_head; }
+h3, h4, h5 { line-height: $line_height_sub;  }
+ul, ol, li, a, p { line-height: $line_height_root; }
 
 h1, h2, h3, h4, h5 {
   color: white;
@@ -217,7 +222,6 @@ h4, h5, li, p, a {
   span, a {
     font-family: inherit;
     font-weight: inherit;
-    line-height: inherit;
   }
 }
 
@@ -272,12 +276,12 @@ $font_wt_bold: 700;
 $font_wt_sbold: 600;
 $font_wt_medium: 500;
 $font_wt_regular: 400;
-$font_wt_light: 300;
-$font_wt_thin: 100;
 
 h1, h2, h3,
 h4, h5, li, p, a {
   font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, { font-family: inherit; font-weight: $font_wt_bold; }

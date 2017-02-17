@@ -10,7 +10,7 @@ $btn_font_size: 0.86em;
 $btn_icon_size: 1.36em;
 $btn_icon_margin: 0.16em;
 
-$btn_pad_vert: 0.66em;
+$btn_pad_vert: 0.46em;
 $btn_pad_horz: 1.16em;
 $btn_bdr_w: 2px;
 
@@ -21,6 +21,8 @@ $btn_bdr_w: 2px;
   
   span { 
     @include transitions(color);
+    transition-duration: $trans_time_instant;
+
     display: inline-block;
     position: relative;
     z-index: 0;
@@ -35,6 +37,8 @@ $btn_bdr_w: 2px;
 
     &:before {
       @include transitions(width, visibility);
+      transition-duration: $trans_time_instant;
+
       position: absolute;
       visibility: hidden;
 
@@ -57,10 +61,13 @@ $btn_bdr_w: 2px;
 
   &:hover span {
     @include transitions(color);
+    transition-duration: $trans_time_instant;
     color: black;
 
     &:before {
       @include transitions(width, visibility);
+      transition-duration: $trans_time_instant;
+
       visibility: visible;
       width: 100%;
     }

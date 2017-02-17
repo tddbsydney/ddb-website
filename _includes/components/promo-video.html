@@ -23,16 +23,13 @@
 
     <!-- video cover - mobile -->
     {% if tile.image.value.views.mobile.url %}
-      <video class="video__cover video__cover--mobile" poster="/assets/images/layout_800x820.png" muted loop autoplay playsinline style="background-image: url('{{ tile.image.value.views.mobile.url }}');">
-        <!---->
-      </video>
+      <video class="video__cover video__cover--mobile" poster="/assets/images/layout_800x820.png" muted loop autoplay playsinline style="background-image: url('{{ tile.image.value.views.mobile.url }}');"></video>
     {% endif %}
 
     <!-- video cover - overlay -->
     <div class="video__cover video__cover--overlay"></div>
 
-  </div>
-  <!-- video end -->
+  </div><!-- video end -->
 
   <!-- content -->
   <div class="promo-video__content" data-align="left">
@@ -47,12 +44,11 @@
         {% endfor %}
       {% endif %}
     </h1>
-  </div>
-  <!-- content end -->
+  </div><!-- content end -->
 
   <!-- scroll down -->
   <a class="promo-video__scroll" href="#scroll-down" title="Scroll down"><!--
     --><i class="icon icon-chevron-down"></i><!--
   --></a>
-</div>
-<!-- promo video end -->
+
+</div><!-- promo video end -->

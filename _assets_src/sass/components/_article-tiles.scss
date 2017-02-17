@@ -11,9 +11,9 @@
 // -------------------------------------
 //   Article Tile
 // -------------------------------------
-$art_tile_h_min: 35vw - ($section_pad * 2);
-$art_tile_h_min_tab: 45vw - ($section_pad * 2);
-$art_tile_h_min_mob: 55vw - ($section_pad * 2);
+$art_tile_h_min: 42.5vw - ($section_pad * 2);
+$art_tile_h_min_tab: 52.5vw - ($section_pad * 2);
+$art_tile_h_min_mob: 62.5vw - ($section_pad * 2);
 
 .article-tile {
   @extend %flex--col;
