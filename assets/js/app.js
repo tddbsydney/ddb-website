@@ -756,16 +756,19 @@ var CONFIG = require("../config");
         _isContentAnimating = true;
 
         // animate the given content into view
-        $(content).velocity(
-          direction == "left" ? 
-          "transition.slideLeftIn" : 
-          "transition.slideRightIn", {
+        requestAnimationFrame(function() {
+          $(content).velocity(
+            direction == "left" ? 
+            "transition.slideLeftIn" : 
+            "transition.slideRightIn", {
 
-            easing: "easeInOutQuad", delay: 0,
-            duration: CONFIG.animation.durationSlow,
+              easing: "easeInOutQuad", 
+              delay: CONFIG.animation.delay / 4,
+              duration: CONFIG.animation.durationSlow,
 
-            // reset the animation flag on complete and resolve the promise
-            complete: function() { _isContentAnimating = false; return resolve(true); }
+              // reset the animation flag on complete and resolve the promise
+              complete: function() { _isContentAnimating = false; return resolve(true); }
+          });
         });
 
         // resolve promimse immediately on error
@@ -789,16 +792,18 @@ var CONFIG = require("../config");
         _isContentAnimating = true;
 
         // animate the given content out of view
-        $(content).velocity(
-          direction == "right" ? 
-          "transition.slideRightOut" : 
-          "transition.slideLeftOut", {
+        requestAnimationFrame(function() {
+          $(content).velocity(
+            direction == "right" ? 
+            "transition.slideRightOut" : 
+            "transition.slideLeftOut", {
 
-            easing: "easeInOutQuad", delay: 0,
-            duration: CONFIG.animation.durationSlow,
+              easing: "easeInOutQuad", delay: 0,
+              duration: CONFIG.animation.durationSlow,
 
-            // reset the animation flag on complete and resolve the promise
-            complete: function() { _isContentAnimating = false; return resolve(true); }
+              // reset the animation flag on complete and resolve the promise
+              complete: function() { _isContentAnimating = false; return resolve(true); }
+          });
         });
         
         // resolve promimse immediately on error
