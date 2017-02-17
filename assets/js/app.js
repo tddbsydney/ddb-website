@@ -6,11 +6,18 @@
 // -------------------------------------
 /** 
   * @plugins
+  * require("jquery");
+  * require("velocity");
   * require("fastclick");
 **/
 
 // base
-/* empty block */
+require("./base/raf");
+require("./base/print");
+require("./base/query");
+require("./base/promise");
+require("./base/debounce");
+require("./base/template");
 
 // services
 /* empty block */
@@ -19,7 +26,7 @@
 /* empty block */
 
 // components
-/* empty block */
+var PromoVideo = require("./components/promo-video.component");
 
 // controllers
 /* empty block */
@@ -50,6 +57,7 @@ console.log(CONFIG);
     // ---------------------------------------------
     //   Private members
     // ---------------------------------------------
+    var _promoVideos = []; // array to hold reference to all the promo videos
     var _hasFastClickAttached = false; // flag to indicate if fast click was attached
 
     // ---------------------------------------------
@@ -74,7 +82,7 @@ console.log(CONFIG);
     // @name init
     // @desc init function to initialize the app
     function init() {
-      console.log("app.js message: init() called.");
+      console.log("app.js: init() called.");
 
       // instantiate FastClick on the body for eliminating
       // the 300ms delay between a physical tap and the 
@@ -83,6 +91,11 @@ console.log(CONFIG);
         document.addEventListener("DOMContentLoaded", _attachFastClick, false);
         _hasFastClickAttached = true; // set attached flag as true
       }
+
+      // initiate the promo videos
+      query(".promo-video").forEach(function(element, index){
+        _promoVideos.push(new PromoVideo({ element: element }));
+      });
     }
 
     // @name destory
@@ -106,15 +119,776 @@ console.log(CONFIG);
   // ---------------------------------------------
   //   Export block
   // ---------------------------------------------
-  var App = new App();
+  var ddbWebsite = new App();
 
   // ---------------------------------------------
   //   Run block
   // ---------------------------------------------
-  App.init(); // initiate the created app
+  ddbWebsite.init(); // initiate the created app
 
 })();
-},{"./config":2}],2:[function(require,module,exports){
+},{"./base/debounce":2,"./base/print":3,"./base/promise":4,"./base/query":5,"./base/raf":6,"./base/template":7,"./components/promo-video.component":8,"./config":9}],2:[function(require,module,exports){
+"use strict";
+
+// -------------------------------------
+//   Dependencies
+// -------------------------------------
+/** 
+  * @plugins
+**/
+
+// -------------------------------------
+//   Base - Debounce
+// -------------------------------------
+/** 
+  * @name debounce
+  * @desc A base module for an event that as long as it continues to be 
+          invoked, will not be triggered. The function will be called after it 
+          stops being called for N milliseconds. If `immediate` is passed, 
+          trigger the function on the leading edge, instead of the trailing.
+**/
+
+(function() {
+  console.log("base/debounce.js loaded.");
+
+  // @name debounce
+  // @desc the main function for the base
+  // @param {Function} func - the function to be executed
+  // @param {Boolean} wait - flag to indicate wait and call
+  // @param {Boolean} immediate - flag to indicate immediate call
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  }
+
+  // ---------------------------------------------
+  //   Export block
+  // ---------------------------------------------
+  window.debounce = debounce;
+
+})();
+
+},{}],3:[function(require,module,exports){
+"use strict";
+
+// -------------------------------------
+//   Dependencies
+// -------------------------------------
+/** 
+  * @plugins
+**/
+
+// -------------------------------------
+//   Base - Print
+// -------------------------------------
+/** 
+  * @name print
+  * @desc A base module to abstract console.log done
+          to ensure that gulp tasks cannot strip 
+          them out on compile. print is attached 
+          to the window object.
+**/
+(function() {
+  console.log("base/print.js loaded.");
+
+  // @name print
+  // @desc the main function for the base
+  // @param {String} selector
+  // @param {String} value
+  // @return {Boolean}
+  function print(value) {
+    // assign to local var 
+    var print = console;
+
+    // find the key log
+    for(var key in print) {
+      if(key == "log"){
+         // log the value and return true
+        print[key](value); return true;
+      }
+    }
+
+    // default return 
+    // value is false
+    return false;
+  }
+
+  // ---------------------------------------------
+  //   Export block
+  // ---------------------------------------------
+  window.print = print;
+    
+})();
+},{}],4:[function(require,module,exports){
+"use strict";
+
+// -------------------------------------
+//   Dependencies
+// -------------------------------------
+/** 
+  * @plugins
+**/
+
+// -------------------------------------
+//   Base - Promise
+// -------------------------------------
+/** 
+  * @name promise
+  * @desc A base module to enable waiting for asynchronous 
+          code to exceute. Simulates the behaviour of 
+          ES6 Promises.
+**/
+(function() {
+  console.log("base/promise.js loaded.");
+
+  // store setTimeout reference so promise-base will be unaffected by
+  // other code modifying setTimeout (like sinon.useFakeTimers())
+  var setTimeoutFunc = setTimeout;
+
+  // @name noop
+  function noop() { }
+
+  // use base for setImmediate for performance gains
+  var asap = (typeof setImmediate === "function" && setImmediate) ||
+    function (fn) {
+      setTimeoutFunc(fn, 1);
+    };
+  
+  // @name onUnhandledRejection
+  var onUnhandledRejection = function onUnhandledRejection(err) {
+    if (typeof console !== "undefined" && console) {
+       console.warn("Possible Unhandled Promise Rejection:", err); // eslint-disable-line no-console
+    }
+  };
+
+  // @name bind
+  // @desc base for Function.prototype.bind
+  function bind(fn, thisArg) {
+    return function () {
+      fn.apply(thisArg, arguments);
+    };
+  }
+
+  // @name Promise
+  function Promise(fn) {
+    if (typeof this !== "object") throw new TypeError("Promises must be constructed via new");
+    if (typeof fn !== "function") throw new TypeError("not a function");
+    this._state = 0;
+    this._handled = false;
+    this._value = undefined;
+    this._deferreds = [];
+
+    doResolve(fn, this);
+  }
+
+  // @name handle
+  function handle(self, deferred) {
+    while (self._state === 3) {
+      self = self._value;
+    }
+    if (self._state === 0) {
+      self._deferreds.push(deferred);
+      return;
+    }
+    self._handled = true;
+    asap(function () {
+      var cb = self._state === 1 ? deferred.onFulfilled : deferred.onRejected;
+      if (cb === null) {
+        (self._state === 1 ? resolve : reject)(deferred.promise, self._value);
+        return;
+      }
+      var ret;
+      try {
+        ret = cb(self._value);
+      } catch (e) {
+        reject(deferred.promise, e);
+        return;
+      }
+      resolve(deferred.promise, ret);
+    });
+  }
+
+  // @name resolve
+  function resolve(self, newValue) {
+      try {
+        // Promise Resolution Procedure: https://github.com/promises-aplus/promises-spec#the-promise-resolution-procedure
+        if (newValue === self) throw new TypeError("A promise cannot be resolved with itself.");
+        if (newValue && (typeof newValue === "object" || typeof newValue === "function")) {
+          var then = newValue.then;
+          if (newValue instanceof Promise) {
+            self._state = 3;
+            self._value = newValue;
+            finale(self);
+            return;
+          } else if (typeof then === "function") {
+            doResolve(bind(then, newValue), self);
+            return;
+          }
+        }
+        self._state = 1;
+        self._value = newValue;
+        finale(self);
+      } catch (e) {
+        reject(self, e);
+      }
+  }
+
+  // @name reject
+  function reject(self, newValue) {
+    self._state = 2;
+    self._value = newValue;
+    finale(self);
+  }
+
+  // @name finale
+  function finale(self) {
+    if (self._state === 2 && self._deferreds.length === 0) {
+      asap(function() {
+        if (!self._handled) {
+          onUnhandledRejection(self._value);
+        }
+      }, 1);
+    }
+  
+    for (var i = 0, len = self._deferreds.length; i < len; i++) {
+      handle(self, self._deferreds[i]);
+    }
+    self._deferreds = null;
+  }
+
+  // @name Handler
+  function Handler(onFulfilled, onRejected, promise) {
+    this.onFulfilled = typeof onFulfilled === "function" ? onFulfilled : null;
+    this.onRejected = typeof onRejected === "function" ? onRejected : null;
+    this.promise = promise;
+  }
+
+  // @name doResolve
+  // @desc Take a potentially misbehaving resolver function and 
+  //       make sure onFulfilled and onRejected are only called 
+  //       once. Makes no guarantees about asynchrony.
+  function doResolve(fn, self) {
+    var done = false;
+    try {
+      fn(function (value) {
+        if (done) return;
+        done = true;
+        resolve(self, value);
+      }, function (reason) {
+        if (done) return;
+        done = true;
+        reject(self, reason);
+      });
+    } catch (ex) {
+      if (done) return;
+      done = true;
+      reject(self, ex);
+    }
+  }
+
+  // @name catch
+  Promise.prototype["catch"] = function (onRejected) {
+    return this.then(null, onRejected);
+  };
+
+  // @name then
+  Promise.prototype.then = function (onFulfilled, onRejected) {
+    var prom = new Promise(noop);
+    handle(this, new Handler(onFulfilled, onRejected, prom));
+    return prom;
+  };
+
+  // @name all
+  Promise.all = function (arr) {
+    var args = Array.prototype.slice.call(arr);
+
+    return new Promise(function (resolve, reject) {
+      if (args.length === 0) return resolve([]);
+      var remaining = args.length;
+
+      function res(i, val) {
+        try {
+          if (val && (typeof val === "object" || typeof val === "function")) {
+            var then = val.then;
+            if (typeof then === "function") {
+                then.call(val, function (val) {
+                    res(i, val);
+                }, reject);
+                return;
+            }
+          }
+          args[i] = val;
+          if (--remaining === 0) {
+            resolve(args);
+          }
+        } catch (ex) {
+          reject(ex);
+        }
+      }
+
+      for (var i = 0; i < args.length; i++) {
+        res(i, args[i]);
+      }
+    });
+  };
+
+  // @name resolve
+  Promise.resolve = function (value) {
+    if (value && typeof value === "object" && value.constructor === Promise) {
+      return value;
+    }
+
+    return new Promise(function (resolve) {
+      resolve(value);
+    });
+  };
+
+  // @name reject
+  Promise.reject = function (value) {
+    return new Promise(function (resolve, reject) {
+      reject(value);
+    });
+  };
+
+  // @name race
+  Promise.race = function (values) {
+    return new Promise(function (resolve, reject) {
+      for (var i = 0, len = values.length; i < len; i++) {
+        values[i].then(resolve, reject);
+      }
+    });
+  };
+
+  // @name _setImmediateFn
+  // @desc set the immediate function to execute callbacks
+  // @param {function} fn - function to execute
+  Promise._setImmediateFn = function _setImmediateFn(fn) {
+    asap = fn;
+  };
+  
+  // @name _setUnhandledRejectionFn
+  // @desc set the unhandled rejection function
+  // @param {function} fn - function to execute
+  Promise._setUnhandledRejectionFn = function _setUnhandledRejectionFn(fn) {
+    onUnhandledRejection = fn;
+  };
+
+  // ---------------------------------------------
+  //   Export block
+  // ---------------------------------------------
+  if (typeof window.Promise != "function") {
+    window.Promise = Promise;
+  }
+
+})();
+},{}],5:[function(require,module,exports){
+"use strict";
+
+// -------------------------------------
+//   Dependencies
+// -------------------------------------
+/** 
+  * @plugins
+**/
+
+// -------------------------------------
+//   Base - Query
+// -------------------------------------
+/** 
+  * @name query
+  * @desc A base module to abstract document.querySelectorAll
+          for increased performance and greater usability. 
+          query is attached to the window object.
+**/
+(function() {
+  console.log("base/query.js loaded.");
+
+  var doc = window.document, 
+  simpleRe = /^(#?[\w-]+|\.[\w-.]+)$/, 
+  periodRe = /\./g, 
+  slice = [].slice,
+  classes;
+
+  // @name query
+  // @desc the main function for the base
+  // @param {String} selector
+  // @param {Element} context (optional)
+  // @return {Array}
+  function query (selector, context) {
+    context = context || doc;
+    // Redirect simple selectors to the more performant function
+    if(simpleRe.test(selector)){
+      switch(selector.charAt(0)){
+        case "#":
+          // Handle ID-based selectors
+          return [context.getElementById(selector.substr(1))];
+        case ".":
+          // Handle class-based selectors
+          // Query by multiple classes by converting the selector 
+          // string into single spaced class names
+          classes = selector.substr(1).replace(periodRe, " ");
+          return slice.call(context.getElementsByClassName(classes));
+        default:
+          // Handle tag-based selectors
+          return slice.call(context.getElementsByTagName(selector));
+      }
+    }
+    // Default to `querySelectorAll`
+    return slice.call(context.querySelectorAll(selector));
+  }
+
+  // ---------------------------------------------
+  //   Export block
+  // ---------------------------------------------
+  window.query = query;
+    
+})();
+},{}],6:[function(require,module,exports){
+"use strict";
+
+// -------------------------------------
+//   Dependencies
+// -------------------------------------
+/** 
+  * @plugins
+**/
+
+// -------------------------------------
+//   Base - Request Animation Frame
+// -------------------------------------
+/** 
+  * @name requestAnimationFrame
+  * @desc A base module to window.requestAnimationFrame
+          for creating a single cross browser version. 
+          requestAnimationFrame is attached to the 
+          window object.
+**/
+(function() {
+  console.log("base/raf.js loaded.");
+
+  var lastTime = 0;
+  var vendors = ["ms", "moz", "webkit", "o"];
+
+  // assign the correct vendor prefix to the window.requestAnimationFrame
+  for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+    window.requestAnimationFrame = window[vendors[x]+"RequestAnimationFrame"];
+    window.cancelAnimationFrame = window[vendors[x]+"CancelAnimationFrame"] 
+                                 || window[vendors[x]+"CancelRequestAnimationFrame"];
+  }
+
+  // @name requestAnimationFrame
+  // @desc the main function for the base
+  // @param {Function} callback - The callback function
+  // @return {Integer} requestID - the id passed to cancelAnimationFrame
+  function requestAnimationFrame(callback, element) {
+    var currTime = new Date().getTime();
+    var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+    var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+      timeToCall);
+    lastTime = currTime + timeToCall;
+    return id;
+  }
+
+  // @name cancelAnimationFrame
+  // @desc the sub function for the base
+  // @param {String} id - The requestID to cancel
+  function cancelAnimationFrame(id) {
+    clearTimeout(id);
+  }
+
+  // ---------------------------------------------
+  //   Export block
+  // ---------------------------------------------
+  if (!window.requestAnimationFrame) {
+    window.requestAnimationFrame = requestAnimationFrame;
+  }
+
+  if (!window.cancelAnimationFrame) {
+    window.cancelAnimationFrame = cancelAnimationFrame;
+  }
+    
+})();
+},{}],7:[function(require,module,exports){
+"use strict";
+
+// -------------------------------------
+//   Dependencies
+// -------------------------------------
+/** 
+  * @plugins
+**/
+
+// -------------------------------------
+//   Base - Template
+// -------------------------------------
+/** 
+  * @name template
+  * @desc A base module that is used to create template 
+          tag elements that represents templates used
+          by an app for any purpose.
+**/
+
+(function() {
+  console.log("base/template.js loaded.");
+
+  // @name createTemplateTags
+  // @desc the main function for the base
+  function createTemplateTags() {
+    if ("content" in document.createElement("template")) {
+        return false;
+    }
+
+    var templates = document.getElementsByTagName("template");
+    var plateLen = templates.length;
+
+    for (var x = 0; x < plateLen; ++x) { try {
+      var template = templates[x];
+      var content  = template.childNodes;
+      var fragment = document.createDocumentFragment();
+
+      while (content[0]) {
+          fragment.appendChild(content[0]);
+      }
+
+      template.content = fragment;}
+      catch(error){ console.log(error); }
+    }
+  }
+
+  // ---------------------------------------------
+  //   Export block
+  // ---------------------------------------------
+  window.createTemplateTags = createTemplateTags;
+  createTemplateTags();
+
+})();
+
+},{}],8:[function(require,module,exports){
+"use strict";
+
+// -------------------------------------
+//   Dependencies
+// -------------------------------------
+/** 
+  * @plugins
+  * require("jquery");
+  * require("velocity");
+**/
+
+// base
+require("../base/query");
+require("../base/promise");
+
+// config
+var CONFIG = require("../config");
+
+// -------------------------------------
+//   Component - Promo Video
+// -------------------------------------
+/** 
+  * @name promo-video.component
+  * @desc The promo video component for the app.
+**/
+
+(function($){
+  console.log("components/promo-video.component.js loaded.");
+
+  /** 
+    * @name PromoVideo
+    * @desc the main class for the component
+    * @param {Object} options - options for the component
+    * @return {Object} - the instance of the component class
+  **/
+  function PromoVideo(options) {
+    // ---------------------------------------------
+    //   Private members
+    // ---------------------------------------------
+    var _el = { // reference to the DOM element
+      main: null,    // the main parent DOM element
+      scroll: null,  // the scroll child DOM element
+      content: null, // the content child DOM element
+      headers: []    // reference to the content headers
+    };
+
+    var _class = { // the classes that need to be applied
+      main: "promo-video",   // to the main parent DOM element
+      scroll: "promo-video__scroll", // to the scroll child DOM element
+      content: "promo-video__content" // to the content child DOM element
+    };
+
+    var _index = 0; // reference to the current active index
+
+    var _timeout = 1500; // reference to the header content animatimation timeout
+    var _interval = 5000; // reference to the header content animatimation interval
+    var _isContentAnimating = false; // flag to indicate if the header content is animating
+
+    // ---------------------------------------------
+    //   Public members
+    // ---------------------------------------------
+    /* empy block */
+
+    // ---------------------------------------------
+    //   Private methods
+    // ---------------------------------------------
+    // @name show
+    // @desc function to animate and show the given header content
+    // @param {DOM} content - the header content to be animated into view
+    // @param {String} direction - the direction of the required animation
+    // @return {Promise(Boolean)} - the promise with resolve as true or false
+    function _show(content, direction) {
+      return new Promise(function(resolve) { try {
+        if(_isContentAnimating) {
+          console.log("promo-video.component.js: Cannot show content while other contents are still animating.")
+          return false;
+        }
+
+        // set the animating flag as true
+        _isContentAnimating = true;
+
+        // animate the given content into view
+        $(content).velocity(
+          direction == "left" ? 
+          "transition.slideLeftIn" : 
+          "transition.slideRightIn", {
+
+            easing: "easeInOutQuad", delay: 0,
+            duration: CONFIG.animation.durationSlow,
+
+            // reset the animation flag on complete and resolve the promise
+            complete: function() { _isContentAnimating = false; return resolve(true); }
+        });
+
+        // resolve promimse immediately on error
+        } catch(error) { console.log(error); return resolve(true); }
+      });
+    }
+
+    // @name show
+    // @desc function to animate and hide the given header content
+    // @param {DOM} content - the header content to be animated out of view
+    // @param {String} direction - the direction of the required animation
+    // @return {Promise(Boolean)} - the promise with resolve as true or false
+    function _hide(content, direction) {
+      return new Promise(function(resolve) { try {
+        if(_isContentAnimating) {
+          console.log("promo-video.component.js: Cannot hide content while other contents are still animating.")
+          return false;
+        }
+
+        // set the animating flag as true
+        _isContentAnimating = true;
+
+        // animate the given content out of view
+        $(content).velocity(
+          direction == "right" ? 
+          "transition.slideRightOut" : 
+          "transition.slideLeftOut", {
+
+            easing: "easeInOutQuad", delay: 0,
+            duration: CONFIG.animation.durationSlow,
+
+            // reset the animation flag on complete and resolve the promise
+            complete: function() { _isContentAnimating = false; return resolve(true); }
+        });
+        
+        // resolve promimse immediately on error
+        } catch(error) { console.log(error); return resolve(true); }
+      });
+    }
+
+    // ---------------------------------------------
+    //   Public methods
+    // ---------------------------------------------
+    // @name next
+    // @desc function to show the next header content
+    function next() {
+      var currIndex = _index; // get the current active index
+      var nextIndex = _index + 1; // get the next active index
+
+      // check if this the last header content
+      if(nextIndex >= _el.headers.length ) {
+         // reset the active index
+         // to the start of the list
+          nextIndex = 0;
+      } 
+
+      // get the corresponding header contents
+      var elCurrContent = _el.headers[currIndex];
+      var elNextContent = _el.headers[nextIndex];
+
+      // animate the current content out of view
+      _hide(elCurrContent, "left").then(
+
+        // animate the next content into view
+        function(isSuccess) {_show( elNextContent, "right"); },
+        function(isError)   { /* empty block */ }
+
+      );
+
+      _index = nextIndex;
+    }
+
+    // @name prev
+    // @desc function to show the previous header content
+    function prev() { /* empty block */ }
+
+    // ---------------------------------------------
+    //   Constructor block
+    // ---------------------------------------------
+    // check if the promo video has valid options
+    // element - should be a valid DOM element
+    if(!options || !options.element 
+      || !options.element.nodeName || !options.element.nodeType) {
+      console.log("promo-video.component.js: Cannot create promo video with invalid options.");
+      return null;  // return null if invalid
+    }
+
+    // get the main parent element
+    _el.main = options.element;
+
+    // get all the child elements
+    _el.scroll = query("." + _class.scroll, _el.main)[0];
+    _el.content = query("." + _class.content, _el.main)[0];
+    _el.headers = query("span", _el.content);
+
+    // show the next header content 
+    // once on initial component load
+    setTimeout(function() {  
+      next(); 
+
+      // and create a loop 
+      // with a set interval
+      setInterval(next, _interval);
+    }, _timeout);
+
+    // ---------------------------------------------
+    //   Instance block
+    // ---------------------------------------------
+    return {
+      next: next, // function to show the next header content
+      prev: prev  // function to show the previous header content
+    };
+  }
+
+  // ---------------------------------------------
+  //   Export block
+  // ---------------------------------------------
+  module.exports = PromoVideo;
+
+})(jQuery);
+
+
+},{"../base/promise":4,"../base/query":5,"../config":9}],9:[function(require,module,exports){
 "use strict";
 
 // -------------------------------------
@@ -481,7 +1255,9 @@ console.log(CONFIG);
         // duration and delay 
         // used in js animations
         delay: 250,   // delay in ms
-        duration: 500 // duration in ms
+        duration: 500, // duration in ms
+        durationSlow: (500 * 1.3), // duration in ms
+        durationFast: (500 * 0.5), // duration in ms
       },
 
       // timeout

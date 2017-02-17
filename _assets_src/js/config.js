@@ -364,7 +364,9 @@
         // duration and delay 
         // used in js animations
         delay: 250,   // delay in ms
-        duration: 500 // duration in ms
+        duration: 500, // duration in ms
+        durationSlow: (500 * 1.3), // duration in ms
+        durationFast: (500 * 0.5), // duration in ms
       },
 
       // timeout

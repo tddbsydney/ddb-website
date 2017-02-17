@@ -3,12 +3,10 @@
   data: style-guide
 ---
 
-<!--
-{% comment %}
+<!--{% comment %}
 {% assign page_data = site.data.prismic[page.data][0].data %}
 {% include _section_handler.html data=page_data.sections.value %} 
-{% endcomment %}
--->
+{% endcomment %}-->
 
 <!-- main -->
 <main>
@@ -29,13 +27,13 @@
         <img class="video__layout video__layout--mobile" src="{{base}}/assets/images/layout_800x820.png" alt="">
 
         <!-- video cover - desktop -->
-        <video class="video__cover video__cover--desktop" poster="{{base}}/assets/images/layout_1920x900.png" style="background-image: url('{{base}}/assets/images/video-poster-factory_desktop.jpg');" muted loop autoplay playsinline>
-          <source src="{{base}}/assets/videos/factory.mp4" type="video/mp4">
+        <video class="video__cover video__cover--desktop" poster="{{base}}/assets/images/layout_1920x900.png" style="background-image: url('{{base}}/assets/images/poster-promo-video_desktop.jpg');" muted loop autoplay playsinline>
+          <source src="{{base}}/assets/videos/promo-video_desktop.mp4" type="video/mp4">
         </video>
 
         <!-- video cover - mobile -->
-        <video class="video__cover video__cover--mobile" poster="{{base}}/assets/images/layout_800x820.png" muted loop autoplay playsinline style="background-image: url('{{base}}/assets/images/video-poster-factory_mobile.jpg');">
-          <source src="{{base}}/assets/videos/factory.mp4" type="video/mp4">
+        <video class="video__cover video__cover--mobile" poster="{{base}}/assets/images/layout_800x820.png" muted loop autoplay playsinline style="background-image: url('{{base}}/assets/images/poster-promo-video_mobile.jpg');">
+          <!--{% comment %} <source src="{{base}}/assets/videos/promo-video_mobile.mp4" type="video/mp4"> {% endcomment %}-->
         </video>
 
         <!-- video cover - overlay -->
@@ -424,7 +422,7 @@
 
           <h4> Style yellow dolor consectetur elit. </h4>
           
-          <a class="link" href="#" target="_self" title="Lorem ipsum dolor"><span> Lorem ipsum dolor </span></a>
+          <a class="link" href="#" title="Lorem ipsum dolor"><span> Lorem ipsum dolor </span></a>
 
         </div><!-- content end -->
         
@@ -440,7 +438,7 @@
 
           <h4> Style black dolor consectetur elit. </h4>
           
-          <a class="link" href="#" target="_self" title="Lorem ipsum dolor"><span> Lorem ipsum dolor </span></a>
+          <a class="link" href="#" title="Lorem ipsum dolor"><span> Lorem ipsum dolor </span></a>
 
         </div><!-- content end -->
 
