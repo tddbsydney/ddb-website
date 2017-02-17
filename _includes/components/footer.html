@@ -1,5 +1,5 @@
 <footer class="footer">
-  <div class="footer__col">
+  <div class="footer__col footer__col--contact">
     <p>Contact</p>
 
     <ul>
@@ -21,7 +21,7 @@
     </ul>
   </div>
 
-  <div class="footer__col">
+  <div class="footer__col footer__col--social">
     <p>Social</p>
 
     <ul>
@@ -51,11 +51,12 @@
     </ul>
   </div>
 
-  <div class="footer__col">
+  <div class="footer__col footer__col--empty">
+    <p class="footer__mob-copy footer__smaller-text">&copy; DDB Sydney {{ 'now' | date: "%Y" }}</p>
   </div>
 
-  <div class="footer__col">
-    <p>&copy; DDB Sydney {{ 'now' | date: "%Y" }}</p>
+  <div class="footer__col footer__col--ddb">
+    <p class="footer__des-copy">&copy; DDB Sydney {{ 'now' | date: "%Y" }}</p>
 
     <ul>
       <li>
@@ -66,7 +67,7 @@
 
       <li>
         <a href="{{base}}/privacy" target="_blank">
-          <span>Privacy Policy</span>
+          <span class="footer__smaller-text">Privacy Policy</span>
         </a>
       </li>
     </ul>
