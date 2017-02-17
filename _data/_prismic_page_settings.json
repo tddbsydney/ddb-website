@@ -213,7 +213,8 @@
                     "label" : "Style",
                     "placeholder" : "black",
                     "options" : [
-                      "yellow"
+                      "yellow",
+                      "grey"
                     ]
                   }
                 }
