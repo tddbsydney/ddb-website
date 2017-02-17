@@ -2,12 +2,25 @@
 
 <div class="image-tile">
 
-  {% if tile.image.main.value %}
-    <img src="{{ tile.image.main.value }}" />
-  {% endif %}
+  <!-- image -->
+  <div class="image">
 
-  {% for image in tile.image %}
-    <img class="{{ image.name }}" src="{{ image.value }}" />
-  {% endif %}
+    <!-- image layout - desktop -->
+    <img class="image__layout image__layout--desktop" src="{{base}}/assets/images/layout_1920x900.png" alt="">
+
+    <!-- image layout - mobile -->
+    <img class="image__layout image__layout--mobile" src="{{base}}/assets/images/layout_800x820.png" alt="">
+
+    <!-- image cover - desktop -->
+    {% if tile.image.value.views.desktop.url %}
+    <div class="image__cover image__cover--desktop" style="background-image: url('{{ tile.image.value.views.desktop.url }}');"></div>
+    {% endif %}
+
+    <!-- image cover - mobile -->
+    {% if tile.image.value.views.mobile.url %}
+    <div class="image__cover image__cover--mobile" style="background-image: url('{{ tile.image.value.views.mobile.url }}');"></div>
+    {% endif %}
+
+  </div><!-- image end -->
 
 </div>

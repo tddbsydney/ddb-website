@@ -1,0 +1,26 @@
+// -------------------------------------
+//   Component - Content Tile
+// -------------------------------------
+/**
+  * @name content-tile
+  * @desc Styles for the content tile component.
+**/
+
+.content-tile {
+  @extend %section;
+  @extend %section--padding;
+
+  // min-height: 50vw;
+
+  .content-tile__flex-row {
+    @extend %flex--row;
+  }
+
+  .content-tile__flex-col {
+    @extend %flex--col;
+  }
+
+  .content-tile__list {
+    @include font-size-h3;
+  }
+}
