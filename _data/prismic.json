@@ -795,6 +795,37 @@
       }
     }
   ],
+  "about": [
+    {
+      "uid": "about",
+      "data": {
+        "meta-title": {
+          "type": "Text",
+          "value": "About  | Tribal DDB"
+        },
+        "meta-description": {
+          "type": "Text",
+          "value": "About Tribal DDB."
+        },
+        "sections": {
+          "type": "SectionList",
+          "value": [
+            {
+              "type": "about-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "About"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
   "latest": [
     {
       "uid": "latest",
@@ -1620,6 +1651,37 @@
                   "style": {
                     "type": "Select",
                     "value": "grey"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "contact": [
+    {
+      "uid": "contact",
+      "data": {
+        "meta-title": {
+          "type": "Text",
+          "value": "Contact  | Tribal DDB"
+        },
+        "meta-description": {
+          "type": "Text",
+          "value": "Contact us at Tribal DDB."
+        },
+        "sections": {
+          "type": "SectionList",
+          "value": [
+            {
+              "type": "rules-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "Contact Us"
                   }
                 }
               ]

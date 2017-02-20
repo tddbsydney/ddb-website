@@ -386,12 +386,6 @@
                       }
                     ]
                   }
-                },
-                "textColor": {
-                  "type": "Color",
-                  "config": {
-                    "label": "Text Colour (default #000 black is ignored)"
-                  }
                 }
               }
             }
