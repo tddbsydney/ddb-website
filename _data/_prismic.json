@@ -11,7 +11,7 @@
       "id": "WKEQFSUAAEUiq5ZX",
       "uid": "work",
       "type": "work",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo4SigAACoAOjMR&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo9SCgAACkAOkkJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -27,7 +27,7 @@
 
           ],
           "type": "case-studies",
-          "slug": "volkswagen-case-study---tribal-ddb"
+          "slug": "test-case-study"
         },
         {
           "id": "WKEQFSUAAEUiq5ZX",
@@ -146,8 +146,8 @@
                             "tags": [
 
                             ],
-                            "slug": "volkswagen-case-study---tribal-ddb",
-                            "uid": "volkswagen"
+                            "slug": "test-case-study",
+                            "uid": "test"
                           },
                           "isBroken": false
                         }
@@ -548,15 +548,16 @@
     },
     {
       "id": "WKEQcCUAAKomq5fv",
-      "uid": "volkswagen",
+      "uid": "test",
       "type": "case-studies",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo4SigAACoAOjMR&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo9SCgAACkAOkkJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:48:38+0000",
-      "last_publication_date": "2017-02-20T00:28:58+0000",
+      "last_publication_date": "2017-02-20T00:50:16+0000",
       "slugs": [
+        "test-case-study",
         "volkswagen-case-study---tribal-ddb"
       ],
       "linked_documents": [
@@ -566,11 +567,11 @@
         "case-studies": {
           "meta-title": {
             "type": "Text",
-            "value": "Volkswagen Case Study  | Tribal DDB"
+            "value": "TEST Case Study"
           },
           "meta-description": {
             "type": "Text",
-            "value": "Case study for Volkswagen"
+            "value": "Case study for TESTing"
           },
           "foregroundColor": {
             "type": "Color",
@@ -578,7 +579,7 @@
           },
           "backgroundColor": {
             "type": "Color",
-            "value": "#593919"
+            "value": "#400080"
           },
           "sections": {
             "type": "SliceZone",
@@ -593,11 +594,11 @@
                     {
                       "headline": {
                         "type": "Text",
-                        "value": "Volkswagen"
+                        "value": "TEST"
                       },
                       "copy": {
                         "type": "Text",
-                        "value": "Das Auto"
+                        "value": "TEST Cast Study"
                       },
                       "image": {
                         "type": "Image",
@@ -1009,7 +1010,7 @@
       "id": "WKTjByoAAIcc_1uc",
       "uid": "design-guide",
       "type": "design-guide",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo4SigAACoAOjMR&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo9SCgAACkAOkkJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1044,7 +1045,7 @@
       "id": "WKoxNCgAACsAOhPa",
       "uid": "about",
       "type": "about",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo4SigAACoAOjMR&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo9SCgAACkAOkkJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1094,7 +1095,7 @@
       "id": "WKEP8CUAAOgdq5Ww",
       "uid": "latest",
       "type": "latest",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo4SigAACoAOjMR&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo9SCgAACkAOkkJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -2081,7 +2082,7 @@
       "id": "WKoxZSgAACgAOhS1",
       "uid": "contact",
       "type": "contact",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo4SigAACoAOjMR&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo9SCgAACkAOkkJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
       "tags": [
 
       ],

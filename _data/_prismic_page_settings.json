@@ -272,25 +272,6 @@
                       }
                     ]
                   }
-                },
-                "align" : {
-                  "type" : "Select",
-                  "config" : {
-                    "label" : "Alignment",
-                    "placeholder" : "left",
-                    "options" : [
-                      "center",
-                      "right",
-                      "",
-                      "topLeft",
-                      "topCenter",
-                      "topRight",
-                      "",
-                      "bottomLeft",
-                      "bottomCenter",
-                      "bottomRight"
-                    ]
-                  }
                 }
               }
             }

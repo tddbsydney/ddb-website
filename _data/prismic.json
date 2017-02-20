@@ -73,8 +73,8 @@
                         "tags": [
 
                         ],
-                        "slug": "volkswagen-case-study---tribal-ddb",
-                        "uid": "volkswagen"
+                        "slug": "test-case-study",
+                        "uid": "test"
                       },
                       "isBroken": false
                     }
@@ -449,15 +449,15 @@
   ],
   "case-studies": [
     {
-      "uid": "volkswagen",
+      "uid": "test",
       "data": {
         "meta-title": {
           "type": "Text",
-          "value": "Volkswagen Case Study  | Tribal DDB"
+          "value": "TEST Case Study"
         },
         "meta-description": {
           "type": "Text",
-          "value": "Case study for Volkswagen"
+          "value": "Case study for TESTing"
         },
         "foregroundColor": {
           "type": "Color",
@@ -465,7 +465,7 @@
         },
         "backgroundColor": {
           "type": "Color",
-          "value": "#593919"
+          "value": "#400080"
         },
         "sections": {
           "type": "SectionList",
@@ -476,11 +476,11 @@
                 {
                   "headline": {
                     "type": "Text",
-                    "value": "Volkswagen"
+                    "value": "TEST"
                   },
                   "copy": {
                     "type": "Text",
-                    "value": "Das Auto"
+                    "value": "TEST Cast Study"
                   },
                   "image": {
                     "type": "Image",
