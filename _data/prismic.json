@@ -68,13 +68,13 @@
                     "type": "Link.document",
                     "value": {
                       "document": {
-                        "id": "WKEQFSUAAEUiq5ZX",
-                        "type": "work",
+                        "id": "WKEQcCUAAKomq5fv",
+                        "type": "case-studies",
                         "tags": [
 
                         ],
-                        "slug": "work---tribal-ddb",
-                        "uid": "work"
+                        "slug": "volkswagen-case-study---tribal-ddb",
+                        "uid": "volkswagen"
                       },
                       "isBroken": false
                     }
@@ -465,11 +465,64 @@
         },
         "backgroundColor": {
           "type": "Color",
-          "value": "#000000"
+          "value": "#593919"
         },
         "sections": {
           "type": "SectionList",
           "value": [
+            {
+              "type": "case-study-work-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "Volkswagen"
+                  },
+                  "copy": {
+                    "type": "Text",
+                    "value": "Das Auto"
+                  },
+                  "image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1662,
+                          "height": 900
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/592c78ebdfecdd8f841943163e15e80f02df75e3_vw3.jpg"
+                      },
+                      "views": {
+                        "mobile": {
+                          "dimensions": {
+                            "width": 800,
+                            "height": 820
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/0b606231ef418f5673066ee3f4527a77b3b18803_vw3.jpg"
+                        },
+                        "desktop": {
+                          "dimensions": {
+                            "width": 1920,
+                            "height": 900
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/f7d543d2e270b839a54d5cf12e1ee38d59f8717c_vw3.jpg"
+                        }
+                      }
+                    }
+                  },
+                  "align": {
+                    "type": "Select",
+                    "value": "center"
+                  }
+                }
+              ]
+            },
             {
               "type": "content-tile",
               "value": [
@@ -668,6 +721,10 @@
               "type": "quote-tile",
               "value": [
                 {
+                  "textColor": {
+                    "type": "Color",
+                    "value": "#ffffff"
+                  },
                   "quote": {
                     "type": "Text",
                     "value": "This is a Quote."
@@ -709,10 +766,6 @@
                         }
                       }
                     }
-                  },
-                  "textColor": {
-                    "type": "Color",
-                    "value": "#ffffff"
                   }
                 }
               ]

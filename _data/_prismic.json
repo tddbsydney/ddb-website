@@ -11,23 +11,23 @@
       "id": "WKEQFSUAAEUiq5ZX",
       "uid": "work",
       "type": "work",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKoxaigAACoAOhTL&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo4SigAACoAOjMR&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:07+0000",
-      "last_publication_date": "2017-02-16T23:33:48+0000",
+      "last_publication_date": "2017-02-20T00:22:58+0000",
       "slugs": [
         "work---tribal-ddb"
       ],
       "linked_documents": [
         {
-          "id": "WKEQFSUAAEUiq5ZX",
+          "id": "WKEQcCUAAKomq5fv",
           "tags": [
 
           ],
-          "type": "work",
-          "slug": "work---tribal-ddb"
+          "type": "case-studies",
+          "slug": "volkswagen-case-study---tribal-ddb"
         },
         {
           "id": "WKEQFSUAAEUiq5ZX",
@@ -141,13 +141,13 @@
                         "type": "Link.document",
                         "value": {
                           "document": {
-                            "id": "WKEQFSUAAEUiq5ZX",
-                            "type": "work",
+                            "id": "WKEQcCUAAKomq5fv",
+                            "type": "case-studies",
                             "tags": [
 
                             ],
-                            "slug": "work---tribal-ddb",
-                            "uid": "work"
+                            "slug": "volkswagen-case-study---tribal-ddb",
+                            "uid": "volkswagen"
                           },
                           "isBroken": false
                         }
@@ -550,12 +550,12 @@
       "id": "WKEQcCUAAKomq5fv",
       "uid": "volkswagen",
       "type": "case-studies",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKoxaigAACoAOhTL&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo4SigAACoAOjMR&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:48:38+0000",
-      "last_publication_date": "2017-02-17T01:28:36+0000",
+      "last_publication_date": "2017-02-20T00:28:58+0000",
       "slugs": [
         "volkswagen-case-study---tribal-ddb"
       ],
@@ -578,11 +578,69 @@
           },
           "backgroundColor": {
             "type": "Color",
-            "value": "#000000"
+            "value": "#593919"
           },
           "sections": {
             "type": "SliceZone",
             "value": [
+              {
+                "type": "Slice",
+                "slice_type": "case-study-work-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Volkswagen"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Das Auto"
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1662,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/592c78ebdfecdd8f841943163e15e80f02df75e3_vw3.jpg"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/0b606231ef418f5673066ee3f4527a77b3b18803_vw3.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/f7d543d2e270b839a54d5cf12e1ee38d59f8717c_vw3.jpg"
+                            }
+                          }
+                        }
+                      },
+                      "align": {
+                        "type": "Select",
+                        "value": "center"
+                      }
+                    }
+                  ]
+                }
+              },
               {
                 "type": "Slice",
                 "slice_type": "content-tile",
@@ -835,6 +893,10 @@
                   "type": "Group",
                   "value": [
                     {
+                      "textColor": {
+                        "type": "Color",
+                        "value": "#ffffff"
+                      },
                       "quote": {
                         "type": "Text",
                         "value": "This is a Quote."
@@ -876,10 +938,6 @@
                             }
                           }
                         }
-                      },
-                      "textColor": {
-                        "type": "Color",
-                        "value": "#ffffff"
                       }
                     }
                   ]
@@ -951,7 +1009,7 @@
       "id": "WKTjByoAAIcc_1uc",
       "uid": "design-guide",
       "type": "design-guide",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKoxaigAACoAOhTL&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo4SigAACoAOjMR&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -986,7 +1044,7 @@
       "id": "WKoxNCgAACsAOhPa",
       "uid": "about",
       "type": "about",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKoxaigAACoAOhTL&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo4SigAACoAOjMR&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1036,7 +1094,7 @@
       "id": "WKEP8CUAAOgdq5Ww",
       "uid": "latest",
       "type": "latest",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKoxaigAACoAOhTL&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo4SigAACoAOjMR&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -2023,7 +2081,7 @@
       "id": "WKoxZSgAACgAOhS1",
       "uid": "contact",
       "type": "contact",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKoxaigAACoAOhTL&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo4SigAACoAOjMR&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
       "tags": [
 
       ],

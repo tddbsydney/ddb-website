@@ -2,18 +2,18 @@
 //   Component - Case Study Work
 // -------------------------------------
 /**
-  * @name case-study-work
+  * @name case-study-work-tile
   * @desc Styles for the case study Work component.
 **/
 
-.case-study-work { @extend .case-study-tile; }
+.case-study-work-tile { @extend .case-study-tile; }
 
 // -------------------------------------
 //   Case Study Work - Content
 // -------------------------------------
 $csw_content_margin_mob: 20vw;
 
-.case-study-work__content { 
+.case-study-work-tile__content {
   @extend .case-study-tile__content;
   @include mobile { top: $csw_content_margin_mob !important; }
 }
@@ -23,7 +23,7 @@ $csw_content_margin_mob: 20vw;
 // -------------------------------------
 $csw_scroll_margin: 0.5em;
 
-.case-study-work__scroll {
+.case-study-work-tile__scroll {
   // disabled for sprint one
   // to prevent click events
   pointer-events: none;
