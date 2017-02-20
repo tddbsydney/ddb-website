@@ -1,13 +1,14 @@
 {% for section in include.data %}
 
-  <!-- section -->
+  <!-- section {{section.type}} -->
   <section>
 
     {% case section.type %}
 
-      <!--{% comment %}
-        Latest & Work Page
-      {% endcomment %}-->
+
+
+      {% comment %} <!-- Latest & Work Page --> {% endcomment %}
+
       {% when "promo-video" %}
         {% include components/promo-video.html data=section.value %}
 
@@ -17,9 +18,10 @@
       {% when "article-tile" %}
         {% include components/article-tile.html data=section.value %}
 
-      <!--{% comment %}
-        Case Study Pages
-      {% endcomment %}-->
+
+
+      {% comment %} <!-- Case Study Pages --> {% endcomment %}
+
       {% when "case-study-work-tile" %}
         {% include components/case-study-work-tile.html data=section.value %}
 
@@ -32,20 +34,24 @@
       {% when "video-tile" %}
         {% include components/video-tile.html data=section.value %}
 
-      <!--{% comment %}
-         About Page
-      {% endcomment %}-->
+
+
+      {% comment %} <!-- About Page --> {% endcomment %}
+
       {% when "about-tile" %}
         {% include components/about-tile.html data=section.value %}
 
-      <!--{% comment %}
-         Contact Page
-      {% endcomment %}-->
+
+
+      {% comment %} <!-- Contact Page --> {% endcomment %}
+
       {% when "rules-tile" %}
         {% include components/rules-tile.html data=section.value %}
 
+
+
     {% endcase %}
 
-  </section><!-- section end -->
+  </section><!-- section {{section.type}} end -->
 
 {% endfor %}
