@@ -23,18 +23,46 @@
     <!-- endcustom -->
   </head><!-- head end -->
   <!-- body -->
-  <body>
+  <body style="background-color: #400080" data-foreground-color="#ffffff">
+    <!-- section header -->
     <section>
       <!-- header -->
       <header>
       </header>
       <!-- header end -->
     </section>
-    <!-- section -->
+    <!-- section header end -->
+    <!-- section case-study-work-tile -->
     <section>
+      <!-- case study work tile -->
+      <div class="case-study-work-tile">
+        <!-- image -->
+        <div class="image">
+          <!-- image layout - desktop -->
+          <img class="image__layout image__layout--desktop" src="../../assets/images/layout_1920x900.png" alt="">
+          <!-- image layout - mobile -->
+          <img class="image__layout image__layout--mobile" src="../../assets/images/layout_840x1350.png" alt="">
+          <!-- image cover - desktop -->
+          <div class="image__cover image__cover--desktop" style="background-image: url('https://prismic-io.s3.amazonaws.com/ddb-website/f7d543d2e270b839a54d5cf12e1ee38d59f8717c_vw3.jpg');"></div>
+          <!-- image cover - mobile -->
+          <div class="image__cover image__cover--mobile" style="background-image: url('https://prismic-io.s3.amazonaws.com/ddb-website/0b606231ef418f5673066ee3f4527a77b3b18803_vw3.jpg');"></div>
+        </div>
+        <!-- image end -->
+        <!-- content -->
+        <div class="case-study-work-tile__content" data-align="left">
+          <p>TEST</p>
+          <h2>TEST Cast Study</h2>
+        </div>
+        <!-- content end -->
+        <!-- scroll down -->
+        <a class="case-study-work-tile__scroll" href="#scroll-down" title="Scroll down"><!--
+    --><i class="icon icon-chevron-down"></i><!--
+  --></a>
+      </div>
+      <!-- case study work end -->
     </section>
-    <!-- section end -->
-    <!-- section -->
+    <!-- section case-study-work-tile end -->
+    <!-- section content-tile -->
     <section>
       <!-- content tile -->
       <div class="content-tile content-tile__flex-row">
@@ -46,8 +74,8 @@
       </div>
       <!-- content tile end -->
     </section>
-    <!-- section end -->
-    <!-- section -->
+    <!-- section content-tile end -->
+    <!-- section image-tile -->
     <section>
       <!-- image tile -->
       <div class="image-tile">
@@ -66,8 +94,8 @@
       </div>
       <!-- image tile end -->
     </section>
-    <!-- section end -->
-    <!-- section -->
+    <!-- section image-tile end -->
+    <!-- section content-tile -->
     <section>
       <!-- content tile -->
       <div class="content-tile content-tile__flex-row">
@@ -77,8 +105,8 @@
       </div>
       <!-- content tile end -->
     </section>
-    <!-- section end -->
-    <!-- section -->
+    <!-- section content-tile end -->
+    <!-- section video-tile -->
     <section>
       <!-- video tile -->
       <div class="video-tile">
@@ -88,10 +116,9 @@
       </video>
       </div>
       <!-- video tile end -->
-      <!---->
     </section>
-    <!-- section end -->
-    <!-- section -->
+    <!-- section video-tile end -->
+    <!-- section content-tile -->
     <section>
       <!-- content tile -->
       <div class="content-tile content-tile__flex-row">
@@ -102,8 +129,8 @@
       </div>
       <!-- content tile end -->
     </section>
-    <!-- section end -->
-    <!-- section -->
+    <!-- section content-tile end -->
+    <!-- section video-tile -->
     <section>
       <!-- video tile -->
       <div class="video-tile">
@@ -113,10 +140,9 @@
       </video>
       </div>
       <!-- video tile end -->
-      <!---->
     </section>
-    <!-- section end -->
-    <!-- section -->
+    <!-- section video-tile end -->
+    <!-- section content-tile -->
     <section>
       <!-- content tile -->
       <div class="content-tile content-tile__flex-row">
@@ -126,18 +152,17 @@
       </div>
       <!-- content tile end -->
     </section>
-    <!-- section end -->
-    <!-- section -->
+    <!-- section content-tile end -->
+    <!-- section video-tile -->
     <section>
       <!-- video tile -->
       <div class="video-tile">
         <iframe type="text/html" src="https://www.youtube.com/embed/65OV30_Oy-0?modestbranding=1&controls=1&iv_load_policy=3&rel=0&showinfo=0" frameborder="0"></iframe>
       </div>
       <!-- video tile end -->
-      <!---->
     </section>
-    <!-- section end -->
-    <!-- section -->
+    <!-- section video-tile end -->
+    <!-- section content-tile -->
     <section>
       <!-- content tile -->
       <div class="content-tile content-tile__flex-row">
@@ -147,22 +172,21 @@
       </div>
       <!-- content tile end -->
     </section>
-    <!-- section end -->
-    <!-- section -->
+    <!-- section content-tile end -->
+    <!-- section video-tile -->
     <section>
       <!-- video tile -->
       <div class="video-tile">
         <iframe type="text/html" src="https://www.youtube.com/embed/QgM4hkAkeY0?modestbranding=1&controls=1&iv_load_policy=3&rel=0&showinfo=0" frameborder="0"></iframe>
       </div>
       <!-- video tile end -->
-      <!---->
     </section>
-    <!-- section end -->
-    <!-- section -->
+    <!-- section video-tile end -->
+    <!-- section quote-tile -->
     <section>
     </section>
-    <!-- section end -->
-    <!-- section -->
+    <!-- section quote-tile end -->
+    <!-- section content-tile -->
     <section>
       <!-- content tile -->
       <div class="content-tile content-tile__flex-row">
@@ -180,7 +204,8 @@
       </div>
       <!-- content tile end -->
     </section>
-    <!-- section end -->
+    <!-- section content-tile end -->
+    <!-- section footer -->
     <section>
       <!-- footer -->
       <footer class="footer">
@@ -240,23 +265,27 @@
         <!-- col -->
         <div class="footer__col footer__col--ddb">
           <p class="footer__des-copy">&copy; DDB Sydney 2017</p>
-          <ul>
-            <li>
-              <a href="../../careers">
-                <span>Careers</span>
-              </a>
-            </li>
-            <li>
-              <a href="../../privacy">
-                <span class="footer__smaller-text">Privacy Policy</span>
-              </a>
-            </li>
-          </ul>
+          <!-- Hidden unavailable pages
+    <ul>
+      <li>
+        <a href="../../careers">
+          <span>Careers</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="../../privacy">
+          <span class="footer__smaller-text">Privacy Policy</span>
+        </a>
+      </li>
+    </ul>
+    -->
         </div>
         <!-- col end -->
       </footer>
       <!-- footer end -->
     </section>
+    <!-- section footer end -->
   </body><!-- body end -->
   <!-- bower:js -->
   <!-- endbower -->
