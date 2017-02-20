@@ -11,7 +11,7 @@
       "id": "WKEQFSUAAEUiq5ZX",
       "uid": "work",
       "type": "work",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpNaygAACkAOpAr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpsxCgAACgAOxog&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -554,12 +554,12 @@
       "id": "WKEQcCUAAKomq5fv",
       "uid": "test",
       "type": "case-studies",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpNaygAACkAOpAr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpsxCgAACgAOxog&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:48:38+0000",
-      "last_publication_date": "2017-02-20T01:59:07+0000",
+      "last_publication_date": "2017-02-20T04:12:52+0000",
       "slugs": [
         "test-case-study--tribal-ddb",
         "test-case-study",
@@ -584,7 +584,7 @@
           },
           "backgroundColor": {
             "type": "Color",
-            "value": "#afc9e2"
+            "value": "#444444"
           },
           "sections": {
             "type": "SliceZone",
@@ -1005,6 +1005,69 @@
                     }
                   ]
                 }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Donec blandit efficitur ligula vestibulum dignissim."
+                      },
+                      "subline": {
+                        "type": "Text",
+                        "value": "Quisque sit amet ex et metus pulvinar aliquam. Ut suscipit, ipsum non ornare rhoncus, dui neque aliquam mi, nec aliquam lorem ligula quis eros. Sed dapibus libero eros, ac faucibus erat viverra sit amet."
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Phasellus in tempus lorem. Praesent aliquam cursus risus sit amet elementum. Sed consectetur sit amet urna in tincidunt. Curabitur volutpat augue sed lorem placerat, ut efficitur nulla sagittis. Maecenas id pulvinar lorem."
+                      },
+                      "list": {
+                        "type": "StructuredText",
+                        "value": [
+                          {
+                            "type": "paragraph",
+                            "text": "<b>Lorem</b><br class=\"all\"/><br class=\"all\"/>Mauris lectus orci, tincidunt sed egestas quis, eleifend lobortis justo.<br class=\"all\"/><br class=\"all\"/>Sed sit amet tincidunt massa.<br class=\"all\"/><br class=\"all\"/>Morbi et mattis est, vel gravida lectus.",
+                            "spans": [
+
+                            ]
+                          },
+                          {
+                            "type": "paragraph",
+                            "text": "<b>Ipsum</b><br class=\"all\"/><br class=\"all\"/>Cras suscipit convallis tincidunt.<br class=\"all\"/><br class=\"all\"/>Fusce turpis lacus, porta sit amet ligula ut, volutpat tempus leo.<br class=\"all\"/><br class=\"all\"/>Maecenas viverra turpis vel velit fermentum, a malesuada diam lacinia. ",
+                            "spans": [
+
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "quote-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "quote": {
+                        "type": "Text",
+                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde dolorem quem maximum?"
+                      },
+                      "author": {
+                        "type": "Text",
+                        "value": "Lorem ipsum"
+                      }
+                    }
+                  ]
+                }
               }
             ]
           }
@@ -1015,7 +1078,7 @@
       "id": "WKTjByoAAIcc_1uc",
       "uid": "design-guide",
       "type": "design-guide",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpNaygAACkAOpAr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpsxCgAACgAOxog&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1058,7 +1121,7 @@
       "id": "WKoxNCgAACsAOhPa",
       "uid": "about",
       "type": "about",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpNaygAACkAOpAr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpsxCgAACgAOxog&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1116,7 +1179,7 @@
       "id": "WKEP8CUAAOgdq5Ww",
       "uid": "latest",
       "type": "latest",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpNaygAACkAOpAr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpsxCgAACgAOxog&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -2107,7 +2170,7 @@
       "id": "WKoxZSgAACgAOhS1",
       "uid": "contact",
       "type": "contact",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpNaygAACkAOpAr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpsxCgAACgAOxog&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
       "tags": [
 
       ],

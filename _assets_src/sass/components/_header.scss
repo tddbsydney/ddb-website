@@ -6,8 +6,100 @@
   * @desc Styles for the header component.
 **/
 
-.header { @extend %section; }
+.header {
+  @extend %section--padding;
+  @extend %flex--row;
+
+  text-align: center;
+  background-color: transparent;
+
+  @include mobile {
+    min-height: 100vh;
+    background-color: black; 
+  }
+
+  @include mobile-up {
+    @include section--padding-top(3/4);
+    @include section--padding-bottom(3/4);
+  }
+  
+  a {
+    @extend %font-size-h5;
+    color: white;
+
+    i {
+      @extend %font-size-h3;
+      line-height: 1em !important;
+    }
+  }
+  
+  &__back, &__logo,
+  &__menu, &__nav {
+    @extend %flex--col;
+  }
+
+  &__back, &__menu {
+    flex: 1;
+    flex-basis: 10%;
+    @include mobile { flex: 2; flex-basis: 20%; }
+  }
+
+  &__logo, &__nav {
+    flex: 8; flex-basis: 80%;
+    @include mobile { flex: 6; flex-basis: 60%; }
+  }
+
+  &__nav {
+    @include mobile { flex: 10; flex-basis: 100%; }
+  }
+}
 
 // -------------------------------------
-//   Header - Content
+//   Header - Back
 // -------------------------------------
+.header__back {
+  text-align: left;
+
+  > a   { display: inline-block; }
+  > a i { display: inline-block; }
+}
+
+// -------------------------------------
+//   Header - Menu
+// -------------------------------------
+.header__menu {
+  text-align: right;
+  &--desktop { @include mobile { display: none !important; }}
+  &--mobile  { @include mobile-up { display: none !important; }}
+
+  > a   { display: inline-block; }
+  > a i { display: inline-block; }
+}
+
+// -------------------------------------
+//   Header - Logo
+// -------------------------------------
+.header__logo {
+  &--desktop { @include mobile { display: none !important; }}
+  &--mobile  { @include mobile-up { display: none !important; }}
+}
+
+// -------------------------------------
+//   Header - Nav
+// -------------------------------------
+.header__nav {
+  @extend %flex--row;
+  @include mobile { display: block; }
+
+  > a {
+    @extend %flex--col;
+    align-self: flex-end;
+
+    @include mobile {
+      display: block;
+      padding-top: $section_pad_mob;
+      padding-bottom: $section_pad_mob;
+    }
+  }
+}
+

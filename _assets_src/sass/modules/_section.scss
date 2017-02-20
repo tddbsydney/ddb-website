@@ -143,3 +143,23 @@ $section_margin_ret: $section_pad_ret; // retina
 
 main { @extend %section; }
 section { @extend %section; }
+
+// -------------------------------------
+//   Section - Classes
+// -------------------------------------
+.section {
+  @extend %section;
+  
+
+  &--header {
+    position: absolute;
+    z-index: $zi_header;
+    
+    display: block;
+    width: 100%;
+  }
+
+  &--footer {
+    /* wmpty block */
+  }
+}

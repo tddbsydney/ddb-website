@@ -38,7 +38,7 @@
   <body{% if page_data.backgroundColor.value %} style="background-color: {{ page_data.backgroundColor.value }}"{% endif %}{% if page_data.foregroundColor.value %} data-foreground-color="{{ page_data.foregroundColor.value }}"{% endif %}>
 
     {% unless page_data.header.value == 'hidden' %}
-      <section>
+      <section class="section--header">
       {% include components/header.html %}
       </section>
     {% endunless %}
@@ -46,7 +46,7 @@
     {{ content }}
 
     {% unless page_data.footer.value == 'hidden' %}
-      <section>
+      <section class="section--footer">
       {% include components/footer.html %}
       </section>
     {% endunless %}

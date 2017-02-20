@@ -757,6 +757,11 @@ var CONFIG = require("../config");
 
         // animate the given content into view
         requestAnimationFrame(function() {
+          // finish any animations currently
+          // being performed on the content
+          $(content).velocity("finish");
+
+          // perform the new animation
           $(content).velocity(
             direction == "left" ? 
             "transition.slideLeftIn" : 
@@ -793,6 +798,11 @@ var CONFIG = require("../config");
 
         // animate the given content out of view
         requestAnimationFrame(function() {
+          // finish any animations currently
+          // being performed on the content
+          $(content).velocity("finish");
+
+          // perform the new animation
           $(content).velocity(
             direction == "right" ? 
             "transition.slideRightOut" : 

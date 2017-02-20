@@ -469,7 +469,7 @@
         },
         "backgroundColor": {
           "type": "Color",
-          "value": "#afc9e2"
+          "value": "#444444"
         },
         "sections": {
           "type": "SectionList",
@@ -822,6 +822,59 @@
                         ]
                       }
                     ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "content-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "Donec blandit efficitur ligula vestibulum dignissim."
+                  },
+                  "subline": {
+                    "type": "Text",
+                    "value": "Quisque sit amet ex et metus pulvinar aliquam. Ut suscipit, ipsum non ornare rhoncus, dui neque aliquam mi, nec aliquam lorem ligula quis eros. Sed dapibus libero eros, ac faucibus erat viverra sit amet."
+                  },
+                  "copy": {
+                    "type": "Text",
+                    "value": "Phasellus in tempus lorem. Praesent aliquam cursus risus sit amet elementum. Sed consectetur sit amet urna in tincidunt. Curabitur volutpat augue sed lorem placerat, ut efficitur nulla sagittis. Maecenas id pulvinar lorem."
+                  },
+                  "list": {
+                    "type": "StructuredText",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "text": "<b>Lorem</b><br class=\"all\"/><br class=\"all\"/>Mauris lectus orci, tincidunt sed egestas quis, eleifend lobortis justo.<br class=\"all\"/><br class=\"all\"/>Sed sit amet tincidunt massa.<br class=\"all\"/><br class=\"all\"/>Morbi et mattis est, vel gravida lectus.",
+                        "spans": [
+
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "text": "<b>Ipsum</b><br class=\"all\"/><br class=\"all\"/>Cras suscipit convallis tincidunt.<br class=\"all\"/><br class=\"all\"/>Fusce turpis lacus, porta sit amet ligula ut, volutpat tempus leo.<br class=\"all\"/><br class=\"all\"/>Maecenas viverra turpis vel velit fermentum, a malesuada diam lacinia. ",
+                        "spans": [
+
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "quote-tile",
+              "value": [
+                {
+                  "quote": {
+                    "type": "Text",
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde dolorem quem maximum?"
+                  },
+                  "author": {
+                    "type": "Text",
+                    "value": "Lorem ipsum"
                   }
                 }
               ]
