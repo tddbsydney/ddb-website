@@ -23,13 +23,13 @@
     "foregroundColor": {
       "type": "Color",
       "config": {
-        "label": "Foreground Colour (default #000 black is ignored)"
+        "label": "Foreground Colour"
       }
     },
     "backgroundColor": {
       "type": "Color",
       "config": {
-        "label": "Background Colour (default #000 black is ignored)"
+        "label": "Background Colour"
       }
     }
   },

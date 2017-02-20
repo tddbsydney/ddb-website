@@ -15,6 +15,10 @@
           "type": "Color",
           "value": "#ffffff"
         },
+        "backgroundColor": {
+          "type": "Color",
+          "value": "#000000"
+        },
         "sections": {
           "type": "SectionList",
           "value": [
@@ -839,6 +843,14 @@
           "type": "Text",
           "value": "The design style guide for the applicaiton."
         },
+        "foregroundColor": {
+          "type": "Color",
+          "value": "#ffffff"
+        },
+        "backgroundColor": {
+          "type": "Color",
+          "value": "#000000"
+        },
         "sections": {
           "type": "SectionList",
           "value": [
@@ -859,6 +871,14 @@
         "meta-description": {
           "type": "Text",
           "value": "About Tribal DDB."
+        },
+        "foregroundColor": {
+          "type": "Color",
+          "value": "#ffffff"
+        },
+        "backgroundColor": {
+          "type": "Color",
+          "value": "#000000"
         },
         "sections": {
           "type": "SectionList",
@@ -894,6 +914,10 @@
         "foregroundColor": {
           "type": "Color",
           "value": "#ffffff"
+        },
+        "backgroundColor": {
+          "type": "Color",
+          "value": "#000000"
         },
         "sections": {
           "type": "SectionList",
@@ -1724,6 +1748,14 @@
         "meta-description": {
           "type": "Text",
           "value": "Contact us at Tribal DDB."
+        },
+        "foregroundColor": {
+          "type": "Color",
+          "value": "#ffffff"
+        },
+        "backgroundColor": {
+          "type": "Color",
+          "value": "#000000"
         },
         "sections": {
           "type": "SectionList",
