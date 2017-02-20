@@ -828,7 +828,7 @@ var CONFIG = require("../config");
       } 
 
       // get the corresponding header contents
-      var elCurrContent = _el.headers[currIndex];
+      var elCurrContent = _el.headers; // get all contents
       var elNextContent = _el.headers[nextIndex];
 
       // animate the current content out of view
@@ -868,13 +868,17 @@ var CONFIG = require("../config");
 
     // show the next header content 
     // once on initial component load
-    setTimeout(function() {  
-      next(); 
+    requestAnimationFrame(function() {
+      setTimeout(function() {  
+        next(); 
 
-      // and create a loop 
-      // with a set interval
-      setInterval(next, _interval);
-    }, _timeout);
+        // and create a loop 
+        // with a set interval
+        requestAnimationFrame(function() { 
+          setInterval(next, _interval); 
+        });
+      }, _timeout);
+    });
 
     // ---------------------------------------------
     //   Instance block

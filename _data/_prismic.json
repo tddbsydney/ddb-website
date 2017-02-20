@@ -11,12 +11,12 @@
       "id": "WKEQFSUAAEUiq5ZX",
       "uid": "work",
       "type": "work",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo9SCgAACkAOkkJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpNaygAACkAOpAr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:07+0000",
-      "last_publication_date": "2017-02-20T00:22:58+0000",
+      "last_publication_date": "2017-02-20T01:40:17+0000",
       "slugs": [
         "work---tribal-ddb"
       ],
@@ -27,7 +27,7 @@
 
           ],
           "type": "case-studies",
-          "slug": "test-case-study"
+          "slug": "test-case-study--tribal-ddb"
         },
         {
           "id": "WKEQFSUAAEUiq5ZX",
@@ -83,6 +83,10 @@
           "foregroundColor": {
             "type": "Color",
             "value": "#ffffff"
+          },
+          "backgroundColor": {
+            "type": "Color",
+            "value": "#000000"
           },
           "sections": {
             "type": "SliceZone",
@@ -146,7 +150,7 @@
                             "tags": [
 
                             ],
-                            "slug": "test-case-study",
+                            "slug": "test-case-study--tribal-ddb",
                             "uid": "test"
                           },
                           "isBroken": false
@@ -550,13 +554,14 @@
       "id": "WKEQcCUAAKomq5fv",
       "uid": "test",
       "type": "case-studies",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo9SCgAACkAOkkJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpNaygAACkAOpAr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:48:38+0000",
-      "last_publication_date": "2017-02-20T00:50:16+0000",
+      "last_publication_date": "2017-02-20T01:59:07+0000",
       "slugs": [
+        "test-case-study--tribal-ddb",
         "test-case-study",
         "volkswagen-case-study---tribal-ddb"
       ],
@@ -567,11 +572,11 @@
         "case-studies": {
           "meta-title": {
             "type": "Text",
-            "value": "TEST Case Study"
+            "value": "Test Case Study | Tribal DDB"
           },
           "meta-description": {
             "type": "Text",
-            "value": "Case study for TESTing"
+            "value": "Case study for Testing"
           },
           "foregroundColor": {
             "type": "Color",
@@ -579,7 +584,7 @@
           },
           "backgroundColor": {
             "type": "Color",
-            "value": "#400080"
+            "value": "#afc9e2"
           },
           "sections": {
             "type": "SliceZone",
@@ -594,23 +599,23 @@
                     {
                       "headline": {
                         "type": "Text",
-                        "value": "TEST"
+                        "value": "Case study work tile"
                       },
                       "copy": {
                         "type": "Text",
-                        "value": "TEST Cast Study"
+                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                       },
                       "image": {
                         "type": "Image",
                         "value": {
                           "main": {
                             "dimensions": {
-                              "width": 1662,
+                              "width": 1920,
                               "height": 900
                             },
                             "alt": null,
                             "copyright": null,
-                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/592c78ebdfecdd8f841943163e15e80f02df75e3_vw3.jpg"
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/661b5836861bc7eaaf4f45f0879eeb8c2a6dbb1e_placeholder-1920x900-000000.png"
                           },
                           "views": {
                             "mobile": {
@@ -620,7 +625,7 @@
                               },
                               "alt": null,
                               "copyright": null,
-                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/0b606231ef418f5673066ee3f4527a77b3b18803_vw3.jpg"
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/c74dada68467c8e09a98ba16362f239b91969993_layout_840x1350_000000.png"
                             },
                             "desktop": {
                               "dimensions": {
@@ -629,7 +634,7 @@
                               },
                               "alt": null,
                               "copyright": null,
-                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/f7d543d2e270b839a54d5cf12e1ee38d59f8717c_vw3.jpg"
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/661b5836861bc7eaaf4f45f0879eeb8c2a6dbb1e_placeholder-1920x900-000000.png"
                             }
                           }
                         }
@@ -1010,12 +1015,12 @@
       "id": "WKTjByoAAIcc_1uc",
       "uid": "design-guide",
       "type": "design-guide",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo9SCgAACkAOkkJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpNaygAACkAOpAr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-15T23:33:33+0000",
-      "last_publication_date": "2017-02-16T03:04:37+0000",
+      "last_publication_date": "2017-02-20T01:42:20+0000",
       "slugs": [
         "design-guide"
       ],
@@ -1032,6 +1037,14 @@
             "type": "Text",
             "value": "The design style guide for the applicaiton."
           },
+          "foregroundColor": {
+            "type": "Color",
+            "value": "#ffffff"
+          },
+          "backgroundColor": {
+            "type": "Color",
+            "value": "#000000"
+          },
           "sections": {
             "type": "SliceZone",
             "value": [
@@ -1045,12 +1058,12 @@
       "id": "WKoxNCgAACsAOhPa",
       "uid": "about",
       "type": "about",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo9SCgAACkAOkkJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpNaygAACkAOpAr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-19T23:58:50+0000",
-      "last_publication_date": "2017-02-19T23:58:50+0000",
+      "last_publication_date": "2017-02-20T01:42:02+0000",
       "slugs": [
         "about---tribal-ddb"
       ],
@@ -1066,6 +1079,14 @@
           "meta-description": {
             "type": "Text",
             "value": "About Tribal DDB."
+          },
+          "foregroundColor": {
+            "type": "Color",
+            "value": "#ffffff"
+          },
+          "backgroundColor": {
+            "type": "Color",
+            "value": "#000000"
           },
           "sections": {
             "type": "SliceZone",
@@ -1095,12 +1116,12 @@
       "id": "WKEP8CUAAOgdq5Ww",
       "uid": "latest",
       "type": "latest",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo9SCgAACkAOkkJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpNaygAACkAOpAr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:26+0000",
-      "last_publication_date": "2017-02-17T04:20:48+0000",
+      "last_publication_date": "2017-02-20T01:40:38+0000",
       "slugs": [
         "latest---tribal-ddb"
       ],
@@ -1199,6 +1220,10 @@
           "foregroundColor": {
             "type": "Color",
             "value": "#ffffff"
+          },
+          "backgroundColor": {
+            "type": "Color",
+            "value": "#000000"
           },
           "sections": {
             "type": "SliceZone",
@@ -2082,12 +2107,12 @@
       "id": "WKoxZSgAACgAOhS1",
       "uid": "contact",
       "type": "contact",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKo9SCgAACkAOkkJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpNaygAACkAOpAr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-19T23:59:38+0000",
-      "last_publication_date": "2017-02-19T23:59:38+0000",
+      "last_publication_date": "2017-02-20T01:41:22+0000",
       "slugs": [
         "contact---tribal-ddb"
       ],
@@ -2103,6 +2128,14 @@
           "meta-description": {
             "type": "Text",
             "value": "Contact us at Tribal DDB."
+          },
+          "foregroundColor": {
+            "type": "Color",
+            "value": "#ffffff"
+          },
+          "backgroundColor": {
+            "type": "Color",
+            "value": "#000000"
           },
           "sections": {
             "type": "SliceZone",
