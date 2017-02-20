@@ -27,8 +27,18 @@
       </div>
     {% endif %}
 
-    {% if tile.image.main.value %}
-      <img src="{{ tile.image.main.value }}">
+    {% if tile.imageDesktop.value.main.url or tile.imageMobile.value.main.url %}
+    <div class="content-tile__image">
+
+      {% if tile.imageDesktop.value.main.url %}
+      <img class="content-tile__image--desktop" src="{{ tile.imageDesktop.value.main.url }}" alt="">
+      {% endif %}
+
+      {% if tile.imageMobile.value.main.url %}
+      <img class="content-tile__image--mobile" src="{{ tile.imageMobile.value.main.url }}" alt="">
+      {% endif %}
+
+    </div>
     {% endif %}
 
   </div>

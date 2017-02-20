@@ -453,6 +453,77 @@
   ],
   "case-studies": [
     {
+      "uid": "the-sydney-opera-house",
+      "data": {
+        "meta-title": {
+          "type": "Text",
+          "value": "Opera"
+        },
+        "foregroundColor": {
+          "type": "Color",
+          "value": "#ffffff"
+        },
+        "backgroundColor": {
+          "type": "Color",
+          "value": "#afc9e2"
+        },
+        "sections": {
+          "type": "SectionList",
+          "value": [
+            {
+              "type": "case-study-work-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "The Sydney Opera House"
+                  },
+                  "copy": {
+                    "type": "Text",
+                    "value": "We needed to get more people inside the Sydney Opera House during summer."
+                  },
+                  "image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1024,
+                          "height": 666
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/0c604664e2287e8951d7a2f7606b4435809820a8_opera1.jpg"
+                      },
+                      "views": {
+                        "desktop": {
+                          "dimensions": {
+                            "width": 1920,
+                            "height": 900
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/5fcad86e5e1657b150a3614c734a16c649f8c025_opera1.jpg"
+                        },
+                        "mobile": {
+                          "dimensions": {
+                            "width": 800,
+                            "height": 820
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/704ddfebc5ad809883d35673596ba63d05ca03c8_opera1.jpg"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
       "uid": "test",
       "data": {
         "meta-title": {
@@ -860,6 +931,38 @@
                         ]
                       }
                     ]
+                  },
+                  "imageDesktop": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1023,
+                          "height": 512
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/a8fd843b4572f294a0754363b0eb2e2635d6b858_vw2.jpg"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "imageMobile": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 532,
+                          "height": 512
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/8f9d057121035888f81325a55db93aba8122eb96_vw2.jpg"
+                      },
+                      "views": {
+                      }
+                    }
                   }
                 }
               ]
@@ -875,6 +978,40 @@
                   "author": {
                     "type": "Text",
                     "value": "Lorem ipsum"
+                  },
+                  "image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1023,
+                          "height": 512
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/a8fd843b4572f294a0754363b0eb2e2635d6b858_vw2.jpg"
+                      },
+                      "views": {
+                        "desktop": {
+                          "dimensions": {
+                            "width": 1920,
+                            "height": 900
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/f21567514a6848315255db8d1830ed07cf998b13_vw2.jpg"
+                        },
+                        "mobile": {
+                          "dimensions": {
+                            "width": 800,
+                            "height": 820
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/cec3370d8d089d2a633d000d8b36f877d5f00321_vw2.jpg"
+                        }
+                      }
+                    }
                   }
                 }
               ]

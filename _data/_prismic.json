@@ -1,8 +1,8 @@
 {
   "page": 1,
   "results_per_page": 20,
-  "results_size": 6,
-  "total_results_size": 6,
+  "results_size": 7,
+  "total_results_size": 7,
   "total_pages": 1,
   "next_page": null,
   "prev_page": null,
@@ -11,7 +11,7 @@
       "id": "WKEQFSUAAEUiq5ZX",
       "uid": "work",
       "type": "work",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpsxCgAACgAOxog&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKp1tCgAACgAO0GC&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -551,15 +551,107 @@
       }
     },
     {
+      "id": "WKpzRigAACgAOzbM",
+      "uid": "the-sydney-opera-house",
+      "type": "case-studies",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKp1tCgAACgAO0GC&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKpzRigAACgAOzbM%22%29+%5D%5D",
+      "tags": [
+
+      ],
+      "first_publication_date": "2017-02-20T04:41:09+0000",
+      "last_publication_date": "2017-02-20T04:41:09+0000",
+      "slugs": [
+        "opera"
+      ],
+      "linked_documents": [
+
+      ],
+      "data": {
+        "case-studies": {
+          "meta-title": {
+            "type": "Text",
+            "value": "Opera"
+          },
+          "foregroundColor": {
+            "type": "Color",
+            "value": "#ffffff"
+          },
+          "backgroundColor": {
+            "type": "Color",
+            "value": "#afc9e2"
+          },
+          "sections": {
+            "type": "SliceZone",
+            "value": [
+              {
+                "type": "Slice",
+                "slice_type": "case-study-work-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "The Sydney Opera House"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "We needed to get more people inside the Sydney Opera House during summer."
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1024,
+                              "height": 666
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/0c604664e2287e8951d7a2f7606b4435809820a8_opera1.jpg"
+                          },
+                          "views": {
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/5fcad86e5e1657b150a3614c734a16c649f8c025_opera1.jpg"
+                            },
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/704ddfebc5ad809883d35673596ba63d05ca03c8_opera1.jpg"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
       "id": "WKEQcCUAAKomq5fv",
       "uid": "test",
       "type": "case-studies",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpsxCgAACgAOxog&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKp1tCgAACgAO0GC&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:48:38+0000",
-      "last_publication_date": "2017-02-20T04:12:52+0000",
+      "last_publication_date": "2017-02-20T04:51:00+0000",
       "slugs": [
         "test-case-study--tribal-ddb",
         "test-case-study",
@@ -1044,6 +1136,38 @@
                             ]
                           }
                         ]
+                      },
+                      "imageDesktop": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1023,
+                              "height": 512
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/a8fd843b4572f294a0754363b0eb2e2635d6b858_vw2.jpg"
+                          },
+                          "views": {
+                          }
+                        }
+                      },
+                      "imageMobile": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 532,
+                              "height": 512
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/8f9d057121035888f81325a55db93aba8122eb96_vw2.jpg"
+                          },
+                          "views": {
+                          }
+                        }
                       }
                     }
                   ]
@@ -1064,6 +1188,40 @@
                       "author": {
                         "type": "Text",
                         "value": "Lorem ipsum"
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1023,
+                              "height": 512
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "https://prismic-io.s3.amazonaws.com/ddb-website/a8fd843b4572f294a0754363b0eb2e2635d6b858_vw2.jpg"
+                          },
+                          "views": {
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/f21567514a6848315255db8d1830ed07cf998b13_vw2.jpg"
+                            },
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "https://prismic-io.s3.amazonaws.com/ddb-website/cec3370d8d089d2a633d000d8b36f877d5f00321_vw2.jpg"
+                            }
+                          }
+                        }
                       }
                     }
                   ]
@@ -1078,7 +1236,7 @@
       "id": "WKTjByoAAIcc_1uc",
       "uid": "design-guide",
       "type": "design-guide",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpsxCgAACgAOxog&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKp1tCgAACgAO0GC&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1121,7 +1279,7 @@
       "id": "WKoxNCgAACsAOhPa",
       "uid": "about",
       "type": "about",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpsxCgAACgAOxog&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKp1tCgAACgAO0GC&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1179,7 +1337,7 @@
       "id": "WKEP8CUAAOgdq5Ww",
       "uid": "latest",
       "type": "latest",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpsxCgAACgAOxog&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKp1tCgAACgAO0GC&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -2170,7 +2328,7 @@
       "id": "WKoxZSgAACgAOhS1",
       "uid": "contact",
       "type": "contact",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKpsxCgAACgAOxog&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKp1tCgAACgAO0GC&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
       "tags": [
 
       ],

@@ -267,8 +267,8 @@
                       },
                       {
                         "name": "Mobile",
-                        "width": "800",
-                        "height": "820"
+                        "width": "840",
+                        "height": "1350"
                       }
                     ]
                   }
@@ -313,26 +313,26 @@
                     "multi": "list-item, o-list-item"
                   }
                 },
-                "image" : {
+                "imageDesktop" : {
                   "type" : "Image",
                   "config" : {
-                    "label" : "Image",
+                    "label" : "Image (Desktop)",
                     "constraint" : {
                       "width" : null,
                       "height" : null
                     },
-                    "thumbnails": [
-                      {
-                        "name": "Desktop",
-                        "width": "1920",
-                        "height": "900"
-                      },
-                      {
-                        "name": "Mobile",
-                        "width": "800",
-                        "height": "820"
-                      }
-                    ]
+                    "thumbnails": [ ]
+                  }
+                },
+                "imageMobile" : {
+                  "type" : "Image",
+                  "config" : {
+                    "label" : "Image (Mobile)",
+                    "constraint" : {
+                      "width" : null,
+                      "height" : null
+                    },
+                    "thumbnails": [ ]
                   }
                 }
               }
