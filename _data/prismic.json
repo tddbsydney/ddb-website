@@ -77,7 +77,7 @@
                         "tags": [
 
                         ],
-                        "slug": "test-case-study",
+                        "slug": "test-case-study--tribal-ddb",
                         "uid": "test"
                       },
                       "isBroken": false
@@ -457,11 +457,11 @@
       "data": {
         "meta-title": {
           "type": "Text",
-          "value": "TEST Case Study"
+          "value": "Test Case Study | Tribal DDB"
         },
         "meta-description": {
           "type": "Text",
-          "value": "Case study for TESTing"
+          "value": "Case study for Testing"
         },
         "foregroundColor": {
           "type": "Color",
@@ -469,7 +469,7 @@
         },
         "backgroundColor": {
           "type": "Color",
-          "value": "#400080"
+          "value": "#444444"
         },
         "sections": {
           "type": "SectionList",
@@ -480,23 +480,23 @@
                 {
                   "headline": {
                     "type": "Text",
-                    "value": "TEST"
+                    "value": "Case study work tile"
                   },
                   "copy": {
                     "type": "Text",
-                    "value": "TEST Cast Study"
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                   },
                   "image": {
                     "type": "Image",
                     "value": {
                       "main": {
                         "dimensions": {
-                          "width": 1662,
+                          "width": 1920,
                           "height": 900
                         },
                         "alt": null,
                         "copyright": null,
-                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/592c78ebdfecdd8f841943163e15e80f02df75e3_vw3.jpg"
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/661b5836861bc7eaaf4f45f0879eeb8c2a6dbb1e_placeholder-1920x900-000000.png"
                       },
                       "views": {
                         "mobile": {
@@ -506,7 +506,7 @@
                           },
                           "alt": null,
                           "copyright": null,
-                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/0b606231ef418f5673066ee3f4527a77b3b18803_vw3.jpg"
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/c74dada68467c8e09a98ba16362f239b91969993_layout_840x1350_000000.png"
                         },
                         "desktop": {
                           "dimensions": {
@@ -515,7 +515,7 @@
                           },
                           "alt": null,
                           "copyright": null,
-                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/f7d543d2e270b839a54d5cf12e1ee38d59f8717c_vw3.jpg"
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/661b5836861bc7eaaf4f45f0879eeb8c2a6dbb1e_placeholder-1920x900-000000.png"
                         }
                       }
                     }
@@ -817,6 +817,44 @@
                       {
                         "type": "paragraph",
                         "text": "list4",
+                        "spans": [
+
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "content-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "Donec blandit efficitur ligula vestibulum dignissim."
+                  },
+                  "subline": {
+                    "type": "Text",
+                    "value": "Quisque sit amet ex et metus pulvinar aliquam. Ut suscipit, ipsum non ornare rhoncus, dui neque aliquam mi, nec aliquam lorem ligula quis eros. Sed dapibus libero eros, ac faucibus erat viverra sit amet."
+                  },
+                  "copy": {
+                    "type": "Text",
+                    "value": "Phasellus in tempus lorem. Praesent aliquam cursus risus sit amet elementum. Sed consectetur sit amet urna in tincidunt. Curabitur volutpat augue sed lorem placerat, ut efficitur nulla sagittis. Maecenas id pulvinar lorem."
+                  },
+                  "list": {
+                    "type": "StructuredText",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "text": "<b>Lorem</b><br class=\"all\"/><br class=\"all\"/>Mauris lectus orci, tincidunt sed egestas quis, eleifend lobortis justo.<br class=\"all\"/><br class=\"all\"/>Sed sit amet tincidunt massa.<br class=\"all\"/><br class=\"all\"/>Morbi et mattis est, vel gravida lectus.",
+                        "spans": [
+
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "text": "<b>Ipsum</b><br class=\"all\"/><br class=\"all\"/>Cras suscipit convallis tincidunt.<br class=\"all\"/><br class=\"all\"/>Fusce turpis lacus, porta sit amet ligula ut, volutpat tempus leo.<br class=\"all\"/><br class=\"all\"/>Maecenas viverra turpis vel velit fermentum, a malesuada diam lacinia. ",
                         "spans": [
 
                         ]

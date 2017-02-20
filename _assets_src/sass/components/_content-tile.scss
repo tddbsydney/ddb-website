@@ -8,19 +8,74 @@
 
 .content-tile {
   @extend %section;
-  @extend %section--padding;
-  
-  // min-height: 50vw;
 
-  .content-tile__flex-row {
-    @extend %flex--row;
-  }
+  display: table;
+  min-height: 50vw;
 
-  .content-tile__flex-col {
-    @extend %flex--col;
-  }
+  .content-tile__content {
+    @include section--padding-top(6);
+    @include section--padding-bottom(6);
+    @include section--padding-left(4);
+    @include section--padding-right(4);
 
-  .content-tile__list {
-    @include font-size-h3;
+    display: table-cell;
+    vertical-align: middle;
+
+    text-align: center;
+    // &[data-align="left"]   { text-align: left; }
+    // &[data-align="center"] { text-align: center; }
+    // &[data-align="right"]  { text-align: right; }
+
+    *:first-child { margin-top: 0; }
+    *:last-child { margin-bottom: 0; }
+
+    .content-tile__list {
+      @extend %flex--row;
+      @include section--margin-top(1);
+      @include section--padding-left(1);
+      @include section--padding-right(1);
+
+      .content-tile__listitem {
+        @extend %flex--col;
+        @include section--padding-left(0.5);
+        @include section--padding-right(0.5);
+
+        @include font-size-p;
+        font-weight: $font_wt_thin;
+
+        text-align: left;
+      }
+    }
+
+    @include mobile {
+      @include section--padding-top(4);
+      @include section--padding-bottom(4);
+      @include section--padding-left(1);
+      @include section--padding-right(1);
+
+      .content-tile__content-copy {
+        @include section--padding-left(2);
+        @include section--padding-right(2);
+
+        text-align: left;
+      }
+
+      .content-tile__list {
+        @include section--margin-top(4);
+        @include section--padding-left(0);
+        @include section--padding-right(0);
+
+        .content-tile__listitem {
+          @include section--padding-left(4);
+          @include section--padding-right(4);
+
+          &:not(:first-child) {
+            @include section--margin-top(3);
+          }
+
+          line-height: 1.2em;
+        }
+      }
+    }
   }
 }

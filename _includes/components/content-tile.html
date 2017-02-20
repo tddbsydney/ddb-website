@@ -1,28 +1,30 @@
 {% assign tile = include.data[0] %}
 
 <!-- content tile -->
-<div class="content-tile content-tile__flex-row">
+<div class="content-tile">
 
-  <div class="content-tile__flex-col">
+  <div class="content-tile__content">
 
     {% if tile.headline.value %}
       <p>{{ tile.headline.value }}</p>
     {% endif %}
 
     {% if tile.subline.value %}
-      <h3>{{ tile.subline.value }}</h3>
+      <h2>{{ tile.subline.value }}</h2>
     {% endif %}
 
     {% if tile.copy.value %}
-      <h2>{{ tile.copy.value }}</h2>
+      <h3 class="content-tile__content-copy">{{ tile.copy.value }}</h3>
     {% endif %}
 
     {% if tile.list.value %}
-      <ul class="content-tile__list">
+      <div class="content-tile__list">
         {% for item in tile.list.value %}
-        <li>{{ item.value }}</li>
+        <div class="content-tile__listitem">
+          {{ item.text }}
+        </div>
         {% endfor %}
-      </ul>
+      </div>
     {% endif %}
 
     {% if tile.image.main.value %}
