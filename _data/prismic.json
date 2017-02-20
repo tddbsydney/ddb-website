@@ -863,6 +863,21 @@
                   }
                 }
               ]
+            },
+            {
+              "type": "quote-tile",
+              "value": [
+                {
+                  "quote": {
+                    "type": "Text",
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde dolorem quem maximum?"
+                  },
+                  "author": {
+                    "type": "Text",
+                    "value": "Lorem ipsum"
+                  }
+                }
+              ]
             }
           ]
         }

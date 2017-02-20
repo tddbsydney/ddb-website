@@ -1,0 +1,40 @@
+// -------------------------------------
+//   Component - Quote Tile
+// -------------------------------------
+/**
+  * @name quote-tile
+  * @desc Styles for the quote tile component.
+**/
+
+.quote-tile {
+  @extend %section;
+
+  display: table;
+  min-height: 50vw;
+
+  .quote-tile__content {
+    @include section--padding-top(6);
+    @include section--padding-bottom(6);
+    @include section--padding-left(4);
+    @include section--padding-right(4);
+
+    display: table-cell;
+    vertical-align: middle;
+
+    text-align: left;
+
+    p:first-child { margin-top: 0; }
+    p:last-child { margin-bottom: 0; }
+
+    // .quote-tile__quotes { font-size: 1.5em; }
+    .quote-tile__quote { margin-bottom: 0.25em; }
+    .quote-tile__author { margin-top: 0.25em; }
+
+    @include mobile {
+      @include section--padding-top(4);
+      @include section--padding-bottom(4);
+      @include section--padding-left(1);
+      @include section--padding-right(1);
+    }
+  }
+}
