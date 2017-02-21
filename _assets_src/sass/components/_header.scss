@@ -28,19 +28,14 @@
   }
 
   @include mobile-up {
+    transition: none;
+    background-color: transparent;
     @include section--padding-top(3/4);
     @include section--padding-bottom(3/4);
   }
   
-  a {
-    @extend %font-size-h5;
-    color: white;
-
-    i {
-      @extend %font-size-h3;
-      line-height: 1em !important;
-    }
-  }
+  a   { @extend %font-size-h5; color: white; }
+  a i { @extend %font-size-h3; line-height: 1em !important; }
   
   &__back, &__logo,
   &__menu, &__nav {
@@ -48,8 +43,7 @@
   }
 
   &__back, &__menu {
-    flex: 1;
-    flex-basis: 10%;
+    flex: 1; flex-basis: 10%;
     @include mobile { flex: 2; flex-basis: 20%; }
   }
 
@@ -74,12 +68,46 @@
 }
 
 // -------------------------------------
+//   Header - Nav
+// -------------------------------------
+.header__nav {
+  @extend %flex--row;
+
+  @include mobile {
+     display: block; 
+
+    .header--closed & {
+      transform: none;
+      display: none;
+      opacity: 0;
+    }
+  }
+
+  @include mobile-up {
+    transform: none !important;
+    display: flex !important;
+    opacity: 1 !important;
+  }
+
+  > a {
+    @extend %flex--col;
+    align-self: flex-end;
+
+    @include mobile {
+      display: block;
+      padding-top: $section_pad_mob;
+      padding-bottom: $section_pad_mob;
+    }
+  }
+}
+
+// -------------------------------------
 //   Header - Menu
 // -------------------------------------
 .header__menu {
   text-align: right;
-  &--desktop { @include mobile { display: none !important; }}
-  &--mobile  { @include mobile-up { display: none !important; }}
+  &--desktop { @include mobile { display: none; }}
+  &--mobile  { @include mobile-up { display: none; }}
 
   > a   { display: inline-block; }
   > a i { display: inline-block; }
@@ -93,7 +121,7 @@
 // -------------------------------------
 .header__logo {
   &--desktop { @include mobile { display: none !important; }}
-  &--mobile  { @include mobile-up { display: none !important; }}
+  &--mobile  { @include mobile-up { display: none; }}
 
   > img { 
     @extend %center;
@@ -108,34 +136,6 @@
     @include mobile { 
       max-width: 16vw;
       padding-bottom: 0;
-    }
-  }
-}
-
-// -------------------------------------
-//   Header - Nav
-// -------------------------------------
-.header__nav {
-  @extend %flex--row;
-
-  @include mobile { 
-    display: block; 
-
-  .header--closed & {
-      transform: none;
-      display: none;
-      opacity: 0;
-    }
-  }
-
-  > a {
-    @extend %flex--col;
-    align-self: flex-end;
-
-    @include mobile {
-      display: block;
-      padding-top: $section_pad_mob;
-      padding-bottom: $section_pad_mob;
     }
   }
 }

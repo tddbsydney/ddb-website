@@ -104,7 +104,7 @@ console.log(CONFIG);
 
     // @name destory
     // @desc destory function to destroy the app
-    function destroy() { }
+    function destroy() { /* empty block */ }
 
     // ---------------------------------------------
     //   Constructor block
