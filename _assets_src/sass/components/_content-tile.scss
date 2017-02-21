@@ -10,7 +10,7 @@
   @extend %section;
 
   display: table;
-  min-height: 50vw;
+  min-height: 70vw;
 
   &.test:hover {
     background-color: rgba(#fff, 0.02);
@@ -18,10 +18,10 @@
   }
 
   .content-tile__content {
-    @include section--padding-top(6);
-    @include section--padding-bottom(6);
-    @include section--padding-left(4);
-    @include section--padding-right(4);
+    @include section--padding-top(3.5);
+    @include section--padding-bottom(3.5);
+    @include section--padding-left(3.5);
+    @include section--padding-right(3.5);
 
     @include mobile {
       @include section--padding-top(4);

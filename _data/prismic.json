@@ -1343,6 +1343,22 @@
                     "type": "Text",
                     "value": "Lorem ipsum"
                   },
+                  "imageDesktop": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1662,
+                          "height": 900
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/592c78ebdfecdd8f841943163e15e80f02df75e3_vw3.jpg"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
                   "image": {
                     "type": "Image",
                     "value": {
@@ -1374,6 +1390,22 @@
                           "copyright": null,
                           "url": "https://prismic-io.s3.amazonaws.com/ddb-website/cec3370d8d089d2a633d000d8b36f877d5f00321_vw2.jpg"
                         }
+                      }
+                    }
+                  },
+                  "imageMobile": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1023,
+                          "height": 512
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/a8fd843b4572f294a0754363b0eb2e2635d6b858_vw2.jpg"
+                      },
+                      "views": {
                       }
                     }
                   }

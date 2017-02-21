@@ -1,7 +1,7 @@
 {% assign tile = include.data[0] %}
 
 <!-- content tile -->
-<div class="content-tile {{ page.page_data.uid }}">
+<div class="content-tile{{ page.page_data.uid | prepend: ' ' }}">
 
   <div class="content-tile__content">
 

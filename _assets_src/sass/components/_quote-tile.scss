@@ -10,31 +10,59 @@
   @extend %section;
 
   display: table;
-  min-height: 50vw;
+  min-height: 70vw;
+
+  &.test:hover {
+    background-color: rgba(#fff, 0.02);
+    outline: 1px solid rgba(#fff, 0.1);
+  }
 
   .quote-tile__content {
-    @include section--padding-top(6);
-    @include section--padding-bottom(6);
-    @include section--padding-left(4);
-    @include section--padding-right(4);
-
-    display: table-cell;
-    vertical-align: middle;
-
-    text-align: left;
-
-    p:first-child { margin-top: 0; }
-    p:last-child { margin-bottom: 0; }
-
-    // .quote-tile__quotes { font-size: 1.5em; }
-    .quote-tile__quote { margin-bottom: 0.25em; }
-    .quote-tile__author { margin-top: 0.25em; }
+    @include section--padding-top(3.5);
+    @include section--padding-bottom(3.5);
+    @include section--padding-left(3.5);
+    @include section--padding-right(3.5);
 
     @include mobile {
       @include section--padding-top(4);
       @include section--padding-bottom(4);
       @include section--padding-left(1);
       @include section--padding-right(1);
+    }
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+    .quote-tile__text {
+      display: inline-block;
+      text-align: left;
+
+      p:first-child { margin-top: 0; }
+      p:last-child { margin-bottom: 0; }
+
+      .quote-tile__quote { margin-bottom: 0.25em; }
+      .quote-tile__author { margin-top: 0.25em; }
+    }
+
+    .quote-tile__image {
+      @include section--margin-top(3);
+      @include section--margin-left(-1);
+      @include section--margin-right(-1);
+
+      img { width: 100%; }
+
+      .quote-tile__image--desktop { display: block; }
+      .quote-tile__image--mobile { display: none; }
+
+      @include mobile {
+        @include section--margin-top(3);
+        @include section--margin-left(0);
+        @include section--margin-right(0);
+
+        .quote-tile__image--desktop { display: none; }
+        .quote-tile__image--mobile  { display: block; }
+      }
     }
   }
 }
