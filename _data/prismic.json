@@ -1323,6 +1323,10 @@
                       "views": {
                       }
                     }
+                  },
+                  "alignCopy": {
+                    "type": "Select",
+                    "value": "left"
                   }
                 }
               ]

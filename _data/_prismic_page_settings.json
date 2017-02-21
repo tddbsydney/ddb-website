@@ -334,6 +334,39 @@
                     },
                     "thumbnails": [ ]
                   }
+                },
+                "alignHeadline" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Alignment (headline)",
+                    "placeholder" : "center",
+                    "options" : [
+                      "left",
+                      "right"
+                    ]
+                  }
+                },
+                "alignSubline" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Alignment (subline)",
+                    "placeholder" : "center",
+                    "options" : [
+                      "left",
+                      "right"
+                    ]
+                  }
+                },
+                "alignCopy" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Alignment (copy)",
+                    "placeholder" : "center",
+                    "options" : [
+                      "left",
+                      "right"
+                    ]
+                  }
                 }
               }
             }
