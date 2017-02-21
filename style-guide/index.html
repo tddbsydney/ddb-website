@@ -24,14 +24,56 @@
   </head><!-- head end -->
   <!-- body -->
   <body>
-    <!-- section header -->
-    <section>
+    <section class="section--header">
       <!-- header -->
-      <header>
+      <header class="header header--closed">
+        <!-- back -->
+        <div class="header__back" style="visibility: hidden;">
+          <a href="#go-back" title="Go back">
+            <i class="icon icon-chevron-left"></i>
+          </a>
+        </div>
+        <!-- back end -->
+        <!-- logo - mobile -->
+        <div class="header__logo header__logo--mobile">
+          <img src="../assets/images/ddb-logo_white.png" alt="">
+        </div>
+        <!-- logo - mobile end -->
+        <!-- menu - mobile -->
+        <div class="header__menu header__menu--mobile">
+          <a href="#open-menu" title="Open menu">
+            <i class="icon icon-menu"></i>
+          </a>
+          <a href="#close-menu" title="Close menu">
+            <i class="icon icon-close"></i>
+          </a>
+        </div>
+        <!-- menu - mobile end -->
+        <!-- nav -->
+        <div class="header__nav">
+          <a class="link" href="/latest"><span> Latest </span></a>
+          <a class="link" href="/work"><span> Work </span></a>
+          <!-- logo - desktop -->
+          <a class="header__logo header__logo--desktop" href="/">
+            <img src="../assets/images/ddb-logo_white.png" alt="">
+          </a><!-- logo - desktop end -->
+          <a class="link" href="/about"><span> About </span></a>
+          <a class="link" href="/contact"><span> Contact </span></a>
+        </div>
+        <!-- nav end -->
+        <!-- menu - desktop -->
+        <div class="header__menu header__menu--desktop" style="visibility: hidden; pointer-events: none;">
+          <a href="#open-menu" title="Open menu">
+            <i class="icon icon-menu"></i>
+          </a>
+          <a href="#close-menu" title="Close menu">
+            <i class="icon icon-close"></i>
+          </a>
+        </div>
+        <!-- menu - desktop -->
       </header>
       <!-- header end -->
     </section>
-    <!-- section header end -->
     <!---->
     <!-- main -->
     <main>
@@ -404,45 +446,15 @@
             <!-- image layout - mobile -->
             <img class="image__layout image__layout--mobile" src="/assets/images/layout_840x1350.png" alt="">
             <!-- image cover - desktop -->
-            <div class="image__cover image__cover--desktop" style="background-image: url('http://placehold.it/1920x900/000000/4a4a4a');"></div>
-            <!-- image cover - mobile -->
-            <div class="image__cover image__cover--mobile" style="background-image: url('http://placehold.it/840x1350/000000/4a4a4a');"></div>
-          </div>
-          <!-- image end -->
-          <!-- content -->
-          <div class="case-study-work-tile__content" data-align="left">
-            <p> Case study work tile </p>
-            <h2> Allignment left lorem ipsum dolor sit amet. </h2>
-          </div>
-          <!-- content end -->
-          <!-- scroll down -->
-          <a class="case-study-work-tile__scroll" href="#scroll-down" title="Scroll down"><!--
-        --><i class="icon icon-chevron-down"></i><!--
-    --></a>
-        </div>
-        <!-- case study work tile end -->
-      </section>
-      <!-- section end -->
-      <!-- section -->
-      <section>
-        <!-- case study work tile -->
-        <div class="case-study-work-tile">
-          <!-- image -->
-          <div class="image">
-            <!-- image layout - desktop -->
-            <img class="image__layout image__layout--desktop" src="/assets/images/layout_1920x900.png" alt="">
-            <!-- image layout - mobile -->
-            <img class="image__layout image__layout--mobile" src="/assets/images/layout_840x1350.png" alt="">
-            <!-- image cover - desktop -->
             <div class="image__cover image__cover--desktop" style="background-image: url('http://placehold.it/1920x900/191919/4a4a4a');"></div>
             <!-- image cover - mobile -->
             <div class="image__cover image__cover--mobile" style="background-image: url('http://placehold.it/840x1350/191919/4a4a4a');"></div>
           </div>
           <!-- image end -->
           <!-- content -->
-          <div class="case-study-work-tile__content" data-align="right">
+          <div class="case-study-work-tile__content" data-align="left">
             <p> Case study work tile </p>
-            <h2> Allignment right lorem ipsum dolor sit amet. </h2>
+            <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
           </div>
           <!-- content end -->
           <!-- scroll down -->
@@ -454,8 +466,7 @@
       </section>
       <!-- section end -->
     </main>
-    <!-- section footer -->
-    <section>
+    <section class="section--footer">
       <!-- footer -->
       <footer class="footer">
         <!-- col -->
@@ -514,7 +525,9 @@
         <!-- col -->
         <div class="footer__col footer__col--ddb">
           <p class="footer__des-copy">&copy; DDB Sydney 2017</p>
-          <!-- Hidden unavailable pages
+          <!-- disabled until careers and -->
+          <!-- privacy pages are complete -->
+          <!--
     <ul>
       <li>
         <a href="../careers">
@@ -534,7 +547,6 @@
       </footer>
       <!-- footer end -->
     </section>
-    <!-- section footer end -->
   </body><!-- body end -->
   <!-- bower:js -->
   <!-- endbower -->
