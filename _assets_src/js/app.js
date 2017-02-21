@@ -25,6 +25,7 @@ require("./base/template");
 /* empty block */
 
 // components
+var Header = require("./components/header.component");
 var PromoVideo = require("./components/promo-video.component");
 
 // controllers
@@ -56,7 +57,8 @@ console.log(CONFIG);
     // ---------------------------------------------
     //   Private members
     // ---------------------------------------------
-    var _promoVideos = []; // array to hold reference to all the promo videos
+    var _header = null; // object to hold a refernce for the header component
+    var _promoVideos = []; // array of objects to hold references for the the promo video components
     var _hasFastClickAttached = false; // flag to indicate if fast click was attached
 
     // ---------------------------------------------
@@ -91,7 +93,10 @@ console.log(CONFIG);
         _hasFastClickAttached = true; // set attached flag as true
       }
 
-      // initiate the promo videos
+      // create the header
+      _header = new Header({ element: query(".header")[0] });
+
+      // create the promo videos
       query(".promo-video").forEach(function(element, index){
         _promoVideos.push(new PromoVideo({ element: element }));
       });

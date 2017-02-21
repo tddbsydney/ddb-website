@@ -9,10 +9,60 @@
 **/
 
 // -------------------------------------
-//   Animations - JS
+//   Animations - Keyframes
+// -------------------------------------
+// fade - in
+@keyframes animation-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+// fade - out
+@keyframes animation-fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+// -------------------------------------
+//   Animations - CSS
 // -------------------------------------
 // JS based animations
 // are prefixed with "animate-"
 
 // CSS based animations
 // are prefixed with "animation-"
+// ( taken from base/_transitions.scss )
+$anim_delay: $trans_delay;
+$anim_time : $trans_time;
+$anim_time_slow: $trans_time_slow;
+$anim_time_fast: $trans_time_fast;
+$anim_time_instant: $trans_time_instant;
+
+// default transition easings
+// ( taken from base/_transitions.scss )
+$ease: $ease;
+$ease_linear: $ease_linear;
+$ease_in_out: $ease_in_out;
+
+// custom transition easings
+// ( taken from base/_transitions.scss )
+$ease_in_out_quad: $ease_in_out_quad;
+$ease_in_out_sine: $ease_in_out_sine;
+
+%animation {
+  animation-fill-mode: both;
+  animation-duration: $anim_time;
+  animation-timing-function: $ease;
+}
+
+// fade - in
+%animation-fade-in {
+  @extend %animation;
+  animation-name: animation-fade-in;
+}
+
+// fade - out
+%animation-fade-out {
+  @extend %animation;
+  animation-name: animation-fade-out;
+}

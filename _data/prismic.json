@@ -453,6 +453,338 @@
   ],
   "case-studies": [
     {
+      "uid": "the-sydney-opera-house",
+      "data": {
+        "meta-title": {
+          "type": "Text",
+          "value": "The Sydney Opera House"
+        },
+        "foregroundColor": {
+          "type": "Color",
+          "value": "#ffffff"
+        },
+        "backgroundColor": {
+          "type": "Color",
+          "value": "#afc9e2"
+        },
+        "sections": {
+          "type": "SectionList",
+          "value": [
+            {
+              "type": "case-study-work-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "The Sydney Opera House"
+                  },
+                  "copy": {
+                    "type": "Text",
+                    "value": "Live response social, powered by a smart application of technology."
+                  },
+                  "image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1024,
+                          "height": 666
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/0c604664e2287e8951d7a2f7606b4435809820a8_opera1.jpg"
+                      },
+                      "views": {
+                        "mobile": {
+                          "dimensions": {
+                            "width": 800,
+                            "height": 820
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/704ddfebc5ad809883d35673596ba63d05ca03c8_opera1.jpg"
+                        },
+                        "desktop": {
+                          "dimensions": {
+                            "width": 1920,
+                            "height": 900
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/5fcad86e5e1657b150a3614c734a16c649f8c025_opera1.jpg"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "content-tile",
+              "value": [
+                {
+                  "copy": {
+                    "type": "Text",
+                    "value": "We needed to get more people inside the Sydney Opera House during summer."
+                  }
+                }
+              ]
+            },
+            {
+              "type": "video-tile",
+              "value": [
+                {
+                  "video": {
+                    "type": "Link.web",
+                    "value": {
+                      "url": "https://www.youtube.com/watch?v=KjoEFnQJE3s"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "content-tile",
+              "value": [
+                {
+                  "subline": {
+                    "type": "Text",
+                    "value": "8.2 million people visit the site of the Sydney Opera House every year."
+                  },
+                  "copy": {
+                    "type": "Text",
+                    "value": "Most take photo if the outside and move on, making it the most Instagrammed icon in Australia. People were a stick away. We selected photos using computer vision, inviting them inside with Instagram."
+                  }
+                }
+              ]
+            },
+            {
+              "type": "video-tile",
+              "value": [
+                {
+                  "video": {
+                    "type": "Link.web",
+                    "value": {
+                      "url": "https://www.youtube.com/watch?v=KjoEFnQJE3s"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "content-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "Solution"
+                  },
+                  "subline": {
+                    "type": "Text",
+                    "value": "Turn photos of the Sydney Opera House on Instagram into incredible experiences inside by inviting users to #comeonin."
+                  }
+                }
+              ]
+            },
+            {
+              "type": "image-tile",
+              "value": [
+                {
+                  "image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1024,
+                          "height": 530
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/7392edcd706cd474b4bc0be49e52fba9a0e012ac_opera4.jpg"
+                      },
+                      "views": {
+                        "desktop": {
+                          "dimensions": {
+                            "width": 1920,
+                            "height": 900
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/78a8f4f308fff64ac01d329b6d2c2501670cce3d_opera4.jpg"
+                        },
+                        "mobile": {
+                          "dimensions": {
+                            "width": 800,
+                            "height": 820
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/67a34f18365fa2ab3cdd4328f012b6c7a01441e7_opera4.jpg"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "quote-tile",
+              "value": [
+                {
+                  "quote": {
+                    "type": "Text",
+                    "value": "Have a look inside, because this is where it all happens"
+                  },
+                  "author": {
+                    "type": "Text",
+                    "value": "Jan Utzon, Architect"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "content-tile",
+              "value": [
+                {
+                  "subline": {
+                    "type": "Text",
+                    "value": "126 unsuspecting Instagrammers invited to #comeonin."
+                  },
+                  "imageDesktop": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1024,
+                          "height": 530
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/575e3cfb9582cde5113fb07d32bd43d638902eae_opera5.png"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "imageMobile": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1024,
+                          "height": 530
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/575e3cfb9582cde5113fb07d32bd43d638902eae_opera5.png"
+                      },
+                      "views": {
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "content-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "How we found the photos"
+                  },
+                  "subline": {
+                    "type": "Text",
+                    "value": "Custom software uses computer vision to identify photos of the  famous sails along with geo-location to find ones posted in close proximity. An on-site response team picks an Instagram user for an experience and quickly film and posts a video response inviting them inside."
+                  },
+                  "imageDesktop": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1024,
+                          "height": 530
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/02267cda8c490e6a9600a60b989458e99147f15f_opera6.png"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "imageMobile": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1024,
+                          "height": 530
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/02267cda8c490e6a9600a60b989458e99147f15f_opera6.png"
+                      },
+                      "views": {
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "content-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "Results"
+                  },
+                  "subline": {
+                    "type": "Text",
+                    "value": "In 4 weeks, over 5 million people saw a new side to the Sydney Opera House: the inside."
+                  },
+                  "list": {
+                    "type": "StructuredText",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "text": "126 unsuspecting Instagrammers invited to #comeonin.",
+                        "spans": [
+
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "text": "Social engagement up 30% from campaign launch",
+                        "spans": [
+
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "text": "17 million impressions generated. ",
+                        "spans": [
+
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "text": "Social engagement up 30% from campaign launch",
+                        "spans": [
+
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
       "uid": "test",
       "data": {
         "meta-title": {
@@ -533,15 +865,15 @@
                 {
                   "headline": {
                     "type": "Text",
-                    "value": "Content tile"
+                    "value": "Content tile - Headline"
                   },
                   "subline": {
                     "type": "Text",
-                    "value": "Lorem ipsum dolor sit amet"
+                    "value": "Content tile - Subline"
                   },
                   "copy": {
                     "type": "Text",
-                    "value": "Lorem ipsum dolor sit amet"
+                    "value": "Content tile - Copy"
                   },
                   "image": {
                     "type": "Image",
@@ -651,11 +983,11 @@
                 {
                   "headline": {
                     "type": "Text",
-                    "value": "Youtube Video 1"
+                    "value": "Youtube video 1"
                   },
                   "copy": {
                     "type": "Text",
-                    "value": "This is a https://youtu.be/ video"
+                    "value": "This is a [https://youtu.be/_____] video"
                   }
                 }
               ]
@@ -679,7 +1011,11 @@
                 {
                   "headline": {
                     "type": "Text",
-                    "value": "This is a www.youtube.com/embed/ video:"
+                    "value": "Youtube video 2"
+                  },
+                  "copy": {
+                    "type": "Text",
+                    "value": "This is a [www.youtube.com/embed/____] video:"
                   }
                 }
               ]
@@ -701,9 +1037,13 @@
               "type": "content-tile",
               "value": [
                 {
+                  "headline": {
+                    "type": "Text",
+                    "value": "Youtube video 3"
+                  },
                   "copy": {
                     "type": "Text",
-                    "value": "This is a normal youtube.com/watch? video:"
+                    "value": "This is a normal [youtube.com/watch?____] video:"
                   }
                 }
               ]
@@ -735,7 +1075,7 @@
                   },
                   "author": {
                     "type": "Text",
-                    "value": "Author"
+                    "value": "This is the Author"
                   },
                   "image": {
                     "type": "Image",
@@ -780,7 +1120,63 @@
                 {
                   "headline": {
                     "type": "Text",
-                    "value": "headline text"
+                    "value": "Vimeo video 1"
+                  },
+                  "copy": {
+                    "type": "Text",
+                    "value": "This is a [vimeo.com/____] video"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "video-tile",
+              "value": [
+                {
+                  "video": {
+                    "type": "Link.web",
+                    "value": {
+                      "url": "https://vimeo.com/38409143"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "content-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "Vimeo video 2"
+                  },
+                  "copy": {
+                    "type": "Text",
+                    "value": "This is a [player.vimeo.com/video/____] video"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "video-tile",
+              "value": [
+                {
+                  "video": {
+                    "type": "Link.web",
+                    "value": {
+                      "url": "https://player.vimeo.com/video/38409143"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "content-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "Headline text"
                   },
                   "subline": {
                     "type": "Text",
@@ -820,6 +1216,13 @@
                         "spans": [
 
                         ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "text": "list5",
+                        "spans": [
+
+                        ]
                       }
                     ]
                   }
@@ -847,19 +1250,83 @@
                     "value": [
                       {
                         "type": "paragraph",
-                        "text": "<b>Lorem</b><br class=\"all\"/><br class=\"all\"/>Mauris lectus orci, tincidunt sed egestas quis, eleifend lobortis justo.<br class=\"all\"/><br class=\"all\"/>Sed sit amet tincidunt massa.<br class=\"all\"/><br class=\"all\"/>Morbi et mattis est, vel gravida lectus.",
+                        "text": "<b>Lorem</b><br class=\"all\"/><br class=\"all\"/>Mauris lectus orci, tincidunt sed egestas quis, eleifend lobortis justo.",
                         "spans": [
 
                         ]
                       },
                       {
                         "type": "paragraph",
-                        "text": "<b>Ipsum</b><br class=\"all\"/><br class=\"all\"/>Cras suscipit convallis tincidunt.<br class=\"all\"/><br class=\"all\"/>Fusce turpis lacus, porta sit amet ligula ut, volutpat tempus leo.<br class=\"all\"/><br class=\"all\"/>Maecenas viverra turpis vel velit fermentum, a malesuada diam lacinia. ",
+                        "text": "Sed sit amet tincidunt massa.",
+                        "spans": [
+
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "text": "Morbi et mattis est, vel gravida lectus.",
+                        "spans": [
+
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "text": "<b>Ipsum</b><br class=\"all\"/><br class=\"all\"/>Cras suscipit convallis tincidunt.",
+                        "spans": [
+
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "text": "Fusce turpis lacus, porta sit amet ligula ut, volutpat tempus leo.",
+                        "spans": [
+
+                        ]
+                      },
+                      {
+                        "type": "paragraph",
+                        "text": "Maecenas viverra turpis vel velit fermentum, a malesuada diam lacinia.",
                         "spans": [
 
                         ]
                       }
                     ]
+                  },
+                  "imageDesktop": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1023,
+                          "height": 512
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/a8fd843b4572f294a0754363b0eb2e2635d6b858_vw2.jpg"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "imageMobile": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 532,
+                          "height": 512
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/0e6cb497b9eec719d25ebbc9c5df02b6f7ee2983_vw2.jpg"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "alignCopy": {
+                    "type": "Select",
+                    "value": "left"
                   }
                 }
               ]
@@ -875,6 +1342,72 @@
                   "author": {
                     "type": "Text",
                     "value": "Lorem ipsum"
+                  },
+                  "imageDesktop": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1662,
+                          "height": 900
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/592c78ebdfecdd8f841943163e15e80f02df75e3_vw3.jpg"
+                      },
+                      "views": {
+                      }
+                    }
+                  },
+                  "image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1023,
+                          "height": 512
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/a8fd843b4572f294a0754363b0eb2e2635d6b858_vw2.jpg"
+                      },
+                      "views": {
+                        "desktop": {
+                          "dimensions": {
+                            "width": 1920,
+                            "height": 900
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/f21567514a6848315255db8d1830ed07cf998b13_vw2.jpg"
+                        },
+                        "mobile": {
+                          "dimensions": {
+                            "width": 800,
+                            "height": 820
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "https://prismic-io.s3.amazonaws.com/ddb-website/cec3370d8d089d2a633d000d8b36f877d5f00321_vw2.jpg"
+                        }
+                      }
+                    }
+                  },
+                  "imageMobile": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1023,
+                          "height": 512
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/a8fd843b4572f294a0754363b0eb2e2635d6b858_vw2.jpg"
+                      },
+                      "views": {
+                      }
+                    }
                   }
                 }
               ]

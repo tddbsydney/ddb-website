@@ -106,4 +106,7 @@ $link_line_h: 2px;
 //   Link - Classes
 // -------------------------------------
 // link
-.link { @extend %link; }
+.link { 
+  @extend %link;
+  &--active { @extend %link--active; }
+}

@@ -11,10 +11,19 @@
   @extend %flex--row;
 
   text-align: center;
-  background-color: transparent;
-
-  @include mobile {
-    min-height: 100vh;
+  @include mobile { min-height: 100vh; }
+  
+  // modifer - closed
+  &--closed {
+    @include transitions(background-color);
+    transition-timing-function: $ease_in_out_quad;
+    background-color: transparent;
+  }
+  
+  // modifer - open
+  &--open { 
+    @include transitions(background-color);
+    transition-timing-function: $ease_in_out_quad;
     background-color: black; 
   }
 
@@ -74,6 +83,9 @@
 
   > a   { display: inline-block; }
   > a i { display: inline-block; }
+
+  .header--closed & { .icon-close  { display: none; }}
+  .header--open &   { .icon-menu   { display: none; }}
 }
 
 // -------------------------------------
@@ -82,6 +94,22 @@
 .header__logo {
   &--desktop { @include mobile { display: none !important; }}
   &--mobile  { @include mobile-up { display: none !important; }}
+
+  > img { 
+    @extend %center;
+    max-width: 6vw;
+    padding-bottom: ($link_pad_vert / 2);
+
+    @include tablet {
+      max-width: 7vw;
+       padding-bottom: ($link_pad_vert / 1);
+    }
+
+    @include mobile { 
+      max-width: 16vw;
+      padding-bottom: 0;
+    }
+  }
 }
 
 // -------------------------------------
@@ -89,7 +117,16 @@
 // -------------------------------------
 .header__nav {
   @extend %flex--row;
-  @include mobile { display: block; }
+
+  @include mobile { 
+    display: block; 
+
+  .header--closed & {
+      transform: none;
+      display: none;
+      opacity: 0;
+    }
+  }
 
   > a {
     @extend %flex--col;

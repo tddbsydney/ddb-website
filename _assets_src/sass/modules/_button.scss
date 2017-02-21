@@ -131,4 +131,7 @@ $btn_bdr_w: 2px;
 //   Button - Classes
 // -------------------------------------
 // button
-.button { @extend %button; }
+.button { 
+  @extend %button;
+  &--active { @extend %button--active; }
+}

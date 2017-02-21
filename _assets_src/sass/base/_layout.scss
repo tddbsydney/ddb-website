@@ -38,6 +38,16 @@ html, body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+// animate fade the page into view
+// ( a temporary placeholder until
+// image load times are improved )
+body { 
+  @extend %animation-fade-in;
+  animation-delay: $anim_delay;
+  animation-duration: $anim_time_slow;
+  animation-timing-function: $ease_in_out_quad;
+}
+
 // image
 img {
   display: block;
@@ -56,9 +66,7 @@ img {
 
 // fallback styles for browsers
 // that do not support tempaltes
-template {
-  display: none !important;
-}
+template { display: none !important; }
 
 // br tags are not visible on 
 // smaller devices unless
