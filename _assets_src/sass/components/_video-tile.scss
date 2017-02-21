@@ -1,0 +1,38 @@
+// -------------------------------------
+//   Component - Video Tile
+// -------------------------------------
+/**
+  * @name video-tile
+  * @desc Styles for the video tile component.
+**/
+
+.video-tile {
+  @extend %section;
+
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .video-tile__outer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;  // 16:9
+
+    .video-tile__inner {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+

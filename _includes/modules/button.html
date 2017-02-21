@@ -34,14 +34,6 @@
     {% endcase %}
   {% endcapture %}
 
-  {% capture linkClass %}
-    {% if isExternalLink %}
-      button
-    {% else %}
-      link
-    {% endif %}
-  {% endcapture %}
-
   {% capture linkTarget %}
     {% if isExternalLink %}
       target="_blank"
@@ -53,9 +45,9 @@
       title="{{ label }}"
     {% endif %}
   {% endcapture %}
-  
+
   <!-- button -->
-  <a class="{{ linkClass | normalize_whitespace }}" href="{{ linkUrl | normalize_whitespace }}" {{ linkTarget | normalize_whitespace }} {{ linkLabel | normalize_whitespace }} >
+  <a class="button" href="{{ linkUrl | normalize_whitespace }}" {{ linkTarget | normalize_whitespace }} {{ linkLabel | normalize_whitespace }} >
     {% if isMedium %}
       <span> Read on <i class="icon icon-medium"></i> Medium </span>
     {% else %}

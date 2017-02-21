@@ -1,18 +1,55 @@
 {% assign tile = include.data[0] %}
+{% assign fgCol = "" %}
 
-<!-- quotes tile -->
-<div class="quote-tile">
+{% if page_data.foregroundColor.value %}
+  {% capture fgCol %}
 
-  {% if tile.image.main.value %}
-    <img src="{{ tile.image.main.value }}">
-  {% endif %}
+    style="
+    {% if page_data.foregroundColor.value %}
+      color: {{ page_data.foregroundColor.value }};
+    {% endif %}
+    "
 
-  {% if tile.quote.value %}
-    <p>{{ tile.quote.value }}</p>
-  {% endif %}
+  {% endcapture %}
+{% endif %}
 
-  {% if tile.author.value %}
-    <p>{{ tile.author.value }}</p>
-  {% endif %}
+<!-- quote tile -->
+<div class="quote-tile{{ page.page_data.uid | prepend: ' ' }}">
 
-</div><!-- quotes tile end -->
+  <div class="quote-tile__content">
+
+    {% if tile.quote.value or tile.author.value %}
+      <div class="quote-tile__text">
+
+        {% if tile.quote.value %}
+          <h3 class="quote-tile__quote"{{ fgCol | normalize_whitespace }}>
+            <span class="quote-tile__quotes">&ldquo;</span>{{ tile.quote.value }}<span class="quote-tile__quotes">&rdquo;</span>
+          </h3>
+        {% endif %}
+
+        {% if tile.author.value %}
+          <h4 class="quote-tile__author"{{ fgCol | normalize_whitespace }}>
+            &mdash; {{ tile.author.value }}
+          </h4>
+        {% endif %}
+
+      </div>
+    {% endif %}
+
+    {% if tile.imageDesktop.value.main.url or tile.imageMobile.value.main.url %}
+      <div class="quote-tile__image">
+
+        {% if tile.imageDesktop.value.main.url %}
+        <img class="quote-tile__image--desktop" src="{{ tile.imageDesktop.value.main.url }}" alt="">
+        {% endif %}
+
+        {% if tile.imageMobile.value.main.url %}
+        <img class="quote-tile__image--mobile" src="{{ tile.imageMobile.value.main.url }}" alt="">
+        {% endif %}
+
+      </div>
+    {% endif %}
+
+  </div>
+
+</div><!-- quote tile end -->

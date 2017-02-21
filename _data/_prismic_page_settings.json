@@ -23,13 +23,13 @@
     "foregroundColor": {
       "type": "Color",
       "config": {
-        "label": "Foreground Colour (default #000 black is ignored)"
+        "label": "Foreground Colour"
       }
     },
     "backgroundColor": {
       "type": "Color",
       "config": {
-        "label": "Background Colour (default #000 black is ignored)"
+        "label": "Background Colour"
       }
     }
   },
@@ -267,8 +267,8 @@
                       },
                       {
                         "name": "Mobile",
-                        "width": "800",
-                        "height": "820"
+                        "width": "840",
+                        "height": "1350"
                       }
                     ]
                   }
@@ -313,25 +313,58 @@
                     "multi": "list-item, o-list-item"
                   }
                 },
-                "image" : {
+                "imageDesktop" : {
                   "type" : "Image",
                   "config" : {
-                    "label" : "Image",
+                    "label" : "Image (Desktop)",
                     "constraint" : {
                       "width" : null,
                       "height" : null
                     },
-                    "thumbnails": [
-                      {
-                        "name": "Desktop",
-                        "width": "1920",
-                        "height": "900"
-                      },
-                      {
-                        "name": "Mobile",
-                        "width": "800",
-                        "height": "820"
-                      }
+                    "thumbnails": [ ]
+                  }
+                },
+                "imageMobile" : {
+                  "type" : "Image",
+                  "config" : {
+                    "label" : "Image (Mobile)",
+                    "constraint" : {
+                      "width" : null,
+                      "height" : null
+                    },
+                    "thumbnails": [ ]
+                  }
+                },
+                "alignHeadline" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Alignment (headline)",
+                    "placeholder" : "center",
+                    "options" : [
+                      "left",
+                      "right"
+                    ]
+                  }
+                },
+                "alignSubline" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Alignment (subline)",
+                    "placeholder" : "center",
+                    "options" : [
+                      "left",
+                      "right"
+                    ]
+                  }
+                },
+                "alignCopy" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Alignment (copy)",
+                    "placeholder" : "center",
+                    "options" : [
+                      "left",
+                      "right"
                     ]
                   }
                 }
@@ -413,26 +446,26 @@
                     "placeholder" : "Author of quote"
                   }
                 },
-                "image" : {
+                "imageDesktop" : {
                   "type" : "Image",
                   "config" : {
-                    "label" : "Image",
+                    "label" : "Image (Desktop)",
                     "constraint" : {
                       "width" : null,
                       "height" : null
                     },
-                    "thumbnails": [
-                      {
-                        "name": "Desktop",
-                        "width": "1920",
-                        "height": "900"
-                      },
-                      {
-                        "name": "Mobile",
-                        "width": "800",
-                        "height": "820"
-                      }
-                    ]
+                    "thumbnails": [ ]
+                  }
+                },
+                "imageMobile" : {
+                  "type" : "Image",
+                  "config" : {
+                    "label" : "Image (Mobile)",
+                    "constraint" : {
+                      "width" : null,
+                      "height" : null
+                    },
+                    "thumbnails": [ ]
                   }
                 }
               }

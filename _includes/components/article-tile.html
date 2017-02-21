@@ -20,7 +20,11 @@
         {% endif %}
 
         {% if tile.linkUrl.value %}
-          {% include modules/button.html link=tile.linkUrl label=tile.linkText.value %}
+          {% if tile.linkUrl.type == "Link.web" %}
+            {% include modules/button.html link=tile.linkUrl label=tile.linkText.value %}
+          {% else %}
+            {% include modules/link.html link=tile.linkUrl label=tile.linkText.value %}
+          {% endif %}
         {% endif %}
 
       </div><!-- content end -->

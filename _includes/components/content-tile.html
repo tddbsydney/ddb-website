@@ -1,32 +1,57 @@
 {% assign tile = include.data[0] %}
+{% assign fgCol = "" %}
+
+{% if page_data.foregroundColor.value %}
+  {% capture fgCol %}
+
+    style="
+    {% if page_data.foregroundColor.value %}
+      color: {{ page_data.foregroundColor.value }};
+    {% endif %}
+    "
+
+  {% endcapture %}
+{% endif %}
 
 <!-- content tile -->
-<div class="content-tile content-tile__flex-row">
+<div class="content-tile{{ page.page_data.uid | prepend: ' ' }}">
 
-  <div class="content-tile__flex-col">
+  <div class="content-tile__content">
 
     {% if tile.headline.value %}
-      <p>{{ tile.headline.value }}</p>
+      <h5 class="content-tile__content--headline" data-align="{{ tile.alignHeadline.value | default: 'center' }}"{{ fgCol | normalize_whitespace }}>{{ tile.headline.value }}</h5>
     {% endif %}
 
     {% if tile.subline.value %}
-      <h3>{{ tile.subline.value }}</h3>
+      <h2 class="content-tile__content--subline" data-align="{{ tile.alignSubline.value | default: 'center' }}"{{ fgCol | normalize_whitespace }}>{{ tile.subline.value }}</h2>
     {% endif %}
 
     {% if tile.copy.value %}
-      <h2>{{ tile.copy.value }}</h2>
+      <h3 class="content-tile__content--copy" data-align="{{ tile.alignCopy.value | default: 'center' }}"{{ fgCol | normalize_whitespace }}>{{ tile.copy.value }}</h3>
     {% endif %}
 
     {% if tile.list.value %}
-      <ul class="content-tile__list">
+      <div class="content-tile__list">
         {% for item in tile.list.value %}
-        <li>{{ item.value }}</li>
+        <h5 class="content-tile__listitem"{{ fgCol | normalize_whitespace }}>
+          {{ item.text }}
+        </h5>
         {% endfor %}
-      </ul>
+      </div>
     {% endif %}
 
-    {% if tile.image.main.value %}
-      <img src="{{ tile.image.main.value }}">
+    {% if tile.imageDesktop.value.main.url or tile.imageMobile.value.main.url %}
+    <div class="content-tile__image">
+
+      {% if tile.imageDesktop.value.main.url %}
+      <img class="content-tile__image--desktop" src="{{ tile.imageDesktop.value.main.url }}" alt="">
+      {% endif %}
+
+      {% if tile.imageMobile.value.main.url %}
+      <img class="content-tile__image--mobile" src="{{ tile.imageMobile.value.main.url }}" alt="">
+      {% endif %}
+
+    </div>
     {% endif %}
 
   </div>
