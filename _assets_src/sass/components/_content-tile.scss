@@ -12,26 +12,53 @@
   display: table;
   min-height: 50vw;
 
+  &.test:hover {
+    background-color: rgba(#fff, 0.02);
+    outline: 1px solid rgba(#fff, 0.1);
+  }
+
   .content-tile__content {
     @include section--padding-top(6);
     @include section--padding-bottom(6);
     @include section--padding-left(4);
     @include section--padding-right(4);
 
+    @include mobile {
+      @include section--padding-top(4);
+      @include section--padding-bottom(4);
+      @include section--padding-left(1);
+      @include section--padding-right(1);
+
+      .content-tile__content--copy {
+        @include section--padding-left(2);
+        @include section--padding-right(2);
+      }
+    }
+
     display: table-cell;
     vertical-align: middle;
-
     text-align: center;
-    // &[data-align="left"]   { text-align: left; }
-    // &[data-align="center"] { text-align: center; }
-    // &[data-align="right"]  { text-align: right; }
 
     *:first-child { margin-top: 0; }
     *:last-child { margin-bottom: 0; }
 
+    .content-tile__content--headline,
+    .content-tile__content--subline,
+    .content-tile__content--copy {
+      &[data-align="left"]   { text-align: left; }
+      &[data-align="center"] { text-align: center; }
+      &[data-align="right"]  { text-align: right; }
+
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+
+      -ms-word-break: break-all;
+      // word-break: break-all;
+      word-break: break-word;
+    }
+
     .content-tile__list {
       @extend %flex--row;
-      @include section--margin-top(1);
       @include section--padding-left(1);
       @include section--padding-right(1);
 
@@ -40,10 +67,31 @@
         @include section--padding-left(0.5);
         @include section--padding-right(0.5);
 
-        @include font-size-p;
-        font-weight: $font_wt_thin;
+        margin: 0;
+
+        @include section--margin-top(1);
 
         text-align: left;
+        flex-basis: 50%;
+      }
+
+      @include mobile {
+        @include section--margin-top(2);
+        @include section--padding-left(0);
+        @include section--padding-right(0);
+
+        .content-tile__listitem {
+          @include section--padding-left(3);
+          @include section--padding-right(3);
+
+          &:not(:first-child) {
+            @include section--margin-top(2);
+          }
+
+          flex-basis: 100%;
+          @include font-size-h4(false);
+          // line-height: 1.2em;
+        }
       }
     }
 
@@ -56,39 +104,8 @@
 
       .content-tile__image--desktop { display: block; }
       .content-tile__image--mobile { display: none; }
-    }
 
-    @include mobile {
-      @include section--padding-top(4);
-      @include section--padding-bottom(4);
-      @include section--padding-left(1);
-      @include section--padding-right(1);
-
-      .content-tile__content-copy {
-        @include section--padding-left(2);
-        @include section--padding-right(2);
-
-        text-align: left;
-      }
-
-      .content-tile__list {
-        @include section--margin-top(4);
-        @include section--padding-left(0);
-        @include section--padding-right(0);
-
-        .content-tile__listitem {
-          @include section--padding-left(4);
-          @include section--padding-right(4);
-
-          &:not(:first-child) {
-            @include section--margin-top(3);
-          }
-
-          line-height: 1.2em;
-        }
-      }
-
-      .content-tile__image {
+      @include mobile {
         @include section--margin-top(3);
         @include section--margin-left(0);
         @include section--margin-right(0);

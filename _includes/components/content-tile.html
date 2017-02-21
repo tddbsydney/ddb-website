@@ -1,28 +1,28 @@
 {% assign tile = include.data[0] %}
 
 <!-- content tile -->
-<div class="content-tile">
+<div class="content-tile {{ page.page_data.uid }}">
 
   <div class="content-tile__content">
 
     {% if tile.headline.value %}
-      <p>{{ tile.headline.value }}</p>
+      <h5 class="content-tile__content--headline" data-align="{{ tile.alignHeadline.value | default: 'center' }}">{{ tile.headline.value }}</h5>
     {% endif %}
 
     {% if tile.subline.value %}
-      <h2>{{ tile.subline.value }}</h2>
+      <h2 class="content-tile__content--subline" data-align="{{ tile.alignSubline.value | default: 'center' }}">{{ tile.subline.value }}</h2>
     {% endif %}
 
     {% if tile.copy.value %}
-      <h3 class="content-tile__content-copy">{{ tile.copy.value }}</h3>
+      <h3 class="content-tile__content--copy" data-align="{{ tile.alignCopy.value | default: 'center' }}">{{ tile.copy.value }}</h3>
     {% endif %}
 
     {% if tile.list.value %}
       <div class="content-tile__list">
         {% for item in tile.list.value %}
-        <div class="content-tile__listitem">
+        <h5 class="content-tile__listitem">
           {{ item.text }}
-        </div>
+        </h5>
         {% endfor %}
       </div>
     {% endif %}
