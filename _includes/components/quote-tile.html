@@ -1,4 +1,17 @@
 {% assign tile = include.data[0] %}
+{% assign fgCol = "" %}
+
+{% if page_data.foregroundColor.value %}
+  {% capture fgCol %}
+
+    style="
+    {% if page_data.foregroundColor.value %}
+      color: {{ page_data.foregroundColor.value }};
+    {% endif %}
+    "
+
+  {% endcapture %}
+{% endif %}
 
 <!-- quote tile -->
 <div class="quote-tile{{ page.page_data.uid | prepend: ' ' }}">
@@ -6,31 +19,35 @@
   <div class="quote-tile__content">
 
     {% if tile.quote.value or tile.author.value %}
-    <div class="quote-tile__text">
+      <div class="quote-tile__text">
 
-      {% if tile.quote.value %}
-        <h3 class="quote-tile__quote"><span class="quote-tile__quotes">&ldquo;</span>{{ tile.quote.value }}<span class="quote-tile__quotes">&rdquo;</span></h3>
-      {% endif %}
+        {% if tile.quote.value %}
+          <h3 class="quote-tile__quote"{{ fgCol | normalize_whitespace }}>
+            <span class="quote-tile__quotes">&ldquo;</span>{{ tile.quote.value }}<span class="quote-tile__quotes">&rdquo;</span>
+          </h3>
+        {% endif %}
 
-      {% if tile.author.value %}
-        <h4 class="quote-tile__author">&mdash; {{ tile.author.value }}</h4>
-      {% endif %}
+        {% if tile.author.value %}
+          <h4 class="quote-tile__author"{{ fgCol | normalize_whitespace }}>
+            &mdash; {{ tile.author.value }}
+          </h4>
+        {% endif %}
 
-    </div>
+      </div>
     {% endif %}
 
     {% if tile.imageDesktop.value.main.url or tile.imageMobile.value.main.url %}
-    <div class="quote-tile__image">
+      <div class="quote-tile__image">
 
-      {% if tile.imageDesktop.value.main.url %}
-      <img class="quote-tile__image--desktop" src="{{ tile.imageDesktop.value.main.url }}" alt="">
-      {% endif %}
+        {% if tile.imageDesktop.value.main.url %}
+        <img class="quote-tile__image--desktop" src="{{ tile.imageDesktop.value.main.url }}" alt="">
+        {% endif %}
 
-      {% if tile.imageMobile.value.main.url %}
-      <img class="quote-tile__image--mobile" src="{{ tile.imageMobile.value.main.url }}" alt="">
-      {% endif %}
+        {% if tile.imageMobile.value.main.url %}
+        <img class="quote-tile__image--mobile" src="{{ tile.imageMobile.value.main.url }}" alt="">
+        {% endif %}
 
-    </div>
+      </div>
     {% endif %}
 
   </div>

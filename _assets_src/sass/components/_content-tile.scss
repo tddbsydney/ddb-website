@@ -68,7 +68,7 @@
 
         margin: 0;
 
-        @include section--margin-top(1);
+        @include section--margin-top(0.5);
 
         text-align: left;
         flex-basis: 50%;
