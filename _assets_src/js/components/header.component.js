@@ -256,6 +256,7 @@ var CONFIG = require("../config");
       // add add, remove the modifiers
       _el.nav.style.opacity = 1;
       requestAnimationFrame(function() {
+        // change the modifer classes after a set timeout
         _menuTimer = setTimeout(function() {
           _el.main.classList.add(_class.modifier.closed);
           _el.main.classList.remove(_class.modifier.open);

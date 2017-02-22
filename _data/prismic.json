@@ -89,7 +89,7 @@
                   },
                   "align": {
                     "type": "Select",
-                    "value": "topRight"
+                    "value": "right"
                   }
                 }
               ]

@@ -11,12 +11,12 @@
       "id": "WKEQFSUAAEUiq5ZX",
       "uid": "work",
       "type": "work",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKuNVigAACkAQA_m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKzUaSkAACsAoFsJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:07+0000",
-      "last_publication_date": "2017-02-20T01:40:17+0000",
+      "last_publication_date": "2017-02-21T23:59:37+0000",
       "slugs": [
         "work---tribal-ddb"
       ],
@@ -162,7 +162,7 @@
                       },
                       "align": {
                         "type": "Select",
-                        "value": "topRight"
+                        "value": "right"
                       }
                     }
                   ]
@@ -554,7 +554,7 @@
       "id": "WKpzRigAACgAOzbM",
       "uid": "the-sydney-opera-house",
       "type": "case-studies",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKuNVigAACkAQA_m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKpzRigAACgAOzbM%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKzUaSkAACsAoFsJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKpzRigAACgAOzbM%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -958,7 +958,7 @@
       "id": "WKEQcCUAAKomq5fv",
       "uid": "test",
       "type": "case-studies",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKuNVigAACkAQA_m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKzUaSkAACsAoFsJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1703,7 +1703,7 @@
       "id": "WKTjByoAAIcc_1uc",
       "uid": "design-guide",
       "type": "design-guide",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKuNVigAACkAQA_m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKzUaSkAACsAoFsJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1746,7 +1746,7 @@
       "id": "WKoxNCgAACsAOhPa",
       "uid": "about",
       "type": "about",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKuNVigAACkAQA_m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKzUaSkAACsAoFsJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1804,7 +1804,7 @@
       "id": "WKEP8CUAAOgdq5Ww",
       "uid": "latest",
       "type": "latest",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKuNVigAACkAQA_m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKzUaSkAACsAoFsJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -2795,7 +2795,7 @@
       "id": "WKoxZSgAACgAOhS1",
       "uid": "contact",
       "type": "contact",
-      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKuNVigAACkAQA_m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
+      "href": "http://ddb-website.prismic.io/api/documents/search?ref=WKzUaSkAACsAoFsJ&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
       "tags": [
 
       ],

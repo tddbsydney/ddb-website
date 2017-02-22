@@ -11,11 +11,12 @@
 // -------------------------------------
 //   Promo Video - Content
 // -------------------------------------
+// taken from base/_case-study-work.scsss
 $promov_content_w_max: $cs_tile_content_w_max; // 50%
 $promov_content_inner_w_max: $cs_tile_content_inner_w_max; // 80%
 $promov_content_inner_w_max_tab: $cs_tile_content_inner_w_max_tab; // 95%
 $promov_content_inner_w_max_mob: $cs_tile_content_inner_w_max_mob; // 80%
-$promov_content_margin_mob: $csw_content_margin_mob; // 20vw
+$promov_content_margin_mob: $cs_content_margin_first; // 20vw
 
 .promo-video__content {
   display: block;

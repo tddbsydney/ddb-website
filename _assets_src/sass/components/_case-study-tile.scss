@@ -15,6 +15,7 @@ $cs_tile_content_w_max: 50%;
 $cs_tile_content_inner_w_max: 80%;
 $cs_tile_content_inner_w_max_tab: 95%;
 $cs_tile_content_inner_w_max_mob: 80%;
+$cs_content_margin_first: 20vw;
 
 .case-study-tile__content {
   display: block;
@@ -57,4 +58,15 @@ $cs_tile_content_inner_w_max_mob: 80%;
   &[data-align="bottomLeft"]   { bottom: 0; left: 0;  }
   &[data-align="bottomRight"]  { bottom: 0; right: 0; }
   &[data-align="bottomCenter"] { @extend %transform-center-h; bottom: 0; }
+}
+
+// -------------------------------------
+//   Case Study Tile - Section - First
+// -------------------------------------
+.section--first > .case-study-tile {
+  .case-study-tile__content {
+    @include mobile { 
+      top: $cs_content_margin_first !important; 
+    }
+  }
 }
