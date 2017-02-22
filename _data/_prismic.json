@@ -1,8 +1,8 @@
 {
   "page": 1,
   "results_per_page": 100,
-  "results_size": 8,
-  "total_results_size": 8,
+  "results_size": 11,
+  "total_results_size": 11,
   "total_pages": 1,
   "next_page": null,
   "prev_page": null,
@@ -11,24 +11,32 @@
       "id": "WKEQFSUAAEUiq5ZX",
       "uid": "work",
       "type": "work",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0agCkAACoAoY-m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:07+0000",
-      "last_publication_date": "2017-02-22T03:36:11+0000",
+      "last_publication_date": "2017-02-22T04:58:00+0000",
       "slugs": [
         "work---ddb",
         "work---tribal-ddb"
       ],
       "linked_documents": [
         {
-          "id": "WKEQcCUAAKomq5fv",
+          "id": "WK0ZFykAACsAoYlk",
           "tags": [
 
           ],
           "type": "case-studies",
-          "slug": "test-case-study--tribal-ddb"
+          "slug": "volkswagen-naked-ute--ddb"
+        },
+        {
+          "id": "WKpzRigAACgAOzbM",
+          "tags": [
+
+          ],
+          "type": "case-studies",
+          "slug": "the-sydney-opera-house--ddb"
         },
         {
           "id": "WKEQFSUAAEUiq5ZX",
@@ -39,36 +47,28 @@
           "slug": "work---ddb"
         },
         {
-          "id": "WKEQFSUAAEUiq5ZX",
+          "id": "WK0SfSkAACoAoWxH",
           "tags": [
 
           ],
-          "type": "work",
-          "slug": "work---ddb"
+          "type": "case-studies",
+          "slug": "volkswagen-brand-love--ddb"
         },
         {
-          "id": "WKEQFSUAAEUiq5ZX",
+          "id": "WK0L2SkAACsAoU7x",
           "tags": [
 
           ],
-          "type": "work",
-          "slug": "work---ddb"
+          "type": "case-studies",
+          "slug": "mcdonalds-loaded-fries--ddb"
         },
         {
-          "id": "WKEQFSUAAEUiq5ZX",
+          "id": "WK0GeCkAACgAoTc8",
           "tags": [
 
           ],
-          "type": "work",
-          "slug": "work---ddb"
-        },
-        {
-          "id": "WKEQFSUAAEUiq5ZX",
-          "tags": [
-
-          ],
-          "type": "work",
-          "slug": "work---ddb"
+          "type": "case-studies",
+          "slug": "volkswagen-tough-sell--ddb"
         }
       ],
       "data": {
@@ -146,13 +146,13 @@
                         "type": "Link.document",
                         "value": {
                           "document": {
-                            "id": "WKEQcCUAAKomq5fv",
+                            "id": "WK0ZFykAACsAoYlk",
                             "type": "case-studies",
                             "tags": [
 
                             ],
-                            "slug": "test-case-study--tribal-ddb",
-                            "uid": "test"
+                            "slug": "volkswagen-naked-ute--ddb",
+                            "uid": "volkswagen-naked-ute"
                           },
                           "isBroken": false
                         }
@@ -183,7 +183,7 @@
                       },
                       "copy": {
                         "type": "Text",
-                        "value": "We needed to get more people inside the Sydney Opera House during summer."
+                        "value": "We needed to get more people inside <br>the Sydney Opera House during summer."
                       },
                       "image": {
                         "type": "Image",
@@ -223,13 +223,13 @@
                         "type": "Link.document",
                         "value": {
                           "document": {
-                            "id": "WKEQFSUAAEUiq5ZX",
-                            "type": "work",
+                            "id": "WKpzRigAACgAOzbM",
+                            "type": "case-studies",
                             "tags": [
 
                             ],
-                            "slug": "work---ddb",
-                            "uid": "work"
+                            "slug": "the-sydney-opera-house--ddb",
+                            "uid": "the-sydney-opera-house"
                           },
                           "isBroken": false
                         }
@@ -333,7 +333,7 @@
                       },
                       "copy": {
                         "type": "Text",
-                        "value": "When is a car more than a car?"
+                        "value": "When is a car more <br>than a car?"
                       },
                       "image": {
                         "type": "Image",
@@ -345,18 +345,9 @@
                             },
                             "alt": null,
                             "copyright": null,
-                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/60e4b4b88f31b73a9bb5178bbf2e02120b2beb47_vw5.jpg"
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/47c30691d0cc241ed778af26f2e40594fd9b0679_vw-brand-love-1.jpg"
                           },
                           "views": {
-                            "desktop": {
-                              "dimensions": {
-                                "width": 1920,
-                                "height": 900
-                              },
-                              "alt": null,
-                              "copyright": null,
-                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/60e4b4b88f31b73a9bb5178bbf2e02120b2beb47_vw5.jpg"
-                            },
                             "mobile": {
                               "dimensions": {
                                 "width": 800,
@@ -364,7 +355,16 @@
                               },
                               "alt": null,
                               "copyright": null,
-                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/2d8c90f2dc719bb1057728c1300ba28dbe3f80b7_vw5.jpg"
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/f1b432979931a1dfaa7d76684bbcc55dca822e81_vw-brand-love-1.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/47c30691d0cc241ed778af26f2e40594fd9b0679_vw-brand-love-1.jpg"
                             }
                           }
                         }
@@ -373,13 +373,13 @@
                         "type": "Link.document",
                         "value": {
                           "document": {
-                            "id": "WKEQFSUAAEUiq5ZX",
-                            "type": "work",
+                            "id": "WK0SfSkAACoAoWxH",
+                            "type": "case-studies",
                             "tags": [
 
                             ],
-                            "slug": "work---ddb",
-                            "uid": "work"
+                            "slug": "volkswagen-brand-love--ddb",
+                            "uid": "volkswagen-brand-love"
                           },
                           "isBroken": false
                         }
@@ -446,13 +446,13 @@
                         "type": "Link.document",
                         "value": {
                           "document": {
-                            "id": "WKEQFSUAAEUiq5ZX",
-                            "type": "work",
+                            "id": "WK0L2SkAACsAoU7x",
+                            "type": "case-studies",
                             "tags": [
 
                             ],
-                            "slug": "work---ddb",
-                            "uid": "work"
+                            "slug": "mcdonalds-loaded-fries--ddb",
+                            "uid": "mcdonalds-loaded-fries"
                           },
                           "isBroken": false
                         }
@@ -523,13 +523,13 @@
                         "type": "Link.document",
                         "value": {
                           "document": {
-                            "id": "WKEQFSUAAEUiq5ZX",
-                            "type": "work",
+                            "id": "WK0GeCkAACgAoTc8",
+                            "type": "case-studies",
                             "tags": [
 
                             ],
-                            "slug": "work---ddb",
-                            "uid": "work"
+                            "slug": "volkswagen-tough-sell--ddb",
+                            "uid": "volkswagen-tough-sell"
                           },
                           "isBroken": false
                         }
@@ -555,7 +555,7 @@
       "id": "WK0GeCkAACgAoTc8",
       "uid": "volkswagen-tough-sell",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0GeCkAACgAoTc8%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0agCkAACoAoY-m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0GeCkAACgAoTc8%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -856,7 +856,7 @@
       "id": "WKpzRigAACgAOzbM",
       "uid": "the-sydney-opera-house",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKpzRigAACgAOzbM%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0agCkAACoAoY-m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKpzRigAACgAOzbM%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1258,10 +1258,264 @@
       }
     },
     {
+      "id": "WK0SfSkAACoAoWxH",
+      "uid": "volkswagen-brand-love",
+      "type": "case-studies",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0agCkAACoAoY-m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0SfSkAACoAoWxH%22%29+%5D%5D",
+      "tags": [
+
+      ],
+      "first_publication_date": "2017-02-22T04:24:45+0000",
+      "last_publication_date": "2017-02-22T04:29:59+0000",
+      "slugs": [
+        "volkswagen-brand-love--ddb"
+      ],
+      "linked_documents": [
+
+      ],
+      "data": {
+        "case-studies": {
+          "meta-title": {
+            "type": "Text",
+            "value": "Volkswagen Brand Love | DDB"
+          },
+          "foregroundColor": {
+            "type": "Color",
+            "value": "#ffffff"
+          },
+          "backgroundColor": {
+            "type": "Color",
+            "value": "#000000"
+          },
+          "sections": {
+            "type": "SliceZone",
+            "value": [
+              {
+                "type": "Slice",
+                "slice_type": "case-study-work-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Volkswagen"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "When is a car more than a car?"
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/1741f1f0e467c15cf8d5b06cdf3bd74399523afc_vw-brand-love-1.jpg"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 840,
+                                "height": 1350
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/37abf9e2e2e43cbc2f2c3ba7170191960038bd64_vw-brand-love-1.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/1741f1f0e467c15cf8d5b06cdf3bd74399523afc_vw-brand-love-1.jpg"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "subline": {
+                        "type": "Text",
+                        "value": "We needed to remind people that Volkswagen is entrenched in Aussie culture."
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "We asked when is a car more than a car? →"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "image-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 887,
+                              "height": 382
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/a261d5ea06943187699aacdcbafd28515ff4c29d_screen-shot-2017-02-22-at-3.20.09-pm.png"
+                          },
+                          "views": {
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/9961341464cfa9da2c99e8ec8e8fb503f62dd359_screen-shot-2017-02-22-at-3.20.09-pm.png"
+                            },
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/d6573ebd0ad56467615f2195ce14393d1068603f_screen-shot-2017-02-22-at-3.20.09-pm.png"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "copy": {
+                        "type": "Text",
+                        "value": "As the brand name suggests, this is the people’s car – a legacy that transcends sheet metal and machinery. This was the thinking that gave rise to the campaign line “When is a car more than a car? When it’s a Volkswagen.”"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "image-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/796cd2b8996f4705e419ab2b997a174f7d6ce732_vw-brand-love-2.jpg"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/1b1d16a69232fd6cfb870092a62c0c7b01ea0b0a_vw-brand-love-2.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/796cd2b8996f4705e419ab2b997a174f7d6ce732_vw-brand-love-2.jpg"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "copy": {
+                        "type": "Text",
+                        "value": "But for the message to really hit home, it couldn’t come from us. We reached out to real Volkswagen owners and asked them to share what made their cars more than a car. The result; a joyous and honest celebration of life in a Volkswagen."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "video-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "video": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "https://www.youtube.com/watch?v=_-Eu5mF3Fqc"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
       "id": "WKEQcCUAAKomq5fv",
       "uid": "test",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0agCkAACoAoY-m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -2003,10 +2257,319 @@
       }
     },
     {
+      "id": "WK0L2SkAACsAoU7x",
+      "uid": "mcdonalds-loaded-fries",
+      "type": "case-studies",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0agCkAACoAoY-m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0L2SkAACsAoU7x%22%29+%5D%5D",
+      "tags": [
+
+      ],
+      "first_publication_date": "2017-02-22T03:56:14+0000",
+      "last_publication_date": "2017-02-22T04:55:00+0000",
+      "slugs": [
+        "mcdonalds-loaded-fries--ddb",
+        "mcdonalds-loaded-fries"
+      ],
+      "linked_documents": [
+
+      ],
+      "data": {
+        "case-studies": {
+          "meta-title": {
+            "type": "Text",
+            "value": "McDonalds Loaded Fries | DDB"
+          },
+          "meta-description": {
+            "type": "Text",
+            "value": "Case Study McDonalds Loaded Fries"
+          },
+          "foregroundColor": {
+            "type": "Color",
+            "value": "#000000"
+          },
+          "backgroundColor": {
+            "type": "Color",
+            "value": "#ffffff"
+          },
+          "sections": {
+            "type": "SliceZone",
+            "value": [
+              {
+                "type": "Slice",
+                "slice_type": "case-study-work-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "McDonalds"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "McDonald’s was modifying their famous, golden Fries for the first time in their history."
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/453f6c0a83abf7497e5d40eb7c6846fdf0e5f964_mcd1.jpg"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 840,
+                                "height": 1350
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/dcbea10e9b15663015ee5758c025224cc8068fa5_mcd1.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/453f6c0a83abf7497e5d40eb7c6846fdf0e5f964_mcd1.jpg"
+                            }
+                          }
+                        }
+                      },
+                      "align": {
+                        "type": "Select",
+                        "value": "center"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Problem"
+                      },
+                      "subline": {
+                        "type": "Text",
+                        "value": "How do we launch Macca’s new Loaded Fries in a fun way that will get Aussies excited to try them?"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "image-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/45e2eba3a59ae55921a42ec44ec5953b952759b7_mcd3.jpg"
+                          },
+                          "views": {
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/45e2eba3a59ae55921a42ec44ec5953b952759b7_mcd3.jpg"
+                            },
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/a2af8f7037c9c9933dd59f3edfc5a73662b32403_mcd3.jpg"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Solution"
+                      },
+                      "subline": {
+                        "type": "Text",
+                        "value": "Literally “Bring Fries to Life” (just like the range of sauces does) through a combination of macro videography and the voices of a handful of hilarious comedians."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "video-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "video": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "https://www.youtube.com/watch?v=FEJT84r3Fkk"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "The recording process"
+                      },
+                      "subline": {
+                        "type": "Text",
+                        "value": "We assembled a group of hilarious actors and set them loose in the recording booth with our scripts and direction"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "video-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "video": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "https://www.youtube.com/watch?v=sqKI_ZteLyc"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Where were they seen?"
+                      },
+                      "subline": {
+                        "type": "Text",
+                        "value": "Videos were shown on television and online, as well as special pre-roll and cinema placements. These placements were supported by a range of OOH and digital placements that drove people to the films."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "image-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/db334b9d02fa5af8e7cfa77062272c3bfeb9c329_mcd4.jpg"
+                          },
+                          "views": {
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/db334b9d02fa5af8e7cfa77062272c3bfeb9c329_mcd4.jpg"
+                            },
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/1b343196cda7d006a0040fdc0f3ad771621ebde7_mcd4.jpg"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
       "id": "WKTjByoAAIcc_1uc",
       "uid": "design-guide",
       "type": "design-guide",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0agCkAACoAoY-m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -2049,7 +2612,7 @@
       "id": "WKoxNCgAACsAOhPa",
       "uid": "about",
       "type": "about",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0agCkAACoAoY-m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -2107,12 +2670,12 @@
       "id": "WKEP8CUAAOgdq5Ww",
       "uid": "latest",
       "type": "latest",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0agCkAACoAoY-m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:26+0000",
-      "last_publication_date": "2017-02-22T03:35:54+0000",
+      "last_publication_date": "2017-02-22T04:57:39+0000",
       "slugs": [
         "latest---ddb",
         "latest---tribal-ddb"
@@ -2127,12 +2690,36 @@
           "slug": "latest---ddb"
         },
         {
+          "id": "WK0ZFykAACsAoYlk",
+          "tags": [
+
+          ],
+          "type": "case-studies",
+          "slug": "volkswagen-naked-ute--ddb"
+        },
+        {
+          "id": "WK0SfSkAACoAoWxH",
+          "tags": [
+
+          ],
+          "type": "case-studies",
+          "slug": "volkswagen-brand-love--ddb"
+        },
+        {
           "id": "WKEP8CUAAOgdq5Ww",
           "tags": [
 
           ],
           "type": "latest",
           "slug": "latest---ddb"
+        },
+        {
+          "id": "WKpzRigAACgAOzbM",
+          "tags": [
+
+          ],
+          "type": "case-studies",
+          "slug": "the-sydney-opera-house--ddb"
         },
         {
           "id": "WKEP8CUAAOgdq5Ww",
@@ -2151,44 +2738,20 @@
           "slug": "latest---ddb"
         },
         {
-          "id": "WKEP8CUAAOgdq5Ww",
+          "id": "WK0L2SkAACsAoU7x",
           "tags": [
 
           ],
-          "type": "latest",
-          "slug": "latest---ddb"
+          "type": "case-studies",
+          "slug": "mcdonalds-loaded-fries--ddb"
         },
         {
-          "id": "WKEP8CUAAOgdq5Ww",
+          "id": "WK0GeCkAACgAoTc8",
           "tags": [
 
           ],
-          "type": "latest",
-          "slug": "latest---ddb"
-        },
-        {
-          "id": "WKEP8CUAAOgdq5Ww",
-          "tags": [
-
-          ],
-          "type": "latest",
-          "slug": "latest---ddb"
-        },
-        {
-          "id": "WKEP8CUAAOgdq5Ww",
-          "tags": [
-
-          ],
-          "type": "latest",
-          "slug": "latest---ddb"
-        },
-        {
-          "id": "WKEP8CUAAOgdq5Ww",
-          "tags": [
-
-          ],
-          "type": "latest",
-          "slug": "latest---ddb"
+          "type": "case-studies",
+          "slug": "volkswagen-tough-sell--ddb"
         },
         {
           "id": "WKEP8CUAAOgdq5Ww",
@@ -2437,13 +3000,13 @@
                         "type": "Link.document",
                         "value": {
                           "document": {
-                            "id": "WKEP8CUAAOgdq5Ww",
-                            "type": "latest",
+                            "id": "WK0ZFykAACsAoYlk",
+                            "type": "case-studies",
                             "tags": [
 
                             ],
-                            "slug": "latest---ddb",
-                            "uid": "latest"
+                            "slug": "volkswagen-naked-ute--ddb",
+                            "uid": "volkswagen-naked-ute"
                           },
                           "isBroken": false
                         }
@@ -2540,7 +3103,7 @@
                       },
                       "copy": {
                         "type": "Text",
-                        "value": "When is a car more than a car?"
+                        "value": "When is a car more <br>than a car?"
                       },
                       "image": {
                         "type": "Image",
@@ -2552,7 +3115,7 @@
                             },
                             "alt": null,
                             "copyright": null,
-                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/60e4b4b88f31b73a9bb5178bbf2e02120b2beb47_vw5.jpg"
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/f878b760f486515c9800bfb3b3dc8d69358f9742_vw-brand-love-1.jpg"
                           },
                           "views": {
                             "desktop": {
@@ -2562,7 +3125,7 @@
                               },
                               "alt": null,
                               "copyright": null,
-                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/60e4b4b88f31b73a9bb5178bbf2e02120b2beb47_vw5.jpg"
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/f878b760f486515c9800bfb3b3dc8d69358f9742_vw-brand-love-1.jpg"
                             },
                             "mobile": {
                               "dimensions": {
@@ -2571,7 +3134,7 @@
                               },
                               "alt": null,
                               "copyright": null,
-                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/4da09f09b58e4f2d5d71f4508faaa6353bda5f37_vw5.jpg"
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/229ad9ea95c7cf9dedf786fae0862f38690c41d4_vw-brand-love-1.jpg"
                             }
                           }
                         }
@@ -2580,13 +3143,13 @@
                         "type": "Link.document",
                         "value": {
                           "document": {
-                            "id": "WKEP8CUAAOgdq5Ww",
-                            "type": "latest",
+                            "id": "WK0SfSkAACoAoWxH",
+                            "type": "case-studies",
                             "tags": [
 
                             ],
-                            "slug": "latest---ddb",
-                            "uid": "latest"
+                            "slug": "volkswagen-brand-love--ddb",
+                            "uid": "volkswagen-brand-love"
                           },
                           "isBroken": false
                         }
@@ -2680,7 +3243,7 @@
                       },
                       "copy": {
                         "type": "Text",
-                        "value": "We needed to get more people inside the Sydney Opera House during summer."
+                        "value": "We needed to get more people inside <br>the Sydney Opera House during summer."
                       },
                       "image": {
                         "type": "Image",
@@ -2720,13 +3283,13 @@
                         "type": "Link.document",
                         "value": {
                           "document": {
-                            "id": "WKEP8CUAAOgdq5Ww",
-                            "type": "latest",
+                            "id": "WKpzRigAACgAOzbM",
+                            "type": "case-studies",
                             "tags": [
 
                             ],
-                            "slug": "latest---ddb",
-                            "uid": "latest"
+                            "slug": "the-sydney-opera-house--ddb",
+                            "uid": "the-sydney-opera-house"
                           },
                           "isBroken": false
                         }
@@ -2869,13 +3432,13 @@
                         "type": "Link.document",
                         "value": {
                           "document": {
-                            "id": "WKEP8CUAAOgdq5Ww",
-                            "type": "latest",
+                            "id": "WK0L2SkAACsAoU7x",
+                            "type": "case-studies",
                             "tags": [
 
                             ],
-                            "slug": "latest---ddb",
-                            "uid": "latest"
+                            "slug": "mcdonalds-loaded-fries--ddb",
+                            "uid": "mcdonalds-loaded-fries"
                           },
                           "isBroken": false
                         }
@@ -3000,13 +3563,13 @@
                         "type": "Link.document",
                         "value": {
                           "document": {
-                            "id": "WKEP8CUAAOgdq5Ww",
-                            "type": "latest",
+                            "id": "WK0GeCkAACgAoTc8",
+                            "type": "case-studies",
                             "tags": [
 
                             ],
-                            "slug": "latest---ddb",
-                            "uid": "latest"
+                            "slug": "volkswagen-tough-sell--ddb",
+                            "uid": "volkswagen-tough-sell"
                           },
                           "isBroken": false
                         }
@@ -3096,10 +3659,364 @@
       }
     },
     {
+      "id": "WK0ZFykAACsAoYlk",
+      "uid": "volkswagen-naked-ute",
+      "type": "case-studies",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0agCkAACoAoY-m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0ZFykAACsAoYlk%22%29+%5D%5D",
+      "tags": [
+
+      ],
+      "first_publication_date": "2017-02-22T04:52:52+0000",
+      "last_publication_date": "2017-02-22T04:58:40+0000",
+      "slugs": [
+        "volkswagen-naked-ute--ddb"
+      ],
+      "linked_documents": [
+
+      ],
+      "data": {
+        "case-studies": {
+          "meta-title": {
+            "type": "Text",
+            "value": "Volkswagen Naked Ute | DDB"
+          },
+          "foregroundColor": {
+            "type": "Color",
+            "value": "#ffffff"
+          },
+          "sections": {
+            "type": "SliceZone",
+            "value": [
+              {
+                "type": "Slice",
+                "slice_type": "case-study-work-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Volkswagen"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Aussie blokes were judging the Amarok by its cover, so we removed it."
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1662,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/592c78ebdfecdd8f841943163e15e80f02df75e3_vw3.jpg"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 840,
+                                "height": 1350
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/8025dbee859456bf3d34e0b9e63dc4a9e9462654_vw3.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/f7d543d2e270b839a54d5cf12e1ee38d59f8717c_vw3.jpg"
+                            }
+                          }
+                        }
+                      },
+                      "align": {
+                        "type": "Select",
+                        "value": "right"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "copy": {
+                        "type": "Text",
+                        "value": "The Amarok’s sleek European styling led people to believe that it was too precious to handle tough Australian conditions"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "image-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1043,
+                              "height": 445
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/1dfff8c07af75652bb12403c0316a5d9f3337cfe_screen-shot-2017-02-22-at-3.43.14-pm.png"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/2683012cc6a938c67a6360e00bc3d9f06698ac2d_screen-shot-2017-02-22-at-3.43.14-pm.png"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/ba2b62ef35e03cc2e465480f64b8653782185e3f_screen-shot-2017-02-22-at-3.43.14-pm.png"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Solution"
+                      },
+                      "subline": {
+                        "type": "Text",
+                        "value": "We Stripped the Amarok of everything that identified it, forcing critics to judge it on performance alone."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "image-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 782,
+                              "height": 361
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/d4413bf1bfd6df594aebea86a7184f5c5c3c610a_screen-shot-2017-02-22-at-3.38.40-pm.png"
+                          },
+                          "views": {
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/a3c6a9c2ee3563849edfc6f06c5fea86c9587f22_screen-shot-2017-02-22-at-3.38.40-pm.png"
+                            },
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/938aba1facb6ee718679a7491a20f04e78895c90_screen-shot-2017-02-22-at-3.38.40-pm.png"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "subline": {
+                        "type": "Text",
+                        "value": "We asked some of the Amarok’s greatest sceptics to guess what it was, while the public guessed along with them."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "video-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "video": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "https://www.youtube.com/watch?v=rWjyPfEbiyg"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "subline": {
+                        "type": "Text",
+                        "value": "We then revealed that the tough Naked Ute was actually the Volkswagen Amarok challenging their prejudices, perceptions and outdated opinions on how the Amarok really performs."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "image-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 777,
+                              "height": 425
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/8ee6bc85cfe26fad23521f649afc6edea55078f2_screen-shot-2017-02-22-at-3.50.15-pm.png"
+                          },
+                          "views": {
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/94dab273beae6238cb0afadcd5f61e8f891a7b2b_screen-shot-2017-02-22-at-3.50.15-pm.png"
+                            },
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/2982f50073a37024f7d646370256e5747ddff549_screen-shot-2017-02-22-at-3.50.15-pm.png"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Results"
+                      },
+                      "subline": {
+                        "type": "Text",
+                        "value": "A total reach of 7.7 million with 125,000 unique visitors to our unbranded website, more than 24,000 guesses an an immediate uplift in sales."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "video-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "video": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "https://www.youtube.com/watch?v=OFk-oFd6aa8"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
       "id": "WKoxZSgAACgAOhS1",
       "uid": "contact",
       "type": "contact",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0agCkAACoAoY-m&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
       "tags": [
 
       ],
