@@ -1,8 +1,8 @@
 {
   "page": 1,
-  "results_per_page": 20,
-  "results_size": 7,
-  "total_results_size": 7,
+  "results_per_page": 100,
+  "results_size": 8,
+  "total_results_size": 8,
   "total_pages": 1,
   "next_page": null,
   "prev_page": null,
@@ -11,13 +11,14 @@
       "id": "WKEQFSUAAEUiq5ZX",
       "uid": "work",
       "type": "work",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WKzitSkAACoAoJnb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:07+0000",
-      "last_publication_date": "2017-02-21T23:59:37+0000",
+      "last_publication_date": "2017-02-22T03:36:11+0000",
       "slugs": [
+        "work---ddb",
         "work---tribal-ddb"
       ],
       "linked_documents": [
@@ -35,7 +36,7 @@
 
           ],
           "type": "work",
-          "slug": "work---tribal-ddb"
+          "slug": "work---ddb"
         },
         {
           "id": "WKEQFSUAAEUiq5ZX",
@@ -43,7 +44,7 @@
 
           ],
           "type": "work",
-          "slug": "work---tribal-ddb"
+          "slug": "work---ddb"
         },
         {
           "id": "WKEQFSUAAEUiq5ZX",
@@ -51,7 +52,7 @@
 
           ],
           "type": "work",
-          "slug": "work---tribal-ddb"
+          "slug": "work---ddb"
         },
         {
           "id": "WKEQFSUAAEUiq5ZX",
@@ -59,7 +60,7 @@
 
           ],
           "type": "work",
-          "slug": "work---tribal-ddb"
+          "slug": "work---ddb"
         },
         {
           "id": "WKEQFSUAAEUiq5ZX",
@@ -67,18 +68,18 @@
 
           ],
           "type": "work",
-          "slug": "work---tribal-ddb"
+          "slug": "work---ddb"
         }
       ],
       "data": {
         "work": {
           "meta-title": {
             "type": "Text",
-            "value": "Work  | Tribal DDB"
+            "value": "Work  | DDB"
           },
           "meta-description": {
             "type": "Text",
-            "value": "Work from Tribal DDB."
+            "value": "Work from DDB."
           },
           "foregroundColor": {
             "type": "Color",
@@ -227,7 +228,7 @@
                             "tags": [
 
                             ],
-                            "slug": "work---tribal-ddb",
+                            "slug": "work---ddb",
                             "uid": "work"
                           },
                           "isBroken": false
@@ -300,7 +301,7 @@
                             "tags": [
 
                             ],
-                            "slug": "work---tribal-ddb",
+                            "slug": "work---ddb",
                             "uid": "work"
                           },
                           "isBroken": false
@@ -377,7 +378,7 @@
                             "tags": [
 
                             ],
-                            "slug": "work---tribal-ddb",
+                            "slug": "work---ddb",
                             "uid": "work"
                           },
                           "isBroken": false
@@ -450,7 +451,7 @@
                             "tags": [
 
                             ],
-                            "slug": "work---tribal-ddb",
+                            "slug": "work---ddb",
                             "uid": "work"
                           },
                           "isBroken": false
@@ -527,7 +528,7 @@
                             "tags": [
 
                             ],
-                            "slug": "work---tribal-ddb",
+                            "slug": "work---ddb",
                             "uid": "work"
                           },
                           "isBroken": false
@@ -551,16 +552,318 @@
       }
     },
     {
+      "id": "WK0GeCkAACgAoTc8",
+      "uid": "volkswagen-tough-sell",
+      "type": "case-studies",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0GeCkAACgAoTc8%22%29+%5D%5D",
+      "tags": [
+
+      ],
+      "first_publication_date": "2017-02-22T03:33:19+0000",
+      "last_publication_date": "2017-02-22T03:38:32+0000",
+      "slugs": [
+        "volkswagen-tough-sell--ddb",
+        "volkswagen-tough-sell"
+      ],
+      "linked_documents": [
+
+      ],
+      "data": {
+        "case-studies": {
+          "meta-title": {
+            "type": "Text",
+            "value": "Volkswagen Tough Sell | DDB"
+          },
+          "foregroundColor": {
+            "type": "Color",
+            "value": "#000000"
+          },
+          "backgroundColor": {
+            "type": "Color",
+            "value": "#ffffff"
+          },
+          "sections": {
+            "type": "SliceZone",
+            "value": [
+              {
+                "type": "Slice",
+                "slice_type": "case-study-work-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Volkswagen"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Can we sell a Golf to town that doesn’t need its city technology?"
+                      },
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 1201
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/8b60104ff46d4cdc7a975e68342d633cd2d50dd3_vw0.jpg"
+                          },
+                          "views": {
+                            "mobile": {
+                              "dimensions": {
+                                "width": 840,
+                                "height": 1350
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/d2ee676df4b1a2ff764a682ef9f42f8532952a9f_vw0.jpg"
+                            },
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/1515c66099db2fd1148a4e551e17efb948e62eac_vw0.jpg"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "So what was the brief then?"
+                      },
+                      "subline": {
+                        "type": "Text",
+                        "value": "The job was to raise the consideration of the new model Golf, boost understanding of its advanced tech features and deliver more test-drives to Volkswagen dealers."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "image-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1920,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/8196dd39edfbd6d6318789ca3e36ca9b3043011a_tough-sell-1.jpg"
+                          },
+                          "views": {
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/8196dd39edfbd6d6318789ca3e36ca9b3043011a_tough-sell-1.jpg"
+                            },
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/6097e57ef9cbf2523343d5bc18437295576b252b_tough-sell-1.jpg"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "An idea that was destined to fail…"
+                      },
+                      "subline": {
+                        "type": "Text",
+                        "value": "We developed an online series about a Volkswagen dealer given an impossible task. The premise was to sell the ultimate city car in an outback town filled with folks with no want or need for it."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "video-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "video": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "https://www.youtube.com/watch?v=6wEFjop9mEY"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Just as we expected…"
+                      },
+                      "subline": {
+                        "type": "Text",
+                        "value": "Our rep Tom, made a grand total of zero sales in the town but on Facebook where the series was shown, viewers loved every awkward minute."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "video-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "video": {
+                        "type": "Link.web",
+                        "value": {
+                          "url": "https://www.youtube.com/watch?v=6wEFjop9mEY"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "content-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "headline": {
+                        "type": "Text",
+                        "value": "Facebook becomes a broadcast channel"
+                      },
+                      "subline": {
+                        "type": "Text",
+                        "value": "We turned Facebook into our broadcast channel, so we could directly target potential buyers with the 6-month series."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "Slice",
+                "slice_type": "image-tile",
+                "slice_label": null,
+                "value": {
+                  "type": "Group",
+                  "value": [
+                    {
+                      "image": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1023,
+                              "height": 512
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/adee8d5da4aa3252d9afeb5d72ddea5f4df82093_vw2.jpg"
+                          },
+                          "views": {
+                            "desktop": {
+                              "dimensions": {
+                                "width": 1920,
+                                "height": 900
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/4f927f0c7f588ebce34f0ac738edeeaff2000931_vw2.jpg"
+                            },
+                            "mobile": {
+                              "dimensions": {
+                                "width": 800,
+                                "height": 820
+                              },
+                              "alt": null,
+                              "copyright": null,
+                              "url": "http://ddb-website.cdn.prismic.io/ddb-website/ba040845e661883acac51dfa1dec92650a431f4d_vw2.jpg"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
       "id": "WKpzRigAACgAOzbM",
       "uid": "the-sydney-opera-house",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WKzitSkAACoAoJnb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKpzRigAACgAOzbM%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKpzRigAACgAOzbM%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-20T04:41:09+0000",
-      "last_publication_date": "2017-02-22T01:00:37+0000",
+      "last_publication_date": "2017-02-22T03:39:30+0000",
       "slugs": [
+        "the-sydney-opera-house--ddb",
         "the-sydney-opera-house",
         "opera"
       ],
@@ -571,7 +874,7 @@
         "case-studies": {
           "meta-title": {
             "type": "Text",
-            "value": "The Sydney Opera House"
+            "value": "The Sydney Opera House | DDB"
           },
           "foregroundColor": {
             "type": "Color",
@@ -958,7 +1261,7 @@
       "id": "WKEQcCUAAKomq5fv",
       "uid": "test",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WKzitSkAACoAoJnb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1703,7 +2006,7 @@
       "id": "WKTjByoAAIcc_1uc",
       "uid": "design-guide",
       "type": "design-guide",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WKzitSkAACoAoJnb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1746,7 +2049,7 @@
       "id": "WKoxNCgAACsAOhPa",
       "uid": "about",
       "type": "about",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WKzitSkAACoAoJnb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1804,13 +2107,14 @@
       "id": "WKEP8CUAAOgdq5Ww",
       "uid": "latest",
       "type": "latest",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WKzitSkAACoAoJnb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:26+0000",
-      "last_publication_date": "2017-02-20T01:40:38+0000",
+      "last_publication_date": "2017-02-22T03:35:54+0000",
       "slugs": [
+        "latest---ddb",
         "latest---tribal-ddb"
       ],
       "linked_documents": [
@@ -1820,7 +2124,7 @@
 
           ],
           "type": "latest",
-          "slug": "latest---tribal-ddb"
+          "slug": "latest---ddb"
         },
         {
           "id": "WKEP8CUAAOgdq5Ww",
@@ -1828,7 +2132,7 @@
 
           ],
           "type": "latest",
-          "slug": "latest---tribal-ddb"
+          "slug": "latest---ddb"
         },
         {
           "id": "WKEP8CUAAOgdq5Ww",
@@ -1836,7 +2140,7 @@
 
           ],
           "type": "latest",
-          "slug": "latest---tribal-ddb"
+          "slug": "latest---ddb"
         },
         {
           "id": "WKEP8CUAAOgdq5Ww",
@@ -1844,7 +2148,7 @@
 
           ],
           "type": "latest",
-          "slug": "latest---tribal-ddb"
+          "slug": "latest---ddb"
         },
         {
           "id": "WKEP8CUAAOgdq5Ww",
@@ -1852,7 +2156,7 @@
 
           ],
           "type": "latest",
-          "slug": "latest---tribal-ddb"
+          "slug": "latest---ddb"
         },
         {
           "id": "WKEP8CUAAOgdq5Ww",
@@ -1860,7 +2164,7 @@
 
           ],
           "type": "latest",
-          "slug": "latest---tribal-ddb"
+          "slug": "latest---ddb"
         },
         {
           "id": "WKEP8CUAAOgdq5Ww",
@@ -1868,7 +2172,7 @@
 
           ],
           "type": "latest",
-          "slug": "latest---tribal-ddb"
+          "slug": "latest---ddb"
         },
         {
           "id": "WKEP8CUAAOgdq5Ww",
@@ -1876,7 +2180,7 @@
 
           ],
           "type": "latest",
-          "slug": "latest---tribal-ddb"
+          "slug": "latest---ddb"
         },
         {
           "id": "WKEP8CUAAOgdq5Ww",
@@ -1884,7 +2188,7 @@
 
           ],
           "type": "latest",
-          "slug": "latest---tribal-ddb"
+          "slug": "latest---ddb"
         },
         {
           "id": "WKEP8CUAAOgdq5Ww",
@@ -1892,18 +2196,18 @@
 
           ],
           "type": "latest",
-          "slug": "latest---tribal-ddb"
+          "slug": "latest---ddb"
         }
       ],
       "data": {
         "latest": {
           "meta-title": {
             "type": "Text",
-            "value": "Latest  | Tribal DDB"
+            "value": "Latest  | DDB"
           },
           "meta-description": {
             "type": "Text",
-            "value": "Latest news from Tribal DDB."
+            "value": "Latest news from DDB."
           },
           "foregroundColor": {
             "type": "Color",
@@ -2061,7 +2365,7 @@
                             "tags": [
 
                             ],
-                            "slug": "latest---tribal-ddb",
+                            "slug": "latest---ddb",
                             "uid": "latest"
                           },
                           "isBroken": false
@@ -2138,7 +2442,7 @@
                             "tags": [
 
                             ],
-                            "slug": "latest---tribal-ddb",
+                            "slug": "latest---ddb",
                             "uid": "latest"
                           },
                           "isBroken": false
@@ -2281,7 +2585,7 @@
                             "tags": [
 
                             ],
-                            "slug": "latest---tribal-ddb",
+                            "slug": "latest---ddb",
                             "uid": "latest"
                           },
                           "isBroken": false
@@ -2344,7 +2648,7 @@
                             "tags": [
 
                             ],
-                            "slug": "latest---tribal-ddb",
+                            "slug": "latest---ddb",
                             "uid": "latest"
                           },
                           "isBroken": false
@@ -2421,7 +2725,7 @@
                             "tags": [
 
                             ],
-                            "slug": "latest---tribal-ddb",
+                            "slug": "latest---ddb",
                             "uid": "latest"
                           },
                           "isBroken": false
@@ -2460,7 +2764,7 @@
                             "tags": [
 
                             ],
-                            "slug": "latest---tribal-ddb",
+                            "slug": "latest---ddb",
                             "uid": "latest"
                           },
                           "isBroken": false
@@ -2493,7 +2797,7 @@
                             "tags": [
 
                             ],
-                            "slug": "latest---tribal-ddb",
+                            "slug": "latest---ddb",
                             "uid": "latest"
                           },
                           "isBroken": false
@@ -2570,7 +2874,7 @@
                             "tags": [
 
                             ],
-                            "slug": "latest---tribal-ddb",
+                            "slug": "latest---ddb",
                             "uid": "latest"
                           },
                           "isBroken": false
@@ -2701,7 +3005,7 @@
                             "tags": [
 
                             ],
-                            "slug": "latest---tribal-ddb",
+                            "slug": "latest---ddb",
                             "uid": "latest"
                           },
                           "isBroken": false
@@ -2768,7 +3072,7 @@
                             "tags": [
 
                             ],
-                            "slug": "latest---tribal-ddb",
+                            "slug": "latest---ddb",
                             "uid": "latest"
                           },
                           "isBroken": false
@@ -2795,7 +3099,7 @@
       "id": "WKoxZSgAACgAOhS1",
       "uid": "contact",
       "type": "contact",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WKzitSkAACoAoJnb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK0H8ikAACgAoT3D&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
       "tags": [
 
       ],

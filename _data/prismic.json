@@ -5,11 +5,11 @@
       "data": {
         "meta-title": {
           "type": "Text",
-          "value": "Work  | Tribal DDB"
+          "value": "Work  | DDB"
         },
         "meta-description": {
           "type": "Text",
-          "value": "Work from Tribal DDB."
+          "value": "Work from DDB."
         },
         "foregroundColor": {
           "type": "Color",
@@ -149,7 +149,7 @@
                         "tags": [
 
                         ],
-                        "slug": "work---tribal-ddb",
+                        "slug": "work---ddb",
                         "uid": "work"
                       },
                       "isBroken": false
@@ -217,7 +217,7 @@
                         "tags": [
 
                         ],
-                        "slug": "work---tribal-ddb",
+                        "slug": "work---ddb",
                         "uid": "work"
                       },
                       "isBroken": false
@@ -289,7 +289,7 @@
                         "tags": [
 
                         ],
-                        "slug": "work---tribal-ddb",
+                        "slug": "work---ddb",
                         "uid": "work"
                       },
                       "isBroken": false
@@ -357,7 +357,7 @@
                         "tags": [
 
                         ],
-                        "slug": "work---tribal-ddb",
+                        "slug": "work---ddb",
                         "uid": "work"
                       },
                       "isBroken": false
@@ -429,7 +429,7 @@
                         "tags": [
 
                         ],
-                        "slug": "work---tribal-ddb",
+                        "slug": "work---ddb",
                         "uid": "work"
                       },
                       "isBroken": false
@@ -453,11 +453,250 @@
   ],
   "case-studies": [
     {
+      "uid": "volkswagen-tough-sell",
+      "data": {
+        "meta-title": {
+          "type": "Text",
+          "value": "Volkswagen Tough Sell | DDB"
+        },
+        "foregroundColor": {
+          "type": "Color",
+          "value": "#000000"
+        },
+        "backgroundColor": {
+          "type": "Color",
+          "value": "#ffffff"
+        },
+        "sections": {
+          "type": "SectionList",
+          "value": [
+            {
+              "type": "case-study-work-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "Volkswagen"
+                  },
+                  "copy": {
+                    "type": "Text",
+                    "value": "Can we sell a Golf to town that doesn’t need its city technology?"
+                  },
+                  "image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1920,
+                          "height": 1201
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "http://ddb-website.cdn.prismic.io/ddb-website/8b60104ff46d4cdc7a975e68342d633cd2d50dd3_vw0.jpg"
+                      },
+                      "views": {
+                        "mobile": {
+                          "dimensions": {
+                            "width": 840,
+                            "height": 1350
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "http://ddb-website.cdn.prismic.io/ddb-website/d2ee676df4b1a2ff764a682ef9f42f8532952a9f_vw0.jpg"
+                        },
+                        "desktop": {
+                          "dimensions": {
+                            "width": 1920,
+                            "height": 900
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "http://ddb-website.cdn.prismic.io/ddb-website/1515c66099db2fd1148a4e551e17efb948e62eac_vw0.jpg"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "content-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "So what was the brief then?"
+                  },
+                  "subline": {
+                    "type": "Text",
+                    "value": "The job was to raise the consideration of the new model Golf, boost understanding of its advanced tech features and deliver more test-drives to Volkswagen dealers."
+                  }
+                }
+              ]
+            },
+            {
+              "type": "image-tile",
+              "value": [
+                {
+                  "image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1920,
+                          "height": 900
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "http://ddb-website.cdn.prismic.io/ddb-website/8196dd39edfbd6d6318789ca3e36ca9b3043011a_tough-sell-1.jpg"
+                      },
+                      "views": {
+                        "desktop": {
+                          "dimensions": {
+                            "width": 1920,
+                            "height": 900
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "http://ddb-website.cdn.prismic.io/ddb-website/8196dd39edfbd6d6318789ca3e36ca9b3043011a_tough-sell-1.jpg"
+                        },
+                        "mobile": {
+                          "dimensions": {
+                            "width": 800,
+                            "height": 820
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "http://ddb-website.cdn.prismic.io/ddb-website/6097e57ef9cbf2523343d5bc18437295576b252b_tough-sell-1.jpg"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "content-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "An idea that was destined to fail…"
+                  },
+                  "subline": {
+                    "type": "Text",
+                    "value": "We developed an online series about a Volkswagen dealer given an impossible task. The premise was to sell the ultimate city car in an outback town filled with folks with no want or need for it."
+                  }
+                }
+              ]
+            },
+            {
+              "type": "video-tile",
+              "value": [
+                {
+                  "video": {
+                    "type": "Link.web",
+                    "value": {
+                      "url": "https://www.youtube.com/watch?v=6wEFjop9mEY"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "content-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "Just as we expected…"
+                  },
+                  "subline": {
+                    "type": "Text",
+                    "value": "Our rep Tom, made a grand total of zero sales in the town but on Facebook where the series was shown, viewers loved every awkward minute."
+                  }
+                }
+              ]
+            },
+            {
+              "type": "video-tile",
+              "value": [
+                {
+                  "video": {
+                    "type": "Link.web",
+                    "value": {
+                      "url": "https://www.youtube.com/watch?v=6wEFjop9mEY"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "content-tile",
+              "value": [
+                {
+                  "headline": {
+                    "type": "Text",
+                    "value": "Facebook becomes a broadcast channel"
+                  },
+                  "subline": {
+                    "type": "Text",
+                    "value": "We turned Facebook into our broadcast channel, so we could directly target potential buyers with the 6-month series."
+                  }
+                }
+              ]
+            },
+            {
+              "type": "image-tile",
+              "value": [
+                {
+                  "image": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1023,
+                          "height": 512
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "http://ddb-website.cdn.prismic.io/ddb-website/adee8d5da4aa3252d9afeb5d72ddea5f4df82093_vw2.jpg"
+                      },
+                      "views": {
+                        "desktop": {
+                          "dimensions": {
+                            "width": 1920,
+                            "height": 900
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "http://ddb-website.cdn.prismic.io/ddb-website/4f927f0c7f588ebce34f0ac738edeeaff2000931_vw2.jpg"
+                        },
+                        "mobile": {
+                          "dimensions": {
+                            "width": 800,
+                            "height": 820
+                          },
+                          "alt": null,
+                          "copyright": null,
+                          "url": "http://ddb-website.cdn.prismic.io/ddb-website/ba040845e661883acac51dfa1dec92650a431f4d_vw2.jpg"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
       "uid": "the-sydney-opera-house",
       "data": {
         "meta-title": {
           "type": "Text",
-          "value": "The Sydney Opera House"
+          "value": "The Sydney Opera House | DDB"
         },
         "foregroundColor": {
           "type": "Color",
@@ -1491,11 +1730,11 @@
       "data": {
         "meta-title": {
           "type": "Text",
-          "value": "Latest  | Tribal DDB"
+          "value": "Latest  | DDB"
         },
         "meta-description": {
           "type": "Text",
-          "value": "Latest news from Tribal DDB."
+          "value": "Latest news from DDB."
         },
         "foregroundColor": {
           "type": "Color",
@@ -1644,7 +1883,7 @@
                         "tags": [
 
                         ],
-                        "slug": "latest---tribal-ddb",
+                        "slug": "latest---ddb",
                         "uid": "latest"
                       },
                       "isBroken": false
@@ -1716,7 +1955,7 @@
                         "tags": [
 
                         ],
-                        "slug": "latest---tribal-ddb",
+                        "slug": "latest---ddb",
                         "uid": "latest"
                       },
                       "isBroken": false
@@ -1849,7 +2088,7 @@
                         "tags": [
 
                         ],
-                        "slug": "latest---tribal-ddb",
+                        "slug": "latest---ddb",
                         "uid": "latest"
                       },
                       "isBroken": false
@@ -1907,7 +2146,7 @@
                         "tags": [
 
                         ],
-                        "slug": "latest---tribal-ddb",
+                        "slug": "latest---ddb",
                         "uid": "latest"
                       },
                       "isBroken": false
@@ -1979,7 +2218,7 @@
                         "tags": [
 
                         ],
-                        "slug": "latest---tribal-ddb",
+                        "slug": "latest---ddb",
                         "uid": "latest"
                       },
                       "isBroken": false
@@ -2013,7 +2252,7 @@
                         "tags": [
 
                         ],
-                        "slug": "latest---tribal-ddb",
+                        "slug": "latest---ddb",
                         "uid": "latest"
                       },
                       "isBroken": false
@@ -2046,7 +2285,7 @@
                         "tags": [
 
                         ],
-                        "slug": "latest---tribal-ddb",
+                        "slug": "latest---ddb",
                         "uid": "latest"
                       },
                       "isBroken": false
@@ -2118,7 +2357,7 @@
                         "tags": [
 
                         ],
-                        "slug": "latest---tribal-ddb",
+                        "slug": "latest---ddb",
                         "uid": "latest"
                       },
                       "isBroken": false
@@ -2239,7 +2478,7 @@
                         "tags": [
 
                         ],
-                        "slug": "latest---tribal-ddb",
+                        "slug": "latest---ddb",
                         "uid": "latest"
                       },
                       "isBroken": false
@@ -2301,7 +2540,7 @@
                         "tags": [
 
                         ],
-                        "slug": "latest---tribal-ddb",
+                        "slug": "latest---ddb",
                         "uid": "latest"
                       },
                       "isBroken": false

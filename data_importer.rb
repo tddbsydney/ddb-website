@@ -23,7 +23,7 @@ class DataImporter
 
     # Get raw data from Prismic.io
     begin
-      url = config["endpoint"] + "/documents/search?ref=#{@prismic_api.master_ref.ref}&format=json"
+      url = config["endpoint"] + "/documents/search?ref=#{@prismic_api.master_ref.ref}&format=json&pageSize=100"
       puts ">> Querying '#{url}'..."
       uri = URI(url)
       response = Net::HTTP.get(uri)
