@@ -272,6 +272,17 @@
                       }
                     ]
                   }
+                },
+                "align" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Alignment",
+                    "placeholder" : "left",
+                    "options" : [
+                      "center",
+                      "right"
+                    ]
+                  }
                 }
               }
             }
