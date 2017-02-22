@@ -143,6 +143,7 @@
 //   Typography - Font Sizes, Colors
 // -------------------------------------
 $line_height_root: 1.5625em;
+$line_height_copy: 1.46em;
 $line_height_head: 1.12em;
 $line_height_sub:  1.25em;
 
@@ -162,7 +163,7 @@ h5 { @extend %font-size-h5; }
 
 h1, h2     { line-height: $line_height_head; }
 h3, h4, h5 { line-height: $line_height_sub;  }
-ul, ol, li, a, p { line-height: $line_height_root; }
+ul, ol, li, a, p { line-height: $line_height_copy; }
 
 h1, h2, h3, h4, h5 {
   color: white;
@@ -173,8 +174,6 @@ h1, h2, h3, h4, h5 {
 
 ul, ol, li, p, a {
   @extend %font-size-p;
-  line-height: inherit;
-
   &:first-child { margin-top: 0; }
   &:last-child  { margin-bottom: 0; }
 }

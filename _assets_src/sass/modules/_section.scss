@@ -31,15 +31,19 @@ $section_margin_ret: $section_pad_ret; // retina
   @include desktop-lg-up { padding-bottom: $section_pad_ret * $mult; }
 }
 
+
+// mixin - padding - vertical
+@mixin section--padding-v($mult: 1) {
+  @include section--padding-top($mult);
+  @include section--padding-bottom($mult);
+}
+
 // modifier - padding - top, bottom
-%section--padding-top { @include section--padding-top; }
+%section--padding-top    { @include section--padding-top; }
 %section--padding-bottom { @include section--padding-bottom; }
 
 // modifier - padding - vertical
-%section--padding-v {
-  @extend %section--padding-top;
-  @extend %section--padding-bottom;
-}
+%section--padding-v { @include section--padding-v; }
 
 // mixin - padding - left
 @mixin section--padding-left($mult: 1) {
@@ -55,21 +59,27 @@ $section_margin_ret: $section_pad_ret; // retina
   @include desktop-lg-up { padding-right: $section_pad_ret * $mult; }
 }
 
+// mixin - padding - horizontal
+@mixin section--padding-h($mult: 1) {
+  @include section--padding-left($mult);
+  @include section--padding-right($mult);
+}
+
 // modifier - padding - left, right
-%section--padding-left { @include section--padding-left; }
+%section--padding-left  { @include section--padding-left; }
 %section--padding-right { @include section--padding-right; }
 
 // modifier - padding - horizontal
-%section--padding-h {
-  @extend %section--padding-left;
-  @extend %section--padding-right;
+%section--padding-h { @include section--padding-h; }
+
+// mixin - padding
+@mixin section--padding($mult: 1) {
+  @include section--padding-v($mult);
+  @include section--padding-h($mult);
 }
 
 // modifier - padding
-%section--padding {
-  @extend %section--padding-v;
-  @extend %section--padding-h;
-}
+%section--padding { @include section--padding; }
 
 // -------------------------------------
 //   Section - Margin

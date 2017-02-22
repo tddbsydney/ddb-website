@@ -30,8 +30,7 @@
   @include mobile-up {
     transition: none;
     background-color: transparent;
-    @include section--padding-top(3/4);
-    @include section--padding-bottom(3/4);
+    @include section--padding-v(3/4);
   }
   
   a   { @extend %font-size-h5; color: white; }
@@ -95,8 +94,9 @@
 
     @include mobile {
       display: block;
-      padding-top: $section_pad_mob;
-      padding-bottom: $section_pad_mob;
+      @include font-size-h2(false);
+      padding: ($section_pad_mob / 1.5) 0;
+      &.link--active { padding-bottom: $section_pad_mob; }
     }
   }
 }
@@ -125,13 +125,9 @@
 
   > img { 
     @extend %center;
-    max-width: 6vw;
-    padding-bottom: ($link_pad_vert / 2);
-
-    @include tablet {
-      max-width: 7vw;
-       padding-bottom: ($link_pad_vert / 1);
-    }
+    max-width: 5vw;
+    padding-bottom: ($link_pad_vert * 1.25);
+    @include tablet { max-width: 6vw; }
 
     @include mobile { 
       max-width: 16vw;
