@@ -41,6 +41,10 @@
     *:first-child { margin-top: 0; }
     *:last-child { margin-bottom: 0; }
 
+    .content-tile__content--copy {
+      @extend %font-size-h3;
+    }
+
     .content-tile__content--headline,
     .content-tile__content--subline,
     .content-tile__content--copy {
@@ -58,18 +62,23 @@
 
     .content-tile__list {
       @extend %flex--row;
+
+      padding: 0;
+      margin: 0;
       @include section--padding-left(1);
       @include section--padding-right(1);
 
       .content-tile__listitem {
         @extend %flex--col;
+
+        padding: 0;
         @include section--padding-left(0.5);
         @include section--padding-right(0.5);
-
         margin: 0;
-
         @include section--margin-top(0.5);
 
+        list-style: none;
+        @extend %font-size-h5;
         text-align: left;
         flex-basis: 50%;
       }
