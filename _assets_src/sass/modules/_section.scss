@@ -159,7 +159,7 @@ section { @extend %section; }
     width: 100vw;
   }
 
-  &--footer {
-    /* wmpty block */
-  }
+  &--first  { /* wmpty block */ }
+  &--last   { /* wmpty block */ }
+  &--footer { /* wmpty block */ }
 }

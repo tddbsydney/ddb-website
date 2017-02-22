@@ -1,7 +1,7 @@
 {% for section in include.data %}
 
-  <!-- section {{section.type}} -->
-  <section>
+  <!-- section -->
+  <section class="section{% if forloop.first %} section--first{% endif %}{% if forloop.last %} section--last{% endif %}" >
 
     {% case section.type %}
 
@@ -55,6 +55,6 @@
 
     {% endcase %}
 
-  </section><!-- section {{section.type}} end -->
+  </section><!-- section end -->
 
 {% endfor %}

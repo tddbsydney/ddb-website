@@ -89,7 +89,7 @@
                   },
                   "align": {
                     "type": "Select",
-                    "value": "topRight"
+                    "value": "right"
                   }
                 }
               ]
@@ -655,12 +655,12 @@
                     "value": {
                       "main": {
                         "dimensions": {
-                          "width": 1024,
-                          "height": 530
+                          "width": 900,
+                          "height": 302
                         },
                         "alt": null,
                         "copyright": null,
-                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/575e3cfb9582cde5113fb07d32bd43d638902eae_opera5.png"
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/59c5c119e21c999e7d28de0ef729529d20a06ad5_opera5.png"
                       },
                       "views": {
                       }
@@ -671,12 +671,12 @@
                     "value": {
                       "main": {
                         "dimensions": {
-                          "width": 1024,
-                          "height": 530
+                          "width": 900,
+                          "height": 302
                         },
                         "alt": null,
                         "copyright": null,
-                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/575e3cfb9582cde5113fb07d32bd43d638902eae_opera5.png"
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/59c5c119e21c999e7d28de0ef729529d20a06ad5_opera5.png"
                       },
                       "views": {
                       }
@@ -702,12 +702,12 @@
                     "value": {
                       "main": {
                         "dimensions": {
-                          "width": 1024,
-                          "height": 530
+                          "width": 781,
+                          "height": 220
                         },
                         "alt": null,
                         "copyright": null,
-                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/02267cda8c490e6a9600a60b989458e99147f15f_opera6.png"
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/ab43a91c6fdf470a5ee7dab142e4442e47ddb736_opera6.png"
                       },
                       "views": {
                       }
@@ -718,12 +718,12 @@
                     "value": {
                       "main": {
                         "dimensions": {
-                          "width": 1024,
-                          "height": 530
+                          "width": 781,
+                          "height": 220
                         },
                         "alt": null,
                         "copyright": null,
-                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/02267cda8c490e6a9600a60b989458e99147f15f_opera6.png"
+                        "url": "https://prismic-io.s3.amazonaws.com/ddb-website/ab43a91c6fdf470a5ee7dab142e4442e47ddb736_opera6.png"
                       },
                       "views": {
                       }

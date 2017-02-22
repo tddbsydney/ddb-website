@@ -366,7 +366,8 @@
         delay: 250,   // delay in ms
         duration: 500, // duration in ms
         durationSlow: (500 * 1.3), // duration in ms
-        durationFast: (500 * 0.5), // duration in ms
+        durationFast: (500 * 0.6), // duration in ms
+        durationInstant: (500 * 0.4) // duration in ms
       },
 
       // timeout

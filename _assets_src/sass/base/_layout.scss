@@ -43,9 +43,11 @@ html, body {
 // ( a temporary placeholder until
 // image load times are improved )
 body { 
+  opacity: 0;
   @extend %animation-fade-in;
-  animation-delay: $anim_delay;
-  animation-duration: $anim_time_slow;
+
+  animation-delay: ($anim_delay * 1.5);
+  animation-duration: ($anim_time_slow * 1.0);
   animation-timing-function: $ease_in_out_quad;
 }
 
