@@ -897,7 +897,7 @@ var CONFIG = require("../config");
         $(_el.nav).velocity("transition.slideUpIn", {
           easing: "easeInOutQuad", 
           delay: CONFIG.animation.delay,
-          duration: CONFIG.animation.duration,
+          duration: CONFIG.animation.durationFast,
           complete: function() { /* empty block */ }
         });
       }); 
@@ -952,7 +952,7 @@ var CONFIG = require("../config");
         // perform the new animation
         $(_el.nav).velocity("transition.slideDownOut", {
           easing: "easeInOutQuad", delay: 0,
-          duration: CONFIG.animation.duration,
+          duration: CONFIG.animation.durationFast,
           complete: function() { /* empty block */ }
         });
       });
@@ -1629,7 +1629,8 @@ var CONFIG = require("../config");
         delay: 250,   // delay in ms
         duration: 500, // duration in ms
         durationSlow: (500 * 1.3), // duration in ms
-        durationFast: (500 * 0.5), // duration in ms
+        durationFast: (500 * 0.6), // duration in ms
+        durationInstant: (500 * 0.4) // duration in ms
       },
 
       // timeout
