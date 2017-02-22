@@ -740,7 +740,10 @@ var CONFIG = require("../config");
 
     var _elHtml = null; // reference to the html DOM element
     var _elBody = null; // reference to the body DOM element
-    var _isMenuOpen = false; // flag to indicate if the menu is open
+    var _hierarchy = []; // array of p[aths with the page hierarcy
+
+    var _menuTimer = null; // timer used when opening (or) closing the menu
+    var _isMenuOpen = false; // flag to indicate if the header menu is open
 
     // ---------------------------------------------
     //   Public members
@@ -793,6 +796,38 @@ var CONFIG = require("../config");
       if(_isMenuOpen && !(CONFIG.breakpoint.isMobile || CONFIG.breakpoint.isMobileSmall)) {
         close(); // close the header menu if it is not longer relevant
       }
+    }
+
+
+    // @name _isPageChild
+    // @desc function to check if the given page is a child
+    // @return {Boolean} - the boolean result of the page hierarchy check
+    function _isPageChild() {
+      // get all the possible paths that leads to the current page
+      var paths = window.location.pathname.split("/");
+      _hierarchy = []; // empty the hierarchy array
+
+      // loop through each of the paths and
+      // populate the page hierarchy array
+      paths.forEach(function(path, index) {
+        if(path.length > 1) { _hierarchy.push(path); }
+      });
+
+      // return if this is a child page or not
+      return (_hierarchy.length > 1);
+    }
+
+    // @name _isPageParent
+    // @desc function to check if the given page is a parent
+    // @return {Boolean} - the boolean result of the page hierarchy check
+    function _isPageParent() { return !_isPageChild(); }
+
+    // @name _getPageParent
+    // @desc function to get the parent of the current child page
+    // @return {String} - the link href value to point to the parent
+    function _getPageParent() {
+      if(_isPageParent()) { return ""; }
+      else { return _hierarchy[_hierarchy.length - 2]; }
     }
 
     // @name _isLinkActive
@@ -862,7 +897,7 @@ var CONFIG = require("../config");
         $(_el.nav).velocity("transition.slideUpIn", {
           easing: "easeInOutQuad", 
           delay: CONFIG.animation.delay,
-          duration: CONFIG.animation.duration,
+          duration: CONFIG.animation.durationFast,
           complete: function() { /* empty block */ }
         });
       }); 
@@ -892,13 +927,20 @@ var CONFIG = require("../config");
       _elHtml.removeAttribute("data-scroll");
       _elBody.removeAttribute("data-scroll");
 
+      // clear any previously set timers
+      if(_menuTimer != null) {
+        clearTimeout(_menuTimer);
+        _menuTimer = null;
+      }
+
       // make sure the nav is visible
       // add add, remove the modifiers
       _el.nav.style.opacity = 1;
       requestAnimationFrame(function() {
-        setTimeout(function() {
-        _el.main.classList.add(_class.modifier.closed);
-        _el.main.classList.remove(_class.modifier.open);
+        // change the modifer classes after a set timeout
+        _menuTimer = setTimeout(function() {
+          _el.main.classList.add(_class.modifier.closed);
+          _el.main.classList.remove(_class.modifier.open);
         }, CONFIG.animation.delay);
       });
 
@@ -910,7 +952,7 @@ var CONFIG = require("../config");
         // perform the new animation
         $(_el.nav).velocity("transition.slideDownOut", {
           easing: "easeInOutQuad", delay: 0,
-          duration: CONFIG.animation.duration,
+          duration: CONFIG.animation.durationFast,
           complete: function() { /* empty block */ }
         });
       });
@@ -952,6 +994,20 @@ var CONFIG = require("../config");
     // the menu open and close links
     _addOpenClickListener();
     _addCloseClickListener();
+
+    // check if this is a child page
+    if(!_isPageChild()) { 
+      // hide the back link if it is not a child
+      _el.back.style.visibility = "hidden"; 
+    }
+
+    else { 
+      // show the back link if it is a child
+      // and set the href atttribute of the 
+      // back link to point to the page page
+      _el.back.style.visibility = "visible"; 
+      query("a", _el.back)[0].setAttribute("href", "/" + _getPageParent());
+    }
 
     // ---------------------------------------------
     //   Instance block
@@ -1573,7 +1629,8 @@ var CONFIG = require("../config");
         delay: 250,   // delay in ms
         duration: 500, // duration in ms
         durationSlow: (500 * 1.3), // duration in ms
-        durationFast: (500 * 0.5), // duration in ms
+        durationFast: (500 * 0.6), // duration in ms
+        durationInstant: (500 * 0.4) // duration in ms
       },
 
       // timeout
