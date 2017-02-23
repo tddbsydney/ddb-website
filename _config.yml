@@ -50,7 +50,7 @@ page_gen:
   - data: prismic.case-studies
     template: data_page_gen
     name: uid
-    dir: work
+    dir: sydney/work
 page_gen-dirs: true
 jekyll_tidy:
   exclude: []

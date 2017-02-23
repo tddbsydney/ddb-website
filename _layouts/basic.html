@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 {% include _relative_links_base_url.html %}
-{% assign page_data = site.data.prismic[page.data][0].data %}
 
 <!-- html -->
 <html>
@@ -16,9 +15,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
 
     <!-- default meta data -->
-    <title>{{ page_data.title.value | default: 'Tribal DDB Sydney' }}</title>
-    <meta name="description" content="{{ page_data.description.value | default: 'Tribal DDB Sydney' }}">
-    <meta name="keywords" content="{{ page_data.keywords.value | default: 'Tribal,DDB,Sydney' }}">
+    <title>{{ page.title.value | default: 'DDB Sydney' }}</title>
+    <meta name="description" content="{{ page.description.value | default: 'DDB Sydney' }}">
+    <meta name="keywords" content="{{ page.keywords.value | default: 'DDB,Sydney' }}">
     <link rel="shortcut icon" href="{{base}}/assets/images/favicon.png">
 
     <!-- bower:css -->
@@ -35,21 +34,13 @@
   </head><!-- head end -->
 
   <!-- body -->
-  <body style="opacity: 0;{% if page_data.backgroundColor.value %} background-color: {{ page_data.backgroundColor.value }}{% endif %}">
+  <body>
 
-    {% unless page_data.header.value == 'hidden' %}
-      <section class="section section--header">
-      {% include components/header.html %}
-      </section>
-    {% endunless %}
+    <section class="section section--header">
+    {% include components/header.html basic="true" %}
+    </section>
 
     {{ content }}
-
-    {% unless page_data.footer.value == 'hidden' %}
-      <section class="section section--footer">
-      {% include components/footer.html %}
-      </section>
-    {% endunless %}
 
   </body><!-- body end -->
 

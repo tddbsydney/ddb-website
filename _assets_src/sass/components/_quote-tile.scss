@@ -18,16 +18,11 @@
   }
 
   .quote-tile__content {
-    @include section--padding-top(3.5);
-    @include section--padding-bottom(3.5);
-    @include section--padding-left(3.5);
-    @include section--padding-right(3.5);
+    @include section--padding(3.5);
 
     @include mobile {
-      @include section--padding-top(4);
-      @include section--padding-bottom(4);
-      @include section--padding-left(1);
-      @include section--padding-right(1);
+      @include section--padding-v(4);
+      @include section--padding-h(1);
     }
 
     display: table-cell;
@@ -47,19 +42,28 @@
 
     .quote-tile__image {
       @include section--margin-top(3);
-      @include section--margin-left(-1);
-      @include section--margin-right(-1);
+      @include section--margin-bottom(0);
 
-      img { width: 100%; }
+      &.top {
+        @include section--margin-top(0);
+        @include section--margin-bottom(3);
+      }
+
+      img {
+        width: 100%;
+        margin: auto;
+      }
 
       .quote-tile__image--desktop { display: block; }
       .quote-tile__image--mobile { display: none; }
 
       @include mobile {
-        @include section--margin-top(3);
-        @include section--margin-left(0);
-        @include section--margin-right(0);
+        text-align: center;
 
+        img {
+          max-width: 100%;
+          width: auto;
+        }
         .quote-tile__image--desktop { display: none; }
         .quote-tile__image--mobile  { display: block; }
       }

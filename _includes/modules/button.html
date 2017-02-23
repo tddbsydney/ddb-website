@@ -26,9 +26,11 @@
 
       {% when "Link.document" %}
         {% if link.value.document.type == "case-studies" %}
-          {{base}}/work/{{link.value.document.uid}}
+          {{base}}/sydney/work/{{link.value.document.uid}}
+        {% elsif link.value.document.uid == "latest" %}
+          {{base}}/sydney/
         {% else %}
-          {{base}}/{{link.value.document.uid}}
+          {{base}}/sydney/{{link.value.document.uid}}
         {% endif %}
 
     {% endcase %}

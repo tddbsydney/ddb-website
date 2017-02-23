@@ -1,0 +1,65 @@
+// -------------------------------------
+//   Component - About Tile
+// -------------------------------------
+/**
+  * @name about-tile
+  * @desc Styles for the about tile component.
+**/
+
+.about-tile {
+  @extend %section;
+  background-color: #000;
+
+  display: table;
+  min-height: 70vw;
+
+  @include mobile {
+    min-height: 100vw;
+  }
+
+  .about-tile__content {
+    @include section--padding-top(4.5);
+    @include section--padding-bottom(3.5);
+    @include section--padding-left(3.5);
+    @include section--padding-right(3.5);
+
+    @include mobile {
+      @include section--padding-top(6);
+      @include section--padding-bottom(4);
+      @include section--padding-left(1);
+      @include section--padding-right(1);
+    }
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+    .about-tile__content--headline {
+      display: inline-block;
+      font-size: 54px;
+      font-size: 5.3vw;
+      color: #fff;
+      line-height: 1.5em;
+      text-align: left;
+
+      @include mobile {
+        font-size: 11vw;
+      }
+
+      span {
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &.yellow {
+          color: #000;
+          background-color: #ffd107;
+        }
+      }
+
+      br {
+        display: block !important;
+      }
+    }
+  }
+}
