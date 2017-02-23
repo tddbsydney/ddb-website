@@ -1,11 +1,26 @@
 {% assign tile = include.data[0] %}
 {% assign fgCol = "" %}
+{% assign bgCol = "" %}
 
-{% if page_data.foregroundColor.value %}
+{% if tile.backgroundColor.value %}
+  {% capture bgCol %}
+
+    style="
+    {% if tile.backgroundColor.value %}
+      background-color: {{ tile.backgroundColor.value }};
+    {% endif %}
+    "
+
+  {% endcapture %}
+{% endif %}
+
+{% if tile.foregroundColor.value or page_data.foregroundColor.value %}
   {% capture fgCol %}
 
     style="
-    {% if page_data.foregroundColor.value %}
+    {% if tile.foregroundColor.value %}
+      color: {{ tile.foregroundColor.value }};
+    {% elsif page_data.foregroundColor.value %}
       color: {{ page_data.foregroundColor.value }};
     {% endif %}
     "
@@ -14,7 +29,7 @@
 {% endif %}
 
 <!-- content tile -->
-<div class="content-tile{{ page.page_data.uid | prepend: ' ' }}">
+<div class="content-tile{{ page.page_data.uid | prepend: ' ' }}"{{ bgCol | normalize_whitespace }}>
 
   <div class="content-tile__content">
 
@@ -27,17 +42,17 @@
     {% endif %}
 
     {% if tile.copy.value %}
-      <h3 class="content-tile__content--copy" data-align="{{ tile.alignCopy.value | default: 'center' }}"{{ fgCol | normalize_whitespace }}>{{ tile.copy.value }}</h3>
+      <p class="content-tile__content--copy" data-align="{{ tile.alignCopy.value | default: 'center' }}"{{ fgCol | normalize_whitespace }}>{{ tile.copy.value }}</p>
     {% endif %}
 
     {% if tile.list.value %}
-      <div class="content-tile__list">
+      <ul class="content-tile__list">
         {% for item in tile.list.value %}
-        <h5 class="content-tile__listitem"{{ fgCol | normalize_whitespace }}>
+        <li class="content-tile__listitem"{{ fgCol | normalize_whitespace }}>
           {{ item.text }}
-        </h5>
+        </li>
         {% endfor %}
-      </div>
+      </ul>
     {% endif %}
 
     {% if tile.imageDesktop.value.main.url or tile.imageMobile.value.main.url %}

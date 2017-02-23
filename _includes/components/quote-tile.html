@@ -1,11 +1,26 @@
 {% assign tile = include.data[0] %}
 {% assign fgCol = "" %}
+{% assign bgCol = "" %}
 
-{% if page_data.foregroundColor.value %}
+{% if tile.backgroundColor.value %}
+  {% capture bgCol %}
+
+    style="
+    {% if tile.backgroundColor.value %}
+      background-color: {{ tile.backgroundColor.value }};
+    {% endif %}
+    "
+
+  {% endcapture %}
+{% endif %}
+
+{% if tile.foregroundColor.value or page_data.foregroundColor.value %}
   {% capture fgCol %}
 
     style="
-    {% if page_data.foregroundColor.value %}
+    {% if tile.foregroundColor.value %}
+      color: {{ tile.foregroundColor.value }};
+    {% elsif page_data.foregroundColor.value %}
       color: {{ page_data.foregroundColor.value }};
     {% endif %}
     "
@@ -14,7 +29,7 @@
 {% endif %}
 
 <!-- quote tile -->
-<div class="quote-tile{{ page.page_data.uid | prepend: ' ' }}">
+<div class="quote-tile{{ page.page_data.uid | prepend: ' ' }}"{{ bgCol | normalize_whitespace }}>
 
   <div class="quote-tile__content">
 

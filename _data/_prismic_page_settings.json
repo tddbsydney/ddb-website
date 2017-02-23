@@ -378,6 +378,18 @@
                       "right"
                     ]
                   }
+                },
+                "foregroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Foreground Colour (optional)"
+                  }
+                },
+                "backgroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Background Colour (optional)"
+                  }
                 }
               }
             }
@@ -477,6 +489,18 @@
                       "height" : null
                     },
                     "thumbnails": [ ]
+                  }
+                },
+                "foregroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Foreground Colour (optional)"
+                  }
+                },
+                "backgroundColor": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Background Colour (optional)"
                   }
                 }
               }
