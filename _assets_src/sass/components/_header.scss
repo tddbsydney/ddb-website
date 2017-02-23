@@ -12,7 +12,7 @@
 
   text-align: center;
   @include mobile { min-height: 0; }
-  
+
   // modifer - closed
   &--closed {
     @include transitions(min-height, background-color);
@@ -21,14 +21,32 @@
     background-color: transparent;
     @include mobile { min-height: 0; }
   }
-  
+
   // modifer - open
-  &--open { 
+  &--open {
     @include transitions(min-height, background-color);
     transition-timing-function: $ease_in_out_quad;
 
-    background-color: black; 
+    background-color: black;
     @include mobile { min-height: 100vh; }
+  }
+
+  // modifer - basic
+  &--basic {
+    .header__back,
+    .header__menu {
+      display: none;
+    }
+
+    .header__nav {
+      .link {
+        display: none;
+      }
+    }
+
+    .header__logo {
+      pointer-events: none;
+    }
   }
 
   @include mobile-up {
@@ -36,17 +54,17 @@
     background-color: transparent;
     @include section--padding-v(3/4);
   }
-  
-  a   { 
+
+  a   {
     @extend %font-size-h5; color: white;
     @include mobile { @include font-size-h2(false); }
   }
 
-  a i { 
+  a i {
     @extend %font-size-h3; line-height: 1em !important;
     @include mobile { @include font-size-h2(false); }
   }
-  
+
   &__back, &__logo,
   &__menu, &__nav {
     @extend %flex--col;
@@ -84,7 +102,7 @@
   @extend %flex--row;
 
   @include mobile {
-     display: block; 
+     display: block;
 
     .header--closed & {
       transform: none;
@@ -130,19 +148,19 @@
 //   Header - Logo
 // -------------------------------------
 .header__logo {
-  &--desktop { 
+  &--desktop {
     align-self: center;
     padding-bottom: $link_pad_vert;
     @include mobile { display: none !important; }
   }
 
-  &--mobile  { 
+  &--mobile  {
     align-self: flex-start;
     padding-top: $link_pad_vert / 2;
     @include mobile-up { display: none; }
   }
 
-  > img { 
+  > img {
     @extend %center;
     max-width: 5vw;
     @include tablet { max-width: 6vw; }
