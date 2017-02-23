@@ -9,11 +9,8 @@
 .footer {
   @extend %flex--row;
 
-  @include section--padding-top(2);
-  @include section--padding-bottom(2);
-
-  @include section--padding-left(0.5);
-  @include section--padding-right(0.5);
+  @include section--padding-v(2);
+  @include section--padding-h(0.5);
 
   background-color: black;
 }
@@ -26,9 +23,7 @@ $footer_span_padding: (0.25em / 4);
 
 .footer__col {
   @extend %flex--col;
-
-  @include section--padding-left(0.5);
-  @include section--padding-right(0.5);
+  @include section--padding-h(0.5);
 
   .footer__mob-copy { display: none;  }
   .footer__des-copy { display: block; }

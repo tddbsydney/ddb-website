@@ -58,6 +58,28 @@ $link_line_h: 2px;
   }
 }
 
+// underlined link
+// ( to be used for links which 
+// need a multi-line underline 
+// without line animations )
+%ulink {
+  display: inline-block;
+  position: relative;
+
+  span {
+    display: inline;
+    position: relative;
+    padding-bottom: $link_pad_vert;
+
+    color: white;
+    line-height: $line_height_copy + ($link_pad_vert * 1.25);
+
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: $link_line_h;
+  }
+}
+
 // -------------------------------------
 //   Link - Colors
 // -------------------------------------
@@ -74,6 +96,22 @@ $link_line_h: 2px;
   span {
     color: black;
     &:before { background-color: black; }
+  }
+}
+
+// modifer - white
+%ulink--white {
+  span {
+    color: white;
+    border-bottom-color: white;
+  }
+}
+
+// modifer - black
+%ulink--black {
+  span {
+    color: black;
+    border-bottom-color: black;
   }
 }
 
@@ -109,4 +147,9 @@ $link_line_h: 2px;
 .link { 
   @extend %link;
   &--active { @extend %link--active; }
+}
+
+// link
+.ulink { 
+  @extend %ulink;
 }
