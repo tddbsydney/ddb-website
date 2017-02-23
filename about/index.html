@@ -23,7 +23,7 @@
     <!-- endcustom -->
   </head><!-- head end -->
   <!-- body -->
-  <body style="opacity: 0; background-color: #000000" data-foreground-color="#ffffff">
+  <body style="opacity: 0; background-color: #000000">
     <section class="section section--header">
       <!-- header -->
       <header class="header header--closed">
@@ -77,7 +77,13 @@
     <section class="section section--first" >
       <!-- about tile -->
       <div class="about-tile">
-        <p>{"type"=>"paragraph", "text"=>"Creating", "spans"=>[]}{"type"=>"paragraph", "text"=>"<span>Unreasonable</span>", "spans"=>[]}{"type"=>"paragraph", "text"=>"Growth", "spans"=>[]}</p>
+        <div class="about-tile__content">
+          <h1 class="about-tile__content--headline">
+            <span>Creating</span><!----><br/>
+            <span class="yellow">Unreasonable</span><!----><br/>
+            <span>Growth</span>
+          </h1>
+        </div>
       </div>
       <!-- about tile end -->
     </section>
@@ -85,7 +91,7 @@
     <!-- section -->
     <section class="section" >
       <!-- content tile -->
-      <div class="content-tile "style=" background-color: #ffd107; ">
+      <div class="content-tile " style=" background-color: #ffd107; ">
         <div class="content-tile__content">
           <p class="content-tile__content--copy" data-align="left"style=" color: #000000; "><b>How do brands and businesses actually grow?</b>
             <br class="all"/>
@@ -99,7 +105,7 @@
             <br class="all"/>
             <br class="all"/>
             <i>“We are feeling beings who can think, not thinking beings who can feel.”</i></p>
-          <div class="content-tile__image">
+          <div class="content-tile__image ">
             <img class="content-tile__image--desktop" src="http://ddb-website.cdn.prismic.io/ddb-website/647bdccacbe30177df6ee7269366b192d23c3ad4_thinking_fast_and_slow_desktop.png" alt="">
             <img class="content-tile__image--mobile" src="http://ddb-website.cdn.prismic.io/ddb-website/438fca144896f1b6c215a027e0e548c4a4c8d384_thinking_fast_and_slow.png" alt="">
           </div>
@@ -111,7 +117,7 @@
     <!-- section -->
     <section class="section" >
       <!-- content tile -->
-      <div class="content-tile "style=" background-color: #ffffff; ">
+      <div class="content-tile " style=" background-color: #ffffff; ">
         <div class="content-tile__content">
           <p class="content-tile__content--copy" data-align="left"style=" color: #000000; "><b>A Challenge to Conventional Business Thinking</b>
             <br class="all"/>
@@ -139,8 +145,12 @@
     <!-- section -->
     <section class="section" >
       <!-- content tile -->
-      <div class="content-tile ">
+      <div class="content-tile " >
         <div class="content-tile__content">
+          <div class="content-tile__image top">
+            <img class="content-tile__image--desktop" src="http://ddb-website.cdn.prismic.io/ddb-website/f41e4b799921e2372a205b78c357382e66e6ca87_fame_feeling_fluency_desktop.png" alt="">
+            <img class="content-tile__image--mobile" src="http://ddb-website.cdn.prismic.io/ddb-website/4988ba783d92431a58a710ad29325fcd8932646d_fame_feeling_fluency.png" alt="">
+          </div>
           <p class="content-tile__content--copy" data-align="left"style=" color: #ffffff; ">We propose new rules of growth that are sympathetic to the latest evidence of the primacy of the emotional mind:
 
             <br class="all"/>
@@ -150,10 +160,6 @@
             <b>Feeling conquers thinking.</b>
             <br class="all"/>
             <b>Long term Fluency beats short term wins.</b></p>
-          <div class="content-tile__image">
-            <img class="content-tile__image--desktop" src="http://ddb-website.cdn.prismic.io/ddb-website/f41e4b799921e2372a205b78c357382e66e6ca87_fame_feeling_fluency_desktop.png" alt="">
-            <img class="content-tile__image--mobile" src="http://ddb-website.cdn.prismic.io/ddb-website/4988ba783d92431a58a710ad29325fcd8932646d_fame_feeling_fluency.png" alt="">
-          </div>
         </div>
       </div>
       <!-- content tile end -->
@@ -162,7 +168,7 @@
     <!-- section -->
     <section class="section section--last" >
       <!-- content tile -->
-      <div class="content-tile "style=" background-color: #ffd107; ">
+      <div class="content-tile " style=" background-color: #ffd107; ">
         <div class="content-tile__content">
           <p class="content-tile__content--copy" data-align="left"style=" color: #000000; "><b>Unreasonable Growth in Practice</b>
             <br class="all"/>
