@@ -522,40 +522,11 @@
               "label" : "About tile",
               "repeat" : false,
               "fields" : {
-                "headline" : {
-                  "type" : "Text",
-                  "config" : {
-                    "label" : "Headline",
-                    "placeholder" : "Headline text"
-                  }
-                },
-                "copy" : {
-                  "type" : "Text",
-                  "config" : {
-                    "label" : "Copy",
-                    "placeholder" : "Copy text"
-                  }
-                },
-                "image" : {
-                  "type" : "Image",
-                  "config" : {
-                    "label" : "Image",
-                    "constraint" : {
-                      "width" : null,
-                      "height" : null
-                    },
-                    "thumbnails": [
-                      {
-                        "name": "Desktop",
-                        "width": "1920",
-                        "height": "900"
-                      },
-                      {
-                        "name": "Mobile",
-                        "width": "800",
-                        "height": "820"
-                      }
-                    ]
+                "list": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "List",
+                    "multi": "paragraph"
                   }
                 }
               }
