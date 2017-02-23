@@ -42,6 +42,7 @@ html, body {
 // animate fade the page into view
 // ( a temporary placeholder until
 // image load times are improved )
+/*
 body { 
   opacity: 0;
   @extend %animation-fade-in;
@@ -50,6 +51,7 @@ body {
   animation-duration: ($anim_time_slow * 1.0);
   animation-timing-function: $ease_in_out_quad;
 }
+*/
 
 // image
 img {

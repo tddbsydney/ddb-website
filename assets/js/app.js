@@ -58,6 +58,9 @@ console.log(CONFIG);
     // ---------------------------------------------
     //   Private members
     // ---------------------------------------------
+    var _elHtml = null; // reference to the html DOM element
+    var _elBody = null; // reference to the body DOM element
+
     var _header = null; // object to hold a refernce for the header component
     var _promoVideos = []; // array of objects to hold references for the the promo video components
     var _hasFastClickAttached = false; // flag to indicate if fast click was attached
@@ -86,6 +89,10 @@ console.log(CONFIG);
     function init() {
       console.log("app.js: init() called.");
 
+      // get the html and body DOM elements
+      _elHtml = query("html")[0];
+      _elBody = query("body")[0];
+
       // instantiate FastClick on the body for eliminating
       // the 300ms delay between a physical tap and the 
       // firing of a click event on mobile browsers
@@ -100,6 +107,13 @@ console.log(CONFIG);
       // create the promo videos
       query(".promo-video").forEach(function(element, index){
         _promoVideos.push(new PromoVideo({ element: element }));
+      });
+
+      // animate fade the current page into view
+      $(_elBody).velocity("transition.fadeIn", {
+        easing: "easeInOutQuad", 
+        delay: CONFIG.animation.delay,
+        duration: CONFIG.animation.durationSlow
       });
     }
 
@@ -897,8 +911,7 @@ var CONFIG = require("../config");
         $(_el.nav).velocity("transition.slideUpIn", {
           easing: "easeInOutQuad", 
           delay: CONFIG.animation.delay,
-          duration: CONFIG.animation.durationFast,
-          complete: function() { /* empty block */ }
+          duration: CONFIG.animation.durationFast
         });
       }); 
 
@@ -952,8 +965,7 @@ var CONFIG = require("../config");
         // perform the new animation
         $(_el.nav).velocity("transition.slideDownOut", {
           easing: "easeInOutQuad", delay: 0,
-          duration: CONFIG.animation.durationFast,
-          complete: function() { /* empty block */ }
+          duration: CONFIG.animation.durationFast
         });
       });
 

@@ -11,20 +11,24 @@
   @extend %flex--row;
 
   text-align: center;
-  @include mobile { min-height: 100vh; }
+  @include mobile { min-height: 0; }
   
   // modifer - closed
   &--closed {
-    @include transitions(background-color);
+    @include transitions(min-height, background-color);
     transition-timing-function: $ease_in_out_quad;
+
     background-color: transparent;
+    @include mobile { min-height: 0; }
   }
   
   // modifer - open
   &--open { 
-    @include transitions(background-color);
+    @include transitions(min-height, background-color);
     transition-timing-function: $ease_in_out_quad;
+
     background-color: black; 
+    @include mobile { min-height: 100vh; }
   }
 
   @include mobile-up {
@@ -33,8 +37,15 @@
     @include section--padding-v(3/4);
   }
   
-  a   { @extend %font-size-h5; color: white; }
-  a i { @extend %font-size-h3; line-height: 1em !important; }
+  a   { 
+    @extend %font-size-h5; color: white;
+    @include mobile { @include font-size-h2(false); }
+  }
+
+  a i { 
+    @extend %font-size-h3; line-height: 1em !important;
+    @include mobile { @include font-size-h2(false); }
+  }
   
   &__back, &__logo,
   &__menu, &__nav {
@@ -94,7 +105,6 @@
 
     @include mobile {
       display: block;
-      @include font-size-h2(false);
       padding: ($section_pad_mob / 1.5) 0;
       &.link--active { padding-bottom: $section_pad_mob; }
     }
@@ -120,19 +130,22 @@
 //   Header - Logo
 // -------------------------------------
 .header__logo {
-  &--desktop { @include mobile { display: none !important; }}
-  &--mobile  { @include mobile-up { display: none; }}
+  &--desktop { 
+    align-self: center;
+    padding-bottom: $link_pad_vert;
+    @include mobile { display: none !important; }
+  }
+
+  &--mobile  { 
+    align-self: flex-start;
+    padding-top: $link_pad_vert / 2;
+    @include mobile-up { display: none; }
+  }
 
   > img { 
     @extend %center;
     max-width: 5vw;
-    padding-bottom: ($link_pad_vert * 1.25);
     @include tablet { max-width: 6vw; }
-
-    @include mobile { 
-      max-width: 16vw;
-      padding-bottom: 0;
-    }
+    @include mobile { max-width: 16vw; }
   }
 }
-
