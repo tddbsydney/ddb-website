@@ -13,44 +13,8 @@
   text-align: center;
   @include mobile { min-height: 0; }
 
-  // modifer - closed
-  &--closed {
-    @include transitions(min-height, background-color);
-    transition-timing-function: $ease_in_out_quad;
-
-    background-color: transparent;
-    @include mobile { min-height: 0; }
-  }
-
-  // modifer - open
-  &--open {
-    @include transitions(min-height, background-color);
-    transition-timing-function: $ease_in_out_quad;
-
-    background-color: black;
-    @include mobile { min-height: 100vh; }
-  }
-
-  // modifer - basic
-  &--basic {
-    .header__back,
-    .header__menu {
-      display: none;
-    }
-
-    .header__nav {
-      .link {
-        display: none;
-      }
-    }
-
-    .header__logo {
-      pointer-events: none;
-    }
-  }
-
   @include mobile-up {
-    transition: none;
+    transition: none !important;
     background-color: transparent;
     @include section--padding-v(3/4);
   }
@@ -82,6 +46,34 @@
 
   &__nav {
     @include mobile { flex: 10; flex-basis: 100%; }
+  }
+
+  // modifer - closed
+  &--closed {
+    @include transitions(min-height, background-color);
+    transition-timing-function: $ease_in_out_quad;
+
+    background-color: transparent;
+    @include mobile { min-height: 0; }
+  }
+
+  // modifer - open
+  &--open {
+    @include transitions(min-height, background-color);
+    transition-timing-function: $ease_in_out_quad;
+
+    background-color: black;
+    @include mobile { min-height: 100vh; }
+  }
+
+  // modifer - basic
+  &--basic {
+    .header {
+      &__nav > .link,
+      &__back, &__menu {
+        visibility: hidden;
+      }
+    }
   }
 }
 

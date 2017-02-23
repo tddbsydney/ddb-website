@@ -9,15 +9,16 @@
   "results": [
     {
       "id": "WK4T9ikAAL4opdjb",
-      "uid": "test111",
+      "uid": "test-vw",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK5Q9SkAADMkpuVd&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK4T9ikAAL4opdjb%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK6oXykAANk8qGXb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK4T9ikAAL4opdjb%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-22T22:44:34+0000",
-      "last_publication_date": "2017-02-23T00:02:38+0000",
+      "last_publication_date": "2017-02-23T09:13:07+0000",
       "slugs": [
+        "test-case-study-vw--ddb",
         "test111",
         "timi"
       ],
@@ -28,11 +29,11 @@
         "case-studies": {
           "meta-title": {
             "type": "Text",
-            "value": "test111"
+            "value": "Test Case Study VW | DDB"
           },
           "meta-description": {
             "type": "Text",
-            "value": "test111"
+            "value": "Case study for testing"
           },
           "foregroundColor": {
             "type": "Color",
@@ -58,21 +59,21 @@
                         "value": [
                           {
                             "type": "paragraph",
-                            "text": "Huhu, ",
+                            "text": "Lorem, ",
                             "spans": [
 
                             ]
                           },
                           {
                             "type": "paragraph",
-                            "text": "Timi,",
+                            "text": "Ipsum,",
                             "spans": [
 
                             ]
                           },
                           {
                             "type": "paragraph",
-                            "text": "Stinktier.",
+                            "text": "Dolar.",
                             "spans": [
 
                             ]
@@ -132,7 +133,7 @@
       "id": "WKEQFSUAAEUiq5ZX",
       "uid": "work",
       "type": "work",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK5Q9SkAADMkpuVd&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK6oXykAANk8qGXb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -676,7 +677,7 @@
       "id": "WK0GeCkAACgAoTc8",
       "uid": "volkswagen-tough-sell",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK5Q9SkAADMkpuVd&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0GeCkAACgAoTc8%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK6oXykAANk8qGXb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0GeCkAACgAoTc8%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -977,7 +978,7 @@
       "id": "WKpzRigAACgAOzbM",
       "uid": "the-sydney-opera-house",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK5Q9SkAADMkpuVd&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKpzRigAACgAOzbM%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK6oXykAANk8qGXb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKpzRigAACgAOzbM%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1382,7 +1383,7 @@
       "id": "WK0SfSkAACoAoWxH",
       "uid": "volkswagen-brand-love",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK5Q9SkAADMkpuVd&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0SfSkAACoAoWxH%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK6oXykAANk8qGXb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0SfSkAACoAoWxH%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1636,13 +1637,14 @@
       "id": "WKEQcCUAAKomq5fv",
       "uid": "test",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK5Q9SkAADMkpuVd&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK6oXykAANk8qGXb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:48:38+0000",
-      "last_publication_date": "2017-02-21T00:44:06+0000",
+      "last_publication_date": "2017-02-23T09:13:16+0000",
       "slugs": [
+        "test-case-study--ddb",
         "test-case-study--tribal-ddb",
         "test-case-study",
         "volkswagen-case-study---tribal-ddb"
@@ -1654,11 +1656,11 @@
         "case-studies": {
           "meta-title": {
             "type": "Text",
-            "value": "Test Case Study | Tribal DDB"
+            "value": "Test Case Study | DDB"
           },
           "meta-description": {
             "type": "Text",
-            "value": "Case study for Testing"
+            "value": "Case study for testing"
           },
           "foregroundColor": {
             "type": "Color",
@@ -1993,14 +1995,6 @@
                         "type": "Color",
                         "value": "#ffffff"
                       },
-                      "quote": {
-                        "type": "Text",
-                        "value": "This is a Quote."
-                      },
-                      "author": {
-                        "type": "Text",
-                        "value": "This is the Author"
-                      },
                       "image": {
                         "type": "Image",
                         "value": {
@@ -2034,6 +2028,14 @@
                             }
                           }
                         }
+                      },
+                      "quote": {
+                        "type": "Text",
+                        "value": "This is a Quote."
+                      },
+                      "author": {
+                        "type": "Text",
+                        "value": "This is the Author"
                       }
                     }
                   ]
@@ -2294,30 +2296,6 @@
                   "type": "Group",
                   "value": [
                     {
-                      "quote": {
-                        "type": "Text",
-                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde dolorem quem maximum?"
-                      },
-                      "author": {
-                        "type": "Text",
-                        "value": "Lorem ipsum"
-                      },
-                      "imageDesktop": {
-                        "type": "Image",
-                        "value": {
-                          "main": {
-                            "dimensions": {
-                              "width": 1662,
-                              "height": 900
-                            },
-                            "alt": null,
-                            "copyright": null,
-                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/592c78ebdfecdd8f841943163e15e80f02df75e3_vw3.jpg"
-                          },
-                          "views": {
-                          }
-                        }
-                      },
                       "image": {
                         "type": "Image",
                         "value": {
@@ -2352,6 +2330,30 @@
                           }
                         }
                       },
+                      "quote": {
+                        "type": "Text",
+                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde dolorem quem maximum?"
+                      },
+                      "author": {
+                        "type": "Text",
+                        "value": "Lorem ipsum"
+                      },
+                      "imageDesktop": {
+                        "type": "Image",
+                        "value": {
+                          "main": {
+                            "dimensions": {
+                              "width": 1662,
+                              "height": 900
+                            },
+                            "alt": null,
+                            "copyright": null,
+                            "url": "http://ddb-website.cdn.prismic.io/ddb-website/592c78ebdfecdd8f841943163e15e80f02df75e3_vw3.jpg"
+                          },
+                          "views": {
+                          }
+                        }
+                      },
                       "imageMobile": {
                         "type": "Image",
                         "value": {
@@ -2381,7 +2383,7 @@
       "id": "WK0L2SkAACsAoU7x",
       "uid": "mcdonalds-loaded-fries",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK5Q9SkAADMkpuVd&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0L2SkAACsAoU7x%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK6oXykAANk8qGXb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0L2SkAACsAoU7x%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -2690,7 +2692,7 @@
       "id": "WKTjByoAAIcc_1uc",
       "uid": "design-guide",
       "type": "design-guide",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK5Q9SkAADMkpuVd&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK6oXykAANk8qGXb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKTjByoAAIcc_1uc%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -2733,12 +2735,12 @@
       "id": "WKoxNCgAACsAOhPa",
       "uid": "about",
       "type": "about",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK5Q9SkAADMkpuVd&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK6oXykAANk8qGXb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-19T23:58:50+0000",
-      "last_publication_date": "2017-02-23T03:03:17+0000",
+      "last_publication_date": "2017-02-23T09:16:15+0000",
       "slugs": [
         "about---tribal-ddb"
       ],
@@ -3011,7 +3013,7 @@
       "id": "WKEP8CUAAOgdq5Ww",
       "uid": "latest",
       "type": "latest",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK5Q9SkAADMkpuVd&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK6oXykAANk8qGXb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -4003,7 +4005,7 @@
       "id": "WK0ZFykAACsAoYlk",
       "uid": "volkswagen-naked-ute",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK5Q9SkAADMkpuVd&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0ZFykAACsAoYlk%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK6oXykAANk8qGXb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0ZFykAACsAoYlk%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -4357,7 +4359,7 @@
       "id": "WKoxZSgAACgAOhS1",
       "uid": "contact",
       "type": "contact",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK5Q9SkAADMkpuVd&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK6oXykAANk8qGXb&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
       "tags": [
 
       ],

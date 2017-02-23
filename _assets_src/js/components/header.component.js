@@ -59,7 +59,9 @@ var CONFIG = require("../config");
 
     var _elHtml = null; // reference to the html DOM element
     var _elBody = null; // reference to the body DOM element
-    var _hierarchy = []; // array of p[aths with the page hierarcy
+
+    var _hierarchy = []; // array of paths representing the hierarchy
+    var _parentPath = "/"; // string representation of the parent path
 
     var _menuTimer = null; // timer used when opening (or) closing the menu
     var _isMenuOpen = false; // flag to indicate if the header menu is open
@@ -132,8 +134,16 @@ var CONFIG = require("../config");
         if(path.length > 1) { _hierarchy.push(path); }
       });
 
+      // create string representation of the parent path
+      _parentPath = "/"; // reset the hierarchy name
+      _hierarchy.forEach(function(name, index) {
+        if(index < (_hierarchy.length - 1)) {
+          _parentPath += (name + "/");
+        }
+      });
+
       // return if this is a child page or not
-      return (_hierarchy.length > 1);
+      return (_hierarchy.length > 2);
     }
 
     // @name _isPageParent
@@ -146,7 +156,7 @@ var CONFIG = require("../config");
     // @return {String} - the link href value to point to the parent
     function _getPageParent() {
       if(_isPageParent()) { return ""; }
-      else { return _hierarchy[_hierarchy.length - 2]; }
+      else { return _parentPath; }
     }
 
     // @name _isLinkActive
@@ -154,12 +164,13 @@ var CONFIG = require("../config");
     // @param {DOM} link - the link DOM object to be checked for active
     // @return {Boolean} - the boolean result of the active status check
     function _isLinkActive(link) { try {
-      var pathName = window.location.pathname;
-      var hrefName = link.getAttribute("href");
+      var path = window.location.pathname;
+      var href = link.getAttribute("href");
 
-      if(hrefName && hrefName.length > 1 
-        && pathName.indexOf(hrefName) != -1) {
-        return true; } 
+      if(href && href.length > 1) {
+        if(_isPageParent()) { return path.endsWith(href); }
+        else { return _parentPath.endsWith(href); }
+      } 
 
       else { return false; }} 
       catch(error) { return false; }
@@ -312,9 +323,9 @@ var CONFIG = require("../config");
     _addOpenClickListener();
     _addCloseClickListener();
 
-    // check if this is a child page
-    if(!_isPageChild()) { 
-      // hide the back link if it is not a child
+    // check if this is a parent page
+    if(_isPageParent()) { 
+      // hide the back link if it is a parent
       _el.back.style.visibility = "hidden"; 
     }
 
@@ -323,7 +334,7 @@ var CONFIG = require("../config");
       // and set the href atttribute of the 
       // back link to point to the page page
       _el.back.style.visibility = "visible"; 
-      query("a", _el.back)[0].setAttribute("href", "/" + _getPageParent());
+      query("a", _el.back)[0].setAttribute("href", _getPageParent());
     }
 
     // ---------------------------------------------

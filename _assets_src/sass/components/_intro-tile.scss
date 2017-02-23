@@ -1,0 +1,29 @@
+// -------------------------------------
+//   Component - Intro Tile
+// -------------------------------------
+/**
+  * @name intro-tile
+  * @desc Styles for the intro tile component.
+**/
+
+.intro-tile {
+  @extend %section;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+// -------------------------------------
+//   Intro Tile - Links
+// -------------------------------------
+.intro-tile__links {
+  @extend %transform-center;
+  text-align: center;
+
+  > a {
+    @extend %font-size-h2;
+    line-height: $line_height_head;
+    @include section--padding-top(0.5);
+    &:first-child { padding-top: 0 !important; }
+  }
+}

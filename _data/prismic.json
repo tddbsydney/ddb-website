@@ -1,15 +1,15 @@
 {
   "case-studies": [
     {
-      "uid": "test111",
+      "uid": "test-vw",
       "data": {
         "meta-title": {
           "type": "Text",
-          "value": "test111"
+          "value": "Test Case Study VW | DDB"
         },
         "meta-description": {
           "type": "Text",
-          "value": "test111"
+          "value": "Case study for testing"
         },
         "foregroundColor": {
           "type": "Color",
@@ -31,21 +31,21 @@
                     "value": [
                       {
                         "type": "paragraph",
-                        "text": "Huhu, ",
+                        "text": "Lorem, ",
                         "spans": [
 
                         ]
                       },
                       {
                         "type": "paragraph",
-                        "text": "Timi,",
+                        "text": "Ipsum,",
                         "spans": [
 
                         ]
                       },
                       {
                         "type": "paragraph",
-                        "text": "Stinktier.",
+                        "text": "Dolar.",
                         "spans": [
 
                         ]
@@ -878,11 +878,11 @@
       "data": {
         "meta-title": {
           "type": "Text",
-          "value": "Test Case Study | Tribal DDB"
+          "value": "Test Case Study | DDB"
         },
         "meta-description": {
           "type": "Text",
-          "value": "Case study for Testing"
+          "value": "Case study for testing"
         },
         "foregroundColor": {
           "type": "Color",
@@ -1158,14 +1158,6 @@
                     "type": "Color",
                     "value": "#ffffff"
                   },
-                  "quote": {
-                    "type": "Text",
-                    "value": "This is a Quote."
-                  },
-                  "author": {
-                    "type": "Text",
-                    "value": "This is the Author"
-                  },
                   "image": {
                     "type": "Image",
                     "value": {
@@ -1199,6 +1191,14 @@
                         }
                       }
                     }
+                  },
+                  "quote": {
+                    "type": "Text",
+                    "value": "This is a Quote."
+                  },
+                  "author": {
+                    "type": "Text",
+                    "value": "This is the Author"
                   }
                 }
               ]
@@ -1424,30 +1424,6 @@
               "type": "quote-tile",
               "value": [
                 {
-                  "quote": {
-                    "type": "Text",
-                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde dolorem quem maximum?"
-                  },
-                  "author": {
-                    "type": "Text",
-                    "value": "Lorem ipsum"
-                  },
-                  "imageDesktop": {
-                    "type": "Image",
-                    "value": {
-                      "main": {
-                        "dimensions": {
-                          "width": 1662,
-                          "height": 900
-                        },
-                        "alt": null,
-                        "copyright": null,
-                        "url": "http://ddb-website.cdn.prismic.io/ddb-website/592c78ebdfecdd8f841943163e15e80f02df75e3_vw3.jpg"
-                      },
-                      "views": {
-                      }
-                    }
-                  },
                   "image": {
                     "type": "Image",
                     "value": {
@@ -1479,6 +1455,30 @@
                           "copyright": null,
                           "url": "http://ddb-website.cdn.prismic.io/ddb-website/cec3370d8d089d2a633d000d8b36f877d5f00321_vw2.jpg"
                         }
+                      }
+                    }
+                  },
+                  "quote": {
+                    "type": "Text",
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde dolorem quem maximum?"
+                  },
+                  "author": {
+                    "type": "Text",
+                    "value": "Lorem ipsum"
+                  },
+                  "imageDesktop": {
+                    "type": "Image",
+                    "value": {
+                      "main": {
+                        "dimensions": {
+                          "width": 1662,
+                          "height": 900
+                        },
+                        "alt": null,
+                        "copyright": null,
+                        "url": "http://ddb-website.cdn.prismic.io/ddb-website/592c78ebdfecdd8f841943163e15e80f02df75e3_vw3.jpg"
+                      },
+                      "views": {
                       }
                     }
                   },

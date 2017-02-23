@@ -14,7 +14,7 @@
           <span>{{ item.text }}</span>
           {% endcapture %}
 
-          {% if forloop.first != true %}<br/>{% endif %}
+          {% if forloop.first != true %}<br class="all">{% endif %}
           {{ itemText | replace: "<span><span>", '<span class="yellow">' | replace: "</span></span>", "</span>" }}
         {% endfor %}
 
