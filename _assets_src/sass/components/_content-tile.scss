@@ -29,7 +29,7 @@
       @include section--padding-left(1);
       @include section--padding-right(1);
 
-      .content-tile__content--copy {
+      .content-tile__content--subline + .content-tile__content--copy {
         @include section--padding-left(2);
         @include section--padding-right(2);
       }
@@ -105,19 +105,30 @@
 
     .content-tile__image {
       @include section--margin-top(3);
-      @include section--margin-left(-1);
-      @include section--margin-right(-1);
+      @include section--margin-bottom(0);
 
-      img { width: 100%; }
+      &.top {
+        @include section--margin-top(0);
+        @include section--margin-bottom(3);
+      }
+
+      img {
+        width: 100%;
+        margin: auto;
+      }
 
       .content-tile__image--desktop { display: block; }
       .content-tile__image--mobile { display: none; }
 
       @include mobile {
         @include section--margin-top(3);
-        @include section--margin-left(0);
-        @include section--margin-right(0);
 
+        text-align: center;
+
+        img {
+          max-width: 100%;
+          width: auto;
+        }
         .content-tile__image--desktop { display: none; }
         .content-tile__image--mobile  { display: block; }
       }

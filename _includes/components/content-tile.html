@@ -28,10 +28,37 @@
   {% endcapture %}
 {% endif %}
 
+{% assign alignTop = false %}
+{% if tile.alignImage.value and tile.alignImage.value == "top" %}
+  {% assign alignTop = true %}
+{% endif %}
+
+{% capture imageHtml %}
+
+  {% if tile.imageDesktop.value.main.url or tile.imageMobile.value.main.url %}
+  <div class="content-tile__image{{ tile.alignImage.value | prepend: ' ' }}">
+
+    {% if tile.imageDesktop.value.main.url %}
+    <img class="content-tile__image--desktop" src="{{ tile.imageDesktop.value.main.url }}" alt="">
+    {% endif %}
+
+    {% if tile.imageMobile.value.main.url %}
+    <img class="content-tile__image--mobile" src="{{ tile.imageMobile.value.main.url }}" alt="">
+    {% endif %}
+
+  </div>
+  {% endif %}
+
+{% endcapture %}
+
 <!-- content tile -->
-<div class="content-tile{{ page.page_data.uid | prepend: ' ' }}"{{ bgCol | normalize_whitespace }}>
+<div class="content-tile{{ page.page_data.uid | prepend: ' ' }}"{{ bgCol | normalize_whitespace | prepend: ' ' }}>
 
   <div class="content-tile__content">
+
+    {% if alignTop %}
+      {{ imageHtml }}
+    {% endif %}
 
     {% if tile.headline.value %}
       <h5 class="content-tile__content--headline" data-align="{{ tile.alignHeadline.value | default: 'center' }}"{{ fgCol | normalize_whitespace }}>{{ tile.headline.value }}</h5>
@@ -55,18 +82,8 @@
       </ul>
     {% endif %}
 
-    {% if tile.imageDesktop.value.main.url or tile.imageMobile.value.main.url %}
-    <div class="content-tile__image">
-
-      {% if tile.imageDesktop.value.main.url %}
-      <img class="content-tile__image--desktop" src="{{ tile.imageDesktop.value.main.url }}" alt="">
-      {% endif %}
-
-      {% if tile.imageMobile.value.main.url %}
-      <img class="content-tile__image--mobile" src="{{ tile.imageMobile.value.main.url }}" alt="">
-      {% endif %}
-
-    </div>
+    {% if alignTop != true %}
+      {{ imageHtml }}
     {% endif %}
 
   </div>

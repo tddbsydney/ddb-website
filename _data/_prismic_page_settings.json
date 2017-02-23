@@ -379,6 +379,16 @@
                     ]
                   }
                 },
+                "alignImage" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Alignment (image)",
+                    "placeholder" : "bottom",
+                    "options" : [
+                      "top"
+                    ]
+                  }
+                },
                 "foregroundColor": {
                   "type": "Color",
                   "config": {
@@ -489,6 +499,16 @@
                       "height" : null
                     },
                     "thumbnails": [ ]
+                  }
+                },
+                "alignImage" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Alignment (image)",
+                    "placeholder" : "bottom",
+                    "options" : [
+                      "top"
+                    ]
                   }
                 },
                 "foregroundColor": {
