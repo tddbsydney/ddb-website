@@ -75,26 +75,38 @@
     </section>
     <!-- section -->
     <section class="section section--first section--last" >
-      <!-- content tile -->
-      <div class="content-tile test111">
-        <div class="content-tile__content">
-          <div class="content-tile__list">
-            <h5 class="content-tile__listitem"style=" color: #ffffff; ">
-              huhu, 
-        </h5>
-            <h5 class="content-tile__listitem"style=" color: #ffffff; ">
-              mimi.
-        </h5>
-            <h5 class="content-tile__listitem"style=" color: #ffffff; ">
-              tete.
-        </h5>
-          </div>
-          <div class="content-tile__image">
-            <img class="content-tile__image--desktop" src="http://ddb-website.cdn.prismic.io/ddb-website/796cd2b8996f4705e419ab2b997a174f7d6ce732_vw-brand-love-2.jpg" alt="">
-          </div>
+      <!-- promo video -->
+      <div class="promo-video">
+        <!-- video -->
+        <div class="video">
+          <!-- video layout - desktop -->
+          <img class="video__layout video__layout--desktop" src="/assets/images/layout_1920x900.png" alt="">
+          <!-- video layout - mobile -->
+          <img class="video__layout video__layout--mobile" src="/assets/images/layout_800x820.png" alt="">
+          <!-- video cover - desktop -->
+          <video class="video__cover video__cover--desktop" poster="/assets/images/layout_1920x900.png" style="background-image: url('http://ddb-website.cdn.prismic.io/ddb-website/796cd2b8996f4705e419ab2b997a174f7d6ce732_vw-brand-love-2.jpg');" muted loop autoplay playsinline>
+          </video>
+          <!-- video cover - mobile -->
+          <video class="video__cover video__cover--mobile" poster="/assets/images/layout_800x820.png" muted loop autoplay playsinline style="background-image: url('http://ddb-website.cdn.prismic.io/ddb-website/1b1d16a69232fd6cfb870092a62c0c7b01ea0b0a_vw-brand-love-2.jpg');"></video>
+          <!-- video cover - overlay -->
+          <div class="video__cover video__cover--overlay"></div>
         </div>
+        <!-- video end -->
+        <!-- content -->
+        <div class="promo-video__content" data-align="left">
+          <h1>
+            <span>huhu, </span>
+            <span style="display: none; opacity: 0;">mimi.</span>
+            <span style="display: none; opacity: 0;">tete.</span>
+          </h1>
+        </div>
+        <!-- content end -->
+        <!-- scroll down -->
+        <a class="promo-video__scroll" href="#scroll-down" title="Scroll down"><!--
+    --><i class="icon icon-chevron-down"></i><!--
+  --></a>
       </div>
-      <!-- content tile end -->
+      <!-- promo video end -->
     </section>
     <!-- section end -->
     <section class="section section--footer">
