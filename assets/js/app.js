@@ -110,10 +110,12 @@ console.log(CONFIG);
       });
 
       // animate fade the current page into view
-      $(_elBody).velocity("transition.fadeIn", {
-        easing: "easeInOutQuad", 
-        delay: CONFIG.animation.delay,
-        duration: CONFIG.animation.durationSlow
+      requestAnimationFrame(function() {
+        $(_elBody).velocity("transition.fadeIn", {
+          easing: "easeInOutQuad", 
+          delay: CONFIG.animation.delay,
+          duration: CONFIG.animation.durationSlow
+        });
       });
     }
 
