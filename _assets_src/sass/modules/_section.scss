@@ -98,15 +98,18 @@ $section_margin_ret: $section_pad_ret; // retina
   @include desktop-lg-up { margin-bottom: $section_margin_ret * $mult; }
 }
 
+// mixin - margin - vertical
+@mixin section--margin-v($mult: 1) {
+  @include section--margin-top($mult);
+  @include section--margin-bottom($mult);
+}
+
 // modifier - margin - top, bottom
 %section--margin-top { @include section--margin-top; }
 %section--margin-bottom { @include section--margin-bottom; }
 
 // modifier - margin - vertical
-%section--margin-v {
-  @extend %section--margin-top;
-  @extend %section--margin-bottom;
-}
+%section--margin-v { @include section--margin-v; }
 
 // mixin - margin - left
 @mixin section--margin-left($mult: 1) {
@@ -122,21 +125,27 @@ $section_margin_ret: $section_pad_ret; // retina
   @include desktop-lg-up { margin-right: $section_margin_ret * $mult; }
 }
 
+// mixin - margin - horizontal
+@mixin section--margin-h($mult: 1) {
+  @include section--margin-left($mult);
+  @include section--margin-right($mult);
+}
+
 // modifier - margin - left, right
 %section--margin-left { @include section--margin-left; }
 %section--margin-right { @include section--margin-right; }
 
 // modifier - margin - horizontal
-%section--margin-h {
-  @extend %section--margin-left;
-  @extend %section--margin-right;
+%section--margin-h { @include section--margin-h; }
+
+// mixin - margin
+@mixin section--margin($mult: 1) {
+  @include section--margin-v($mult);
+  @include section--margin-h($mult);
 }
 
 // modifier - margin
-%section--margin {
-  @extend %section--margin-v;
-  @extend %section--margin-h;
-}
+%section--margin { @include section--margin; }
 
 // -------------------------------------
 //   Section - Tags

@@ -18,16 +18,11 @@
   }
 
   .quote-tile__content {
-    @include section--padding-top(3.5);
-    @include section--padding-bottom(3.5);
-    @include section--padding-left(3.5);
-    @include section--padding-right(3.5);
+    @include section--padding(3.5);
 
     @include mobile {
-      @include section--padding-top(4);
-      @include section--padding-bottom(4);
-      @include section--padding-left(1);
-      @include section--padding-right(1);
+      @include section--padding-v(4);
+      @include section--padding-h(1);
     }
 
     display: table-cell;
@@ -63,8 +58,6 @@
       .quote-tile__image--mobile { display: none; }
 
       @include mobile {
-        @include section--margin-top(3);
-
         text-align: center;
 
         img {

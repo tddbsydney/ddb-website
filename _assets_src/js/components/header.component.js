@@ -216,8 +216,7 @@ var CONFIG = require("../config");
         $(_el.nav).velocity("transition.slideUpIn", {
           easing: "easeInOutQuad", 
           delay: CONFIG.animation.delay,
-          duration: CONFIG.animation.durationFast,
-          complete: function() { /* empty block */ }
+          duration: CONFIG.animation.durationFast
         });
       }); 
 
@@ -271,8 +270,7 @@ var CONFIG = require("../config");
         // perform the new animation
         $(_el.nav).velocity("transition.slideDownOut", {
           easing: "easeInOutQuad", delay: 0,
-          duration: CONFIG.animation.durationFast,
-          complete: function() { /* empty block */ }
+          duration: CONFIG.animation.durationFast
         });
       });
 
