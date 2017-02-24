@@ -5,23 +5,8 @@
 
   <div class="about-tile__content">
 
-    {% if tile.list.value %}
-      <h1 class="about-tile__content--headline">
-      {% capture headlineText %}
-
-        {% for item in tile.list.value %}
-          {% capture itemText %}
-          <span>{{ item.text }}</span>
-          {% endcapture %}
-
-          {% if forloop.first != true %}<br class="all">{% endif %}
-          {{ itemText | replace: "<span><span>", '<span class="yellow">' | replace: "</span></span>", "</span>" }}
-        {% endfor %}
-
-      {% endcapture %}
-
-      {{ headlineText | normalize_whitespace | replace: "span> <br", "span><!----><br" | replace: "br/> <span", "br/><span" }}
-      </h1>
+    {% if tile.headline.value %}
+      <h1>{{ tile.headline.value }}</h1>
     {% endif %}
 
   </div>

@@ -2515,35 +2515,6 @@
       }
     }
   ],
-  "design-guide": [
-    {
-      "uid": "design-guide",
-      "data": {
-        "meta-title": {
-          "type": "Text",
-          "value": "Design Guide"
-        },
-        "meta-description": {
-          "type": "Text",
-          "value": "The design style guide for the applicaiton."
-        },
-        "foregroundColor": {
-          "type": "Color",
-          "value": "#ffffff"
-        },
-        "backgroundColor": {
-          "type": "Color",
-          "value": "#000000"
-        },
-        "sections": {
-          "type": "SectionList",
-          "value": [
-
-          ]
-        }
-      }
-    }
-  ],
   "about": [
     {
       "uid": "about",
@@ -2571,32 +2542,6 @@
               "type": "about-tile",
               "value": [
                 {
-                  "headline": {
-                    "type": "StructuredText",
-                    "value": [
-                      {
-                        "type": "paragraph",
-                        "text": "Creating",
-                        "spans": [
-
-                        ]
-                      },
-                      {
-                        "type": "paragraph",
-                        "text": "<span>Unreasonable</span>",
-                        "spans": [
-
-                        ]
-                      },
-                      {
-                        "type": "paragraph",
-                        "text": "Growth",
-                        "spans": [
-
-                        ]
-                      }
-                    ]
-                  },
                   "list": {
                     "type": "StructuredText",
                     "value": [
@@ -2622,6 +2567,10 @@
                         ]
                       }
                     ]
+                  },
+                  "headline": {
+                    "type": "Text",
+                    "value": "Creating\n<br class=\"all\"/>\n<span>Unreasonable</span>\n<br class=\"all\"/>\nGrowth"
                   }
                 }
               ]

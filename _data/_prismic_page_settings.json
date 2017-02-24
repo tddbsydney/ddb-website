@@ -676,11 +676,11 @@
               "label" : "About tile",
               "repeat" : false,
               "fields" : {
-                "list": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "List",
-                    "multi": "paragraph"
+                "headline" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label" : "Headline",
+                    "placeholder" : "Headline text"
                   }
                 }
               }
