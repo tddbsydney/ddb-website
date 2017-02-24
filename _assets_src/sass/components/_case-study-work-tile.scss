@@ -28,6 +28,7 @@ $csw_scroll_margin: 0.5em;
   // disabled for sprint one
   // to prevent click events
   pointer-events: none;
+  visibility: hidden;
 
   @extend %transform-center-h;
   @extend %font-size-h1;
