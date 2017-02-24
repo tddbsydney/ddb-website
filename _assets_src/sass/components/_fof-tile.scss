@@ -1,0 +1,34 @@
+// -------------------------------------
+//   Component - 404 Tile
+// -------------------------------------
+/**
+  * @name fof-tile
+  * @desc Styles for the 404 tile.
+**/
+
+.fof-tile {
+  @extend %section;
+
+  .fof-tile__content {
+    @include section--padding(1);
+    @include section--padding-top(2);
+
+    @include mobile {
+      @include section--padding-top(4);
+    }
+
+    text-align: center;
+
+    h1 {
+      font-size: get-vw-desktop(200px);
+      line-height: 1em;
+      margin: 0;
+    }
+
+    p {
+      font-size: get-vw-desktop(40px);
+      line-height: 1em;
+      margin: 0;
+    }
+  }
+}
