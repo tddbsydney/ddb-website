@@ -9,7 +9,7 @@
 .quote-tile {
   @extend %section;
 
-  display: table;
+  display: flex;
   min-height: 70vw;
 
   &.test:hover {
@@ -25,7 +25,7 @@
       @include section--padding-h(1);
     }
 
-    display: table-cell;
+    align-self: center;
     vertical-align: middle;
     text-align: center;
 

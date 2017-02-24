@@ -9,7 +9,7 @@
 .content-tile {
   @extend %section;
 
-  display: table;
+  display: flex;
   min-height: 70vw;
 
   &.test:hover {
@@ -29,7 +29,7 @@
       }
     }
 
-    display: table-cell;
+    align-self: center;
     vertical-align: middle;
 
     *:first-child { margin-top: 0; }
