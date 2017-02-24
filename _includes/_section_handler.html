@@ -7,6 +7,13 @@
 
 
 
+      {% comment %} <!-- Intro Page --> {% endcomment %}
+
+      {% when "intro-tile" %}
+        {% include components/intro-tile.html data=section.value %}
+
+
+
       {% comment %} <!-- Latest & Work Page --> {% endcomment %}
 
       {% when "promo-video" %}
@@ -17,6 +24,7 @@
 
       {% when "article-tile" %}
         {% include components/article-tile.html data=section.value %}
+
 
 
       {% comment %} <!-- Case Study Pages --> {% endcomment %}
@@ -42,6 +50,7 @@
 
       {% when "about-tile" %}
         {% include components/about-tile.html data=section.value %}
+
 
 
       {% comment %} <!-- Contact Page --> {% endcomment %}

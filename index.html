@@ -1,8 +1,7 @@
 ---
   layout: basic
+  data: intro
 ---
 
-<!-- section -->
-<section class="section section--first">
-	{% include components/intro-tile.html %}
-</section><!-- section end -->
+{% assign page_data = site.data.prismic[page.data][0].data %}
+{% include _section_handler.html data=page_data.sections.value %}

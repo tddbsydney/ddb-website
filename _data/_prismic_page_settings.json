@@ -45,6 +45,18 @@
 
 
 
+          "intro-tile" : {
+            "type" : "Group",
+            "config" : {
+              "label" : "Intro tile",
+              "repeat" : false,
+              "fields" : {
+              }
+            }
+          },
+
+
+
           "promo-video" : {
             "type" : "Group",
             "config" : {
