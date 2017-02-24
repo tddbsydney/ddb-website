@@ -11,7 +11,7 @@
       "id": "WK4T9ikAAL4opdjb",
       "uid": "test-vw",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK-54CEAACAA229f&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK4T9ikAAL4opdjb%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK_ByCEAAGgA25JE&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK4T9ikAAL4opdjb%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -133,13 +133,15 @@
       "id": "WKEQFSUAAEUiq5ZX",
       "uid": "work",
       "type": "work",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK-54CEAACAA229f&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK_ByCEAAGgA25JE&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:07+0000",
-      "last_publication_date": "2017-02-22T05:11:46+0000",
+      "last_publication_date": "2017-02-24T05:15:41+0000",
       "slugs": [
+        "work--ddb-sydney",
+        "work--ddb",
         "work---ddb",
         "work---tribal-ddb"
       ],
@@ -166,7 +168,7 @@
 
           ],
           "type": "work",
-          "slug": "work---ddb"
+          "slug": "work--ddb-sydney"
         },
         {
           "id": "WK0SfSkAACoAoWxH",
@@ -197,11 +199,11 @@
         "work": {
           "meta-title": {
             "type": "Text",
-            "value": "Work  | DDB"
+            "value": "Work | DDB Sydney"
           },
           "meta-description": {
             "type": "Text",
-            "value": "Work from DDB."
+            "value": "Work from DDB Sydney."
           },
           "foregroundColor": {
             "type": "Color",
@@ -423,7 +425,7 @@
                             "tags": [
 
                             ],
-                            "slug": "work---ddb",
+                            "slug": "work--ddb-sydney",
                             "uid": "work"
                           },
                           "isBroken": false
@@ -677,7 +679,7 @@
       "id": "WK0GeCkAACgAoTc8",
       "uid": "volkswagen-tough-sell",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK-54CEAACAA229f&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0GeCkAACgAoTc8%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK_ByCEAAGgA25JE&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0GeCkAACgAoTc8%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -978,14 +980,15 @@
       "id": "WK-uuiEAAGgA2z5I",
       "uid": "intro",
       "type": "intro",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK-54CEAACAA229f&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK-uuiEAAGgA2z5I%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK_ByCEAAGgA25JE&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK-uuiEAAGgA2z5I%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-24T03:55:41+0000",
-      "last_publication_date": "2017-02-24T04:00:28+0000",
+      "last_publication_date": "2017-02-24T05:16:56+0000",
       "slugs": [
-        "ddb-group-australia"
+        "ddb-group-australia",
+        "ddb-australia"
       ],
       "linked_documents": [
 
@@ -998,7 +1001,7 @@
           },
           "meta-description": {
             "type": "Text",
-            "value": "DDB Group Australia"
+            "value": "The landing page for DDB Group Australia."
           },
           "sections": {
             "type": "SliceZone",
@@ -1024,7 +1027,7 @@
       "id": "WKpzRigAACgAOzbM",
       "uid": "the-sydney-opera-house",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK-54CEAACAA229f&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKpzRigAACgAOzbM%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK_ByCEAAGgA25JE&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKpzRigAACgAOzbM%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1429,7 +1432,7 @@
       "id": "WK0SfSkAACoAoWxH",
       "uid": "volkswagen-brand-love",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK-54CEAACAA229f&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0SfSkAACoAoWxH%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK_ByCEAAGgA25JE&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0SfSkAACoAoWxH%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1683,7 +1686,7 @@
       "id": "WKEQcCUAAKomq5fv",
       "uid": "test",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK-54CEAACAA229f&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK_ByCEAAGgA25JE&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -2429,7 +2432,7 @@
       "id": "WK0L2SkAACsAoU7x",
       "uid": "mcdonalds-loaded-fries",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK-54CEAACAA229f&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0L2SkAACsAoU7x%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK_ByCEAAGgA25JE&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0L2SkAACsAoU7x%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -2738,13 +2741,16 @@
       "id": "WKoxNCgAACsAOhPa",
       "uid": "about",
       "type": "about",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK-54CEAACAA229f&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK_ByCEAAGgA25JE&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-19T23:58:50+0000",
-      "last_publication_date": "2017-02-24T04:43:12+0000",
+      "last_publication_date": "2017-02-24T05:14:57+0000",
       "slugs": [
+        "about--ddb-sydney",
+        "about--ddb",
+        "about---ddb",
         "about---tribal-ddb"
       ],
       "linked_documents": [
@@ -2754,11 +2760,11 @@
         "about": {
           "meta-title": {
             "type": "Text",
-            "value": "About  | Tribal DDB"
+            "value": "About | DDB Sydney"
           },
           "meta-description": {
             "type": "Text",
-            "value": "About Tribal DDB."
+            "value": "About DDB Sydney."
           },
           "foregroundColor": {
             "type": "Color",
@@ -2994,13 +3000,15 @@
       "id": "WKEP8CUAAOgdq5Ww",
       "uid": "latest",
       "type": "latest",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK-54CEAACAA229f&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK_ByCEAAGgA25JE&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:49:26+0000",
-      "last_publication_date": "2017-02-22T05:10:51+0000",
+      "last_publication_date": "2017-02-24T05:15:27+0000",
       "slugs": [
+        "latest--ddb-sydney",
+        "latest--ddb",
         "latest---ddb",
         "latest---tribal-ddb"
       ],
@@ -3011,7 +3019,7 @@
 
           ],
           "type": "latest",
-          "slug": "latest---ddb"
+          "slug": "latest--ddb-sydney"
         },
         {
           "id": "WK0ZFykAACsAoYlk",
@@ -3035,7 +3043,7 @@
 
           ],
           "type": "latest",
-          "slug": "latest---ddb"
+          "slug": "latest--ddb-sydney"
         },
         {
           "id": "WKpzRigAACgAOzbM",
@@ -3051,7 +3059,7 @@
 
           ],
           "type": "latest",
-          "slug": "latest---ddb"
+          "slug": "latest--ddb-sydney"
         },
         {
           "id": "WKEP8CUAAOgdq5Ww",
@@ -3059,7 +3067,7 @@
 
           ],
           "type": "latest",
-          "slug": "latest---ddb"
+          "slug": "latest--ddb-sydney"
         },
         {
           "id": "WK0L2SkAACsAoU7x",
@@ -3083,18 +3091,18 @@
 
           ],
           "type": "latest",
-          "slug": "latest---ddb"
+          "slug": "latest--ddb-sydney"
         }
       ],
       "data": {
         "latest": {
           "meta-title": {
             "type": "Text",
-            "value": "Latest  | DDB"
+            "value": "Latest | DDB Sydney"
           },
           "meta-description": {
             "type": "Text",
-            "value": "Latest news from DDB."
+            "value": "Latest news from DDB Sydney."
           },
           "foregroundColor": {
             "type": "Color",
@@ -3179,15 +3187,15 @@
                           }
                         }
                       },
+                      "foregroundColor": {
+                        "type": "Color",
+                        "value": "#ffffff"
+                      },
                       "video": {
                         "type": "Link.web",
                         "value": {
                           "url": "http://content.volkswagen-commercial.com.au/Amarok/Content/videos/VW_The_Naked_Reveal_Loop.mp4"
                         }
-                      },
-                      "foregroundColor": {
-                        "type": "Color",
-                        "value": "#ffffff"
                       }
                     }
                   ]
@@ -3252,7 +3260,7 @@
                             "tags": [
 
                             ],
-                            "slug": "latest---ddb",
+                            "slug": "latest--ddb-sydney",
                             "uid": "latest"
                           },
                           "isBroken": false
@@ -3535,7 +3543,7 @@
                             "tags": [
 
                             ],
-                            "slug": "latest---ddb",
+                            "slug": "latest--ddb-sydney",
                             "uid": "latest"
                           },
                           "isBroken": false
@@ -3651,7 +3659,7 @@
                             "tags": [
 
                             ],
-                            "slug": "latest---ddb",
+                            "slug": "latest--ddb-sydney",
                             "uid": "latest"
                           },
                           "isBroken": false
@@ -3684,7 +3692,7 @@
                             "tags": [
 
                             ],
-                            "slug": "latest---ddb",
+                            "slug": "latest--ddb-sydney",
                             "uid": "latest"
                           },
                           "isBroken": false
@@ -3959,7 +3967,7 @@
                             "tags": [
 
                             ],
-                            "slug": "latest---ddb",
+                            "slug": "latest--ddb-sydney",
                             "uid": "latest"
                           },
                           "isBroken": false
@@ -3986,7 +3994,7 @@
       "id": "WK0ZFykAACsAoYlk",
       "uid": "volkswagen-naked-ute",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK-54CEAACAA229f&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0ZFykAACsAoYlk%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK_ByCEAAGgA25JE&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0ZFykAACsAoYlk%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -4340,13 +4348,16 @@
       "id": "WKoxZSgAACgAOhS1",
       "uid": "contact",
       "type": "contact",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK-54CEAACAA229f&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WK_ByCEAAGgA25JE&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-19T23:59:38+0000",
-      "last_publication_date": "2017-02-24T03:34:19+0000",
+      "last_publication_date": "2017-02-24T05:15:12+0000",
       "slugs": [
+        "contact--ddb-sydney",
+        "contact--ddb",
+        "contact---ddb",
         "contact---tribal-ddb"
       ],
       "linked_documents": [
@@ -4356,11 +4367,11 @@
         "contact": {
           "meta-title": {
             "type": "Text",
-            "value": "Contact  | Tribal DDB"
+            "value": "Contact | DDB Sydney"
           },
           "meta-description": {
             "type": "Text",
-            "value": "Contact us at Tribal DDB."
+            "value": "Contact us at DDB Sydney."
           },
           "foregroundColor": {
             "type": "Color",
