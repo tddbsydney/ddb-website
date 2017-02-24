@@ -19,7 +19,6 @@
         {% include components/article-tile.html data=section.value %}
 
 
-
       {% comment %} <!-- Case Study Pages --> {% endcomment %}
 
       {% when "case-study-work-tile" %}
@@ -45,8 +44,10 @@
         {% include components/about-tile.html data=section.value %}
 
 
-
       {% comment %} <!-- Contact Page --> {% endcomment %}
+
+      {% when "contact-tile" %}
+        {% include components/contact-tile.html data=section.value %}
 
       {% when "rules-tile" %}
         {% include components/rules-tile.html data=section.value %}
