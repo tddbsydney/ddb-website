@@ -2042,11 +2042,11 @@
       "data": {
         "meta-title": {
           "type": "Text",
-          "value": "Work  | DDB"
+          "value": "Work | DDB Sydney"
         },
         "meta-description": {
           "type": "Text",
-          "value": "Work from DDB."
+          "value": "Work from DDB Sydney."
         },
         "foregroundColor": {
           "type": "Color",
@@ -2254,7 +2254,7 @@
                         "tags": [
 
                         ],
-                        "slug": "work---ddb",
+                        "slug": "work--ddb-sydney",
                         "uid": "work"
                       },
                       "isBroken": false
@@ -2498,7 +2498,7 @@
         },
         "meta-description": {
           "type": "Text",
-          "value": "DDB Group Australia"
+          "value": "The landing page for DDB Group Australia."
         },
         "sections": {
           "type": "SectionList",
@@ -2521,11 +2521,11 @@
       "data": {
         "meta-title": {
           "type": "Text",
-          "value": "About  | Tribal DDB"
+          "value": "About | DDB Sydney"
         },
         "meta-description": {
           "type": "Text",
-          "value": "About Tribal DDB."
+          "value": "About DDB Sydney."
         },
         "foregroundColor": {
           "type": "Color",
@@ -2738,11 +2738,11 @@
       "data": {
         "meta-title": {
           "type": "Text",
-          "value": "Latest  | DDB"
+          "value": "Latest | DDB Sydney"
         },
         "meta-description": {
           "type": "Text",
-          "value": "Latest news from DDB."
+          "value": "Latest news from DDB Sydney."
         },
         "foregroundColor": {
           "type": "Color",
@@ -2823,15 +2823,15 @@
                       }
                     }
                   },
+                  "foregroundColor": {
+                    "type": "Color",
+                    "value": "#ffffff"
+                  },
                   "video": {
                     "type": "Link.web",
                     "value": {
                       "url": "http://content.volkswagen-commercial.com.au/Amarok/Content/videos/VW_The_Naked_Reveal_Loop.mp4"
                     }
-                  },
-                  "foregroundColor": {
-                    "type": "Color",
-                    "value": "#ffffff"
                   }
                 }
               ]
@@ -2891,7 +2891,7 @@
                         "tags": [
 
                         ],
-                        "slug": "latest---ddb",
+                        "slug": "latest--ddb-sydney",
                         "uid": "latest"
                       },
                       "isBroken": false
@@ -3154,7 +3154,7 @@
                         "tags": [
 
                         ],
-                        "slug": "latest---ddb",
+                        "slug": "latest--ddb-sydney",
                         "uid": "latest"
                       },
                       "isBroken": false
@@ -3260,7 +3260,7 @@
                         "tags": [
 
                         ],
-                        "slug": "latest---ddb",
+                        "slug": "latest--ddb-sydney",
                         "uid": "latest"
                       },
                       "isBroken": false
@@ -3293,7 +3293,7 @@
                         "tags": [
 
                         ],
-                        "slug": "latest---ddb",
+                        "slug": "latest--ddb-sydney",
                         "uid": "latest"
                       },
                       "isBroken": false
@@ -3548,7 +3548,7 @@
                         "tags": [
 
                         ],
-                        "slug": "latest---ddb",
+                        "slug": "latest--ddb-sydney",
                         "uid": "latest"
                       },
                       "isBroken": false
@@ -3576,11 +3576,11 @@
       "data": {
         "meta-title": {
           "type": "Text",
-          "value": "Contact  | Tribal DDB"
+          "value": "Contact | DDB Sydney"
         },
         "meta-description": {
           "type": "Text",
-          "value": "Contact us at Tribal DDB."
+          "value": "Contact us at DDB Sydney."
         },
         "foregroundColor": {
           "type": "Color",
