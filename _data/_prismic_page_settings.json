@@ -224,10 +224,139 @@
 
 
 
-
-
-
-
+          "contact-tile" : {
+            "type" : "Group",
+            "config" : {
+              "label" : "Contact tile",
+              "repeat" : false,
+              "fields" : {
+                "image" : {
+                  "type" : "Image",
+                  "config" : {
+                    "label" : "Image",
+                    "constraint" : {
+                      "width" : null,
+                      "height" : null
+                    },
+                    "thumbnails" : [ {
+                      "name" : "Desktop",
+                      "width" : "960",
+                      "height" : "825"
+                    }, {
+                      "name" : "Mobile",
+                      "width" : "800",
+                      "height" : "820"
+                    } ]
+                  }
+                },
+                "headline1" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label": "Headline 1",
+                    "placeholder" : "Headline text"
+                  }
+                },
+                "copy1" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label": "Copy 1",
+                    "placeholder" : "Copy text"
+                  }
+                },
+                "phone1": {
+                  "type" : "Text",
+                  "config" : {
+                    "label": "Phone 1",
+                    "placeholder" : "+61 2 XXXX XXXX"
+                  }
+                },
+                "mail1": {
+                  "type" : "Text",
+                  "config" : {
+                    "label": "Mail 1",
+                    "placeholder" : "email@domain.com"
+                  }
+                },
+                "linkUrl1" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Link URL 1",
+                    "placeholder" : "Link URL"
+                  }
+                },
+                "linkText1" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label": "Link Text 1",
+                    "placeholder" : "Link text"
+                  }
+                },
+                "headline2" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label": "Headline 2",
+                    "placeholder" : "Headline text"
+                  }
+                },
+                "copy2" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label": "Copy 2",
+                    "placeholder" : "Copy text"
+                  }
+                },
+                "phone2": {
+                  "type" : "Text",
+                  "config" : {
+                    "label": "Phone 2",
+                    "placeholder" : "+61 2 XXXX XXXX"
+                  }
+                },
+                "mail2": {
+                  "type" : "Text",
+                  "config" : {
+                    "label": "Mail 2",
+                    "placeholder" : "email@domain.com"
+                  }
+                },
+                "linkUrl2" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Link URL 2",
+                    "placeholder" : "Link URL"
+                  }
+                },
+                "linkText2" : {
+                  "type" : "Text",
+                  "config" : {
+                    "label": "Link Text 2",
+                    "placeholder" : "Link text"
+                  }
+                },
+                "align" : {
+                  "type" : "Select",
+                  "config" : {
+                    "label" : "Alignment (text)",
+                    "placeholder" : "right",
+                    "options" : [
+                      "left"
+                    ]
+                  }
+                },
+                "style" : {
+                  "type" : "Select",
+                   "config" : {
+                    "label" : "Style (background)",
+                    "placeholder" : "black",
+                    "options" : [
+                      "yellow",
+                      "grey"
+                    ]
+                  }
+                }
+              }
+            }
+          },
 
 
 
@@ -529,13 +658,6 @@
 
 
 
-
-
-
-
-
-
-
           "about-tile" : {
             "type" : "Group",
             "config" : {
@@ -552,13 +674,6 @@
               }
             }
           },
-
-
-
-
-
-
-
 
 
 
