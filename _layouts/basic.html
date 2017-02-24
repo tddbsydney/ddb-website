@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 {% include _relative_links_base_url.html %}
+{% assign page_data = site.data.prismic[page.data][0].data %}
 
 <!-- html -->
 <html data-scroll="disabled">
@@ -15,9 +16,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
 
     <!-- default meta data -->
-    <title>{{ page.title.value | default: 'DDB Sydney' }}</title>
-    <meta name="description" content="{{ page.description.value | default: 'DDB Sydney' }}">
-    <meta name="keywords" content="{{ page.keywords.value | default: 'DDB,Sydney' }}">
+    <title>{{ page_data.meta-title.value | default: 'DDB Sydney' }}</title>
+    <meta name="description" content="{{ page_data.meta-description.value | default: 'DDB Sydney' }}">
+    <meta name="keywords" content="{{ page_data.meta-keywords.value | default: 'DDB,Sydney' }}">
     <link rel="shortcut icon" href="{{base}}/assets/images/favicon.png">
 
     <!-- bower:css -->
