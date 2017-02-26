@@ -11,13 +11,13 @@
 // -------------------------------------
 //   Article Tile
 // -------------------------------------
-$art_tile_h_min: 42.5vw - ($section_pad * 2);
-$art_tile_h_min_tab: 52.5vw - ($section_pad * 2);
-$art_tile_h_min_mob: 62.5vw - ($section_pad * 2);
+$art_tile_h_min:     35vw;
+$art_tile_h_min_tab: 45vw;
+$art_tile_h_min_mob: 55vw;
 
 .article-tile {
   @extend %flex--col;
-  @extend %section--padding;
+  @include section--padding;
 
   min-height: $art_tile_h_min;
   @include tablet { min-height: $art_tile_h_min_tab; }
@@ -53,7 +53,7 @@ $art_tile_content_inner_w_max_mob: 50%;
   display: block;
   position: absolute;
   box-sizing: border-box;
-  @extend %section--padding;
+  @include section--padding;
   
   top: 0;
   left: 0;

@@ -8,8 +8,7 @@
 
 .content-tile {
   @extend %section;
-
-  display: flex;
+  @extend %flex--row;
   min-height: 70vw;
 
   &.test:hover {
@@ -42,8 +41,8 @@
     .content-tile__content--headline,
     .content-tile__content--subline,
     .content-tile__content--copy {
-      &[data-align="left"]   { text-align: left; }
-      &[data-align="right"]  { text-align: right; }
+      &[data-align="left"]   { text-align: left;   }
+      &[data-align="right"]  { text-align: right;  }
       &[data-align="center"] { text-align: center; }
 
       overflow-wrap: break-word;
@@ -107,7 +106,7 @@
       }
 
       .content-tile__image--desktop { display: block; }
-      .content-tile__image--mobile { display: none; }
+      .content-tile__image--mobile  { display: none;  }
 
       @include mobile {
         text-align: center;
@@ -116,7 +115,7 @@
           max-width: 100%;
           width: auto;
         }
-        .content-tile__image--desktop { display: none; }
+        .content-tile__image--desktop { display: none;  }
         .content-tile__image--mobile  { display: block; }
       }
     }

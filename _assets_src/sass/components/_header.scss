@@ -7,8 +7,8 @@
 **/
 
 .header {
-  @extend %section--padding;
   @extend %flex--row;
+  @include section--padding;
 
   text-align: center;
   @include mobile { min-height: 0; }

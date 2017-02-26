@@ -20,8 +20,7 @@ $cs_content_margin_first: 20vw;
 .case-study-tile__content {
   display: block;
   position: absolute;
-  box-sizing: border-box;
-  @extend %section--padding;
+  @include section--padding;
 
   width: 100%;
   max-width: $cs_tile_content_w_max;
