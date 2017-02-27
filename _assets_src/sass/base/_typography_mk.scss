@@ -1,0 +1,107 @@
+// -------------------------------------
+//   Base - Typography
+// -------------------------------------
+/**
+  * @name typography
+  * @desc Used for setting various font properties
+          used with common elements that spread
+          across the entire app.
+**/
+
+// -------------------------------------
+//   Typography - Font Size
+// -------------------------------------
+// font size - h1
+$font_size_h1:     42px; // base 
+$font_size_h1_tab: 38px; // tablet
+$font_size_h1_mob: 36px; // mobile
+
+// font size - h2
+$font_size_h2:     32px; // base 
+$font_size_h2_tab: 28px; // tablet
+$font_size_h2_mob: 24px; // mobile
+
+// font size - h3
+$font_size_h3:     28px; // base 
+$font_size_h3_tab: 24px; // tablet
+$font_size_h3_mob: 22px; // mobile
+
+// font size - h4
+$font_size_h4:     22px; // base 
+$font_size_h4_tab: 18px; // tablet
+$font_size_h4_mob: 16px; // mobile
+
+// font size - h5
+$font_size_h5:     18px; // base 
+$font_size_h5_tab: 16px; // tablet
+$font_size_h5_mob: 14px; // mobile
+
+// font size - p
+$font_size_p:     14px; // base
+$font_size_p_tab: 13px; // tablet
+$font_size_p_mob: 12px; // mobile
+
+// font size - xs
+$font_size_xs:     12px; // base 
+$font_size_xs_tab: 11px; // tablet
+$font_size_xs_mob: 10px; // mobile
+
+// map of available
+// typography sizes
+$font-size: (
+  "none":     0, // base
+  "none_tab": 0, // tablet
+  "none_mob": 0, // mobile
+
+  "h1":     $font_size_h1,     // base
+  "h1_tab": $font_size_h1_tab, // tablet
+  "h1_mob": $font_size_h1_mob, // mobile
+
+  "h2":     $font_size_h2,     // base
+  "h2_tab": $font_size_h2_tab, // tablet
+  "h2_mob": $font_size_h2_mob, // mobile
+
+  "h3":     $font_size_h3,     // base
+  "h3_tab": $font_size_h3_tab, // tablet
+  "h3_mob": $font_size_h3_mob, // mobile
+
+  "h4":     $font_size_h4,     // base
+  "h4_tab": $font_size_h4_tab, // tablet
+  "h4_mob": $font_size_h4_mob, // mobile
+
+  "h5":     $font_size_h5,     // base
+  "h5_tab": $font_size_h5_tab, // tablet
+  "h5_mob": $font_size_h5_mob, // mobile
+
+  "p":     $font_size_p,     // base
+  "p_tab": $font_size_p_tab, // tablet
+  "p_mob": $font_size_p_mob, // mobile
+
+  "xs":     $font_size_xs,     // base
+  "xs_tab": $font_size_xs_tab, // tablet
+  "xs_mob": $font_size_xs_mob  // mobile
+);
+
+// function to get the font size
+// for the given key ( default otherwise )
+@function get-font--size($key: "p") {
+  // throw a warning and error if the key is invalid
+  @if not map-has-key($font-size, $key) {
+    @warn "$key not found for @mixin font--size($key)";
+    @error "$key not found for @mixin font--size($key)";
+  } 
+  
+  // return the correct padding if the key is valid
+  @return map-get($font-size, $key);
+}
+
+// -------------------------------------
+//   Font Size - Mixins
+// ------------------------------------
+// mixin - font size
+@mixin font--size($size: "p") {
+  font-size: get-font--size($size);
+  @include tablet { font-size: get-font--size(#{$size + "_tab"}); }
+  @include mobile { font-size: get-font--size(#{$size + "_mob"}); }
+}
+

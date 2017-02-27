@@ -312,8 +312,8 @@ var CONFIG = require("../config");
     _elHtml = query("html")[0];
     _elBody = query("body")[0];
 
-    // loop through all the nav link and check if any of them are active
-    query("a", _el.nav).forEach(function(link, index) {
+    // loop through all the nav links and check if any of them are active
+    query(".link", _el.nav).forEach(function(link, index) {
       if(_isLinkActive(link)) { _setLinkAsActive(link); } 
       else { _setLinkAsInactive(link); }
     });
