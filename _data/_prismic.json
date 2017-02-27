@@ -11,7 +11,7 @@
       "id": "WK4T9ikAAL4opdjb",
       "uid": "test-vw",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLNxtCEAACht68nk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK4T9ikAAL4opdjb%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLPFKyEAACht7Tks&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK4T9ikAAL4opdjb%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -133,7 +133,7 @@
       "id": "WKEQFSUAAEUiq5ZX",
       "uid": "work",
       "type": "work",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLNxtCEAACht68nk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLPFKyEAACht7Tks&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQFSUAAEUiq5ZX%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -679,7 +679,7 @@
       "id": "WK0GeCkAACgAoTc8",
       "uid": "volkswagen-tough-sell",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLNxtCEAACht68nk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0GeCkAACgAoTc8%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLPFKyEAACht7Tks&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0GeCkAACgAoTc8%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -980,7 +980,7 @@
       "id": "WK-uuiEAAGgA2z5I",
       "uid": "intro",
       "type": "intro",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLNxtCEAACht68nk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK-uuiEAAGgA2z5I%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLPFKyEAACht7Tks&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK-uuiEAAGgA2z5I%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1027,7 +1027,7 @@
       "id": "WKpzRigAACgAOzbM",
       "uid": "the-sydney-opera-house",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLNxtCEAACht68nk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKpzRigAACgAOzbM%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLPFKyEAACht7Tks&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKpzRigAACgAOzbM%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -1432,12 +1432,12 @@
       "id": "WK0SfSkAACoAoWxH",
       "uid": "volkswagen-brand-love",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLNxtCEAACht68nk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0SfSkAACoAoWxH%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLPFKyEAACht7Tks&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0SfSkAACoAoWxH%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-22T04:24:45+0000",
-      "last_publication_date": "2017-02-22T05:16:37+0000",
+      "last_publication_date": "2017-02-27T01:07:57+0000",
       "slugs": [
         "volkswagen-brand-love--ddb"
       ],
@@ -1475,7 +1475,7 @@
                       },
                       "copy": {
                         "type": "Text",
-                        "value": "When is a car more than a car?"
+                        "value": "When is a car more<br>than a car?"
                       },
                       "image": {
                         "type": "Image",
@@ -1686,12 +1686,12 @@
       "id": "WKEQcCUAAKomq5fv",
       "uid": "test",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLNxtCEAACht68nk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLPFKyEAACht7Tks&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEQcCUAAKomq5fv%22%29+%5D%5D",
       "tags": [
 
       ],
       "first_publication_date": "2017-02-13T01:48:38+0000",
-      "last_publication_date": "2017-02-23T09:13:16+0000",
+      "last_publication_date": "2017-02-27T06:20:27+0000",
       "slugs": [
         "test-case-study--ddb",
         "test-case-study--tribal-ddb",
@@ -1732,11 +1732,11 @@
                     {
                       "headline": {
                         "type": "Text",
-                        "value": "Case study work tile"
+                        "value": "Case study work tile - headline"
                       },
                       "copy": {
                         "type": "Text",
-                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        "value": "Case study work tile - copy"
                       },
                       "image": {
                         "type": "Image",
@@ -1788,18 +1788,6 @@
                   "type": "Group",
                   "value": [
                     {
-                      "headline": {
-                        "type": "Text",
-                        "value": "Content tile - Headline"
-                      },
-                      "subline": {
-                        "type": "Text",
-                        "value": "Content tile - Subline"
-                      },
-                      "copy": {
-                        "type": "Text",
-                        "value": "Content tile - Copy"
-                      },
                       "image": {
                         "type": "Image",
                         "value": {
@@ -1833,6 +1821,18 @@
                             }
                           }
                         }
+                      },
+                      "headline": {
+                        "type": "Text",
+                        "value": "Content tile - Headline"
+                      },
+                      "subline": {
+                        "type": "Text",
+                        "value": "Content tile - Subline"
+                      },
+                      "copy": {
+                        "type": "Text",
+                        "value": "Content tile - Copy"
                       }
                     }
                   ]
@@ -2432,7 +2432,7 @@
       "id": "WK0L2SkAACsAoU7x",
       "uid": "mcdonalds-loaded-fries",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLNxtCEAACht68nk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0L2SkAACsAoU7x%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLPFKyEAACht7Tks&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0L2SkAACsAoU7x%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -2741,7 +2741,7 @@
       "id": "WKoxNCgAACsAOhPa",
       "uid": "about",
       "type": "about",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLNxtCEAACht68nk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLPFKyEAACht7Tks&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxNCgAACsAOhPa%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -3000,7 +3000,7 @@
       "id": "WKEP8CUAAOgdq5Ww",
       "uid": "latest",
       "type": "latest",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLNxtCEAACht68nk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLPFKyEAACht7Tks&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKEP8CUAAOgdq5Ww%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -3994,7 +3994,7 @@
       "id": "WK0ZFykAACsAoYlk",
       "uid": "volkswagen-naked-ute",
       "type": "case-studies",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLNxtCEAACht68nk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0ZFykAACsAoYlk%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLPFKyEAACht7Tks&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WK0ZFykAACsAoYlk%22%29+%5D%5D",
       "tags": [
 
       ],
@@ -4348,7 +4348,7 @@
       "id": "WKoxZSgAACgAOhS1",
       "uid": "contact",
       "type": "contact",
-      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLNxtCEAACht68nk&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
+      "href": "http://ddb-website.cdn.prismic.io/api/documents/search?ref=WLPFKyEAACht7Tks&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22WKoxZSgAACgAOhS1%22%29+%5D%5D",
       "tags": [
 
       ],

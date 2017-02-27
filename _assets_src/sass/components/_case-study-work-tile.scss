@@ -11,12 +11,9 @@
 // -------------------------------------
 //   Case Study Work - Content
 // -------------------------------------
-// taken from base/_case-study-work.scss
-$csw_content_margin_mob: $cs_content_margin_first; // 20vw
-
 .case-study-work-tile__content {
   @extend .case-study-tile__content;
-  @include mobile { top: $csw_content_margin_mob !important; }
+  @include mobile { top: $section_margin_lg_mob !important; }
 }
 
 // -------------------------------------
@@ -31,7 +28,7 @@ $csw_scroll_margin: 0.5em;
   visibility: hidden;
 
   @extend %transform-center-h;
-  @extend %font-size-h1;
+  @include font--size("h1");
 
   &:last-child {
     bottom: 0;

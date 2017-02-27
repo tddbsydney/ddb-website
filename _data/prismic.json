@@ -698,7 +698,7 @@
                   },
                   "copy": {
                     "type": "Text",
-                    "value": "When is a car more than a car?"
+                    "value": "When is a car more<br>than a car?"
                   },
                   "image": {
                     "type": "Image",
@@ -901,11 +901,11 @@
                 {
                   "headline": {
                     "type": "Text",
-                    "value": "Case study work tile"
+                    "value": "Case study work tile - headline"
                   },
                   "copy": {
                     "type": "Text",
-                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    "value": "Case study work tile - copy"
                   },
                   "image": {
                     "type": "Image",
@@ -952,18 +952,6 @@
               "type": "content-tile",
               "value": [
                 {
-                  "headline": {
-                    "type": "Text",
-                    "value": "Content tile - Headline"
-                  },
-                  "subline": {
-                    "type": "Text",
-                    "value": "Content tile - Subline"
-                  },
-                  "copy": {
-                    "type": "Text",
-                    "value": "Content tile - Copy"
-                  },
                   "image": {
                     "type": "Image",
                     "value": {
@@ -997,6 +985,18 @@
                         }
                       }
                     }
+                  },
+                  "headline": {
+                    "type": "Text",
+                    "value": "Content tile - Headline"
+                  },
+                  "subline": {
+                    "type": "Text",
+                    "value": "Content tile - Subline"
+                  },
+                  "copy": {
+                    "type": "Text",
+                    "value": "Content tile - Copy"
                   }
                 }
               ]
