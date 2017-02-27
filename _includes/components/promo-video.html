@@ -32,6 +32,14 @@
   </div><!-- video end -->
 
   <!-- content -->
+  <div class="promo-video__content" data-align="fullCenter">
+    {% if tile.headline.value %}
+      <h1>{{ tile.headline.value }}</h1>
+    {% endif %}
+  </div><!-- content end -->
+
+  {% comment %}
+  <!-- Unused scrolling header
   <div class="promo-video__content" data-align="left">
     <h1>
       {% if tile.list.value %}
@@ -44,7 +52,9 @@
         {% endfor %}
       {% endif %}
     </h1>
-  </div><!-- content end -->
+  </div>
+  -->
+  {% endcomment %}
 
   <!-- scroll down -->
   <a class="promo-video__scroll" href="#scroll-down" title="Scroll down"><!--
