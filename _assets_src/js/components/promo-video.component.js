@@ -201,8 +201,8 @@ var CONFIG = require("../config");
     _el.headers = query("span", _el.content);
 
     // show the next header content 
-    // once on initial component load
-    requestAnimationFrame(function() {
+    // once on initial component load 
+    /* requestAnimationFrame(function() {
       setTimeout(function() {  
         next(); 
 
@@ -212,7 +212,7 @@ var CONFIG = require("../config");
           setInterval(next, _interval); 
         });
       }, _timeout);
-    });
+    }); */
 
     // ---------------------------------------------
     //   Instance block
