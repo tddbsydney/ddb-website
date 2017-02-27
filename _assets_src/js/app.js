@@ -3,7 +3,7 @@
 // -------------------------------------
 //   Dependencies
 // -------------------------------------
-/** 
+/**
   * @plugins
   * require("jquery");
   * require("velocity");
@@ -26,7 +26,7 @@ require("./base/template");
 
 // components
 var Header = require("./components/header.component");
-var PromoVideo = require("./components/promo-video.component");
+// var PromoVideo = require("./components/promo-video.component");
 
 // controllers
 /* empty block */
@@ -39,16 +39,16 @@ console.log(CONFIG);
 // -------------------------------------
 //   App
 // -------------------------------------
-/** 
+/**
   * @name app
-  * @desc The main js file that contains the 
+  * @desc The main js file that contains the
           run options and functions for the app.
 **/
 
 (function() {
   console.log("app.js loaded.");
 
-  /** 
+  /**
     * @name App
     * @desc the main class for the app
     * @return {Object} - the instance of the app class
@@ -61,7 +61,7 @@ console.log(CONFIG);
     var _elBody = null; // reference to the body DOM element
 
     var _header = null; // object to hold a refernce for the header component
-    var _promoVideos = []; // array of objects to hold references for the the promo video components
+    // var _promoVideos = []; // array of objects to hold references for the the promo video components
     var _hasFastClickAttached = false; // flag to indicate if fast click was attached
 
     // ---------------------------------------------
@@ -75,7 +75,7 @@ console.log(CONFIG);
     // @name _attachFastClick
     // @desc function to attach fast click to the document
     // @param {Event} event - the event the function was dispatched from
-    function _attachFastClick(event) { 
+    function _attachFastClick(event) {
       try { FastClick.attach(document.body); } // try to attach fast click
       catch(error) { console.log(error); } // catch attach fast click error
     }
@@ -93,7 +93,7 @@ console.log(CONFIG);
       _elBody = query("body")[0];
 
       // instantiate FastClick on the body for eliminating
-      // the 300ms delay between a physical tap and the 
+      // the 300ms delay between a physical tap and the
       // firing of a click event on mobile browsers
       if (!_hasFastClickAttached && "addEventListener" in document) {
         document.addEventListener("DOMContentLoaded", _attachFastClick, false);
@@ -103,15 +103,15 @@ console.log(CONFIG);
       // create the header
       _header = new Header({ element: query(".header")[0] });
 
-      // create the promo videos
-      query(".promo-video").forEach(function(element, index){
-        _promoVideos.push(new PromoVideo({ element: element }));
-      });
+      // // create the promo videos
+      // query(".promo-video").forEach(function(element, index){
+      //   _promoVideos.push(new PromoVideo({ element: element }));
+      // });
 
       // animate fade the current page into view
       requestAnimationFrame(function() {
         $(_elBody).velocity("transition.fadeIn", {
-          easing: "easeInOutQuad", 
+          easing: "easeInOutQuad",
           delay: CONFIG.animation.delay,
           duration: CONFIG.animation.durationSlow
         });

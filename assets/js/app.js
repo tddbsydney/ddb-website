@@ -4,7 +4,7 @@
 // -------------------------------------
 //   Dependencies
 // -------------------------------------
-/** 
+/**
   * @plugins
   * require("jquery");
   * require("velocity");
@@ -27,7 +27,7 @@ require("./base/template");
 
 // components
 var Header = require("./components/header.component");
-var PromoVideo = require("./components/promo-video.component");
+// var PromoVideo = require("./components/promo-video.component");
 
 // controllers
 /* empty block */
@@ -40,16 +40,16 @@ console.log(CONFIG);
 // -------------------------------------
 //   App
 // -------------------------------------
-/** 
+/**
   * @name app
-  * @desc The main js file that contains the 
+  * @desc The main js file that contains the
           run options and functions for the app.
 **/
 
 (function() {
   console.log("app.js loaded.");
 
-  /** 
+  /**
     * @name App
     * @desc the main class for the app
     * @return {Object} - the instance of the app class
@@ -62,7 +62,7 @@ console.log(CONFIG);
     var _elBody = null; // reference to the body DOM element
 
     var _header = null; // object to hold a refernce for the header component
-    var _promoVideos = []; // array of objects to hold references for the the promo video components
+    // var _promoVideos = []; // array of objects to hold references for the the promo video components
     var _hasFastClickAttached = false; // flag to indicate if fast click was attached
 
     // ---------------------------------------------
@@ -76,7 +76,7 @@ console.log(CONFIG);
     // @name _attachFastClick
     // @desc function to attach fast click to the document
     // @param {Event} event - the event the function was dispatched from
-    function _attachFastClick(event) { 
+    function _attachFastClick(event) {
       try { FastClick.attach(document.body); } // try to attach fast click
       catch(error) { console.log(error); } // catch attach fast click error
     }
@@ -94,7 +94,7 @@ console.log(CONFIG);
       _elBody = query("body")[0];
 
       // instantiate FastClick on the body for eliminating
-      // the 300ms delay between a physical tap and the 
+      // the 300ms delay between a physical tap and the
       // firing of a click event on mobile browsers
       if (!_hasFastClickAttached && "addEventListener" in document) {
         document.addEventListener("DOMContentLoaded", _attachFastClick, false);
@@ -104,15 +104,15 @@ console.log(CONFIG);
       // create the header
       _header = new Header({ element: query(".header")[0] });
 
-      // create the promo videos
-      query(".promo-video").forEach(function(element, index){
-        _promoVideos.push(new PromoVideo({ element: element }));
-      });
+      // // create the promo videos
+      // query(".promo-video").forEach(function(element, index){
+      //   _promoVideos.push(new PromoVideo({ element: element }));
+      // });
 
       // animate fade the current page into view
       requestAnimationFrame(function() {
         $(_elBody).velocity("transition.fadeIn", {
-          easing: "easeInOutQuad", 
+          easing: "easeInOutQuad",
           delay: CONFIG.animation.delay,
           duration: CONFIG.animation.durationSlow
         });
@@ -148,7 +148,8 @@ console.log(CONFIG);
   ddbWebsite.init(); // initiate the created app
 
 })();
-},{"./base/debounce":2,"./base/print":3,"./base/promise":4,"./base/query":5,"./base/raf":6,"./base/template":7,"./components/header.component":8,"./components/promo-video.component":9,"./config":10}],2:[function(require,module,exports){
+
+},{"./base/debounce":2,"./base/print":3,"./base/promise":4,"./base/query":5,"./base/raf":6,"./base/template":7,"./components/header.component":8,"./config":9}],2:[function(require,module,exports){
 "use strict";
 
 // -------------------------------------
@@ -1051,241 +1052,7 @@ var CONFIG = require("../config");
 })(jQuery);
 
 
-},{"../base/promise":4,"../base/query":5,"../config":10}],9:[function(require,module,exports){
-"use strict";
-
-// -------------------------------------
-//   Dependencies
-// -------------------------------------
-/** 
-  * @plugins
-  * require("jquery");
-  * require("velocity");
-**/
-
-// base
-require("../base/query");
-require("../base/promise");
-
-// config
-var CONFIG = require("../config");
-
-// -------------------------------------
-//   Component - Promo Video
-// -------------------------------------
-/** 
-  * @name promo-video.component
-  * @desc The promo video component for the app.
-**/
-
-(function($){
-  console.log("components/promo-video.component.js loaded.");
-
-  /** 
-    * @name PromoVideo
-    * @desc the main class for the component
-    * @param {Object} options - options for the component
-    * @return {Object} - the instance of the component class
-  **/
-  function PromoVideo(options) {
-    // ---------------------------------------------
-    //   Private members
-    // ---------------------------------------------
-    var _el = { // reference to the DOM element
-      main: null,    // the main parent DOM element
-      scroll: null,  // the scroll child DOM element
-      content: null, // the content child DOM element
-      headers: []    // reference to the content headers
-    };
-
-    var _class = { // the classes that need to be applied
-      main: "promo-video",   // to the main parent DOM element
-      scroll: "promo-video__scroll", // to the scroll child DOM element
-      content: "promo-video__content" // to the content child DOM element
-    };
-
-    var _index = 0; // reference to the current active index
-
-    var _timeout = 1500; // reference to the header content animatimation timeout
-    var _interval = 5000; // reference to the header content animatimation interval
-    var _isContentAnimating = false; // flag to indicate if the header content is animating
-
-    // ---------------------------------------------
-    //   Public members
-    // ---------------------------------------------
-    /* empy block */
-
-    // ---------------------------------------------
-    //   Private methods
-    // ---------------------------------------------
-    // @name show
-    // @desc function to animate and show the given header content
-    // @param {DOM} content - the header content to be animated into view
-    // @param {String} direction - the direction of the required animation
-    // @return {Promise(Boolean)} - the promise with resolve as true or false
-    function _show(content, direction) {
-      return new Promise(function(resolve) { try {
-        if(_isContentAnimating) {
-          console.log("promo-video.component.js: Cannot show content while other contents are still animating.")
-          return false;
-        }
-
-        // set the animating flag as true
-        _isContentAnimating = true;
-
-        // animate the given content into view
-        requestAnimationFrame(function() {
-          // finish any animations currently
-          // being performed on the content
-          $(content).velocity("finish");
-
-          // perform the new animation
-          $(content).velocity(
-            direction == "left" ? 
-            "transition.slideLeftIn" : 
-            "transition.slideRightIn", {
-
-              easing: "easeInOutQuad", 
-              delay: CONFIG.animation.delay / 4,
-              duration: CONFIG.animation.durationSlow,
-
-              // reset the animation flag on complete and resolve the promise
-              complete: function() { _isContentAnimating = false; return resolve(true); }
-          });
-        });
-
-        // resolve promimse immediately on error
-        } catch(error) { console.log(error); return resolve(true); }
-      });
-    }
-
-    // @name show
-    // @desc function to animate and hide the given header content
-    // @param {DOM} content - the header content to be animated out of view
-    // @param {String} direction - the direction of the required animation
-    // @return {Promise(Boolean)} - the promise with resolve as true or false
-    function _hide(content, direction) {
-      return new Promise(function(resolve) { try {
-        if(_isContentAnimating) {
-          console.log("promo-video.component.js: Cannot hide content while other contents are still animating.")
-          return false;
-        }
-
-        // set the animating flag as true
-        _isContentAnimating = true;
-
-        // animate the given content out of view
-        requestAnimationFrame(function() {
-          // finish any animations currently
-          // being performed on the content
-          $(content).velocity("finish");
-
-          // perform the new animation
-          $(content).velocity(
-            direction == "right" ? 
-            "transition.slideRightOut" : 
-            "transition.slideLeftOut", {
-
-              easing: "easeInOutQuad", delay: 0,
-              duration: CONFIG.animation.durationSlow,
-
-              // reset the animation flag on complete and resolve the promise
-              complete: function() { _isContentAnimating = false; return resolve(true); }
-          });
-        });
-        
-        // resolve promimse immediately on error
-        } catch(error) { console.log(error); return resolve(true); }
-      });
-    }
-
-    // ---------------------------------------------
-    //   Public methods
-    // ---------------------------------------------
-    // @name next
-    // @desc function to show the next header content
-    function next() {
-      var currIndex = _index; // get the current active index
-      var nextIndex = _index + 1; // get the next active index
-
-      // check if this the last header content
-      if(nextIndex >= _el.headers.length ) {
-         // reset the active index
-         // to the start of the list
-          nextIndex = 0;
-      } 
-
-      // get the corresponding header contents
-      var elCurrContent = _el.headers; // get all contents
-      var elNextContent = _el.headers[nextIndex];
-
-      // animate the current content out of view
-      _hide(elCurrContent, "left").then(
-
-        // animate the next content into view
-        function(isSuccess) {_show( elNextContent, "right"); },
-        function(isError)   { /* empty block */ }
-
-      );
-
-      _index = nextIndex;
-    }
-
-    // @name prev
-    // @desc function to show the previous header content
-    function prev() { /* empty block */ }
-
-    // ---------------------------------------------
-    //   Constructor block
-    // ---------------------------------------------
-    // check if the promo video has valid options
-    // element - should be a valid DOM element
-    if(!options || !options.element 
-      || !options.element.nodeName || !options.element.nodeType) {
-      console.log("promo-video.component.js: Cannot create promo video with invalid options.");
-      return null;  // return null if invalid
-    }
-
-    // get the main parent element
-    _el.main = options.element;
-
-    // get all the child elements
-    _el.scroll = query("." + _class.scroll, _el.main)[0];
-    _el.content = query("." + _class.content, _el.main)[0];
-    _el.headers = query("span", _el.content);
-
-    // show the next header content 
-    // once on initial component load
-    requestAnimationFrame(function() {
-      setTimeout(function() {  
-        next(); 
-
-        // and create a loop 
-        // with a set interval
-        requestAnimationFrame(function() { 
-          setInterval(next, _interval); 
-        });
-      }, _timeout);
-    });
-
-    // ---------------------------------------------
-    //   Instance block
-    // ---------------------------------------------
-    return {
-      next: next, // function to show the next header content
-      prev: prev  // function to show the previous header content
-    };
-  }
-
-  // ---------------------------------------------
-  //   Export block
-  // ---------------------------------------------
-  module.exports = PromoVideo;
-
-})(jQuery);
-
-
-},{"../base/promise":4,"../base/query":5,"../config":10}],10:[function(require,module,exports){
+},{"../base/promise":4,"../base/query":5,"../config":9}],9:[function(require,module,exports){
 "use strict";
 
 // -------------------------------------

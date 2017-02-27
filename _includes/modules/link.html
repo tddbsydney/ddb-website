@@ -20,6 +20,10 @@
       {% when "Link.document" %}
         {% if link.value.document.type == "case-studies" %}
           {{base}}/sydney/work/{{link.value.document.uid}}
+        {% elsif link.value.document.type == "career-listings" %}
+          {{base}}/sydney/careers/{{link.value.document.uid}}
+        {% elsif link.value.document.type == "custom-pages" %}
+          {{base}}/sydney/pages/{{link.value.document.uid}}
         {% elsif link.value.document.uid == "latest" %}
           {{base}}/sydney/
         {% else %}

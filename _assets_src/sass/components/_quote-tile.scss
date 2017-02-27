@@ -8,8 +8,7 @@
 
 .quote-tile {
   @extend %section;
-
-  display: flex;
+  @extend %flex--row;
   min-height: 70vw;
 
   &.test:hover {
@@ -36,8 +35,8 @@
       p:first-child { margin-top: 0; }
       p:last-child { margin-bottom: 0; }
 
-      .quote-tile__quote { margin-bottom: 0.25em; }
-      .quote-tile__author { margin-top: 0.25em; }
+      .quote-tile__quote  { margin-bottom: 0.25em; }
+      .quote-tile__author { margin-top: 0.25em;    }
     }
 
     .quote-tile__image {
@@ -55,7 +54,7 @@
       }
 
       .quote-tile__image--desktop { display: block; }
-      .quote-tile__image--mobile { display: none; }
+      .quote-tile__image--mobile  { display: none;  }
 
       @include mobile {
         text-align: center;
@@ -64,7 +63,7 @@
           max-width: 100%;
           width: auto;
         }
-        .quote-tile__image--desktop { display: none; }
+        .quote-tile__image--desktop { display: none;  }
         .quote-tile__image--mobile  { display: block; }
       }
     }
