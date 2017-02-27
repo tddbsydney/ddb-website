@@ -2761,7 +2761,7 @@
                 {
                   "headline": {
                     "type": "Text",
-                    "value": "Promo video"
+                    "value": "Feeling\n<br/>\n<span>conquers</span>\n<br/>\nthinking"
                   },
                   "list": {
                     "type": "StructuredText",
@@ -2788,6 +2788,10 @@
                         ]
                       }
                     ]
+                  },
+                  "foregroundColor": {
+                    "type": "Color",
+                    "value": "#ffffff"
                   },
                   "image": {
                     "type": "Image",
@@ -2822,10 +2826,6 @@
                         }
                       }
                     }
-                  },
-                  "foregroundColor": {
-                    "type": "Color",
-                    "value": "#ffffff"
                   },
                   "video": {
                     "type": "Link.web",

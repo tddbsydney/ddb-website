@@ -51,6 +51,14 @@ page_gen:
     template: data_page_gen
     name: uid
     dir: sydney/work
+  - data: prismic.career-listings
+    template: data_page_gen
+    name: uid
+    dir: sydney/careers
+  - data: prismic.custom-pages
+    template: data_page_gen
+    name: uid
+    dir: sydney/pages
 page_gen-dirs: true
 jekyll_tidy:
   exclude: []
