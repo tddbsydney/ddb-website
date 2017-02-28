@@ -20,11 +20,11 @@
   }
 
   a   {
-    @include font--style("h5"); color: white;
+    @include font--style("h6"); color: white;
     @include mobile { @include font--style("h2"); }
   }
 
-  a i { @include font--style("h3"); }
+  a i { @include font--style("h4"); }
 
   &__back, &__logo,
   &__menu, &__nav {

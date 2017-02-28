@@ -13,25 +13,4 @@
 // -------------------------------------
 .case-study-work-tile__content {
   @extend .case-study-tile__content;
-  @include mobile { top: $section_margin_lg_mob !important; }
-}
-
-// -------------------------------------
-//   Case Study Work - Scroll
-// -------------------------------------
-$csw_scroll_margin: 0.5em;
-
-.case-study-work-tile__scroll {
-  // disabled for sprint one
-  // to prevent click events
-  pointer-events: none;
-  visibility: hidden;
-
-  @extend %transform-center-h;
-  @include font--size("h1");
-
-  &:last-child {
-    bottom: 0;
-    margin-bottom: $csw_scroll_margin;
-  }
 }

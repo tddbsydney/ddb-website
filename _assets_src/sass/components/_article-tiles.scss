@@ -70,6 +70,6 @@ $art_tile_content_inner_w_max_mob: 50%;
     @include mobile    { max-width: $art_tile_content_inner_w_max_mob; }
   }
   
-  > h4 { margin: 0; }
-  > a  { margin-top: 1em; }
+  h4 { margin: 0; }
+  h4 + a { margin-top: 1em; }
 }

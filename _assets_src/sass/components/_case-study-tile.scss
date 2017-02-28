@@ -61,10 +61,6 @@ $cs_tile_content_inner_w_max_mob: 80%;
 // -------------------------------------
 //   Case Study Tile - Section - First
 // -------------------------------------
-.section--first > .case-study-tile {
-  .case-study-tile__content {
-    @include mobile { 
-      top: $section_margin_lg_mob !important; 
-    }
-  }
-}
+.section--first > .case-study-tile { .case-study-tile__content {
+  @include mobile { top: $section_margin_lg_mob !important; }
+}}

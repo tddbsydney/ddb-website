@@ -698,7 +698,7 @@
                   },
                   "copy": {
                     "type": "Text",
-                    "value": "When is a car more<br>than a car?"
+                    "value": "When is a car more than a car?"
                   },
                   "image": {
                     "type": "Image",
@@ -2141,7 +2141,7 @@
                   },
                   "copy": {
                     "type": "Text",
-                    "value": "We needed to get more people inside <br>the Sydney Opera House during summer."
+                    "value": "We needed to get more people inside the Sydney Opera House during summer."
                   },
                   "image": {
                     "type": "Image",
@@ -2281,7 +2281,7 @@
                   },
                   "copy": {
                     "type": "Text",
-                    "value": "When is a car more <br>than a car?"
+                    "value": "When is a car more than a car?"
                   },
                   "image": {
                     "type": "Image",
@@ -2761,7 +2761,7 @@
                 {
                   "headline": {
                     "type": "Text",
-                    "value": "Feeling\n<br/>\n<span>conquers</span>\n<br/>\nthinking"
+                    "value": "Feeling\n<br class=\"mobile\"/><span>conquers</span><br class=\"mobile\"/>\nthinking"
                   },
                   "list": {
                     "type": "StructuredText",
@@ -3051,7 +3051,7 @@
                   },
                   "copy": {
                     "type": "Text",
-                    "value": "When is a car more <br>than a car?"
+                    "value": "When is a car more than a car?"
                   },
                   "image": {
                     "type": "Image",
@@ -3181,7 +3181,7 @@
                   },
                   "copy": {
                     "type": "Text",
-                    "value": "We needed to get more people inside <br>the Sydney Opera House during summer."
+                    "value": "We needed to get more people inside the Sydney Opera House during summer."
                   },
                   "image": {
                     "type": "Image",

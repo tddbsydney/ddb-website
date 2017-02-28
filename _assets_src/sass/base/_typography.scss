@@ -14,28 +14,33 @@
 // based on tags
 // font size - h1
 $font_size_h1:     42px; // base 
-$font_size_h1_tab: 38px; // tablet
-$font_size_h1_mob: 36px; // mobile
+$font_size_h1_tab: 37px; // tablet
+$font_size_h1_mob: 32px; // mobile
 
 // font size - h2
 $font_size_h2:     32px; // base 
-$font_size_h2_tab: 28px; // tablet
-$font_size_h2_mob: 24px; // mobile
+$font_size_h2_tab: 29px; // tablet
+$font_size_h2_mob: 26px; // mobile
 
 // font size - h3
 $font_size_h3:     28px; // base 
-$font_size_h3_tab: 24px; // tablet
+$font_size_h3_tab: 25px; // tablet
 $font_size_h3_mob: 22px; // mobile
 
 // font size - h4
-$font_size_h4:     22px; // base 
-$font_size_h4_tab: 18px; // tablet
-$font_size_h4_mob: 16px; // mobile
+$font_size_h4:     24px; // base 
+$font_size_h4_tab: 22px; // tablet
+$font_size_h4_mob: 18px; // mobile
 
 // font size - h5
-$font_size_h5:     18px; // base 
-$font_size_h5_tab: 16px; // tablet
-$font_size_h5_mob: 14px; // mobile
+$font_size_h5:     20px; // base 
+$font_size_h5_tab: 18px; // tablet
+$font_size_h5_mob: 16px; // mobile
+
+// font size - h6
+$font_size_h6:     16px; // base 
+$font_size_h6_tab: 15px; // tablet
+$font_size_h6_mob: 14px; // mobile
 
 // font size - p
 $font_size_p:     14px; // base
@@ -77,6 +82,10 @@ $font-size: (
   "h5_tab": $font_size_h5_tab, // tablet
   "h5_mob": $font_size_h5_mob, // mobile
 
+  "h6":     $font_size_h6,     // base
+  "h6_tab": $font_size_h6_tab, // tablet
+  "h6_mob": $font_size_h6_mob, // mobile
+
   "p":     $font_size_p,     // base
   "p_tab": $font_size_p_tab, // tablet
   "p_mob": $font_size_p_mob, // mobile
@@ -113,6 +122,7 @@ $line_height_h2: 1.26em;
 $line_height_h3: 1.33em;
 $line_height_h4: 1.33em;
 $line_height_h5: 1.72em;
+$line_height_h6: 1.72em;
 $line_height_p:  1.72em;
 
 // based on size
@@ -125,7 +135,8 @@ $line-height: (
   // based on tags
   "h1": $line_height_h1, "h2": $line_height_h2,
   "h3": $line_height_h3, "h4": $line_height_h4,
-  "h5": $line_height_h5, "p" : $line_height_p,
+  "h5": $line_height_h5, "h6": $line_height_h6,
+  "p" : $line_height_p,
   
   // based on size
   "xs": $line_height_xs, "lg": $line_height_lg
@@ -153,6 +164,7 @@ $font_family_h2: "Helvetica Neue", Helvetica, sans-serif;
 $font_family_h3: "Helvetica Neue", Helvetica, sans-serif;
 $font_family_h4: "Helvetica Neue", Helvetica, sans-serif;
 $font_family_h5: "Helvetica Neue", Helvetica, sans-serif;
+$font_family_h6: "Helvetica Neue", Helvetica, sans-serif;
 $font_family_p:  "Helvetica Neue", Helvetica, sans-serif;
 
 // based on size
@@ -165,7 +177,8 @@ $font-family: (
   // based on tags
   "h1": $font_family_h1, "h2": $font_family_h2,
   "h3": $font_family_h3, "h4": $font_family_h4,
-  "h5": $font_family_h5, "p" : $font_family_p,
+  "h5": $font_family_h5, "h6": $font_family_h6,
+  "p" : $font_family_p,
   
   // based on size
   "xs": $font_family_xs, "lg": $font_family_lg
@@ -200,6 +213,7 @@ $font_weight_h2: $font_weight_medium;
 $font_weight_h3: $font_weight_regular;
 $font_weight_h4: $font_weight_regular;
 $font_weight_h5: $font_weight_regular;
+$font_weight_h6: $font_weight_regular;
 $font_weight_p : $font_weight_regular;
 
 // based on size
@@ -212,7 +226,8 @@ $font-weight: (
   // based on tags
   "h1": $font_weight_h1, "h2": $font_weight_h2,
   "h3": $font_weight_h3, "h4": $font_weight_h4,
-  "h5": $font_weight_h5, "p" : $font_weight_p,
+  "h5": $font_weight_h5, "h6": $font_weight_h6,
+  "p" : $font_weight_p,
   
   // based on size
   "xs": $font_weight_xs, "lg": $font_weight_lg
@@ -240,6 +255,7 @@ $letter_spacing_h2: normal;
 $letter_spacing_h3: normal;
 $letter_spacing_h4: normal;
 $letter_spacing_h5: normal;
+$letter_spacing_h6: normal;
 $letter_spacing_p : normal;
 
 // based on size
@@ -252,7 +268,8 @@ $letter-spacing: (
   // based on tags
   "h1": $letter_spacing_h1, "h2": $letter_spacing_h2,
   "h3": $letter_spacing_h3, "h4": $letter_spacing_h4,
-  "h5": $letter_spacing_h5, "p" : $letter_spacing_p,
+  "h5": $letter_spacing_h5, "h6": $letter_spacing_h6,
+  "p" : $letter_spacing_p,
   
   // based on size
   "xs": $letter_spacing_xs, "lg": $letter_spacing_lg
@@ -309,7 +326,7 @@ $letter-spacing: (
 
   @include font--size($size, $mult); @include line--height($size);
   @include font--family($size); @include font--weight($size);
-  @include letter--spacing($size); color: white;
+  @include letter--spacing($size);
 }
 
 // ------------------------------------
@@ -320,6 +337,7 @@ h2 { @include font--style("h2"); }
 h3 { @include font--style("h3"); }
 h4 { @include font--style("h4"); }
 h5 { @include font--style("h5"); }
+h6 { @include font--style("h6"); }
 
 html, body, ul, ol, li,
 p, a { @include font--style("p"); }
@@ -330,7 +348,8 @@ span, i {
   letter-spacing: inherit; color: inherit;
 }
 
-h1, h2, h3, h4, h5, ul, ol, li, p, a {
+h1, h2, h3, h4, h5, h6, ul, ol, li, p, a {
+  color: white;
   &:first-child { margin-top: 0; }
   &:last-child  { margin-bottom: 0; }
 }

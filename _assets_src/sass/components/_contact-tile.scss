@@ -21,20 +21,20 @@
 // -------------------------------------
 .contact-tile__image {
   @extend %flex--col;
-  @include section--padding(2);
-  @include section--padding-right(4);
+  @include section--padding("md");
+  @include section--padding-right("lg");
   order: 1;
 
   @include mobile { 
     display: block;
-    @include section--padding(2);
+    @include section--padding("md");
   }
 }
 
 .contact-tile__content {
   @extend %flex--col;
-  @include section--padding(2);
-  &__inner { @include section--padding-right(1); }
+  @include section--padding("md");
+  &__inner { @include section--padding-right; }
 
   order: 1;
   position: relative;
@@ -50,29 +50,24 @@
   
 
   h5, p { color: inherit; }
-  p, a  { @extend %font-size-h5; }
-  h5    { margin: 0; font-weight: $font_wt_bold; }
-
-  p { 
-    margin: $line_height_sub 0 0; 
-    &:first-child { margin-top: 0; }
-    &:last-child  { margin-bottom: 0; }
-  }
+  p, a  { @include font--style("h5"); }
+  h5    { margin: 0; font-weight: $font_weight_bold; }
 
   a { 
-    margin: $line_height_head 0 0; 
+    margin-top: 1em; 
     &:first-child { margin-top: 0; }
     &:last-child  { margin-bottom: 0; }
   }
   
 
-  h5 + a,
-  a + a { margin-top: 0; }
+  h5 + a, 
+  p + a { margin-top: 0; }
+  a + a { margin: 0.75em 75% 0 0; }
 
   h5, p, a {
     + h5 { 
-      @include section--margin-top(1);
-      @include mobile { @include section--margin-top(2); }
+      @include section--margin-top;
+      @include mobile { @include section--margin-top("md"); }
     }
   }
 
