@@ -26,9 +26,6 @@
 // -------------------------------------
 //   Video - Cover
 // -------------------------------------
-$video_overlay_color: black;
-$video_overlay_opacity: 0.25;
-
 // videos used purely for the purpose of
 // covering an entrire parent element in 
 // html ( used along with layout videos )
@@ -55,8 +52,5 @@ $video_overlay_opacity: 0.25;
   }
 
   // overlay
-  &--overlay {
-    opacity: $video_overlay_opacity;
-    background-color: $video_overlay_color;
-  }
+  &--overlay { @extend %image__cover--overlay; }
 }
