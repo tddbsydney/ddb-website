@@ -11,6 +11,8 @@
   @include section--padding;
 
   text-align: center;
+  width: 100%; height: auto;
+  min-width: $base_html_w_min;
   @include mobile { min-height: 0; }
 
   @include mobile-up {

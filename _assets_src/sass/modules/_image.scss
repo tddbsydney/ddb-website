@@ -56,7 +56,6 @@
 
   // modifiers for switching of 
   // responsive images with CSS
-  // desktop and mobile
   &--desktop { @extend %image__layout--desktop; }
   &--mobile  { @extend %image__layout--mobile;  }
 }

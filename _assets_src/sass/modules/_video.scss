@@ -37,20 +37,13 @@
   
   // modifiers for switching of 
   // responsive images with CSS
-  // desktop
-  &--desktop { 
-    @extend %image__cover--desktop;
-    width: 100%; height: auto;
-  }
-  
-  // mobile
-  &--mobile  { 
-    @extend %image__cover--mobile;
+  &--desktop { @extend %image__cover--desktop; }
+  &--mobile  { @extend %image__cover--mobile;  }
+  &--overlay { @extend %image__cover--overlay; }
+
+  &--desktop, &--mobile  {
     @include transform-center-h(false);
     min-width: 100%; min-height: 100%;
     width: auto; height: 100%;
   }
-
-  // overlay
-  &--overlay { @extend %image__cover--overlay; }
 }

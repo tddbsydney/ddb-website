@@ -260,8 +260,9 @@ section { @extend %section; }
     z-index: $zi_header;
     display: block;
 
-    width: 100vw; height: auto;
+    width: 100%; height: auto;
     min-width: $base_html_w_min;
+    overflow-x: hidden;
   }
 
   &--first  { /* empty block */ }
